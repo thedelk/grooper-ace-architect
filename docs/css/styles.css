@@ -1,0 +1,52 @@
+/* body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 0.8rem !important;
+  color: #333;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0;
+  position: relative;
+} */
+
+/* .md-typeset {
+  font-size: 1em !important;
+} */
+
+.md-main,
+.md-typeset {
+  font-family: Roboto !important;
+  font-size: 14px !important;
+  color: #707070 !important;
+}
+
+.md-sidebar * {
+  font-size: 14px !important;
+}
+
+img {
+  max-height: 50% !important;
+  max-width: 50% !important;
+}
+
+h1 {
+  font-family: "Roboto Thin" !important;
+  font-size: 36px !important;
+  /* font-weight: 500 !important; */
+}
+
+h2 {
+  font-family: "Roboto Light" !important;
+}
+
+h4 {
+  font-family: "Roboto Medium" !important;
+  font-weight: normal !important;
+}
+
+strong {
+  font-weight: normal;
+  border-radius: 3px;
+  background-color: #f4f4f4;
+  padding: 4px 7px;
+  margin-left: 2px;
+}
