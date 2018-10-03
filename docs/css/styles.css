@@ -37,12 +37,6 @@
 
 article > ol > li {
   margin: 6rem 0 !important;
-  list-style: none !important;
-  counter-increment: myIndex;
-}
-
-article > ol > li:after {
-  content: counter(myIndex) " | " !important;
 }
 
 img {
