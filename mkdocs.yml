@@ -1,8 +1,10 @@
 site_name: ACE - Architect
 theme:
-  name: "material"
+  name: material
+  favicon: "img/favicon.ico"
   palette:
-    primary: orange
+    primary: teal
+    accent: orange
   feature:
     tabs: true
   font:
@@ -14,6 +16,7 @@ markdown_extensions:
   - tables
   - pymdownx.betterem
   - pymdownx.details
+  - pymdownx.escapeall
   - pymdownx.superfences
   - codehilite:
       # linenums: true # https://squidfunk.github.io/mkdocs-material/extensions/codehilite/#highlighting-specific-lines

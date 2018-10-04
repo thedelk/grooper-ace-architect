@@ -1,5 +1,20 @@
+/* body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 0.8rem !important;
+  color: #333;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0;
+  position: relative;
+} */
+
+/* .md-typeset {
+  font-size: 1em !important;
+} */
+
 .md-main,
 .md-typeset {
+  /* font-family: Roboto !important; */
   font-size: 14px !important;
   color: #707070 !important;
   line-height: 24px !important;
@@ -9,25 +24,31 @@
   font-size: 14px !important;
 }
 
-.md-typeset code,
-.md-typeset pre {
-  font-size: 1.2rem;
-}
-
 .md-typeset .codehilite .hll,
 .md-typeset .highlight .hll {
-  display: inline;
-  margin: 0 -0.5rem;
-  padding: 0 0.5rem;
+  display: inline !important;
+  margin: 0 -0.5rem !important;
+  padding: 0 0.5rem !important;
 }
 
+.md-typeset code,
+.md-typeset pre {
+  font-size: 85% !important;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 1.2rem !important;
+}
+
+/* Step instructions */
 .md-typeset .admonition.abstract {
+  font-size: 1.6rem !important;
   font-family: "Roboto Light" !important;
 }
 
-details:not(.abstract) {
-  margin-left: 50%;
-  font-size: 1.2rem;
+article > ol > li {
+  /* margin: 6rem 0 !important; */
 }
 
 hr {
@@ -39,7 +60,10 @@ img {
   max-width: 50% !important; */
   margin: 1rem 0 0 !important;
   /* border: 0.4rem solid #80828580 !important; */
+  /* border-left: 0.4rem solid #36b0a7 !important; */
   border-radius: 0.2rem !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
 }
 
 h1 {
@@ -55,7 +79,6 @@ h2 {
 h4 {
   font-family: "Roboto Medium" !important;
   font-weight: normal !important;
-  margin-top: 4rem !important;
 }
 
 strong {
@@ -65,4 +88,3 @@ strong {
   padding: 4px 7px;
   margin-left: 2px;
 }
-/*# sourceMappingURL=styles.css.map */

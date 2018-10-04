@@ -25,10 +25,10 @@ The first thing we want to do is create a Batch Process.
 
 1. Open Grooper Design Studio and expand the node tree to **_(root)_ > Batch Processing > Process** and select the **Working** node.
 2. Create a new Batch Process by either:
-   1. right-clicking on the **Working** node and selecting **Add > Batch Process...**, or
-   2. clicking **Add** in the toolbar and selecting **Batch Process...**.
+    1. right-clicking on the **Working** node and selecting **Add > Batch Process...**, or
+    2. clicking **Add** in the toolbar and selecting **Batch Process...**.
 
-### Naming the new Batch Process
+### Naming the Batch Process
 
 Before our Process can be created, we have to give it a name.
 
@@ -139,7 +139,7 @@ We first need to set which of the various "scan" methods our profile will be usi
 
 2. Click the drop-down on the right and select **File System Import**.
 
-    !!! note
+    !!! info
         If you have scanner drivers installed, you will probably see ISIS and TWAIN in this list as well.
 
     ![Selecting the scan device](img/1-3/008.png)
@@ -220,7 +220,7 @@ We're going to create a production batch with our new Process, so now we want to
 
     If you click on the batch, you can see where it's at in the process.  Currently, it's on the **Scan** step.  The progress bar is gray, which means it's in "Pending" status.  That means that this activity is ready to begin.
 
-    !!! note
+    !!! info
         Depending on the type of activity, the batch process step may begin processing automatically. For this to happen, two criteria have to be met:
 
         - the activity type must be an *unattended* activity, and
