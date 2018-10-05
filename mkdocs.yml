@@ -17,7 +17,6 @@ markdown_extensions:
   - pymdownx.betterem
   - pymdownx.details
   - pymdownx.escapeall
-  - pymdownx.superfences
   - codehilite:
       # linenums: true # https://squidfunk.github.io/mkdocs-material/extensions/codehilite/#highlighting-specific-lines
       guess_lang: true
@@ -26,6 +25,7 @@ markdown_extensions:
   #     linenums_style: pymdownx-inline
   - pymdownx.inlinehilite
   - pymdownx.mark
+  - pymdownx.superfences
   - pymdownx.tilde
 plugins:
   - pdf-export:
