@@ -558,7 +558,7 @@ We're going to be performing what's called OCR, which stands for "optical charac
 
 Image someone who doesn't know how to read. Letters on a page would simply look like a bunch of symbols without meaning, right?
 
-It's even worse for computers. For a scanned document, a computer doesn’t even know the symbol is a letter, but instead just a combination of pixels. The OCR process is how the computer takes an image and, ==line by line==, finds combinations of pixels that it ultimately determines are letters, spaces, special characters, etc. – i.e. machine print.
+Now image that that person is a computer. For a scanned document, a computer doesn’t even know the symbol is a letter, but instead an arbitrary combination of pixels. The OCR process is how the computer takes an image and, ==line by line==, finds combinations of pixels that it ultimately determines are letters, numbers, spaces, special characters, and so on.
 
 For this to happen successfully, the quality of the images has to be as high as possible. If we tried to OCR low-quality images, the text identified by the OCR engine won't be very good, which essentially breaks down everything we do from this point forward.
 
