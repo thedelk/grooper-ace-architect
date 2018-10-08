@@ -642,7 +642,22 @@ The **Grooper Unattended Client** should kick off again and start processing aga
 !!! danger "TO-DO"
     Insert information about OCR and unattended client (images 36-39)
 
+## Recap
 
+That's it for the **Condition** phase! We've successfully prepped our images and extracted text from them.
 
+Here's a list of everything we learned:
+- how to clone a batch from production to test,
+- how to create an Image Processing Profile (or "IP Profile"),
+- how to configure our IP Profile to clean up our images,
+- how to update an existing batch when you change its Batch Process,
+- how to perform Image Review on the images, and
+- how to extract text from the images using Optical Character Recognition (or "OCR")
+
+And thus your arsenal of Grooper knowledge grows!
+
+## Up next
+
+We currently have a batch of loose pages with some patch code sheets. This batch consists of multiple invoices, but Grooper isn't aware of that yet. You and I know where one invoice ends and another begins, so it's up to us to tell Grooper how to recognize that as well.
 
 ![](img/2-3/0.png)
