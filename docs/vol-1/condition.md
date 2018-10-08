@@ -647,7 +647,6 @@ The **Grooper Unattended Client** should kick off again and start processing aga
 That's it for the **Condition** phase! We've successfully prepped our images and extracted text from them.
 
 Here's a list of everything we learned:
-
 - how to clone a batch from production to test,
 - how to create an Image Processing Profile (or "IP Profile"),
 - how to configure our IP Profile to clean up our images,

@@ -1,4 +1,7 @@
+# Project information
 site_name: ACE - Architect
+
+# Configuration
 theme:
   name: material
   favicon: "img/favicon.ico"
@@ -10,6 +13,20 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+
+# Customization
+extra:
+  social:
+    - type: "facebook"
+      link: "https://www.facebook.com/BusinessImagingSystems"
+    - type: "linkedin"
+      link: "https://www.linkedin.com/company/business-imaging-systems"
+    - type: "twitter"
+      link: "https://twitter.com/grooper_ai"
+    - type: "youtube"
+      link: "https://www.youtube.com/channel/UCiJPKqS_enHrFsX49cngqag"
+
+# Extensions
 markdown_extensions:
   - admonition
   - footnotes
