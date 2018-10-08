@@ -22,3 +22,20 @@ Let's get organized!
 
 ## But first
 
+!!! danger
+    Need stuff here.
+
+## Separation
+
+Before we can expect to get any kind of information from these invoices, we need to sort them. While we could get away with doing this manually, Grooper most certainly provides us with a better way.
+
+### Creating a Separation Profile
+
+!!! abstract "Step 1"
+    1. Navigate to ***(root)* > Global Resources > Separation Profiles**
+    2. Create a new **Separation Profile** by either:
+      1. right clicking on **Separation Profiles** and selecting **Add > Separation Profile**, or
+      2. clicking **Add** in the toolbar and selecting **Separation Profile...**.
+    3. Give it a name, like ==Invoices Separation==.
+
+
