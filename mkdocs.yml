@@ -5,6 +5,7 @@ site_name: ACE - Architect
 theme:
   name: material
   favicon: "img/favicon.ico"
+  # logo: "img/favicon.ico"
   palette:
     primary: teal
     accent: orange
@@ -44,6 +45,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.superfences
   - pymdownx.tilde
+  - toc:
+      permalink: true
 plugins:
   - pdf-export:
       verbose: true
