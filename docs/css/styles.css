@@ -23,6 +23,7 @@
 
 .md-typeset .admonition.abstract {
   font-family: "Roboto Light" !important;
+  font-size: 1.6rem;
 }
 
 details:not(.abstract) {
