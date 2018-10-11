@@ -279,7 +279,8 @@ Our Border Crop works pretty well, but there are some images that still have a b
 If you click on **Execute**, nothing happens. That tells us that the default properties for this command probably need to be tweaked for us to see results.
     
 !!! abstract "Step 10"
-    Make sure you have the **Border Fill** command selected in your list and change the **Border Region Size** property to ==25pt==.
+    1. Select the **Border Fill** command.
+    2. Change the **Border Region Size** property to ==25pt==.
 
 ![Changing the "Border Region Size" property](img/2-1/048.png)
 
@@ -288,7 +289,8 @@ This is increasing how far inward from the border Grooper will look when running
 Yet, once again, **Execute** yields no results.
     
 !!! abstract "Step 11"
-    Select **Page 9** in our batch. Change the **Method** property to **Inclusive**.
+    1. Select **Page 9** in our batch.
+    2. Change the **Method** property to ==Inclusive==.
 
 ![Changing the "Method" property](img/2-1/052.png)
     
