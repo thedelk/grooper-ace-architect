@@ -49,9 +49,9 @@ markdown_extensions:
   - toc:
       permalink: true
 plugins:
-  - pdf-export:
-      verbose: true
-      # enabled_if_env: ENABLE_PDF_EXPORT
+  # - pdf-export:
+  #     verbose: true
+  # enabled_if_env: ENABLE_PDF_EXPORT
   - search
   - awesome-pages:
       filename: .title
