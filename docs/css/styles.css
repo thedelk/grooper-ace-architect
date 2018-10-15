@@ -44,9 +44,8 @@ img {
   border-radius: 0.4rem !important;
 }
 
-h1 {
+.md-content h1 {
   font-family: "Roboto Thin" !important;
-  font-size: 36px !important;
   /* font-weight: 500 !important; */
 }
 
