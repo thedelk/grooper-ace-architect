@@ -14,7 +14,7 @@ Change the following properties:
 ---
 1. Navigate to (root) > Batch Processing > Processes > Working > Invoices Process
 2. Add a new step
-3. Set the Activity Type of the step to Separate
+3. Set the Activity Type property of the new step to Separate
 4. Set the Separation Profile to the new Invoices Separation profile we created
 5. Save and Publish.
 
@@ -113,7 +113,7 @@ Change the following properties:
 ---
 1. Navigate to (root) > Batch Processing > Processes > Working > Invoices Process
 2. Add a new step
-3. Set the Activity Type of the step to Classify
+3. Set the Activity Type property of the new step to Classify
 4. Set the Content Model Scope to our Invoices Content Model
 
     img/3-3/001
@@ -121,7 +121,7 @@ Change the following properties:
     img/3-3/002
 ---
 1. Add a new step
-2. Set the Activity Type of the step to Classify Review
+2. Set the Activity Type property of the new step to Classify Review
 3. Set the Classification Viewer Settings > Content Model Scope to our Invoices Content Model
 4. Save and Publish.
 

@@ -84,14 +84,14 @@
 ---
 1. Navigate to (root) > Batch Processing > Processes > Working > Invoices Process
 2. Add a new step
-3. Set the Activity Type of the new step to Extract
+3. Set the Activity Type property of the new step to ==Extract==
 
     img/4-2/001
 
     img/4-2/002
 ---
 1. Add a new step
-2. Set the Activity Type of the new step to Data Review
+2. Set the Activity Type property of the new step to ==Data Review==
 3. Save and Publish
 
     img/4-2/003
@@ -99,7 +99,7 @@
 1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process
 2. Make sure the batch is paused
 3. Right click on the Invoices Batch and select Update Process...
-4. Set Target Step to Extract
+4. Set Target Step to ==Extract==
 5. Click Execute
 
     img/4-2/005
@@ -111,7 +111,7 @@
 
     img/4-2/008
 
-    img/4-2/009
+    img/4-2/010
 ---
 1. After the Extract step has completed, click Process to start the Data Review step
 2. In Grooper Data Review, press Ctrl + I on your keyboard
@@ -130,27 +130,3 @@
     img/4-2/024
 
     img/4-2/027
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    img/4-1/0
