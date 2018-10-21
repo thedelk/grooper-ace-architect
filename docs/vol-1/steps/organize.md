@@ -75,10 +75,10 @@ Change the following properties:
 
     img/3-2/019
 ---
-1. On the Invoices Content Model in the General section, set the Classification Method property to Lexical
+1. On the Invoices Content Model in the General section, set the Classification Method property to ==Lexical==
 2. Still in the General section, navigate to Classification Method > Text Feature Extractor > Type
-3. Set the Type property to Reference
-4. Set the Referenced Extractor property to the Data Extraction > Downloads > Features > Words (Stemmed) Data Type
+3. Set the Type property to ==Reference==
+4. Set the Referenced Extractor property to the Data Extraction > Downloads > Features > ==Words (Stemmed)== Data Type
 
     img/3-2/021
 
