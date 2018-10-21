@@ -16,13 +16,15 @@ Change the following properties:
 2. Add a new step
 3. Set the Activity Type of the step to Separate
 4. Set the Separation Profile to the new Invoices Separation profile we created
+5. Save and Publish.
 
     img/3-1/016
 ---
 1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process.
-2. Right click on the Invoices Batch and select Update Process….
-3. Set Target Step to Separate.
-4. Click Execute.
+2. Make sure the batch is paused
+3. Right click on the Invoices Batch and select Update Process….
+4. Set Target Step to Separate.
+5. Click Execute.
 
     img/3-1/018
     
@@ -44,9 +46,6 @@ Change the following properties:
     img/3-2/002
 ---
 1. Right click on the new Invoices Content Model and select Contents > Add Multiple Items….
-    
-    img/3-2/005
-    
 2. In the Contents • Add Multiple Items window, set Item Type to Document Type
 3. Edit the Item Names property and type out the names of each vendor
     - Acme
@@ -55,6 +54,8 @@ Change the following properties:
     - Spartan
     - Standard
 4. Click Execute to complete
+    
+    img/3-2/005
 
     img/3-2/009
 ---
@@ -108,3 +109,50 @@ Change the following properties:
 
     img/3-2/038
 ---
+## Section 3-3
+---
+1. Navigate to (root) > Batch Processing > Processes > Working > Invoices Process
+2. Add a new step
+3. Set the Activity Type of the step to Classify
+4. Set the Content Model Scope to our Invoices Content Model
+
+    img/3-3/001
+
+    img/3-3/002
+---
+1. Add a new step
+2. Set the Activity Type of the step to Classify Review
+3. Set the Classification Viewer Settings > Content Model Scope to our Invoices Content Model
+4. Save and Publish.
+
+    img/3-3/003
+
+    img/3-3/004
+---
+1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process
+2. Make sure the batch is paused
+3. Right click on the Invoices Batch and select Update Process….
+4. Set Target Step to Classify.
+5. Click Execute.
+
+    img/3-3/007
+
+    img/3-3/008
+---
+1. Resume the batch
+2. Click Process
+
+    img/3-3/011
+---
+1. After the Classify step has completed, click Process to start the Classify Review step.
+2. In Grooper Classify Review, right click on Folder (18) and select Assign Content Type
+3. Select the Enid Document Type from the list and click OK
+4. In the toolbar, click on the Complete Task button to finish this activity
+
+    img/3-3/015
+
+    img/3-3/017
+
+    img/3-3/019
+
+    img/3-3/021
