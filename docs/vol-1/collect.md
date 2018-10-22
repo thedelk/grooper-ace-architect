@@ -34,13 +34,10 @@
 !!! abstract "Step 3"
     1. Select Acme (1) from the batch viewer
     2. In the Value Pattern editor, type:
-
         ```
         invoice\snumber\s?:?\s(\d{8,10})
         ```
-
     3. In the Output Format editor, type:
-
         ```
         {1}
         ```
@@ -63,13 +60,10 @@
     1. Select the Invoice Number > Spartan Data Format
     2. Select Spartan (4) in the batch viewer
     3. In the Value Pattern editor, type:
-
         ```
         \w{2}\d{2}-\d{6}
         ```
-
     4. In the Look Behind editor, type:
-
         ```
         \r\n
         ```
@@ -80,13 +74,10 @@
     1. Select the Invoice Number > Enid Data Format
     2. Select Enid (5) in the batch viewer
     3. In the Value Pattern editor, type:
-
         ```
         (\w{3})(\d{8})
         ```
-
     4. In the Output Format editor, type:
-
         ```
         {1} {2}
         ```
