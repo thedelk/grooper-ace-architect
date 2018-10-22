@@ -28,9 +28,39 @@
     &.abstract {
       font-family: "Roboto Light" !important;
       font-size: 1.6rem;
-      line-height: 2.6rem;
+      line-height: 2.8rem;
+
+      li {
+        margin-top: 2.6rem;
+        margin-bottom: 2.6rem;
+      }
+
+      // border-left: 0.4rem solid #f89420 !important;
+      // border-right: 0.1rem solid #ff9100;
+      // border-top: 0.4rem solid #ff9100;
+      // border-bottom: 0.1rem solid #ff9100;
+      // letter-spacing: -0.0625rem;
+
+      & > .admonition-title {
+        font-weight: normal;
+        // font-size: 1.4rem;
+        font-family: monospace;
+        //   background-color: rgba(255, 145, 0, 0.1) !important;
+        // margin-left: 0.625em !important;
+        padding-left: 1.5em;
+
+        &::before {
+          // color: #f89420 !important;
+          content: "";
+        }
+      }
     }
   }
+}
+
+.codehilite,
+.codehilite pre {
+  color: #ed2330 !important;
 }
 
 details:not(.abstract) {
@@ -44,32 +74,47 @@ hr {
 }
 
 img {
-  /* max-height: 50% !important;
-  max-width: 50% !important; */
-  margin: 1rem 0 0 !important;
+  /* max-height: 50% !important; */
+  max-width: 85% !important;
+  margin: 0 7.5%;
+  // margin: 1rem 0 0 !important;
   // clip: rect(2px, 2px, 2px, 2px);
-  // border: 2px solid rgba(0, 176, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   /* border: 0.4rem solid #80828580 !important; */
   // border-left: 0.4rem solid rgba(0, 176, 255, 0.1) !important;
-  border-radius: 0.4rem !important;
+  // border-radius: 0.4rem !important;
   // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
   //   0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
 }
 
-.md-content h1 {
-  font-family: "Roboto Thin" !important;
-  // font-size: 36px !important;
-  /* font-weight: 500 !important; */
-}
+.md-content {
+  h1 {
+    font-family: "Roboto Thin" !important;
+    letter-spacing: -0.125rem;
+    // font-size: 36px !important;
+    /* font-weight: 500 !important; */
+  }
 
-h2 {
-  font-family: "Roboto Light" !important;
+  h2 {
+    font-family: "Roboto Light" !important;
+    letter-spacing: -0.0625rem;
+  }
+
+  h3 {
+    font-family: "Roboto Light" !important;
+    letter-spacing: -0.0625rem;
+  }
 }
 
 h4 {
   font-family: "Roboto Medium" !important;
   font-weight: normal !important;
   margin-top: 4rem !important;
+}
+
+del {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 strong {
@@ -80,7 +125,7 @@ strong {
   // margin-left: 2px;
   margin: 0 0.25em;
   // padding: 0.0625em 0;
-  padding: 0.0625em 0 0.25em;
+  padding: 0.0625em 0;
   border-radius: 0.3rem;
   background-color: rgba(219, 219, 219, 0.6);
   box-shadow: 0.25em 0 0 rgba(219, 219, 219, 0.6),

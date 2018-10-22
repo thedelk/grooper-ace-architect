@@ -24,7 +24,27 @@
 .md-typeset .admonition.abstract {
   font-family: "Roboto Light" !important;
   font-size: 1.6rem;
-  line-height: 2.6rem;
+  line-height: 2.8rem;
+}
+
+.md-typeset .admonition.abstract li {
+  margin-top: 2.6rem;
+  margin-bottom: 2.6rem;
+}
+
+.md-typeset .admonition.abstract > .admonition-title {
+  font-weight: normal;
+  font-family: monospace;
+  padding-left: 1.5em;
+}
+
+.md-typeset .admonition.abstract > .admonition-title::before {
+  content: "";
+}
+
+.codehilite,
+.codehilite pre {
+  color: #ed2330 !important;
 }
 
 details:not(.abstract) {
@@ -37,20 +57,27 @@ hr {
 }
 
 img {
-  /* max-height: 50% !important;
-  max-width: 50% !important; */
-  margin: 1rem 0 0 !important;
+  /* max-height: 50% !important; */
+  max-width: 85% !important;
+  margin: 0 7.5%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   /* border: 0.4rem solid #80828580 !important; */
-  border-radius: 0.4rem !important;
 }
 
 .md-content h1 {
   font-family: "Roboto Thin" !important;
+  letter-spacing: -0.125rem;
   /* font-weight: 500 !important; */
 }
 
-h2 {
+.md-content h2 {
   font-family: "Roboto Light" !important;
+  letter-spacing: -0.0625rem;
+}
+
+.md-content h3 {
+  font-family: "Roboto Light" !important;
+  letter-spacing: -0.0625rem;
 }
 
 h4 {
@@ -59,10 +86,15 @@ h4 {
   margin-top: 4rem !important;
 }
 
+del {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 strong {
   font-weight: normal;
   margin: 0 0.25em;
-  padding: 0.0625em 0 0.25em;
+  padding: 0.0625em 0;
   border-radius: 0.3rem;
   background-color: rgba(219, 219, 219, 0.6);
   -webkit-box-shadow: 0.25em 0 0 rgba(219, 219, 219, 0.6), -0.25em 0 0 rgba(219, 219, 219, 0.6);
