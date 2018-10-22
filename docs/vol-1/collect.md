@@ -35,11 +35,15 @@
     1. Select Acme (1) from the batch viewer
     2. In the Value Pattern editor, type:
 
-        `invoice\snumber\s?:?\s(\d{8,10})`
+        ```
+        invoice\snumber\s?:?\s(\d{8,10})
+        ```
 
     3. In the Output Format editor, type:
 
-        `{1}`
+        ```
+        {1}
+        ```
 
 ![](img/4-1/012.png)
 
@@ -60,11 +64,15 @@
     2. Select Spartan (4) in the batch viewer
     3. In the Value Pattern editor, type:
 
-        `\w{2}\d{2}-\d{6}`
+        ```
+        \w{2}\d{2}-\d{6}
+        ```
 
     4. In the Look Behind editor, type:
 
-        `\r\n`
+        ```
+        \r\n
+        ```
 
 ![](img/4-1/020.png)
 
@@ -73,11 +81,15 @@
     2. Select Enid (5) in the batch viewer
     3. In the Value Pattern editor, type:
 
-        `(\w{3})(\d{8})`
+        ```
+        (\w{3})(\d{8})
+        ```
 
     4. In the Output Format editor, type:
 
-        `{1} {2}`
+        ```
+        {1} {2}
+        ```
 
 ![](img/4-1/022-2.png)
 
