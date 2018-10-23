@@ -38,8 +38,10 @@
 
 ### Configuring the Scanner Profile
 
-!!! abstract "Global Resources / Scanner Profiles"
-    | Section                   | Default Value | New Value                |
+!!! abstract "Global Resources / Scanner Profiles / Invoices Source Scan"
+    Change the following properties:
+
+    | Section/Property          | Default Value | New Value                |
     |---------------------------|---------------|--------------------------|
     | General                   |               |                          |
     | **Selected Device**       | -             | ==`File System Import`== |
@@ -47,11 +49,6 @@
     | Import Settings           |               |                          |
     | **Import Source**         | `FileSystem`  | ==`TestBatch`==          |
     | **Source Batch**          | -             | ==`_Source`==            |
-
-    1. Set the **Selected Device** property to ==File System Import==.
-    2. Click to edit the **Device Settings** property.
-    3. Set the **Import Source** property to ==TestBatch==.
-    4. Set the **Source Batch** property to the **Batches • Test > _Source > _Source** batch.
 
 ![](img/1-1/017.png)
 
@@ -61,11 +58,10 @@
 
 ### Testing the Scanner Profile
 
-!!! abstract "Step "
-    1. Navigate to ***(root)* > Global Resources > Scanner Profiles**.
-    2. Click the **Scanner Profile** dropdown and select the **Invoices Source Scan** profile.
-    3. Click the **Batch** dropdown and select the **Invoices** batch.
-    4. Click **Scan**.
+!!! abstract "Global Resources > Scanner Profiles"
+    1. Select the **Invoices Source Scan** profile from the **Scanner Profile** dropdown.
+    2. Select the **Invoices** batch from the **Batch** dropdown.
+    3. Click **Scan**.
 
 ![](img/1-1/030.png)
 
@@ -74,6 +70,10 @@
 ![](img/1-1/034.png)
 
 ![](img/1-1/035.png)
+
+---
+
+# Playground
 
 1. Edit the patterns for each of the Data Formats:
     - Acme/Standard/Express

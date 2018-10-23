@@ -21,6 +21,14 @@
   padding: 0 0.5rem;
 }
 
+.md-typeset .admonition {
+  overflow: hidden !important;
+}
+
+.md-typeset .admonition .md-typeset__table table th {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .md-typeset .admonition.abstract {
   font-family: "Roboto Light" !important;
   font-size: 1.4rem;
@@ -37,6 +45,18 @@
   font-weight: normal;
   line-height: 3rem;
   padding-left: 2.5rem;
+}
+
+.md-typeset .admonition.abstract > .admonition-title strong {
+  color: #f89420 !important;
+  font-weight: 700 !important;
+  font-family: "Roboto Mono" !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background-color: initial;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .md-typeset .admonition.abstract > .admonition-title::before {
@@ -112,5 +132,9 @@ strong {
 mark {
   font-family: "Roboto Mono";
   font-size: 1.3rem;
+}
+
+table {
+  margin: auto auto !important;
 }
 /*# sourceMappingURL=styles.css.map */

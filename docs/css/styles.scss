@@ -25,7 +25,21 @@
   }
 
   .admonition {
+    overflow: hidden !important;
+
+    .md-typeset__table table {
+      // border: 1px solid rgba(0, 0, 0, 0.12);
+      // box-shadow: none;
+      // display: block;
+
+      th {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
     &.abstract {
+      // border-left-color: #36b0a7 !important;
+      // border-left-color: #f89420 !important;
       font-family: "Roboto Light" !important;
       font-size: 1.4rem;
 
@@ -35,11 +49,25 @@
       }
 
       & > .admonition-title {
+        // background-color: rgba(54, 176, 167, 0.1) !important;
+        // background-color: rgba(248, 148, 32, 0.1) !important;
         font-family: "Roboto Mono";
         font-size: 1.2rem;
         font-weight: normal;
         line-height: 3rem;
         padding-left: 2.5rem;
+
+        strong {
+          color: #f89420 !important;
+          font-weight: 700 !important;
+          font-family: "Roboto Mono" !important;
+          // font-family: "Roboto Medium" !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          border-radius: 0 !important;
+          background-color: initial;
+          box-shadow: none !important;
+        }
 
         &::before {
           content: "";
@@ -130,4 +158,8 @@ strong {
 mark {
   font-family: "Roboto Mono";
   font-size: 1.3rem;
+}
+
+table {
+  margin: auto auto !important;
 }

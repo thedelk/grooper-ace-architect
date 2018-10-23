@@ -2,35 +2,40 @@
 
 ## OCR
 
-!!! abstract "Step "
-    1. Navigate to **(root) > Global Resources > OCR Profiles**.
-    2. Right click and select **Add > OCR Profile...**.
-    3. Name it ==Invoices OCR==.
+!!! abstract "Global Resources / OCR Profiles"
+    1. Right click and select **Add > OCR Profile...**.
+    2. Name it ==Invoices OCR==.
 
 ![](img/2-1/002.png)
 
 ![](img/2-1/004.png)
 
-!!! abstract "Step "
+!!! abstract "Global Resources / OCR Profiles / **Invoices OCR** "
     Change the following property values:
 
-    | Section              | Property                           | Value           |
-    |----------------------|------------------------------------|-----------------|
-    | General              | **IP Profile**                     | `OCR Cleanup`     |
-    | General              | **Bound Region Processing**        | `Enabled`         |
-    | Synthesis Options    | **Segment End Ratio**              | `125%`            |
-    | Synthesis Options    | **Segment Reprocessing Threshold** | `90%`             |
-    | Iterative Processing | **OCR Iterations**                 | `2`               |
-    | Iterative Processing | **Enable Cell Validation**         | `True`            |
-    | Iterative Processing | **Rows**                           | `1`               |
-    | Iterative Processing | **Columns**                        | `4`               |
-    | Iterative Processing | **Skip First Column**              | `True`            |
-    | Results Filtering    | **Minimum Character Confidence**   | `20%`             |
-    | Results Filtering    | **Eliminate Isolated Symbols**     | `True`            |
-    | Document Structure   | **Orientation**                    | `None`            |
-    | Document Structure   | **Perform Sectioning**             | `True`            |
-    | Processing Options   | **Reject Questionable Lines**      | `True`            |
-    | Processing Options   | **Reject Questionable Characters** | `True`            |
+| Section/Property                   | Default Value | New Value         |
+|------------------------------------|---------------|-------------------|
+| General                            |               |                   |
+| **IP Profile**                     | -             | ==`OCR Cleanup`== |
+| **Bound Region Processing**        | `Disabled`    | ==`Enabled`==     |
+| Synthesis Options                  |               |                   |
+| **Segment End Ratio**              | `100%`        | ==`125%`==        |
+| **Segment Reprocessing Threshold** | `0%`          | ==`90%`==         |
+| Iterative Processing               |               |                   |
+| **OCR Iterations**                 | `1`           | ==`2`==           |
+| **Enable Cell Validation**         | `False`       | ==`True`==        |
+| **Rows**                           | -             | ==`1`==           |
+| **Columns**                        | -             | ==`4`==           |
+| **Skip First Column**              | -             | ==`True`==        |
+| Results Filtering                  |               |                   |
+| **Minimum Character Confidence**   | `0%`          | ==`20%`==         |
+| **Eliminate Isolated Symbols**     | `False`       | ==`True`==        |
+| Document Structure                 |               |                   |
+| **Orientation**                    | `Auto`        | ==`None`==        |
+| **Perform Sectioning**             | `False`       | ==`True`==        |
+| Processing Options                 |               |                   |
+| **Reject Questionable Lines**      | `False`       | ==`True`==        |
+| **Reject Questionable Characters** | `False`       | ==`True`==        |
 
 ![](img/2-1/036.png)
 
