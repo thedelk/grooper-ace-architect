@@ -5,7 +5,7 @@
 ### Importing a pre-made batch
 
 !!! abstract "(root)"
-    1. Right click on ***(root)*** and select **Import > Compressed Archive.**
+    1. Right click and select **Import > Compressed Archive.**
     2. Set the **Import Path** property to the ==Grooper ACE - Architect - Volume II - Begin.zip== file.
 
 ![](img/1-1/002.png)
@@ -16,7 +16,7 @@
 
 ### Creating an empty test batch
 
-!!! abstract "Batch Processing > Batches > Test"
+!!! abstract "Batch Processing / Batches / Test"
     1. Right click and select **Add > Batch...**.
     2. Name it ==Invoices==.
 
@@ -28,7 +28,7 @@
 
 ### Creating a Scanner Profile
 
-!!! abstract "Global Resources > Scanner Profiles"
+!!! abstract "Global Resources / Scanner Profiles"
     1. Right click and select **Add > Scanner Profile...**.
     2. Name it ==Invoices Source Scan==.
 
@@ -38,7 +38,16 @@
 
 ### Configuring the Scanner Profile
 
-!!! abstract "Step "
+!!! abstract "Global Resources / Scanner Profiles"
+    | Section                   | Default Value | New Value                |
+    |---------------------------|---------------|--------------------------|
+    | General                   |               |                          |
+    | **Selected Device**       | -             | ==`File System Import`== |
+    | General / Device Settings |               |                          |
+    | Import Settings           |               |                          |
+    | **Import Source**         | `FileSystem`  | ==`TestBatch`==          |
+    | **Source Batch**          | -             | ==`_Source`==            |
+
     1. Set the **Selected Device** property to ==File System Import==.
     2. Click to edit the **Device Settings** property.
     3. Set the **Import Source** property to ==TestBatch==.
@@ -262,25 +271,25 @@ Edit the patterns for each of the Data Formats:
 
 | Section                            | Default Value | New Value         |
 |-----------------------------------|---------------|-------------------|
-| ~~General~~                           |               |                   |
+| General                           |               |                   |
 | **IP Profile**                     | -             | ==`OCR Cleanup`== |
 | **Bound Region Processing**        | `Disabled`    | ==`Enabled`==     |
-| ~~Synthesis Options~~                  |               |                   |
+| Synthesis Options                  |               |                   |
 | **Segment End Ratio**              |               | `125%`            |
 | **Segment Reprocessing Threshold** |               | `90%`             |
-| ~~Iterative Processing~~               |               |                   |
+| Iterative Processing               |               |                   |
 | **OCR Iterations**                 |               | `2`               |
 | **Enable Cell Validation**         |               | `True`            |
 | **Rows**                           |               | `1`               |
 | **Columns**                        |               | `4`               |
 | **Skip First Column**              |               | `True`            |
-| ~~Results Filtering~~                  |               |                   |
+| Results Filtering                  |               |                   |
 | **Minimum Character Confidence**   |               | `20%`             |
 | **Eliminate Isolated Symbols**     |               | `True`            |
-| ~~Document Structure~~                 |               |                   |
+| Document Structure                 |               |                   |
 | **Orientation**                    |               | `None`            |
 | **Perform Sectioning**             |               | `True`            |
-| ~~Processing Options~~                 |               |                   |
+| Processing Options                 |               |                   |
 | **Reject Questionable Lines**      |               | `True`            |
 | **Reject Questionable Characters** |               | `True`            |
 

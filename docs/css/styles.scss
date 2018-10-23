@@ -28,29 +28,20 @@
     &.abstract {
       font-family: "Roboto Light" !important;
       font-size: 1.4rem;
-      line-height: 2.4rem;
 
       li {
         margin-top: 2.4rem;
         margin-bottom: 2.4rem;
       }
 
-      // border-left: 0.4rem solid #f89420 !important;
-      // border-right: 0.1rem solid #ff9100;
-      // border-top: 0.4rem solid #ff9100;
-      // border-bottom: 0.1rem solid #ff9100;
-      // letter-spacing: -0.0625rem;
-
       & > .admonition-title {
+        font-family: "Roboto Mono";
+        font-size: 1.2rem;
         font-weight: normal;
-        // font-size: 1.4rem;
-        font-family: monospace;
-        //   background-color: rgba(255, 145, 0, 0.1) !important;
-        // margin-left: 0.625em !important;
-        padding-left: 1.5em;
+        line-height: 3rem;
+        padding-left: 2.5rem;
 
         &::before {
-          // color: #f89420 !important;
           content: "";
         }
       }
@@ -120,24 +111,23 @@ h4 {
 }
 
 del {
-  // font-weight: bold;
   text-decoration: none;
-  // font-size: 1.4rem;
   font-family: "Roboto Light" !important;
 }
 
 strong {
   font-weight: normal;
-  // border-radius: 3px;
-  // background-color: #f4f4f4;
-  // padding: 4px 7px;
-  // margin-left: 2px;
+  font-family: "Roboto Light";
   margin: 0 0.25em;
-  // padding: 0.0625em 0;
   padding: 0.0625em 0;
   border-radius: 0.3rem;
   background-color: rgba(219, 219, 219, 0.6);
   box-shadow: 0.25em 0 0 rgba(219, 219, 219, 0.6),
     -0.25em 0 0 rgba(219, 219, 219, 0.6);
   word-break: break-word;
+}
+
+mark {
+  font-family: "Roboto Mono";
+  font-size: 1.3rem;
 }
