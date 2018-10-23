@@ -1,7 +1,7 @@
 .md-main,
 .md-typeset {
   font-size: 14px !important;
-  color: #707070 !important;
+  color: #707070;
   line-height: 24px !important;
 }
 
@@ -23,13 +23,13 @@
 
 .md-typeset .admonition.abstract {
   font-family: "Roboto Light" !important;
-  font-size: 1.6rem;
-  line-height: 2.8rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 
 .md-typeset .admonition.abstract li {
-  margin-top: 2.6rem;
-  margin-bottom: 2.6rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .md-typeset .admonition.abstract > .admonition-title {
@@ -42,9 +42,14 @@
   content: "";
 }
 
-.codehilite,
+mark .codehilite {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .codehilite pre {
-  color: #ed2330 !important;
+  color: #ed2330;
 }
 
 details:not(.abstract) {
@@ -87,8 +92,8 @@ h4 {
 }
 
 del {
-  font-weight: bold;
   text-decoration: none;
+  font-family: "Roboto Light" !important;
 }
 
 strong {

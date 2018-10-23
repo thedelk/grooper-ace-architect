@@ -1,0 +1,1 @@
+RegexColorizer.colorizeAll('codehilite');

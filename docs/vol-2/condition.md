@@ -14,7 +14,7 @@
 !!! abstract "Step "
     Change the following property values:
 
-    | Section              | Properties                         | Value           |
+    | Section              | Property                           | Value           |
     |----------------------|------------------------------------|-----------------|
     | General              | **IP Profile**                     | `OCR Cleanup`     |
     | General              | **Bound Region Processing**        | `Enabled`         |

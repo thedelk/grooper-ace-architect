@@ -407,7 +407,7 @@
     img/4-4/063
 ---
 1. Select the [Array] PO Number Data Type
-2. Set the Collation Method property to ==Ordered Array==
+2. Set the Collation property to ==Ordered Array==
 3. Expand Collation and set the Vertical Layout property to ==Enabled==
 4. Expand the Vertical Layout property
 5. Set the Maximum Distance property to ==0.25==
@@ -821,10 +821,6 @@ Edit the patterns for each of the Data Formats:
     shipping charge:?[^0-9]{0,4}
     ```
 
-    ```tab="Look Behind Pattern"
-    
-    ```
-
     ```tab="Output Format"
     {1:Number}
     ```
@@ -839,10 +835,6 @@ Edit the patterns for each of the Data Formats:
     shipping charge\s
     ```
 
-    ```tab="Look Behind Pattern"
-    
-    ```
-
     ```tab="Output Format"
     {1:Number}
     ```
@@ -855,9 +847,9 @@ Edit the patterns for each of the Data Formats:
 
     img/4-9/023
 ---
-1. Create two child Data Formats of the Spartan Data Type:
-    1. Freight
-    2. Value 1
+1. Create two Data Formats as children of the Spartan Data Type:
+    1. ==Freight==
+    2. ==Value 1==
 2. Edit the Value Patterns for each of the Data Formats:
 
     ```tab="Freight"
@@ -880,7 +872,7 @@ Edit the patterns for each of the Data Formats:
     img/4-9/023
 ---
 1. Select the Spartan Data Type
-2. Set the Collation Method property to ==Ordered Array==
+2. Set the Collation property to ==Ordered Array==
 3. Expand Collation and set the Vertical Layout property to ==Enabled==
 4. Expand the Vertical Layout property
 5. Set the Maximum Distance property to ==0.25==
@@ -916,11 +908,298 @@ Edit the patterns for each of the Data Formats:
 
 ## Discount
 ---
+1. Right click on the Extractors folder and select Add > Data Type...
+2. Name it ==Discount==
 
+    img/4-10/002
 
-
-
-
+    img/4-10/003
 ---
+1. Create two Data Types as children of the Discount Data Type:
+    - ==Acme==
+    - ==Enid==
+2. Select the Acme Data Type and click to edit its Pattern
 
-    img/4-10/0
+    img/4-10/004
+
+    img/4-10/005
+
+    img/4-10/006
+---
+1. Click on the Properties tab and set the Preprocessing Options > Tab Marking property to ==True==
+2. Click back to the Pattern Editor tab
+3. In the Value Pattern editor, type:
+    ```
+    [@Number.,]{3,12}
+    ```
+4. In the Look Ahead Pattern editor, type:
+    ```
+    cust\.\sdiscount\s%(\t|\r\n)[^\t]+\t
+    ```
+5. In the Output Format editor, type:
+    ```
+    {0:Number}
+    ```
+6. Click OK to close the pattern editor window
+
+    img/4-10/008
+
+    img/4-10/010
+---
+1. Select Acme (14)
+2. In the Output section, set the Collation property to ==Combine==
+3. Expand Collation and set the Combine Method property to ==Sum==
+
+    img/4-10/013
+
+    img/4-10/015
+
+    img/4-10/018
+---
+Create two Data Formats as children of the Enid Data Type:
+    - ==[Key] Enid - Discount==
+    - ==[Value] Enid - Discount==
+
+    img/4-10/021
+---
+1. Select the [Key] Enid - Discount Data Format
+2. Select Enid (5)
+3. In the Value Pattern editor, type:
+    ```
+    order discount amount
+    ```
+
+    img/4-10/022
+---
+1. Click on the Properties tab
+2. In the General section, set the Mode property to ==FuzzyRegEx==
+3. In the Fuzzy Matching Options section, set the Minimum Similarity property to ==85%==
+4. Expand Fuzzy Match Weightings and click to edit Local Entries
+5. In the List Editor window, type:
+    ```
+    )D=0.1
+    ```
+6. Click OK to close the List Editor window
+
+    img/4-10/025
+
+    img/4-10/026
+
+    img/4-10/028
+
+    img/4-10/029
+---
+1. Select the [Value] Enid - Discount Data Format
+2. In the Value Pattern editor, type:
+    ```
+    \d{1,6}\.\d{2,3}
+    ```
+
+    img/4-10/031
+
+    img/4-10/032
+---
+1. Select the Enid Data Type
+2. In the Output section, set the Collation property to ==Key-Value Pair==
+3. Expand Collation and set the Horizontal Layout property to ==Enabled==
+
+    img/4-10/033
+
+    img/4-10/035
+
+    img/4-10/038
+---
+1. In the Data Model, select the Discount Data Field
+2. In the General section, set the Value Type to ==Decimal==
+3. Expand Value Type and set the Format Specifier property to ==c2==
+4. In the Expressions section, set the Default Value Expression property to ==0==
+
+    img/4-10/040
+
+    img/4-10/042
+
+    img/4-10/044
+
+    img/4-10/047
+---
+1. In the General section, set the Value Extractor > Type property to Reference
+2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Discount== Data Type.
+
+    img/4-10/046
+
+    img/4-10/047
+
+## Sales Tax
+---
+1. Right click on the Extractors folder and select Add > Data Type...
+2. Name it ==Sales Tax==
+3. Create two Data Formats as children of the Sales Tax Data Type
+    - ==Express==
+    - ==Standard==
+
+    img/4-11/003
+
+    img/4-11/004
+---
+Edit the patterns for each of the Data Formats:
+- Express
+
+    ```tab="Value Pattern"
+    ([@Number.]{4,12})
+    ```
+
+    ```tab="Look Ahead Pattern"
+    sales tax:((\r\n)|\s)
+    ```
+
+    ```tab="Output Format"
+    {0:Number}
+    ```
+
+- Standard
+
+    ```tab="Value Pattern"
+    ([@Number.]{3,12})
+    ```
+
+    ```tab="Look Ahead Pattern"
+    tax\s
+    ```
+
+    ```tab="Output Format"
+    {1:Number}
+    ```
+
+    img/4-11/006
+
+    img/4-11/008
+---
+1. In the Data Model, select the Sales Tax Data Field
+2. In the General section, set the Value Type to ==Decimal==
+3. Expand Value Type and set the Format Specifier property to ==c2==
+4. In the Expressions section, set the Default Value Expression property to ==0==
+
+    img/4-11/009
+
+    img/4-11/011
+
+    img/4-11/012
+---
+1. In the General section, set the Value Extractor > Type property to Reference
+2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Sales Tax== Data Type.
+
+    img/4-11/014
+---
+1. Add a new folder to (local resources)
+2. Name it ==Overrides==
+
+    img/4-11/018
+---
+1. In the Overrides folder, add a Field Class
+2. Name it ==[Enid] Sales Tax==
+
+    img/4-11/020
+---
+1. Set the Value Extractor > Type property to ==Internal==
+2. Click to edit the pattern:
+
+    ```tab="Value Pattern"
+    ([@Number.]{2,12})
+    ```
+
+    ```tab="Output Format"
+    {1:Number}
+    ```
+
+3. Set the Feature Extractor > Type property to ==Reference==
+4. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Features > ==Phrases== Data Type
+
+    img/4-11/021
+
+    img/4-11/023
+
+    img/4-11/024
+---
+1. Click to edit the Context Zones property
+2. In the Context Zones window, delete one of the zones
+3. Edit the dimensions of the remaining zone:
+
+    |        | Zone   |
+    |--------|--------|
+    | Left   | `-2.4` |
+    | Top    | `-0.2` |
+    | Right  | `0.25` |
+    | Bottom | `0.1`  |
+
+4. Click OK to close the Context Zones window
+5. In the Output section, set the Minimum Confidence property to ==90%==
+
+    img/4-11/027
+
+    img/4-11/030
+
+    img/4-11/033
+---
+1. Navigate to the (root) > Content Models > Invoices > Enid Document Type
+2. Click on the Data Element Profiles tab
+3. Click on the Sales Tax Data Field and click the **+** button in the toolbar
+
+    img/4-11/034
+
+    img/4-11/035
+
+    img/4-11/036
+
+    img/4-11/037
+---
+1. In the properties panel, set the ESP(tm) Extraction Overrides > Override Extractor property to ==True==
+2. Expand Extractor and set the Extractor > Type property to Reference
+3. Set the Referenced Extractor property to the Invoices • (local resources) > Overrides > ==[Enid] Sales Tax== Field Class
+
+    img/4-11/039
+
+    img/4-11/040
+
+## Data Model Adjustments
+---
+1. Navigate to the Ship To Data Field
+2. In the Appearance section, set the Display Width property to ==110==
+3. In the Behavior section, set the Multi Line property to ==Enabled==
+4. Expand Multi Line and set the Multi Line Height property to ==45==
+5. Set the Word Wrap property to ==True==
+
+    img/4-12/002
+
+    img/4-12/003
+
+    img/4-12/004
+---
+1. Right click on any of the property names and select Copy Properties > Selected Properties...
+2. In the Select Properties window, check the boxes next to the properties to copy:
+    - [X] Display Width
+    - [X] Multi Line
+
+    img/4-12/010
+
+    img/4-12/011
+
+    img/4-12/012
+---
+1. Navigate to the Remit To Data Field
+2. Right click on any of the property names and select Paste Properties
+
+    img/4-12/013
+
+    img/4-12/014
+
+    img/4-12/015
+---
+1. Navigate to the Data Model itself
+2. In the Child Element Options section, set the Show Fields In Grid property to ==True==
+3. In the toolbar, click the Test Extraction button to test all fields against a document
+
+    img/4-12/016
+
+    img/4-12/018
+
+    img/4-12/019

@@ -1,7 +1,7 @@
 .md-main,
 .md-typeset {
   font-size: 14px !important;
-  color: #707070 !important;
+  color: #707070;
   line-height: 24px !important;
 }
 
@@ -27,12 +27,12 @@
   .admonition {
     &.abstract {
       font-family: "Roboto Light" !important;
-      font-size: 1.6rem;
-      line-height: 2.8rem;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
 
       li {
-        margin-top: 2.6rem;
-        margin-bottom: 2.6rem;
+        margin-top: 2.4rem;
+        margin-bottom: 2.4rem;
       }
 
       // border-left: 0.4rem solid #f89420 !important;
@@ -58,9 +58,16 @@
   }
 }
 
-.codehilite,
+mark .codehilite {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.codehilite:not(pre) {
+  // color: #f89420 !important;
+}
 .codehilite pre {
-  color: #ed2330 !important;
+  color: #ed2330;
 }
 
 details:not(.abstract) {
@@ -113,8 +120,10 @@ h4 {
 }
 
 del {
-  font-weight: bold;
+  // font-weight: bold;
   text-decoration: none;
+  // font-size: 1.4rem;
+  font-family: "Roboto Light" !important;
 }
 
 strong {

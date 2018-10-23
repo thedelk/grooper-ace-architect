@@ -4,7 +4,7 @@
 
 ### Creating a Separation Profile
 
-!!! abstract "Global Resources > Separation Profiles"
+!!! abstract "Global Resources / Separation Profiles"
     1. Right click and select **Add > Separation Profile...**.
     2. Name it something like ==Change in Value (Invoice Number)==.
 
@@ -12,7 +12,7 @@
 
 ### Configuring "Change in Value" separation
 
-!!! abstract ""
+!!! abstract "Global Resources / Separation Profiles"
     1. Set the **Provider** property to ==Change in Value Separation==.
     2. Set the **Provider > Value Extractor > Type** property to ==Reference==.
     3. Set the **Referenced Extractor** property to the **Data Extraction • Data Types > Training Materials > ==Invoice Number==** Data Type.
@@ -81,7 +81,7 @@
 
 ### Setting the Classification Method
 
-!!! abstract "Content Models > Invoices"
+!!! abstract "Content Models --> Invoices"
     1. On the **Invoices** Content Model, set the **Classification Method** property to ==Lexical==.
     2. Set the **Classification Method > Text Feature Extractor > Type** property to ==Reference==.
     3. Set the **Referenced Extractor** property to the **Data Extraction > Downloads > Features > ==Words (Stemmed)==** Data Type.

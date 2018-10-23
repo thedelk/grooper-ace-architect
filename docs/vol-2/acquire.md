@@ -4,7 +4,7 @@
 
 ### Importing a pre-made batch
 
-!!! abstract "Step "
+!!! abstract "(root)"
     1. Right click on ***(root)*** and select **Import > Compressed Archive.**
     2. Set the **Import Path** property to the ==Grooper ACE - Architect - Volume II - Begin.zip== file.
 
@@ -16,10 +16,9 @@
 
 ### Creating an empty test batch
 
-!!! abstract "Step "
-    1. Navigate to ***(root)* > Batch Processing > Batches > Test**.
-    2. Right click and select **Add > Batch...**.
-    3. Name it something like ==Invoices==.
+!!! abstract "Batch Processing > Batches > Test"
+    1. Right click and select **Add > Batch...**.
+    2. Name it ==Invoices==.
 
 ![](img/1-1/007.png)
 
@@ -29,10 +28,9 @@
 
 ### Creating a Scanner Profile
 
-!!! abstract "Step "
-    1. Navigate to ***(root)* > Global Resources > Scanner Profiles**.
-    2. Right click and select **Add > Scanner Profile...**.
-    3. Name it ==Invoices Source Scan==.
+!!! abstract "Global Resources > Scanner Profiles"
+    1. Right click and select **Add > Scanner Profile...**.
+    2. Name it ==Invoices Source Scan==.
 
 ![](img/1-1/012.png)
 
@@ -177,10 +175,6 @@ Edit the patterns for each of the Data Formats:
     shipping charge:?[^0-9]{0,4}
     ```
 
-    ```tab="Look Behind Pattern"
-    
-    ```
-
     ```tab="Output Format"
     {1:Number}
     ```
@@ -195,10 +189,6 @@ Edit the patterns for each of the Data Formats:
     shipping charge\s
     ```
 
-    ```tab="Look Behind Pattern"
-    
-    ```
-
     ```tab="Output Format"
     {1:Number}
     ```
@@ -210,10 +200,104 @@ Edit the patterns for each of the Data Formats:
     2. Value 1
 2. Edit the Value Patterns for each of the Data Formats:
 
-    ```tab="Freight"
+    ```Regex tab="Freight"
     freight
     ```
 
-    ```tab="Value 1"
+    ```Regex tab="Value 1"
     [\d.]+
     ```
+
+
+
+|        | Zone 1  | Zone 2  |
+|--------|---------|---------|
+| Left   | `-4`    | `-1`    |
+| Top    | `-0.02` | `-0.25` |
+| Right  | `0.35`  | `0.375` |
+| Bottom | `0.1`   | `0.05`  |
+
+
+
+1. Click to edit the Context Zones property
+2. In the Context Zones window, delete one of the zones
+3. Edit the dimensions of the remaining zone:
+
+    |        | Zone   |
+    |--------|--------|
+    | Left   | `-2.4` |
+    | Top    | `-0.2` |
+    | Right  | `0.25` |
+    | Bottom | `0.1`  |
+
+4. Click OK to close the Context Zones window
+5. In the Output section, set the Minimum Confidence property to ==90%==
+
+
+1. In the properties panel, set the ESP(tm) Extraction Overrides > Override Extractor property to ==True==
+2. Expand Extractor and set the Extractor > Type property to Reference
+3. Set the Referenced Extractor property to the Invoices • (local resources) > Overrides > ==[Enid] Sales Tax== Field Class
+
+
+| Section                     | Default Value                      | New Value         |
+|-----------------------------|------------------------------------|-------------------|
+| General                     |                                    |                   |
+| **IP Profile**              | -                                  | ==`OCR Cleanup`== |
+| **Bound Region Processing** | ` Disabled`                        | ==`Enabled`==     |
+| Synthesis Options           |                                    |                   |
+| Synthesis Options           | **Segment End Ratio**              | `125%`            |
+| Synthesis Options           | **Segment Reprocessing Threshold** | `90%`             |
+| Iterative Processing        | **OCR Iterations**                 | `2`               |
+| Iterative Processing        | **Enable Cell Validation**         | `True`            |
+| Iterative Processing        | **Rows**                           | `1`               |
+| Iterative Processing        | **Columns**                        | `4`               |
+| Iterative Processing        | **Skip First Column**              | `True`            |
+| Results Filtering           | **Minimum Character Confidence**   | `20%`             |
+| Results Filtering           | **Eliminate Isolated Symbols**     | `True`            |
+| Document Structure          | **Orientation**                    | `None`            |
+| Document Structure          | **Perform Sectioning**             | `True`            |
+| Processing Options          | **Reject Questionable Lines**      | `True`            |
+| Processing Options          | **Reject Questionable Characters** | `([@Number.]{3,12})`            |
+
+
+| Section                            | Default Value | New Value         |
+|-----------------------------------|---------------|-------------------|
+| ~~General~~                           |               |                   |
+| **IP Profile**                     | -             | ==`OCR Cleanup`== |
+| **Bound Region Processing**        | `Disabled`    | ==`Enabled`==     |
+| ~~Synthesis Options~~                  |               |                   |
+| **Segment End Ratio**              |               | `125%`            |
+| **Segment Reprocessing Threshold** |               | `90%`             |
+| ~~Iterative Processing~~               |               |                   |
+| **OCR Iterations**                 |               | `2`               |
+| **Enable Cell Validation**         |               | `True`            |
+| **Rows**                           |               | `1`               |
+| **Columns**                        |               | `4`               |
+| **Skip First Column**              |               | `True`            |
+| ~~Results Filtering~~                  |               |                   |
+| **Minimum Character Confidence**   |               | `20%`             |
+| **Eliminate Isolated Symbols**     |               | `True`            |
+| ~~Document Structure~~                 |               |                   |
+| **Orientation**                    |               | `None`            |
+| **Perform Sectioning**             |               | `True`            |
+| ~~Processing Options~~                 |               |                   |
+| **Reject Questionable Lines**      |               | `True`            |
+| **Reject Questionable Characters** |               | `True`            |
+
+
+
+```clojure
+Disabled
+2
+True
+-0.02
+([@Number.]{3,12})
+{1}
+020-0027[^\n]*?\n[^\r]*?
+WS.FREIGHT[0o]231[^\n]+\n
+[^\n]+\n
+[^\t]+\t
+[^\t]+\t
+```
+
+==`#!clojure OCR Cleanup`==

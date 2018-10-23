@@ -115,10 +115,10 @@
 
 !!! abstract "Step "
     1. Train the other four vendors:
-        - Folder (2) -> Standard (2)
-        - Folder (3) -> Express (3)
-        - Folder (4) -> Spartan (4)
-        - Folder (5) -> Enid (5)
+        - Folder (2) --> Standard (2)
+        - Folder (3) --> Express (3)
+        - Folder (4) --> Spartan (4)
+        - Folder (5) --> Enid (5)
     2. In the toolbar, click on the Classify Batch button
 
 ![](img/3-2/035.png)
