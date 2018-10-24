@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{ base_url }}/css/ekko-lightbox.min.css">
+{% endblock styles %}
+
+{% block libs %}
+{{ super() }}
+<script src="{{ base_url }}/js/ekko-lightbox.min.js"></script>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+  var tags = document.querySelectorAll('p > a');
+  var i = 0;
+  while (i < tags.length)
+  {
+    tags[i].setAttribute('data-toggle', 'lightbox;');
+    i++
+  }
+
+  document.querySelectorAll('[data-toggle="lightbox"]').onclick = function (event)
+  {
+    event.preventDefault();
+    this.ekkoLightbox();
+  }
+</script>
+{% endblock scripts %}

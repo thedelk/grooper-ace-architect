@@ -4,6 +4,7 @@ site_name: ACE - Architect
 # Configuration
 theme:
   name: material
+  custom_dir: custom_theme
   favicon: "img/favicon.ico"
   # logo: "img/favicon.ico"
   palette:
@@ -60,7 +61,9 @@ plugins:
 extra_css:
   - "css/pdf.css"
   - "css/styles.css"
+  # - "custom_theme/css/glightbox.css"
   # - "css/nobg.css"
-# extra_javascript:
-# - "js/regex-colorizer.js"
-# - "js/app.js"
+extra_javascript:
+  #   - "custom_theme/js/glightbox.js"
+  # - "js/regex-colorizer.js"
+  - "js/app.js"

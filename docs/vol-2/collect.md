@@ -16,7 +16,7 @@
         - Remit To
     4. Click Execute to complete
 
-![](img/4-1/005.png)
+[![](img/4-1/005.png)](img/4-1/005.png)
 
 ![](img/4-1/008.png)
 
