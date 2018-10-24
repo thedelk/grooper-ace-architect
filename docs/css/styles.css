@@ -67,7 +67,7 @@
 }
 
 .md-typeset .admonition.abstract > .admonition-title::before {
-  content: "\E5DA";
+  content: "\E315";
   line-height: inherit !important;
 }
 

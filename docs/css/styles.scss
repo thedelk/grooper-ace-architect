@@ -73,7 +73,9 @@
         }
 
         &::before {
-          content: "\E5DA";
+          // content: "\E5DA"; // subdirectory_arrow_right
+          content: "\E315"; // keyboard_arrow_right
+          // content: "\E037"; // play_arrow
           line-height: inherit !important;
         }
       }

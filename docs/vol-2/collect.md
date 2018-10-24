@@ -1,10 +1,9 @@
 ## Invoice Date
 
-!!! abstract "Step"
-    1. Navigate to the Invoices Content Model
-    2. Right click on its Data Model and select Contents > Add Multiple Items...
-    3. In the Contents • Add Multiple Items window, make sure Item Type is set to ==Data Field==
-    4. Edit the Item Names property and type out the names of the following fields
+!!! abstract "Content Models / Invoices / **(data model)**"
+    1. Right click and select **Contents > Add Multiple Items...**.
+    2. In the Contents • Add Multiple Items window, make sure Item Type is set to ==Data Field==
+    3. Edit the Item Names property and type out the names of the following fields
         - Invoice Number
         - PO Number
         - Invoice Date
@@ -15,7 +14,7 @@
         - Payment Terms
         - Ship To
         - Remit To
-    5. Click Execute to complete
+    4. Click Execute to complete
 
 ![](img/4-1/005.png)
 
@@ -23,42 +22,42 @@
 
 ![](img/4-1/010.png)
 
-!!! abstract "Step"
-    1. Right click on the (local resources) folder and select Add > Folder...
+!!! abstract "Content Models / Invoices / **(local resources)**"
+    1. Right click and select Add > Folder...
     2. Give it a name, like ==Extractors==
 
 ![](img/4-1/016.png)
 
 ![](img/4-1/018.png)
 
-!!! abstract "Step"
-    1. Right click on the Extractors folder and select Add > Field Class...
+!!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
+    1. Right click and select Add > Field Class...
     2. Name it ==Invoice Date==
 
 ![](img/4-1/019.png)
 
 ![](img/4-1/021.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date** *(Field Class)*"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Data Extraction • Data Types > Downloads > Base Types > Date Data Type
 
 ![](img/4-1/029.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
     1. In the General section, set the Feature Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Features > Phrases Data Type
 
 ![](img/4-1/031.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
     1. Select Acme (1`)
     2. Click the Run Extraction button
     3. In the candidate list, right click on the ==11/14/2008== value and select Train As Positive
 
 ![](img/4-1/034.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
     1. Select Standard (2)
     2. Select both of the ==11/11/2008== candidates that have correct features
     3. Right click on either of them and select Train As Positive
