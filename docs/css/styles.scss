@@ -55,7 +55,7 @@
         font-size: 1.2rem;
         font-weight: normal;
         line-height: 3rem;
-        padding-left: 2.5rem;
+        // padding-left: 2.5rem;
 
         strong {
           color: #f89420 !important;
@@ -70,7 +70,8 @@
         }
 
         &::before {
-          content: "";
+          content: "\E5DA";
+          line-height: inherit !important;
         }
       }
     }
@@ -116,19 +117,21 @@ img {
 .md-content {
   h1 {
     font-family: "Roboto Thin" !important;
-    letter-spacing: -0.125rem;
-    // font-size: 36px !important;
+    letter-spacing: -1px;
+    font-size: 36px;
     /* font-weight: 500 !important; */
   }
 
   h2 {
     font-family: "Roboto Light" !important;
-    letter-spacing: -0.0625rem;
+    font-size: 28px;
+    letter-spacing: -1px;
   }
 
   h3 {
     font-family: "Roboto Light" !important;
-    letter-spacing: -0.0625rem;
+    font-size: 20px;
+    // letter-spacing: -0.8px;
   }
 }
 
@@ -148,16 +151,27 @@ strong {
   font-family: "Roboto Light";
   margin: 0 0.25em;
   padding: 0.0625em 0;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   background-color: rgba(219, 219, 219, 0.6);
-  box-shadow: 0.25em 0 0 rgba(219, 219, 219, 0.6),
-    -0.25em 0 0 rgba(219, 219, 219, 0.6);
+  box-shadow: 0.25rem 0 0 rgba(219, 219, 219, 0.6),
+    -0.25rem 0 0 rgba(219, 219, 219, 0.6);
   word-break: break-word;
 }
 
-mark {
+.codehilite:not(pre) {
+  font-size: 1.2rem !important;
+  box-shadow: 0.25rem 0 0 rgba(236, 236, 236, 0.5) !important,
+    -0.25rem 0 0 rgba(236, 236, 236, 0.5) !important;
+}
+
+td mark {
   font-family: "Roboto Mono";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+mark {
+  box-shadow: 0.25rem 0 0 rgba(255, 235, 59, 0.5) !important,
+    -0.25rem 0 0 rgba(255, 235, 59, 0.5) !important;
 }
 
 table {
