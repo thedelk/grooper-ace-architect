@@ -15,7 +15,7 @@
 !!! abstract "Global Resources / OCR Profiles / **Invoices OCR**"
     Change the following property values:
 
-    | Section/Property                   | Default Value | New Value         |
+    | Property                           | Default Value | New Value         |
     |------------------------------------|---------------|-------------------|
     | General                            |               |                   |
     | **IP Profile**                     | -             | ==`OCR Cleanup`== |
@@ -49,12 +49,12 @@
     3. Right click on the root batch folder and select **Contents > Apply Activity...**.
     4. In the **Contents • Apply Activity** window, change the following property values:
 
-        | Property Location       | Default Value | New Value          |
-        |-------------------------|---------------|--------------------|
-        | General                 |               |                    |
-        | **Activity Type**       | `-`           | ==`OCR`==          |
-        | --> Activity Type       |               |                    |
-        | **OCR Profile**         | `-`           | ==`Invoices OCR`== |
+        | Property            | Default Value | New Value          |
+        |---------------------|---------------|--------------------|
+        | General             |               |                    |
+        | **Activity Type**   | `-`           | ==`OCR`==          |
+        | **Activity**        |               |                    |
+        | --> **OCR Profile** | `-`           | ==`Invoices OCR`== |
 
     5.  Press **Execute**.
     6.  Press **Start**.

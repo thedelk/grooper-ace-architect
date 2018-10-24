@@ -15,7 +15,7 @@
 !!! abstract "Global Resources / Separation Profiles / **Change in Value (Invoice Number)**"
     Change the following property values:
     
-    | Property Location                | Default Value | New Value                        |
+    | Property                         | Default Value | New Value                        |
     |----------------------------------|---------------|----------------------------------|
     | General                          |               |                                  |
     | **Provider**                     | `-`           | ==`Change in Value Separation`== |
@@ -69,7 +69,7 @@
     1. Right click and select **Contents > Add Multiple Items...**.
     2. In the **Contents • Add Multiple Items** window, change the following property values:
 
-        | Property Location | Default Value      | New Value                                                                    |
+        | Property          | Default Value      | New Value                                                                    |
         |-------------------|--------------------|------------------------------------------------------------------------------|
         | General           |                    |                                                                              |
         | **Item Type**     | `Content Category` | ==`Document Type`==                                                          |
@@ -88,7 +88,7 @@
 !!! abstract "Content Models / **Invoices**"
     Change the following property values:
 
-    | Property Location                | Default Value | New Value             |
+    | Property                         | Default Value | New Value             |
     |----------------------------------|---------------|-----------------------|
     | General                          |               |                       |
     | **Classification Method**        | `(None)`      | ==`Lexical`==         |
@@ -105,7 +105,7 @@
 !!! abstract "Content Models / Invoices / **Acme**"
     Change the following property values:
 
-    | Section/Property       | Default Value     | New Value         |
+    | Property               | Default Value     | New Value         |
     |------------------------|-------------------|-------------------|
     | Classification Rules   |                   |                   |
     | **Positive Extractor** |                   |                   |

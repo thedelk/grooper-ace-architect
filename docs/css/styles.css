@@ -25,11 +25,19 @@
   overflow: hidden !important;
 }
 
+.md-typeset .admonition .md-typeset__table table {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: auto !important;
+}
+
 .md-typeset .admonition .md-typeset__table table th {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .md-typeset .admonition.abstract {
+  border-left: 0px solid transparent !important;
   font-family: "Roboto Light" !important;
   font-size: 1.4rem;
 }
