@@ -16,7 +16,12 @@
         - Remit To
     4. Click Execute to complete
 
-[![](img/4-1/005.png)](img/4-1/005.png)
+[![](http://www.amazing-cccam.com/wp-content/uploads/2018/04/26e178f.png)](http://www.amazing-cccam.com/wp-content/uploads/2018/04/26e178f.png)
+<!-- <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" type="image" data-remote="www.google.com">
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            </a> -->
+
+![image](img/4-1/005.png)
 
 ![](img/4-1/008.png)
 
