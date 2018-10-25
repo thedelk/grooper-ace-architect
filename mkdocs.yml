@@ -4,7 +4,6 @@ site_name: ACE - Architect
 # Configuration
 theme:
   name: material
-  custom_dir: custom_theme
   favicon: "img/favicon.ico"
   # logo: "img/favicon.ico"
   palette:
@@ -33,8 +32,6 @@ markdown_extensions:
   - admonition
   - footnotes
   - tables
-  # - pymdownx.b64:
-  #     base_path: docs
   - pymdownx.betterem
   - pymdownx.details
   - pymdownx.escapeall
@@ -61,11 +58,10 @@ plugins:
   - awesome-pages:
       filename: .title
 extra_css:
+  - "css/glightbox.min.css"
   - "css/pdf.css"
   - "css/styles.css"
-  # - "custom_theme/css/glightbox.css"
-  # - "css/nobg.css"
 extra_javascript:
-  #   - "custom_theme/js/glightbox.js"
-  # - "js/regex-colorizer.js"
-  # - "js/app.js"
+  - "js/glightbox.min.js"
+  - "js/jquery-3.3.1.min.js"
+  - "js/app.js"
