@@ -5,9 +5,9 @@
     2. Right click and select Add > OCR Profile...
     3. Name it ==Invoices OCR==
 
-![](img/2-1/002.png)
+![](img/2-1/002)
 
-![](img/2-1/004.png)
+![](img/2-1/004)
 
 !!! abstract "Step "
     1. Set the IP Profile property to the ==OCR Cleanup== profile
@@ -26,7 +26,7 @@
     14. Set the Reject Questionable Lines property to ==True==
     15. Set the Reject Questionable Characters property to ==True==
 
-![](img/2-1/036.png)
+![](img/2-1/036)
 
 !!! abstract "Step "
     1. Click on the OCR Testing tab
@@ -39,12 +39,12 @@
     8. Click Start
     9. Click Close when the activity has completed
 
-![](img/2-1/037.png)
+![](img/2-1/037)
 
-![](img/2-1/051.png)
+![](img/2-1/051)
 
-![](img/2-1/056.png)
+![](img/2-1/056)
 
-![](img/2-1/061.png)
+![](img/2-1/061)
 
-![](img/2-1/064.png)
+![](img/2-1/064)

@@ -5,7 +5,7 @@
     2. Create a new separation profile
     3. Give it a name, like Invoices Separation
 
-![](img/3-1/006.png)
+![](img/3-1/006)
 
 !!! abstract "Step "
     Change the following properties:
@@ -13,7 +13,7 @@
         1. Set Provider to Control Sheet Separation
         2. Set Delete All Separators to True
 
-![](img/3-1/013.png)
+![](img/3-1/013)
 
 !!! abstract "Step "
     1. Navigate to (root) > Batch Processing > Processes > Working > Invoices Process
@@ -22,7 +22,7 @@
     4. Set the Separation Profile to the new Invoices Separation profile we created
     5. Save and Publish.
 
-![](img/3-1/016.png)
+![](img/3-1/016)
 
 !!! abstract "Step "
     1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process.
@@ -31,17 +31,17 @@
     4. Set Target Step to Separate.
     5. Click Execute.
 
-![](img/3-1/018.png)
+![](img/3-1/018)
 
-![](img/3-1/021.png)
+![](img/3-1/021)
 
 !!! abstract "Step "
     1. Resume the batch
     2. Click Process
 
-![](img/3-1/027.png)
+![](img/3-1/027)
 
-![](img/3-1/029.png)
+![](img/3-1/029)
 
 ---
 
@@ -52,7 +52,7 @@
     2. Right click on Content Models and select Add > Content Model….
     3. Name it ==Invoices==.
 
-![](img/3-2/002.png)
+![](img/3-2/002)
 
 !!! abstract "Step "
     1. Right click on the new Invoices Content Model and select Contents > Add Multiple Items….
@@ -65,28 +65,28 @@
         - Standard
     4. Click Execute to complete
     
-![](img/3-2/005.png)
+![](img/3-2/005)
 
-![](img/3-2/009.png)
+![](img/3-2/009)
 
 !!! abstract "Step "
     1. Navigate to (root) > Batch Processing > Batches > Test > Production Clones > Invoices Process > Invoices Batch
     2. Right click on Invoices Batch and select Delete
 
-![](img/3-2/015.png)
+![](img/3-2/015)
 
 !!! abstract "Step "
     1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process > Invoices Batch
     2. Click Clone To Test
 
-![](img/3-2/016.png)
+![](img/3-2/016)
 
 !!! abstract "Step "
     1. Navigate to (root) > Content Models > Invoices
     2. Right click on Invoices and select Create Data Model
     3. Right click on Invoices and select Create Local Resources Folder
 
-![](img/3-2/019.png)
+![](img/3-2/019)
 
 !!! abstract "Step "
     1. On the Invoices Content Model in the General section, set the Classification Method property to ==Lexical==
@@ -94,9 +94,9 @@
     3. Set the Type property to ==Reference==
     4. Set the Referenced Extractor property to the Data Extraction > Downloads > Features > ==Words (Stemmed)== Data Type
 
-![](img/3-2/021.png)
+![](img/3-2/021)
 
-![](img/3-2/026.png)
+![](img/3-2/026)
 
 !!! abstract "Step "
     1. Click on the Classification Testing tab
@@ -105,13 +105,13 @@
     4. Select the Acme Document Type from the list
     5. In the toolbar, click on the Classify Batch button
 
-![](img/3-2/027.png)
+![](img/3-2/027)
 
-![](img/3-2/028.png)
+![](img/3-2/028)
 
-![](img/3-2/031.png)
+![](img/3-2/031)
 
-![](img/3-2/035.png)
+![](img/3-2/035)
 
 !!! abstract "Step "
     1. Train the other four vendors:
@@ -121,9 +121,9 @@
         - Folder (5) --> Enid (5)
     2. In the toolbar, click on the Classify Batch button
 
-![](img/3-2/035.png)
+![](img/3-2/035)
 
-![](img/3-2/038.png)
+![](img/3-2/038)
 
 ---
 
@@ -135,9 +135,9 @@
     3. Set the Activity Type property of the new step to Classify
     4. Set the Content Model Scope to our Invoices Content Model
 
-![](img/3-3/001.png)
+![](img/3-3/001)
 
-![](img/3-3/002.png)
+![](img/3-3/002)
 
 !!! abstract "Step "
     1. Add a new step
@@ -145,9 +145,9 @@
     3. Set the Classification Viewer Settings > Content Model Scope to our Invoices Content Model
     4. Save and Publish.
 
-![](img/3-3/003.png)
+![](img/3-3/003)
 
-![](img/3-3/004.png)
+![](img/3-3/004)
 
 !!! abstract "Step "
     1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process
@@ -156,15 +156,15 @@
     4. Set Target Step to Classify.
     5. Click Execute.
 
-![](img/3-3/007.png)
+![](img/3-3/007)
 
-![](img/3-3/008.png)
+![](img/3-3/008)
 
 !!! abstract "Step "
     1. Resume the batch
     2. Click Process
 
-![](img/3-3/011.png)
+![](img/3-3/011)
 
 !!! abstract "Step "
     1. After the Classify step has completed, click Process to start the Classify Review step.
@@ -172,10 +172,10 @@
     3. Select the Enid Document Type from the list and click OK
     4. In the toolbar, click on the Complete Task button to finish this activity
 
-![](img/3-3/015.png)
+![](img/3-3/015)
 
-![](img/3-3/017.png)
+![](img/3-3/017)
 
-![](img/3-3/019.png)
+![](img/3-3/019)
 
-![](img/3-3/021.png)
+![](img/3-3/021)

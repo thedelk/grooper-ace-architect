@@ -50,9 +50,14 @@ markdown_extensions:
   - pymdownx.tilde
   - toc:
       permalink: true
+
+pages:
+  - Home: index.md
+  - Vol1: vol-1/acquire.md
+
 plugins:
-  # - pdf-export:
-  #     verbose: true
+  - pdf-export:
+      verbose: true
   # enabled_if_env: ENABLE_PDF_EXPORT
   - search
   - awesome-pages:

@@ -7,11 +7,11 @@
     4. Set the Export Provider property to ==File System Export==
     5. Click on the Export Settings property to edit its properties
 
-![](img/5-1/001.png)
+![](img/5-1/001)
 
-![](img/5-1/002.png)
+![](img/5-1/002)
 
-![](img/5-1/004.png)
+![](img/5-1/004)
 
 !!! abstract "Step "
     1. In the File System Export window, in the General section:
@@ -29,11 +29,11 @@
     4. Click OK to close the window
     5. Save and Publish
 
-![](img/5-1/028.png)
+![](img/5-1/028)
 
-![](img/5-1/032.png)
+![](img/5-1/032)
 
-![](img/5-1/033.png)
+![](img/5-1/033)
 
 !!! abstract "Step "
     1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process
@@ -42,19 +42,19 @@
     4. Set Target Step to ==Document Export==
     5. Click Execute
 
-![](img/5-1/036.png)
+![](img/5-1/036)
 
-![](img/5-1/039.png)
+![](img/5-1/039)
 
 !!! abstract "Step "
     1. Resume the batch
     2. Click Process
     3. View the exported documents in Windows Explorer
 
-![](img/5-1/043.png)
+![](img/5-1/043)
 
-![](img/5-1/044.png)
+![](img/5-1/044)
 
-![](img/5-1/045.png)
+![](img/5-1/045)
 
-![](img/5-1/046.png)
+![](img/5-1/046)

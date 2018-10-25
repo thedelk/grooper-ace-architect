@@ -661,5 +661,3 @@ And thus your arsenal of Grooper knowledge grows!
 ## Up next
 
 We currently have a batch of loose pages with some patch code sheets. This batch consists of multiple invoices, but Grooper isn't aware of that yet. You and I know where one invoice ends and another begins, so it's up to us to tell Grooper how to recognize that as well.
-
-![](img/2-3/0.png)

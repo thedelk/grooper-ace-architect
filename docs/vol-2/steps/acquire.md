@@ -6,11 +6,11 @@
     1. Right click on (root) and select Import > Compressed Archive
     2. Set the Import Path property to the Begin.zip file
 
-![](img/1-1/002.png)
+![](img/1-1/002)
 
-![](img/1-1/003.png)
+![](img/1-1/003)
 
-![](img/1-1/005.png)
+![](img/1-1/005)
 
 ### Creating an empty test batch
 
@@ -19,9 +19,9 @@
     2. Right click and select Add > Batch...
     3. Name it ==Invoices==
 
-![](img/1-1/007.png)
+![](img/1-1/007)
 
-![](img/1-1/009.png)
+![](img/1-1/009)
 
 ## Scanning
 
@@ -32,9 +32,9 @@
     2. Right click and select Add > Scanner Profile...
     3. Name it ==Invoices Source Scan==
 
-![](img/1-1/012.png)
+![](img/1-1/012)
 
-![](img/1-1/014.png)
+![](img/1-1/014)
 
 ### Configuring the Scanner Profile
 
@@ -44,11 +44,11 @@
     3. Set the Import Source property to ==TestBatch==
     4. Set the Source Batch property to the Batches • Test > _Source > _Source batch
 
-![](img/1-1/017.png)
+![](img/1-1/017)
 
-![](img/1-1/022.png)
+![](img/1-1/022)
 
-![](img/1-1/025.png)
+![](img/1-1/025)
 
 ### Testing the Scanner Profile
 
@@ -58,10 +58,10 @@
     3. Click the Batch dropdown and select the Invoices batch
     4. Click Scan
 
-![](img/1-1/030.png)
+![](img/1-1/030)
 
-![](img/1-1/032.png)
+![](img/1-1/032)
 
-![](img/1-1/034.png)
+![](img/1-1/034)
 
-![](img/1-1/035.png)
+![](img/1-1/035)
