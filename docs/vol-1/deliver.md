@@ -11,11 +11,11 @@
     4. Set the Export Provider property to ==File System Export==
     5. Click on the Export Settings property to edit its settings
 
-![](../img/vol-1/5-1/001.png)
+![](../assets/img/vol-1/5-1/001.png)
 
-![](../img/vol-1/5-1/002.png)
+![](../assets/img/vol-1/5-1/002.png)
 
-![](../img/vol-1/5-1/004.png)
+![](../assets/img/vol-1/5-1/004.png)
 
 !!! abstract "Step 2"
     1. In the File System Export window, in the General section:
@@ -33,11 +33,11 @@
     4. Click OK to close the window
     5. Save and Publish
 
-![](../img/vol-1/5-1/028.png)
+![](../assets/img/vol-1/5-1/028.png)
 
-![](../img/vol-1/5-1/032.png)
+![](../assets/img/vol-1/5-1/032.png)
 
-![](../img/vol-1/5-1/033.png)
+![](../assets/img/vol-1/5-1/033.png)
 
 ### Updating the production batch
 
@@ -48,19 +48,19 @@
     4. Set Target Step to ==Document Export==
     5. Click Execute
 
-![](../img/vol-1/5-1/036.png)
+![](../assets/img/vol-1/5-1/036.png)
 
-![](../img/vol-1/5-1/039.png)
+![](../assets/img/vol-1/5-1/039.png)
 
 !!! abstract "Step 2"
     1. Resume the batch
     2. Click Process
     3. View the exported documents in Windows Explorer
 
-![](../img/vol-1/5-1/043.png)
+![](../assets/img/vol-1/5-1/043.png)
 
-![](../img/vol-1/5-1/044.png)
+![](../assets/img/vol-1/5-1/044.png)
 
-![](../img/vol-1/5-1/045.png)
+![](../assets/img/vol-1/5-1/045.png)
 
-![](../img/vol-1/5-1/046.png)
+![](../assets/img/vol-1/5-1/046.png)

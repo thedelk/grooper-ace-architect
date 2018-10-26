@@ -8,7 +8,7 @@
     1. Right click and select **Add > Separation Profile...**.
     2. Name it ==Change in Value (Invoice Number)==.
 
-![](../img/vol-2/3-1/009.png)
+![](../assets/img/vol-2/3-1/009.png)
 
 ### Configuring "Change in Value" separation
 
@@ -23,7 +23,7 @@
     | --> --> **Type**                 | `None`        | ==`Reference`==                  |
     | --> --> **Referenced Extractor** | `-`           | ==`Invoice Number`==             |
 
-![](../img/vol-2/3-1/020.png)
+![](../assets/img/vol-2/3-1/020.png)
 
 ### Testing the Separation Profile
 
@@ -31,7 +31,7 @@
     1. Switch to the **Testing** tab.
     2. Press **Separate Batch**.
 
-![](../img/vol-2/3-1/022.png)
+![](../assets/img/vol-2/3-1/022.png)
 
 ### Correcting issues
 
@@ -39,7 +39,7 @@
     1. Select **Page 38**.
     2. Right click and select **Add Selection to New Folder**.
 
-![](../img/vol-2/3-1/025.png)
+![](../assets/img/vol-2/3-1/025.png)
 
 ## Classification
 
@@ -49,9 +49,9 @@
     1. Right click and select **Add > Content Model...**.
     2. Name it ==Invoices==.
 
-![](../img/vol-2/3-2/002.png)
+![](../assets/img/vol-2/3-2/002.png)
 
-![](../img/vol-2/3-2/004.png)
+![](../assets/img/vol-2/3-2/004.png)
 
 ### Creating the Data Model and Local Resources folder
 
@@ -59,9 +59,9 @@
     1. Right click and select **Create Data Model**.
     2. Right click and select **Create Local Resources Folder**.
 
-![](../img/vol-2/3-2/006.png)
+![](../assets/img/vol-2/3-2/006.png)
 
-![](../img/vol-2/3-2/007.png)
+![](../assets/img/vol-2/3-2/007.png)
 
 ### Adding Document Types
 
@@ -77,11 +77,11 @@
 
     3. Press **Execute**.
 
-![](../img/vol-2/3-2/008.png)
+![](../assets/img/vol-2/3-2/008.png)
 
-![](../img/vol-2/3-2/013.png)
+![](../assets/img/vol-2/3-2/013.png)
 
-![](../img/vol-2/3-2/015.png)
+![](../assets/img/vol-2/3-2/015.png)
 
 ### Setting the Classification Method
 
@@ -96,9 +96,9 @@
     | --> --> **Type**                 | `None`        | ==`Reference`==       |
     | --> --> **Referenced Extractor** | `-`           | ==`Words (Stemmed)`== |
 
-![](../img/vol-2/3-2/017.png)
+![](../assets/img/vol-2/3-2/017.png)
 
-![](../img/vol-2/3-2/026.png)
+![](../assets/img/vol-2/3-2/026.png)
 
 ### Setting a positive extractor for classification
 
@@ -112,9 +112,9 @@
     | --> **Type**           | `None`            | ==`Internal`==    |
     | --> **Pattern**        | *(Click to edit)* | *(Click to edit)* |
 
-![](../img/vol-2/3-2/028.png)
+![](../assets/img/vol-2/3-2/028.png)
 
-![](../img/vol-2/3-2/034.png)
+![](../assets/img/vol-2/3-2/034.png)
 
 !!! abstract "Content Models / Invoices / **Acme**"
     1. Select **Folder (1)**.
@@ -126,7 +126,7 @@
 
     3. Press **OK**.
     
-![](../img/vol-2/3-2/036.png)
+![](../assets/img/vol-2/3-2/036.png)
 
 !!! abstract "Content Models / Invoices / **\***"
     Repeat the previous two steps for each of the other four vendors, using the following patterns in their respective **Value Pattern** editors:
@@ -147,7 +147,7 @@
     standard products
     ```
 
-![](../img/vol-2/3-2/38-42.gif)
+![](../assets/img/vol-2/3-2/38-42.gif)
 
 ### Testing classification
 
@@ -156,10 +156,10 @@
     2. Press **Classify Batch**.
     3. Press **Execute**.
 
-![](../img/vol-2/3-2/043.png)
+![](../assets/img/vol-2/3-2/043.png)
 
-![](../img/vol-2/3-2/044.png)
+![](../assets/img/vol-2/3-2/044.png)
 
-![](../img/vol-2/3-2/045.png)
+![](../assets/img/vol-2/3-2/045.png)
 
-![](../img/vol-2/3-2/046.png)
+![](../assets/img/vol-2/3-2/046.png)

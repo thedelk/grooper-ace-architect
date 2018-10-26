@@ -4,8 +4,8 @@ site_name: ACE - Architect
 # Configuration
 theme:
   name: material
-  favicon: "img/favicon.ico"
-  # logo: "img/favicon.ico"
+  favicon: "assets/img/favicon.ico"
+  # logo: "assets/img/favicon.ico"
   palette:
     primary: teal
     accent: orange

@@ -31,7 +31,7 @@ Before we can expect to get any kind of information from these invoices, we need
     2. Create a new separation profile
     3. Give it a name, like Invoices Separation
 
-![](../img/vol-1/3-1/006.png)
+![](../assets/img/vol-1/3-1/006.png)
 
 !!! abstract "Step 2"
     Change the following properties:
@@ -39,7 +39,7 @@ Before we can expect to get any kind of information from these invoices, we need
     1. Set Provider to Control Sheet Separation
     2. Set Delete All Separators to True
 
-![](../img/vol-1/3-1/013.png)
+![](../assets/img/vol-1/3-1/013.png)
 
 ### Updating the production batch
 
@@ -50,7 +50,7 @@ Before we can expect to get any kind of information from these invoices, we need
     4. Set the Separation Profile to the new Invoices Separation profile we created
     5. Save and Publish.
 
-![](../img/vol-1/3-1/016.png)
+![](../assets/img/vol-1/3-1/016.png)
 
 !!! abstract "Step 2"
     1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process.
@@ -59,17 +59,17 @@ Before we can expect to get any kind of information from these invoices, we need
     4. Set Target Step to Separate.
     5. Click Execute.
 
-![](../img/vol-1/3-1/018.png)
+![](../assets/img/vol-1/3-1/018.png)
 
-![](../img/vol-1/3-1/021.png)
+![](../assets/img/vol-1/3-1/021.png)
 
 !!! abstract "Step 3"
     1. Resume the batch
     2. Click Process
 
-![](../img/vol-1/3-1/027.png)
+![](../assets/img/vol-1/3-1/027.png)
 
-![](../img/vol-1/3-1/029.png)
+![](../assets/img/vol-1/3-1/029.png)
 
 ## Classification
 
@@ -80,7 +80,7 @@ Before we can expect to get any kind of information from these invoices, we need
     2. Right click on Content Models and select Add > Content Model….
     3. Name it ==Invoices==.
 
-![](../img/vol-1/3-2/002.png)
+![](../assets/img/vol-1/3-2/002.png)
 
 !!! abstract "Step 2"
     1. Right click on the new Invoices Content Model and select Contents > Add Multiple Items….
@@ -93,9 +93,9 @@ Before we can expect to get any kind of information from these invoices, we need
         - Standard
     4. Click Execute to complete
     
-![](../img/vol-1/3-2/005.png)
+![](../assets/img/vol-1/3-2/005.png)
 
-![](../img/vol-1/3-2/009.png)
+![](../assets/img/vol-1/3-2/009.png)
 
 ### Re-cloning the production batch
 
@@ -103,13 +103,13 @@ Before we can expect to get any kind of information from these invoices, we need
     1. Navigate to (root) > Batch Processing > Batches > Test > Production Clones > Invoices Process > Invoices Batch
     2. Right click on Invoices Batch and select Delete
 
-![](../img/vol-1/3-2/015.png)
+![](../assets/img/vol-1/3-2/015.png)
 
 !!! abstract "Step 2"
     1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process > Invoices Batch
     2. Click Clone To Test
 
-![](../img/vol-1/3-2/016.png)
+![](../assets/img/vol-1/3-2/016.png)
 
 ### Setting the classification method
 
@@ -118,7 +118,7 @@ Before we can expect to get any kind of information from these invoices, we need
     2. Right click on Invoices and select Create Data Model
     3. Right click on Invoices and select Create Local Resources Folder
 
-![](../img/vol-1/3-2/019.png)
+![](../assets/img/vol-1/3-2/019.png)
 
 !!! abstract "Step 2"
     1. On the Invoices Content Model in the General section, set the Classification Method property to ==Lexical==
@@ -126,9 +126,9 @@ Before we can expect to get any kind of information from these invoices, we need
     3. Set the Type property to ==Reference==
     4. Set the Referenced Extractor property to the Data Extraction > Downloads > Features > ==Words (Stemmed)== Data Type
 
-![](../img/vol-1/3-2/021.png)
+![](../assets/img/vol-1/3-2/021.png)
 
-![](../img/vol-1/3-2/026.png)
+![](../assets/img/vol-1/3-2/026.png)
 
 ### Training and testing classification
 
@@ -139,13 +139,13 @@ Before we can expect to get any kind of information from these invoices, we need
     4. Select the Acme Document Type from the list
     5. In the toolbar, click on the Classify Batch button
 
-![](../img/vol-1/3-2/027.png)
+![](../assets/img/vol-1/3-2/027.png)
 
-![](../img/vol-1/3-2/028.png)
+![](../assets/img/vol-1/3-2/028.png)
 
-![](../img/vol-1/3-2/031.png)
+![](../assets/img/vol-1/3-2/031.png)
 
-![](../img/vol-1/3-2/035.png)
+![](../assets/img/vol-1/3-2/035.png)
 
 !!! abstract "Step 2"
     1. Train the other four vendors:
@@ -155,9 +155,9 @@ Before we can expect to get any kind of information from these invoices, we need
         - Folder (5) --> Enid (5)
     2. In the toolbar, click on the Classify Batch button
 
-![](../img/vol-1/3-2/035.png)
+![](../assets/img/vol-1/3-2/035.png)
 
-![](../img/vol-1/3-2/038.png)
+![](../assets/img/vol-1/3-2/038.png)
 
 ## Classify Review
 
@@ -169,9 +169,9 @@ Before we can expect to get any kind of information from these invoices, we need
     3. Set the Activity Type property of the new step to Classify
     4. Set the Content Model Scope to our Invoices Content Model
 
-![](../img/vol-1/3-3/001.png)
+![](../assets/img/vol-1/3-3/001.png)
 
-![](../img/vol-1/3-3/002.png)
+![](../assets/img/vol-1/3-3/002.png)
 
 !!! abstract "Step 2"
     1. Add a new step
@@ -179,9 +179,9 @@ Before we can expect to get any kind of information from these invoices, we need
     3. Set the Classification Viewer Settings > Content Model Scope to our Invoices Content Model
     4. Save and Publish.
 
-![](../img/vol-1/3-3/003.png)
+![](../assets/img/vol-1/3-3/003.png)
 
-![](../img/vol-1/3-3/004.png)
+![](../assets/img/vol-1/3-3/004.png)
 
 ### Updating the production batch
 
@@ -192,15 +192,15 @@ Before we can expect to get any kind of information from these invoices, we need
     4. Set Target Step to Classify.
     5. Click Execute.
 
-![](../img/vol-1/3-3/007.png)
+![](../assets/img/vol-1/3-3/007.png)
 
-![](../img/vol-1/3-3/008.png)
+![](../assets/img/vol-1/3-3/008.png)
 
 !!! abstract "Step 2"
     1. Resume the batch
     2. Click Process
 
-![](../img/vol-1/3-3/011.png)
+![](../assets/img/vol-1/3-3/011.png)
 
 ### Reviewing and correcting classification
 
@@ -210,10 +210,10 @@ Before we can expect to get any kind of information from these invoices, we need
     3. Select the Enid Document Type from the list and click OK
     4. In the toolbar, click on the Complete Task button to finish this activity
 
-![](../img/vol-1/3-3/015.png)
+![](../assets/img/vol-1/3-3/015.png)
 
-![](../img/vol-1/3-3/017.png)
+![](../assets/img/vol-1/3-3/017.png)
 
-![](../img/vol-1/3-3/019.png)
+![](../assets/img/vol-1/3-3/019.png)
 
-![](../img/vol-1/3-3/021.png)
+![](../assets/img/vol-1/3-3/021.png)
