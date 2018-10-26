@@ -8,9 +8,9 @@
     1. Right click and select **Add > OCR Profile...**.
     2. Name it ==Invoices OCR==.
 
-![](../img/vol2/2-1/002.png)
+![](../img/vol-2/2-1/002.png)
 
-![](../img/vol2/2-1/004.png)
+![](../img/vol-2/2-1/004.png)
 
 !!! abstract "Global Resources / OCR Profiles / **Invoices OCR**"
     Change the following property values:
@@ -39,7 +39,7 @@
     | **Reject Questionable Lines**      | `False`       | ==`True`==        |
     | **Reject Questionable Characters** | `False`       | ==`True`==        |
 
-![](../img/vol2/2-1/036.png)
+![](../img/vol-2/2-1/036.png)
 
 ### Running OCR against the test batch
 
@@ -60,12 +60,12 @@
     6.  Press **Start**.
     7.  When the activity has completed, press **Close**.
 
-![](../img/vol2/2-1/037.png)
+![](../img/vol-2/2-1/037.png)
 
-![](../img/vol2/2-1/051.png)
+![](../img/vol-2/2-1/051.png)
 
-![](../img/vol2/2-1/056.png)
+![](../img/vol-2/2-1/056.png)
 
-![](../img/vol2/2-1/061.png)
+![](../img/vol-2/2-1/061.png)
 
-![](../img/vol2/2-1/064.png)
+![](../img/vol-2/2-1/064.png)

@@ -16,65 +16,65 @@
         - Remit To
     4. Click Execute to complete
 
-![](../img/vol2/4-1/005.png)
+![](../img/vol-2/4-1/005.png)
 
-![](../img/vol2/4-1/008.png)
+![](../img/vol-2/4-1/008.png)
 
-![](../img/vol2/4-1/010.png)
+![](../img/vol-2/4-1/010.png)
 
 !!! abstract "Content Models / Invoices / **(local resources)**"
     1. Right click and select Add > Folder...
     2. Give it a name, like ==Extractors==
 
-![](../img/vol2/4-1/016.png)
+![](../img/vol-2/4-1/016.png)
 
-![](../img/vol2/4-1/018.png)
+![](../img/vol-2/4-1/018.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
     1. Right click and select Add > Field Class...
     2. Name it ==Invoice Date==
 
-![](../img/vol2/4-1/019.png)
+![](../img/vol-2/4-1/019.png)
 
-![](../img/vol2/4-1/021.png)
+![](../img/vol-2/4-1/021.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date** *(Field Class)*"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Data Extraction • Data Types > Downloads > Base Types > Date Data Type
 
-![](../img/vol2/4-1/029.png)
+![](../img/vol-2/4-1/029.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
     1. In the General section, set the Feature Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Features > Phrases Data Type
 
-![](../img/vol2/4-1/031.png)
+![](../img/vol-2/4-1/031.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
     1. Select Acme (1`)
     2. Click the Run Extraction button
     3. In the candidate list, right click on the ==11/14/2008== value and select Train As Positive
 
-![](../img/vol2/4-1/034.png)
+![](../img/vol-2/4-1/034.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
     1. Select Standard (2)
     2. Select both of the ==11/11/2008== candidates that have correct features
     3. Right click on either of them and select Train As Positive
 
-![](../img/vol2/4-1/039.png)
+![](../img/vol-2/4-1/039.png)
 
 !!! abstract "Step"
     1. Select Express (3)
     2. Right click on the ==12/2/2008== candidate with 58.1689% confidence and select Train As Positive
 
-![](../img/vol2/4-1/043.png)
+![](../img/vol-2/4-1/043.png)
 
 !!! abstract "Step"
     1. Select Spartan (4)
     2. Click to edit the Context Zones property
 
-![](../img/vol2/4-1/048.png)
+![](../img/vol-2/4-1/048.png)
 
 !!! abstract "Step"
     1. In the Context Zones window, edit the dimensions as follows:
@@ -90,17 +90,17 @@
             4. Bottom: `0.04`
     2. Click OK
 
-![](../img/vol2/4-1/050.png)
+![](../img/vol-2/4-1/050.png)
 
-![](../img/vol2/4-1/052.png)
+![](../img/vol-2/4-1/052.png)
 
 !!! abstract "Step"
     1. Select Enid (5)
     2. In the Output section, set the Minimum Confidence property to ==70%==
 
-![](../img/vol2/4-1/060.png)
+![](../img/vol-2/4-1/060.png)
 
-![](../img/vol2/4-1/062.png)
+![](../img/vol-2/4-1/062.png)
 
 !!! abstract "Step"
     1. In the Data Model, select the Invoice Date Data Field
@@ -108,11 +108,11 @@
     3. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Invoice Date Field Class.
     4. In the Behavior section, set the Required property to ==True==
 
-![](../img/vol2/4-1/063.png)
+![](../img/vol-2/4-1/063.png)
 
-![](../img/vol2/4-1/065.png)
+![](../img/vol-2/4-1/065.png)
 
-![](../img/vol2/4-1/068.png)
+![](../img/vol-2/4-1/068.png)
 
 ## Ship To
 
@@ -120,20 +120,20 @@
     1. Right click on the Extractors folder and select Add > Field Class...
     2. Name it ==Ship To==
 
-![](../img/vol2/4-2/002.png)
+![](../img/vol-2/4-2/002.png)
 
-![](../img/vol2/4-2/004.png)
+![](../img/vol-2/4-2/004.png)
 
 !!! abstract "Step"
     1. Right click on the Ship To Field Class and select Add > Data Type...
     2. Name it ==[Features] Ship To==
     3. In the Data Extraction section, click to edit the Pattern
 
-![](../img/vol2/4-2/005.png)
+![](../img/vol-2/4-2/005.png)
 
-![](../img/vol2/4-2/006.png)
+![](../img/vol-2/4-2/006.png)
 
-![](../img/vol2/4-2/007.png)
+![](../img/vol-2/4-2/007.png)
 
 !!! abstract "Step"
     1. In the Value Pattern editor, type:
@@ -146,22 +146,22 @@
         ```
     3. Click OK
 
-![](../img/vol2/4-2/009.png)
+![](../img/vol-2/4-2/009.png)
 
 !!! abstract "Step"
     1. Click on the Ship To Field Class
     2. In the General section, set the Value Extractor > Type property to Reference
     3. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Base Types > Address Data Type
 
-![](../img/vol2/4-2/012.png)
+![](../img/vol-2/4-2/012.png)
 
-![](../img/vol2/4-2/013.png)
+![](../img/vol-2/4-2/013.png)
 
 !!! abstract "Step"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Extractors • Ship To > [Features] Ship To Data Type
 
-![](../img/vol2/4-2/014.png)
+![](../img/vol-2/4-2/014.png)
 
 !!! abstract "Step"
     1. In the Context Scope Options section, click to edit the Context Zones
@@ -174,18 +174,18 @@
     4. Click OK
     5. Click Run Extraction
 
-![](../img/vol2/4-2/015.png)
+![](../img/vol-2/4-2/015.png)
 
-![](../img/vol2/4-2/018.png)
+![](../img/vol-2/4-2/018.png)
 
 !!! abstract "Step"
     1. In the candidate list, find the value that has features that can be trained
     2. Right click on that value and select Train As Positive
     3. Set the Minimum Confidence property to ==70%==
 
-![](../img/vol2/4-2/023.png)
+![](../img/vol-2/4-2/023.png)
 
-![](../img/vol2/4-2/030.png)
+![](../img/vol-2/4-2/030.png)
 
 !!! abstract "Step"
     1. In the Data Model, select the Ship To Data Field
@@ -193,11 +193,11 @@
     3. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Ship To Field Class.
     4. In the Behavior section, set the Required property to ==True==
 
-![](../img/vol2/4-2/031.png)
+![](../img/vol-2/4-2/031.png)
 
-![](../img/vol2/4-2/032.png)
+![](../img/vol-2/4-2/032.png)
 
-![](../img/vol2/4-2/033.png)
+![](../img/vol-2/4-2/033.png)
 
 ## Remit To
 
@@ -207,17 +207,17 @@
     3. In the General section, set the Value Extractor > Type property to Reference
     4. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Base Types > Address Data Type
 
-![](../img/vol2/4-3/001.png)
+![](../img/vol-2/4-3/001.png)
 
-![](../img/vol2/4-3/003.png)
+![](../img/vol-2/4-3/003.png)
 
-![](../img/vol2/4-3/004.png)
+![](../img/vol-2/4-3/004.png)
 
 !!! abstract "Step"
     1. In the General section, set the Feature Extractor > Type property to Internal
     2. Click to edit the Pattern
 
-![](../img/vol2/4-3/006.png)
+![](../img/vol-2/4-3/006.png)
 
 !!! abstract "Step"
     1. In the Value Pattern editor, type:
@@ -240,13 +240,13 @@
     9. Click OK to close the List Editor
     10. Click OK to close the Pattern Editor
 
-![](../img/vol2/4-3/023-1.png)
+![](../img/vol-2/4-3/023-1.png)
 
-![](../img/vol2/4-3/014.png)
+![](../img/vol-2/4-3/014.png)
 
-![](../img/vol2/4-3/019.png)
+![](../img/vol-2/4-3/019.png)
 
-![](../img/vol2/4-3/021.png)
+![](../img/vol-2/4-3/021.png)
 
 !!! abstract "Step"
     1. Click to edit the Context Zones property
@@ -258,9 +258,9 @@
         4. Bottom: `0.15`
     4. Click OK
 
-![](../img/vol2/4-3/027.png)
+![](../img/vol-2/4-3/027.png)
 
-![](../img/vol2/4-3/028.png)
+![](../img/vol-2/4-3/028.png)
 
 !!! abstract "Step"
     1. Select Acme (1)
@@ -268,18 +268,18 @@
     3. Right click on that value and select Train As Positive
     4. Set the Minimum Confidence property to ==70%==
 
-![](../img/vol2/4-3/033.png)
+![](../img/vol-2/4-3/033.png)
 
-![](../img/vol2/4-3/034.png)
+![](../img/vol-2/4-3/034.png)
 
 !!! abstract "Step"
     1. In the Remit To Data Field, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Remit To Field Class.
     3. In the Behavior section, set the Required property to ==True==
 
-![](../img/vol2/4-3/040.png)
+![](../img/vol-2/4-3/040.png)
 
-![](../img/vol2/4-3/041.png)
+![](../img/vol-2/4-3/041.png)
 
 ## Feature List
 
@@ -289,11 +289,11 @@
     3. Collapse the Node Tree using the button in the toolbar
     4. Open Notepad.exe alongside Grooper Design Studio
 
-![](../img/vol2/4-4/001.png)
+![](../img/vol-2/4-4/001.png)
 
-![](../img/vol2/4-4/002.png)
+![](../img/vol-2/4-4/002.png)
 
-![](../img/vol2/4-4/003.png)
+![](../img/vol-2/4-4/003.png)
 
 !!! abstract "Step"
     1. Select Acme (1)
@@ -301,11 +301,11 @@
     3. Do this for the remaining four vendors
     4. When complete, copy everything in Notepad to your clipboard
 
-![](../img/vol2/4-4/004.png)
+![](../img/vol-2/4-4/004.png)
 
-![](../img/vol2/4-4/005.png)
+![](../img/vol-2/4-4/005.png)
 
-![](../img/vol2/4-4/007.png)
+![](../img/vol-2/4-4/007.png)
 
 !!! abstract "Step"
     1. Restore the default Grooper Design Studio view
@@ -315,11 +315,11 @@
     5. Right click on the Lexicons folder and select Add > Lexicon...
     6. Name it ==Invoice Field Labels==
 
-![](../img/vol2/4-4/009.png)
+![](../img/vol-2/4-4/009.png)
 
-![](../img/vol2/4-4/011.png)
+![](../img/vol-2/4-4/011.png)
 
-![](../img/vol2/4-4/014.png)
+![](../img/vol-2/4-4/014.png)
 
 !!! abstract "Step"
     1. Paste your list of field labels in the Edit Entries editor
@@ -327,11 +327,11 @@
     3. Right click in the Edit Entries editor and select Deduplicate
     4. Normalize synonymous phrases by setting an `=` sign between the original phrase and the desired transformed phrase
 
-![](../img/vol2/4-4/015.png)
+![](../img/vol-2/4-4/015.png)
 
-![](../img/vol2/4-4/016.png)
+![](../img/vol-2/4-4/016.png)
 
-![](../img/vol2/4-4/018.png)
+![](../img/vol-2/4-4/018.png)
 
 !!! abstract "Step"
     1. Delete this Lexicon
@@ -339,13 +339,13 @@
     3. Right click and select Copy
     4. Right click on the Invoices > (local resources) > Lexicons folder and select Paste
 
-![](../img/vol2/4-4/019.png)
+![](../img/vol-2/4-4/019.png)
 
-![](../img/vol2/4-4/021.png)
+![](../img/vol-2/4-4/021.png)
 
-![](../img/vol2/4-4/022.png)
+![](../img/vol-2/4-4/022.png)
 
-![](../img/vol2/4-4/023.png)
+![](../img/vol-2/4-4/023.png)
 
 !!! abstract "Step"
     1. Right click on the (local resources) folder and select Add > Folder...
@@ -354,13 +354,13 @@
     4. Name it ==Invoice Field Labels==
     5. Click to edit the Pattern
 
-![](../img/vol2/4-4/024.png)
+![](../img/vol-2/4-4/024.png)
 
-![](../img/vol2/4-4/026.png)
+![](../img/vol-2/4-4/026.png)
 
-![](../img/vol2/4-4/027.png)
+![](../img/vol-2/4-4/027.png)
 
-![](../img/vol2/4-4/028.png)
+![](../img/vol-2/4-4/028.png)
 
 !!! abstract "Step"
     1. In the Value Pattern editor, type:
@@ -370,11 +370,11 @@
     2. Click on the Properties tab
     3. Expand Preprocessing Options and set the Tab Marking property to Enabled
 
-![](../img/vol2/4-4/029.png)
+![](../img/vol-2/4-4/029.png)
 
-![](../img/vol2/4-4/030.png)
+![](../img/vol-2/4-4/030.png)
 
-![](../img/vol2/4-4/031.png)
+![](../img/vol-2/4-4/031.png)
 
 !!! abstract "Step"
     1. In the Lookup and Translation section, click to edit the Lookup Options
@@ -384,13 +384,13 @@
     5. Set the Fuzzy Match Similarity property to ==90%==
     6. Click OK
 
-![](../img/vol2/4-4/032.png)
+![](../img/vol-2/4-4/032.png)
 
-![](../img/vol2/4-4/036.png)
+![](../img/vol-2/4-4/036.png)
 
-![](../img/vol2/4-4/038.png)
+![](../img/vol-2/4-4/038.png)
 
-![](../img/vol2/4-4/044.png)
+![](../img/vol-2/4-4/044.png)
 
 !!! abstract "Step"
     1. In the Output Options section, click to edit Result Filter
@@ -398,9 +398,9 @@
     3. Click OK to close the Result Filter window
     4. Click OK to close the pattern editor window
 
-![](../img/vol2/4-4/047.png)
+![](../img/vol-2/4-4/047.png)
 
-![](../img/vol2/4-4/049.png)
+![](../img/vol-2/4-4/049.png)
 
 !!! abstract "Step"
     1. Right click on the (local resources) > _Global folder and select Add > Data Type...
@@ -409,9 +409,9 @@
         1. Purchase
         2. Order Number
 
-![](../img/vol2/4-4/056.png)
+![](../img/vol-2/4-4/056.png)
 
-![](../img/vol2/4-4/060.png)
+![](../img/vol-2/4-4/060.png)
 
 !!! abstract "Step"
     1. Select the [Array] PO Number > Purchase Data Format
@@ -425,9 +425,9 @@
         po
         ```
 
-![](../img/vol2/4-4/061.png)
+![](../img/vol-2/4-4/061.png)
 
-![](../img/vol2/4-4/062.png)
+![](../img/vol-2/4-4/062.png)
 
 !!! abstract "Step"
     1. Select the [Array] PO Number > Order Number Data Format
@@ -441,7 +441,7 @@
         number
         ```
 
-![](../img/vol2/4-4/063.png)
+![](../img/vol-2/4-4/063.png)
 
 !!! abstract "Step"
     1. Select the [Array] PO Number Data Type
@@ -453,21 +453,21 @@
     7. Set the Alignment Tolerance property to ==0.1==
     8. Set the Result Separator property to ==`␣`== (a single space)
 
-![](../img/vol2/4-4/064.png)
+![](../img/vol-2/4-4/064.png)
 
-![](../img/vol2/4-4/073.png)
+![](../img/vol-2/4-4/073.png)
 
 !!! abstract "Step"
     1. Drag the [Array] PO Number Data Type on top of the Invoice Field Labels Data Type
     2. Select the Invoice Field Labels Data Type to ensure the array is now being included in the results
 
-![](../img/vol2/4-4/075.png)
+![](../img/vol-2/4-4/075.png)
 
-![](../img/vol2/4-4/076.png)
+![](../img/vol-2/4-4/076.png)
 
-![](../img/vol2/4-4/077.png)
+![](../img/vol-2/4-4/077.png)
 
-![](../img/vol2/4-4/078.png)
+![](../img/vol-2/4-4/078.png)
 
 ## Invoice Number
 
@@ -475,9 +475,9 @@
     1. Right click on the Extractors folder and select Add > Field Class...
     2. Name it ==Invoice Number==
 
-![](../img/vol2/4-5/002.png)
+![](../img/vol-2/4-5/002.png)
 
-![](../img/vol2/4-5/004.png)
+![](../img/vol-2/4-5/004.png)
 
 !!! abstract "Step"
     1. Create a child Data Type under the Invoice Number Field Class
@@ -487,7 +487,7 @@
         2. ==Enid==
         3. ==Spartan==
 
-![](../img/vol2/4-5/005.png)
+![](../img/vol-2/4-5/005.png)
     ---
     Edit the patterns for each of the Data Formats:
     - Acme/Standard/Express
@@ -516,11 +516,11 @@
         {1}{2:Number}-{3}
         ```
 
-![](../img/vol2/4-5/007.png)
+![](../img/vol-2/4-5/007.png)
 
-![](../img/vol2/4-5/009.png)
+![](../img/vol-2/4-5/009.png)
 
-![](../img/vol2/4-5/011.png)
+![](../img/vol-2/4-5/011.png)
 
 !!! abstract "Step"
     1. Select the Invoice Number Field Class
@@ -531,17 +531,17 @@
     6. Select Acme (1)
     7. Click Run Extraction
 
-![](../img/vol2/4-5/014.png)
+![](../img/vol-2/4-5/014.png)
 
-![](../img/vol2/4-5/015.png)
+![](../img/vol-2/4-5/015.png)
 
-![](../img/vol2/4-5/016.png)
+![](../img/vol-2/4-5/016.png)
 
 !!! abstract "Step"
     1. In the candidate list, find the value that has the appropriate feature(s) to train
     2. Right click and select Train As Positive
 
-![](../img/vol2/4-5/019.png)
+![](../img/vol-2/4-5/019.png)
 
 !!! abstract "Step"
     1. Select Spartan (4)
@@ -559,25 +559,25 @@
             4. Bottom: `0.05`
     2. Click OK
 
-![](../img/vol2/4-5/027.png)
+![](../img/vol-2/4-5/027.png)
 
-![](../img/vol2/4-5/029.png)
+![](../img/vol-2/4-5/029.png)
 
-![](../img/vol2/4-5/031.png)
+![](../img/vol-2/4-5/031.png)
 
-![](../img/vol2/4-5/032.png)
+![](../img/vol-2/4-5/032.png)
 
 !!! abstract "Step"
     1. Click on the [Values] Invoice Number Data Type
     2. In the Deduplication section, set the Deduplicate Locations property to ==True==
 
-![](../img/vol2/4-5/038.png)
+![](../img/vol-2/4-5/038.png)
 
 !!! abstract "Step"
     1. Click on the Invoice Number Field Class
     2. In the Output section, set the Minimum Confidence property to ==70%==
 
-![](../img/vol2/4-5/042.png)
+![](../img/vol-2/4-5/042.png)
 
 !!! abstract "Step"
     1. In the Data Model, select the Invoice Number Data Field
@@ -585,11 +585,11 @@
     3. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Invoice Number Field Class.
     4. In the Behavior section, set the Required property to ==True==
 
-![](../img/vol2/4-5/043.png)
+![](../img/vol-2/4-5/043.png)
 
-![](../img/vol2/4-5/044.png)
+![](../img/vol-2/4-5/044.png)
 
-![](../img/vol2/4-5/045.png)
+![](../img/vol-2/4-5/045.png)
 
 ## PO Number/Exclusion Extractor
 
@@ -598,11 +598,11 @@
     2. Name it ==Addresses, Phone Numbers==
     3. In the Data Extraction section, click to edit Referenced Extractors
 
-![](../img/vol2/4-6/001.png)
+![](../img/vol-2/4-6/001.png)
 
-![](../img/vol2/4-6/003.png)
+![](../img/vol-2/4-6/003.png)
 
-![](../img/vol2/4-6/004.png)
+![](../img/vol-2/4-6/004.png)
 
 !!! abstract "Step"
     1. In the Referenced Extractors window, click Add...
@@ -612,13 +612,13 @@
     3. Click OK to close the Select Items window
     4. Click OK to close the Referenced Extractors window
 
-![](../img/vol2/4-6/005.png)
+![](../img/vol-2/4-6/005.png)
 
-![](../img/vol2/4-6/007.png)
+![](../img/vol-2/4-6/007.png)
 
-![](../img/vol2/4-6/008.png)
+![](../img/vol-2/4-6/008.png)
 
-![](../img/vol2/4-6/009.png)
+![](../img/vol-2/4-6/009.png)
 
 !!! abstract "Step"
     1. Right click on the Extractors folder and select Add > Field Class...
@@ -626,11 +626,11 @@
     3. Create a child Data Type of PO Number and name it ==[Values] PO Number==
     4. On the [Values] PO Number Data Type, click to edit the Pattern
 
-![](../img/vol2/4-6/013.png)
+![](../img/vol-2/4-6/013.png)
 
-![](../img/vol2/4-6/015.png)
+![](../img/vol-2/4-6/015.png)
 
-![](../img/vol2/4-6/016.png)
+![](../img/vol-2/4-6/016.png)
 
 !!! abstract "Step"
     1. In the Value Pattern editor, type:
@@ -639,13 +639,13 @@
         ```
     2. Click OK
 
-![](../img/vol2/4-6/018.png)
+![](../img/vol-2/4-6/018.png)
 
 !!! abstract "Step"
     1. On the [Values] PO Number Data Type, in the Data Extraction section, set the Exclusion Extractor > Type property to ==Reference==
     2. Set the Referenced Extractor property to the Invoices • (local resources) > _Global > ==Addresses, Phone Numbers== Data Type
 
-![](../img/vol2/4-6/021.png)
+![](../img/vol-2/4-6/021.png)
 
 !!! abstract "Step"
     1. Click on the PO Number Field Class
@@ -654,9 +654,9 @@
     4. In the General section, set the Feature Extractor > Type property to Reference
     5. Set the Referenced Extractor property to the Invoices • (local resources) > _Global > Invoice Field Labels Data Type
 
-![](../img/vol2/4-6/025.png)
+![](../img/vol-2/4-6/025.png)
 
-![](../img/vol2/4-6/027.png)
+![](../img/vol-2/4-6/027.png)
 
 !!! abstract "Step"
     1. Select Acme (1)
@@ -664,9 +664,9 @@
     3. In the candidate list, find the value that has the appropriate feature(s) to train
     4. Right click and select Train As Positive
 
-![](../img/vol2/4-6/029.png)
+![](../img/vol-2/4-6/029.png)
 
-![](../img/vol2/4-6/030.png)
+![](../img/vol-2/4-6/030.png)
 
 !!! abstract "Step"
     1. Click to edit the Context Zones property
@@ -684,13 +684,13 @@
     3. Click OK
     4. In the Output section, set the Minimum Confidence property to ==70%==
 
-![](../img/vol2/4-6/034.png)
+![](../img/vol-2/4-6/034.png)
 
-![](../img/vol2/4-6/036.png)
+![](../img/vol-2/4-6/036.png)
 
-![](../img/vol2/4-6/038.png)
+![](../img/vol-2/4-6/038.png)
 
-![](../img/vol2/4-6/041.png)
+![](../img/vol-2/4-6/041.png)
 
 !!! abstract "Step"
     1. In the Data Model, select the PO Number Data Field
@@ -698,11 +698,11 @@
     3. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > PO Number Field Class.
     4. In the Behavior section, set the Required property to ==True==
 
-![](../img/vol2/4-6/042.png)
+![](../img/vol-2/4-6/042.png)
 
-![](../img/vol2/4-6/044.png)
+![](../img/vol-2/4-6/044.png)
 
-![](../img/vol2/4-6/046.png)
+![](../img/vol-2/4-6/046.png)
 
 ## Invoice Amount
 
@@ -710,9 +710,9 @@
     1. Right click on the Extractors folder and select Add > Field Class...
     2. Name it ==Invoice Amount==
 
-![](../img/vol2/4-7/001.png)
+![](../img/vol-2/4-7/001.png)
 
-![](../img/vol2/4-7/003.png)
+![](../img/vol-2/4-7/003.png)
 
 !!! abstract "Step"
     1. In the General section, set the Value Extractor > Type property to Reference
@@ -720,9 +720,9 @@
     4. Set the Feature Extractor > Type property to Reference
     5. Set the Referenced Extractor property to the Invoices • (local resources) > _Global > Invoice Field Labels Data Type
 
-![](../img/vol2/4-7/005.png)
+![](../img/vol-2/4-7/005.png)
 
-![](../img/vol2/4-7/007.png)
+![](../img/vol-2/4-7/007.png)
 
 !!! abstract "Step"
     1. Select Acme (1)
@@ -730,9 +730,9 @@
     3. In the candidate list, find the value that has the appropriate feature(s) to train
     4. Right click and select Train As Positive
 
-![](../img/vol2/4-7/011.png)
+![](../img/vol-2/4-7/011.png)
 
-![](../img/vol2/4-7/012.png)
+![](../img/vol-2/4-7/012.png)
 
 !!! abstract "Step"
     1. Click to edit the Context Zones property
@@ -750,35 +750,35 @@
     3. Click OK
     4. In the Output section, set the Minimum Confidence property to ==70%==
 
-![](../img/vol2/4-7/013.png)
+![](../img/vol-2/4-7/013.png)
 
-![](../img/vol2/4-7/015.png)
+![](../img/vol-2/4-7/015.png)
 
-![](../img/vol2/4-7/017.png)
+![](../img/vol-2/4-7/017.png)
 
-![](../img/vol2/4-7/021.png)
+![](../img/vol-2/4-7/021.png)
 
 !!! abstract "Step"
     1. In the Data Model, select the Invoice Amount Data Field
     2. In the General section, set the Value Type to ==Decimal==
     3. Expand Value Type and set the Format Specifier property to ==c2==
 
-![](../img/vol2/4-7/022.png)
+![](../img/vol-2/4-7/022.png)
 
-![](../img/vol2/4-7/025.png)
+![](../img/vol-2/4-7/025.png)
 
-![](../img/vol2/4-7/028.png)
+![](../img/vol-2/4-7/028.png)
 
 !!! abstract "Step"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Invoice Amount Field Class.
     3. In the Behavior section, set the Required property to ==True==
 
-![](../img/vol2/4-7/029.png)
+![](../img/vol-2/4-7/029.png)
 
-![](../img/vol2/4-7/030.png)
+![](../img/vol-2/4-7/030.png)
 
-![](../img/vol2/4-7/032.png)
+![](../img/vol-2/4-7/032.png)
 
 ## Payment Terms
 
@@ -787,9 +787,9 @@
     2. In the General section, set the Value Extractor > Type property to Internal
     3. Click to edit the pattern
 
-![](../img/vol2/4-8/001.png)
+![](../img/vol-2/4-8/001.png)
 
-![](../img/vol2/4-8/003.png)
+![](../img/vol-2/4-8/003.png)
 
 !!! abstract "Step"
     1. Select Acme (16)
@@ -803,12 +803,12 @@
         ```
     4. Click OK
 
-![](../img/vol2/4-8/007.png)
+![](../img/vol-2/4-8/007.png)
 
 !!! abstract "Step"
     1. On the Payment Terms Data Field, set the Required Property to ==True==
 
-![](../img/vol2/4-8/010.png)
+![](../img/vol-2/4-8/010.png)
 
 ## Freight
 
@@ -816,9 +816,9 @@
     1. Right click on the Extractors folder and select Add > Data Type...
     2. Name it ==Freight==
 
-![](../img/vol2/4-9/001.png)
+![](../img/vol-2/4-9/001.png)
 
-![](../img/vol2/4-9/003.png)
+![](../img/vol-2/4-9/003.png)
 
 !!! abstract "Step"
     1. As child extractors under the Freight Data Type, create:
@@ -828,13 +828,13 @@
         4. Data Format: ==Standard==
         5. Data Type: ==Spartan==
 
-![](../img/vol2/4-9/004.png)
+![](../img/vol-2/4-9/004.png)
 
-![](../img/vol2/4-9/006.png)
+![](../img/vol-2/4-9/006.png)
 
-![](../img/vol2/4-9/010.png)
+![](../img/vol-2/4-9/010.png)
 
-![](../img/vol2/4-9/012.png)
+![](../img/vol-2/4-9/012.png)
     ---
     Edit the patterns for each of the Data Formats:
     - Acme
@@ -906,13 +906,13 @@
         {1:Number}
         ```
 
-![](../img/vol2/4-9/017.png)
+![](../img/vol-2/4-9/017.png)
 
-![](../img/vol2/4-9/019.png)
+![](../img/vol-2/4-9/019.png)
 
-![](../img/vol2/4-9/021.png)
+![](../img/vol-2/4-9/021.png)
 
-![](../img/vol2/4-9/023.png)
+![](../img/vol-2/4-9/023.png)
 
 !!! abstract "Step"
     1. Create two Data Formats as children of the Spartan Data Type:
@@ -931,13 +931,13 @@
     3. Right click on the Value 1 Data Format and select Clone
     4. Name the clone ==Value 2==
 
-![](../img/vol2/4-9/025.png)
+![](../img/vol-2/4-9/025.png)
 
-![](../img/vol2/4-9/027.png)
+![](../img/vol-2/4-9/027.png)
 
-![](../img/vol2/4-9/029.png)
+![](../img/vol-2/4-9/029.png)
 
-![](../img/vol2/4-9/023.png)
+![](../img/vol-2/4-9/023.png)
 
 !!! abstract "Step"
     1. Select the Spartan Data Type
@@ -947,13 +947,13 @@
     5. Set the Maximum Distance property to ==0.25==
     6. Set the Combine Method property to ==Sum==
 
-![](../img/vol2/4-9/035.png)
+![](../img/vol-2/4-9/035.png)
 
-![](../img/vol2/4-9/037.png)
+![](../img/vol-2/4-9/037.png)
 
-![](../img/vol2/4-9/039.png)
+![](../img/vol-2/4-9/039.png)
 
-![](../img/vol2/4-9/045.png)
+![](../img/vol-2/4-9/045.png)
 
 !!! abstract "Step"
     1. In the Data Model, select the Freight Data Field
@@ -961,21 +961,21 @@
     3. Expand Value Type and set the Format Specifier property to ==c2==
     4. In the Expressions section, set the Default Value Expression property to ==0==
 
-![](../img/vol2/4-9/050.png)
+![](../img/vol-2/4-9/050.png)
 
-![](../img/vol2/4-9/052.png)
+![](../img/vol-2/4-9/052.png)
 
-![](../img/vol2/4-9/054.png)
+![](../img/vol-2/4-9/054.png)
 
-![](../img/vol2/4-9/056.png)
+![](../img/vol-2/4-9/056.png)
 
 !!! abstract "Step"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Freight== Data Type.
 
-![](../img/vol2/4-9/058.png)
+![](../img/vol-2/4-9/058.png)
 
-![](../img/vol2/4-9/059.png)
+![](../img/vol-2/4-9/059.png)
 
 ## Discount
 
@@ -983,9 +983,9 @@
     1. Right click on the Extractors folder and select Add > Data Type...
     2. Name it ==Discount==
 
-![](../img/vol2/4-10/002.png)
+![](../img/vol-2/4-10/002.png)
 
-![](../img/vol2/4-10/003.png)
+![](../img/vol-2/4-10/003.png)
 
 !!! abstract "Step"
     1. Create two Data Types as children of the Discount Data Type:
@@ -993,11 +993,11 @@
         - ==Enid==
     2. Select the Acme Data Type and click to edit its Pattern
 
-![](../img/vol2/4-10/004.png)
+![](../img/vol-2/4-10/004.png)
 
-![](../img/vol2/4-10/005.png)
+![](../img/vol-2/4-10/005.png)
 
-![](../img/vol2/4-10/006.png)
+![](../img/vol-2/4-10/006.png)
 
 !!! abstract "Step"
     1. Click on the Properties tab and set the Preprocessing Options > Tab Marking property to ==True==
@@ -1016,26 +1016,26 @@
         ```
     6. Click OK to close the pattern editor window
 
-![](../img/vol2/4-10/008.png)
+![](../img/vol-2/4-10/008.png)
 
-![](../img/vol2/4-10/010.png)
+![](../img/vol-2/4-10/010.png)
 
 !!! abstract "Step"
     1. Select Acme (14)
     2. In the Output section, set the Collation property to ==Combine==
     3. Expand Collation and set the Combine Method property to ==Sum==
 
-![](../img/vol2/4-10/013.png)
+![](../img/vol-2/4-10/013.png)
 
-![](../img/vol2/4-10/015.png)
+![](../img/vol-2/4-10/015.png)
 
-![](../img/vol2/4-10/018.png)
+![](../img/vol-2/4-10/018.png)
     ---
     Create two Data Formats as children of the Enid Data Type:
         - ==[Key] Enid - Discount==
         - ==[Value] Enid - Discount==
 
-![](../img/vol2/4-10/021.png)
+![](../img/vol-2/4-10/021.png)
 
 !!! abstract "Step"
     1. Select the [Key] Enid - Discount Data Format
@@ -1045,7 +1045,7 @@
         order discount amount
         ```
 
-![](../img/vol2/4-10/022.png)
+![](../img/vol-2/4-10/022.png)
 
 !!! abstract "Step"
     1. Click on the Properties tab
@@ -1058,13 +1058,13 @@
         ```
     6. Click OK to close the List Editor window
 
-![](../img/vol2/4-10/025.png)
+![](../img/vol-2/4-10/025.png)
 
-![](../img/vol2/4-10/026.png)
+![](../img/vol-2/4-10/026.png)
 
-![](../img/vol2/4-10/028.png)
+![](../img/vol-2/4-10/028.png)
 
-![](../img/vol2/4-10/029.png)
+![](../img/vol-2/4-10/029.png)
 
 !!! abstract "Step"
     1. Select the [Value] Enid - Discount Data Format
@@ -1073,20 +1073,20 @@
         \d{1,6}\.\d{2,3}
         ```
 
-![](../img/vol2/4-10/031.png)
+![](../img/vol-2/4-10/031.png)
 
-![](../img/vol2/4-10/032.png)
+![](../img/vol-2/4-10/032.png)
 
 !!! abstract "Step"
     1. Select the Enid Data Type
     2. In the Output section, set the Collation property to ==Key-Value Pair==
     3. Expand Collation and set the Horizontal Layout property to ==Enabled==
 
-![](../img/vol2/4-10/033.png)
+![](../img/vol-2/4-10/033.png)
 
-![](../img/vol2/4-10/035.png)
+![](../img/vol-2/4-10/035.png)
 
-![](../img/vol2/4-10/038.png)
+![](../img/vol-2/4-10/038.png)
 
 !!! abstract "Step"
     1. In the Data Model, select the Discount Data Field
@@ -1094,21 +1094,21 @@
     3. Expand Value Type and set the Format Specifier property to ==c2==
     4. In the Expressions section, set the Default Value Expression property to ==0==
 
-![](../img/vol2/4-10/040.png)
+![](../img/vol-2/4-10/040.png)
 
-![](../img/vol2/4-10/042.png)
+![](../img/vol-2/4-10/042.png)
 
-![](../img/vol2/4-10/044.png)
+![](../img/vol-2/4-10/044.png)
 
-![](../img/vol2/4-10/047.png)
+![](../img/vol-2/4-10/047.png)
 
 !!! abstract "Step"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Discount== Data Type.
 
-![](../img/vol2/4-10/046.png)
+![](../img/vol-2/4-10/046.png)
 
-![](../img/vol2/4-10/047.png)
+![](../img/vol-2/4-10/047.png)
 
 ## Sales Tax
 
@@ -1119,9 +1119,9 @@
         - ==Express==
         - ==Standard==
 
-![](../img/vol2/4-11/003.png)
+![](../img/vol-2/4-11/003.png)
 
-![](../img/vol2/4-11/004.png)
+![](../img/vol-2/4-11/004.png)
     ---
     Edit the patterns for each of the Data Formats:
     - Express
@@ -1152,9 +1152,9 @@
         {1:Number}
         ```
 
-![](../img/vol2/4-11/006.png)
+![](../img/vol-2/4-11/006.png)
 
-![](../img/vol2/4-11/008.png)
+![](../img/vol-2/4-11/008.png)
 
 !!! abstract "Step"
     1. In the Data Model, select the Sales Tax Data Field
@@ -1162,29 +1162,29 @@
     3. Expand Value Type and set the Format Specifier property to ==c2==
     4. In the Expressions section, set the Default Value Expression property to ==0==
 
-![](../img/vol2/4-11/009.png)
+![](../img/vol-2/4-11/009.png)
 
-![](../img/vol2/4-11/011.png)
+![](../img/vol-2/4-11/011.png)
 
-![](../img/vol2/4-11/012.png)
+![](../img/vol-2/4-11/012.png)
 
 !!! abstract "Step"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Sales Tax== Data Type.
 
-![](../img/vol2/4-11/014.png)
+![](../img/vol-2/4-11/014.png)
 
 !!! abstract "Step"
     1. Add a new folder to (local resources)
     2. Name it ==Overrides==
 
-![](../img/vol2/4-11/018.png)
+![](../img/vol-2/4-11/018.png)
 
 !!! abstract "Step"
     1. In the Overrides folder, add a Field Class
     2. Name it ==[Enid] Sales Tax==
 
-![](../img/vol2/4-11/020.png)
+![](../img/vol-2/4-11/020.png)
 
 !!! abstract "Step"
     1. Set the Value Extractor > Type property to ==Internal==
@@ -1201,11 +1201,11 @@
     3. Set the Feature Extractor > Type property to ==Reference==
     4. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Features > ==Phrases== Data Type
 
-![](../img/vol2/4-11/021.png)
+![](../img/vol-2/4-11/021.png)
 
-![](../img/vol2/4-11/023.png)
+![](../img/vol-2/4-11/023.png)
 
-![](../img/vol2/4-11/024.png)
+![](../img/vol-2/4-11/024.png)
 
 !!! abstract "Step"
     1. Click to edit the Context Zones property
@@ -1222,33 +1222,33 @@
     4. Click OK to close the Context Zones window
     5. In the Output section, set the Minimum Confidence property to ==90%==
 
-![](../img/vol2/4-11/027.png)
+![](../img/vol-2/4-11/027.png)
 
-![](../img/vol2/4-11/030.png)
+![](../img/vol-2/4-11/030.png)
 
-![](../img/vol2/4-11/033.png)
+![](../img/vol-2/4-11/033.png)
 
 !!! abstract "Step"
     1. Navigate to the (root) > Content Models > Invoices > Enid Document Type
     2. Click on the Data Element Profiles tab
     3. Click on the Sales Tax Data Field and click the **+** button in the toolbar
 
-![](../img/vol2/4-11/034.png)
+![](../img/vol-2/4-11/034.png)
 
-![](../img/vol2/4-11/035.png)
+![](../img/vol-2/4-11/035.png)
 
-![](../img/vol2/4-11/036.png)
+![](../img/vol-2/4-11/036.png)
 
-![](../img/vol2/4-11/037.png)
+![](../img/vol-2/4-11/037.png)
 
 !!! abstract "Step"
     1. In the properties panel, set the ESP(tm) Extraction Overrides > Override Extractor property to ==True==
     2. Expand Extractor and set the Extractor > Type property to Reference
     3. Set the Referenced Extractor property to the Invoices • (local resources) > Overrides > ==[Enid] Sales Tax== Field Class
 
-![](../img/vol2/4-11/039.png)
+![](../img/vol-2/4-11/039.png)
 
-![](../img/vol2/4-11/040.png)
+![](../img/vol-2/4-11/040.png)
 
 ## Data Model Adjustments
 
@@ -1259,11 +1259,11 @@
     4. Expand Multi Line and set the Multi Line Height property to ==45==
     5. Set the Word Wrap property to ==True==
 
-![](../img/vol2/4-12/002.png)
+![](../img/vol-2/4-12/002.png)
 
-![](../img/vol2/4-12/003.png)
+![](../img/vol-2/4-12/003.png)
 
-![](../img/vol2/4-12/004.png)
+![](../img/vol-2/4-12/004.png)
 
 !!! abstract "Step"
     1. Right click on any of the property names and select Copy Properties > Selected Properties...
@@ -1271,30 +1271,30 @@
         - [X] Display Width
         - [X] Multi Line
 
-![](../img/vol2/4-12/010.png)
+![](../img/vol-2/4-12/010.png)
 
-![](../img/vol2/4-12/011.png)
+![](../img/vol-2/4-12/011.png)
 
-![](../img/vol2/4-12/012.png)
+![](../img/vol-2/4-12/012.png)
 
 !!! abstract "Step"
     1. Navigate to the Remit To Data Field
     2. Right click on any of the property names and select Paste Properties
 
-![](../img/vol2/4-12/013.png)
+![](../img/vol-2/4-12/013.png)
 
-![](../img/vol2/4-12/014.png)
+![](../img/vol-2/4-12/014.png)
 
-![](../img/vol2/4-12/015.png)
+![](../img/vol-2/4-12/015.png)
 
 !!! abstract "Step"
     1. Navigate to the Data Model itself
     2. In the Child Element Options section, set the Show Fields In Grid property to ==True==
     3. In the toolbar, click the Test Extraction button to test all fields against a document
 
-![](../img/vol2/4-12/016.png)
+![](../img/vol-2/4-12/016.png)
 
-![](../img/vol2/4-12/018.png)
+![](../img/vol-2/4-12/018.png)
 
-![](../img/vol2/4-12/019.png)
+![](../img/vol-2/4-12/019.png)
     

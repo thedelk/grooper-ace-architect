@@ -9,11 +9,11 @@
     2. Set the **Import Path** property to the ==Grooper ACE - Architect - Volume II - Begin.zip== file.
     3. Press **Execute**.
 
-![](../img/vol2/1-1/002.png)
+![](../img/vol-2/1-1/002.png)
 
-![](../img/vol2/1-1/003.png)
+![](../img/vol-2/1-1/003.png)
 
-![](../img/vol2/1-1/005.png)
+![](../img/vol-2/1-1/005.png)
 
 ### Creating an empty test batch
 
@@ -21,9 +21,9 @@
     1. Right click and select **Add > Batch...**.
     2. Name it ==Invoices==.
 
-![](../img/vol2/1-1/007.png)
+![](../img/vol-2/1-1/007.png)
 
-![](../img/vol2/1-1/009.png)
+![](../img/vol-2/1-1/009.png)
 
 ## Scanning
 
@@ -33,9 +33,9 @@
     1. Right click and select **Add > Scanner Profile...**.
     2. Name it ==Invoices Source Scan==.
 
-![](../img/vol2/1-1/012.png)
+![](../img/vol-2/1-1/012.png)
 
-![](../img/vol2/1-1/014.png)
+![](../img/vol-2/1-1/014.png)
 
 ### Configuring the Scanner Profile
 
@@ -56,11 +56,11 @@
         | **Import Source** | `FileSystem`  | ==`TestBatch`== |
         | **Source Batch**  | `-`           | ==`_Source`==   |
 
-![](../img/vol2/1-1/017.png)
+![](../img/vol-2/1-1/017.png)
 
-![](../img/vol2/1-1/022.png)
+![](../img/vol-2/1-1/022.png)
 
-![](../img/vol2/1-1/025.png)
+![](../img/vol-2/1-1/025.png)
 
 ### Testing the Scanner Profile
 
@@ -69,10 +69,10 @@
     2. From the **batch dropdown** select the ==Invoices== batch.
     3. Press **Scan**.
 
-![](../img/vol2/1-1/030.png)
+![](../img/vol-2/1-1/030.png)
 
-![](../img/vol2/1-1/032.png)
+![](../img/vol-2/1-1/032.png)
 
-![](../img/vol2/1-1/034.png)
+![](../img/vol-2/1-1/034.png)
 
-![](../img/vol2/1-1/035.png)
+![](../img/vol-2/1-1/035.png)
