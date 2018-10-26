@@ -576,9 +576,9 @@ Check out [this video](https://upload.wikimedia.org/wikipedia/commons/transcoded
 
 With Grooper, page scanning happens (usually) all at once. During the OCR process the image is broken into vertical and horizontal lines of pixels to identify individual letter characters and spacing.
 
-|G|r|o|
+<!-- |G|r|o|
 :---:|:---:|:---:
-![Pixels for a serif "G"](img/2-3/ref/ocr-01.jpg) | ![Pixels for a serif "r"](img/2-3/ref/ocr-02.jpg) | ![Pixels for a serif "o"](img/2-3/ref/ocr-03.jpg)
+![Pixels for a serif "G"](img/2-3/ref/ocr-01.jpg) | ![Pixels for a serif "r"](img/2-3/ref/ocr-02.jpg) | ![Pixels for a serif "o"](img/2-3/ref/ocr-03.jpg) -->
 
 !!! danger "TO-DO"
     THESE STEPS NEED EXPLANATION.

@@ -51,13 +51,22 @@ markdown_extensions:
   - toc:
       permalink: true
 
-pages:
-  - Home: index.md
-  - Vol1: vol-1/acquire.md
+# pages:
+#   - Home: index.md
+#   - Vol1: vol-1/acquire.md
+#   - Vol1: vol-1/condition.md
+# - Vol1: vol-1/organize.md
+# - Vol1: vol-1/collect.md
+# - Vol1: vol-1/deliver.md
+# - Vol2: vol-2/acquire.md
+# - Vol2: vol-2/condition.md
+# - Vol2: vol-2/organize.md
+# - Vol2: vol-2/collect.md
+# - Vol2: vol-2/deliver.md
 
 plugins:
-  - pdf-export:
-      verbose: true
+  - pdf-export
+  # verbose: true
   # enabled_if_env: ENABLE_PDF_EXPORT
   - search
   - awesome-pages:
