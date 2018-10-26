@@ -72,10 +72,10 @@ plugins:
   - awesome-pages:
       filename: .title
 extra_css:
-  - "css/glightbox.min.css"
-  - "css/pdf.css"
-  - "css/styles.css"
+  - "assets/css/glightbox.min.css"
+  - "assets/css/pdf.css"
+  - "assets/css/styles.css"
 extra_javascript:
-  - "js/glightbox.min.js"
-  - "js/jquery-3.3.1.min.js"
-  - "js/app.js"
+  - "assets/js/glightbox.min.js"
+  - "assets/js/jquery-3.3.1.min.js"
+  - "assets/js/app.js"
