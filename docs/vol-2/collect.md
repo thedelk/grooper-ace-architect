@@ -2,19 +2,14 @@
 
 !!! abstract "Content Models / Invoices / **(data model)**"
     1. Right click and select **Contents > Add Multiple Items...**.
-    2. In the **Contents • Add Multiple Items** window, make sure **Item Type** is set to ==Data Field==
-    3. Edit the **Item Names** property and type out the names of the following fields:
-        - Invoice Number
-        - PO Number
-        - Invoice Date
-        - Freight
-        - Sales Tax
-        - Discount
-        - Invoice Amount
-        - Payment Terms
-        - Ship To
-        - Remit To
-    4. Press **Execute**.
+    2. In the **Contents • Add Multiple Items** window, change the following property values:
+
+        | Property       | Default Value | New Value                                                                                                                                                                                             |
+        | -------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+        | General        |               |                                                                                                                                                                                                       |
+        | **Item Names** | `-`           | ==`Invoice Number`==<br>==`PO Number`==<br>==`Invoice Date`==<br>==`Freight`==<br>==`Sales Tax`==<br>==`Discount`==<br>==`Invoice Amount`==<br>==`Payment Terms`==<br>==`Ship To`==<br>==`Remit To`== |
+
+    3. Press **Execute**.
 
 ![](../assets/img/vol-2/4-1/005.png)
 
@@ -38,11 +33,11 @@
 
 ![](../assets/img/vol-2/4-1/021.png)
 
-!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date** *(Field Class)*"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
     Change the following property values:
 
     | Property                     | Default Value | New Value       |
-    |------------------------------|---------------|-----------------|
+    | ---------------------------- | ------------- | --------------- |
     | General                      |               |                 |
     | **Value Extractor**          |               |                 |
     | --> **Type**                 | `none`        | ==`Reference`== |
@@ -54,7 +49,7 @@
     Change the following property values:
 
     | Property                     | Default Value | New Value       |
-    |------------------------------|---------------|-----------------|
+    | ---------------------------- | ------------- | --------------- |
     | General                      |               |                 |
     | **Feature Extractor**        |               |                 |
     | --> **Type**                 | `none`        | ==`Reference`== |
@@ -84,7 +79,7 @@
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
     1. Select **Spartan (4)**
-    2. Click to edit the **Context Zones** property
+    2. In the **Context Zone Options** section, click to edit the **Context Zones**
 
 ![](../assets/img/vol-2/4-1/048.png)
 
@@ -92,13 +87,13 @@
     1. In the Context Zones window, edit the dimensions as follows:
 
     | Property   | Zone 1       | Zone 2      |
-    |------------|--------------|-------------|
+    | ---------- | ------------ | ----------- |
     | **Left**   | ==`-3.278`== | ==`-0.67`== |
     | **Top**    | ==`-0.054`== | ==`-0.67`== |
     | **Right**  | ==`0.312`==  | ==`0.5`==   |
     | **Bottom** | ==`0.054`==  | ==`0.04`==  |
 
-    2. Press **OK**
+    2. Press **OK**.
 
 ![](../assets/img/vol-2/4-1/050.png)
 
@@ -116,7 +111,7 @@
     Change the following property values:
 
     | Property                     | Default Value | New Value          |
-    |------------------------------|---------------|--------------------|
+    | ---------------------------- | ------------- | ------------------ |
     | General                      |               |                    |
     | **Value Extractor**          |               |                    |
     | --> **Type**                 | `None`        | ==`Reference`==    |
@@ -132,82 +127,110 @@
 
 ## Ship To
 
-!!! abstract "Step"
-    1. Right click on the Extractors folder and select Add > Field Class...
+!!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
+    1. Right click and select **Add > Field Class...**
     2. Name it ==Ship To==
 
 ![](../assets/img/vol-2/4-2/002.png)
 
 ![](../assets/img/vol-2/4-2/004.png)
 
-!!! abstract "Step"
-    1. Right click on the Ship To Field Class and select Add > Data Type...
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Ship To**"
+    1. Right click and select **Add > Data Type...**
     2. Name it ==[Features] Ship To==
-    3. In the Data Extraction section, click to edit the Pattern
 
 ![](../assets/img/vol-2/4-2/005.png)
 
 ![](../assets/img/vol-2/4-2/006.png)
 
-![](../assets/img/vol-2/4-2/007.png)
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Ship To / **[Features] Ship To**"
+    1. In the Data Extraction section, click to edit the **Pattern**.
+    2. Edit the pattern(s):
 
-!!! abstract "Step"
-    1. In the Value Pattern editor, type:
-        ```
+        ```tab="Value Pattern"
         ship to|shipped to|ship
         ```
-    2. In the Output Format editor, type:
-        ```
+
+        ```tab="Output Format"
         ship to
         ```
-    3. Press **OK**
+
+    3. Press **OK**.
+
+![](../assets/img/vol-2/4-2/007.png)
 
 ![](../assets/img/vol-2/4-2/009.png)
 
-!!! abstract "Step"
-    1. Click on the Ship To Field Class
-    2. In the General section, set the Value Extractor > Type property to Reference
-    3. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Base Types > Address Data Type
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Ship To**"
+    Change the following property values:
+
+    | Property                     | Default Value | New Value       |
+    | ---------------------------- | ------------- | --------------- |
+    | General                      |               |                 |
+    | **Value Extractor**          |               |                 |
+    | --> **Type**                 | `none`        | ==`Reference`== |
+    | --> **Referenced Extractor** | `-`           | ==`Address`==   |
 
 ![](../assets/img/vol-2/4-2/012.png)
 
 ![](../assets/img/vol-2/4-2/013.png)
 
-!!! abstract "Step"
-    1. In the General section, set the Value Extractor > Type property to Reference
-    2. Set the Referenced Extractor property to the Extractors • Ship To > [Features] Ship To Data Type
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Ship To**"
+    Change the following property values:
+
+    | Property                     | Default Value | New Value                |
+    | ---------------------------- | ------------- | ------------------------ |
+    | General                      |               |                          |
+    | **Feature Extractor**        |               |                          |
+    | --> **Type**                 | `none`        | ==`Reference`==          |
+    | --> **Referenced Extractor** | `-`           | ==`[Features] Ship To`== |
 
 ![](../assets/img/vol-2/4-2/014.png)
 
-!!! abstract "Step"
-    1. In the Context Scope Options section, click to edit the Context Zones
-    2. In the Context Zones window, delete one of the zones
-    3. Edit the dimensions of the remaining zone:
-        1. Left: `-1.25`
-        2. Top: `-0.54`
-        3. Right: `0.73`
-        4. Bottom: `0.13`
-    4. Press **OK**
-    5. Click Run Extraction
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Ship To**"
+    1. In the **Context Zone Options** section, click to edit the **Context Zones**.
+    2. In the **Context Zones** window, delete one of the zones.
+    3. For the remaining zone, edit the dimensions as follows:
+
+        | Property   | Zone        |
+        | ---------- | ----------- |
+        | **Left**   | ==`-1.25`== |
+        | **Top**    | ==`-0.54`== |
+        | **Right**  | ==`0.73`==  |
+        | **Bottom** | ==`0.13`==  |
+
+    4. Press **OK**.
+    5. Press **Run Extraction**.
 
 ![](../assets/img/vol-2/4-2/015.png)
 
 ![](../assets/img/vol-2/4-2/018.png)
 
-!!! abstract "Step"
-    1. In the candidate list, find the value that has features that can be trained
-    2. Right click on that value and select **Train As Positive**
-    3. Set the Minimum Confidence property to ==70%==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Ship To**"
+    1. In the candidate list, find the value that has features that can be trained.
+    2. Right click on that value and select **Train As Positive**.
+    3. Change the following property value(s):
+        
+        | Property               | Default Value | New Value |
+        | ---------------------- | ------------- | --------- |
+        | Output                 |               |           |
+        | **Minimum Confidence** | `0%`          | ==`70%`== |
 
 ![](../assets/img/vol-2/4-2/023.png)
 
 ![](../assets/img/vol-2/4-2/030.png)
 
-!!! abstract "Step"
-    1. In the Data Model, select the Ship To Data Field
-    2. In the General section, set the Value Extractor > Type property to Reference
-    3. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Ship To Field Class.
-    4. In the Behavior section, set the Required property to ==True==
+!!! abstract "Content Models / Invoices / (data model) / **Ship To**"
+    Change the following property values:
+
+    | Property                     | Default Value | New Value       |
+    | ---------------------------- | ------------- | --------------- |
+    | General                      |               |                 |
+    | **Value Extractor**          |               |                 |
+    | --> **Type**                 | `None`        | ==`Reference`== |
+    | --> **Referenced Extractor** | `-`           | ==`Ship To`==   |
+    | Behavior                     |               |                 |
+    | **Required**                 | `False`       | ==`True`==      |
 
 ![](../assets/img/vol-2/4-2/031.png)
 
@@ -217,11 +240,17 @@
 
 ## Remit To
 
-!!! abstract "Step"
-    1. Right click on the Extractors folder and select Add > Field Class...
-    2. Name it Remit To
-    3. In the General section, set the Value Extractor > Type property to Reference
-    4. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Base Types > Address Data Type
+!!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
+    1. Right click and select **Add > Field Class...**.
+    2. Name it ==Remit To==.
+    3. Change the following property values:
+
+        | Property                     | Default Value | New Value       |
+        | ---------------------------- | ------------- | --------------- |
+        | General                      |               |                 |
+        | **Value Extractor**          |               |                 |
+        | --> **Type**                 | `None`        | ==`Reference`== |
+        | --> **Referenced Extractor** | `-`           | ==`Address`==   |
 
 ![](../assets/img/vol-2/4-3/001.png)
 
@@ -229,32 +258,43 @@
 
 ![](../assets/img/vol-2/4-3/004.png)
 
-!!! abstract "Step"
-    1. In the General section, set the Feature Extractor > Type property to Internal
-    2. Click to edit the Pattern
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Remit To**"
+    Change the following property value(s):
+
+    | Property              | Default Value     | New Value         |
+    | --------------------- | ----------------- | ----------------- |
+    | General               |                   |                   |
+    | **Feature Extractor** |                   |                   |
+    | --> **Type**          | `None`            | ==`Internal`==    |
+    | --> **Pattern**       | *(Click to edit)* | *(Click to edit)* |
 
 ![](../assets/img/vol-2/4-3/006.png)
 
-!!! abstract "Step"
-    1. In the Value Pattern editor, type:
-        ```
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Remit To**"
+    1. Edit the pattern(s):
+
+        ```tab="Value Pattern"
         remit to|mail payment to|checks to
         ```
-    2. In the Output Format editor, type:
-        ```
+
+        ```tab="Output Format"
         remit to
         ```
-    3. Select Standard (2)
-    4. Click on the Properties tab
-    5. Change the Mode property to FuzzyRegEx
-    6. In the Fuzzy Matching Options section, expand Fuzzy Match Weightings
-    7. Click to edit Local Entries
-    8. In the List Editor window, type:
-        ```
-        li=0.25
-        ```
-    9. Press **OK** to close the List Editor
-    10. Press **OK** to close the Pattern Editor
+
+    2. Select **Standard (2)**.
+    3. Click on the **Properties** tab.
+    4. Change the following property value(s):
+
+        | Property                   | Default Value | New Value        |
+        | -------------------------- | ------------- | ---------------- |
+        | General                    |               |                  |
+        | **Mode**                   | `RegEx`       | ==`FuzzyRegEx`== |
+        | Fuzzy Matching Options     |               |                  |
+        | **Fuzzy Match Weightings** |               |                  |
+        | --> **Local Entries**      | `-`           | ==`li=0.25`==    |
+
+    5.  Press **OK** to close the List Editor.
+    6.  Press **OK** to close the Pattern Editor.
 
 ![](../assets/img/vol-2/4-3/023-1.png)
 
@@ -264,34 +304,50 @@
 
 ![](../assets/img/vol-2/4-3/021.png)
 
-!!! abstract "Step"
-    1. Click to edit the Context Zones property
-    2. In the Context Zones window, delete one of the zones
-    3. Edit the dimensions of the remaining zone:
-        1. Left: `-2.55`
-        2. Top: `-0.55`
-        3. Right: `1`
-        4. Bottom: `0.15`
-    4. Press **OK**
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Remit To**"
+    1. In the **Context Zone Options** section, click to edit the **Context Zones**.
+    2. In the **Context Zones** window, delete one of the zones.
+    3. For the remaining zone, edit the dimensions as follows:
+
+        | Property   | Zone        |
+        | ---------- | ----------- |
+        | **Left**   | ==`-2.55`== |
+        | **Top**    | ==`-0.55`== |
+        | **Right**  | ==`1`==     |
+        | **Bottom** | ==`0.15`==  |
+
+    4. Press **OK**.
 
 ![](../assets/img/vol-2/4-3/027.png)
 
 ![](../assets/img/vol-2/4-3/028.png)
 
-!!! abstract "Step"
-    1. Select Acme (1)
-    2. In the candidate list, find the value that has features that can be trained
-    3. Right click on that value and select **Train As Positive**
-    4. Set the Minimum Confidence property to ==70%==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Remit To**"
+    1. Select **Acme (1)**.
+    2. In the candidate list, find the value that has features that can be trained.
+    3. Right click on that value and select **Train As Positive**.
+    4. Change the following property value(s):
+        
+        | Property               | Default Value | New Value |
+        | ---------------------- | ------------- | --------- |
+        | Output                 |               |           |
+        | **Minimum Confidence** | `0%`          | ==`70%`== |
 
 ![](../assets/img/vol-2/4-3/033.png)
 
 ![](../assets/img/vol-2/4-3/034.png)
 
-!!! abstract "Step"
-    1. In the Remit To Data Field, set the Value Extractor > Type property to Reference
-    2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Remit To Field Class.
-    3. In the Behavior section, set the Required property to ==True==
+!!! abstract "Content Models / Invoices / (data model) / **Remit To**"
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value       |
+    | ---------------------------- | ------------- | --------------- |
+    | General                      |               |                 |
+    | **Value Extractor**          |               |                 |
+    | --> **Type**                 | `None`        | ==`Reference`== |
+    | --> **Referenced Extractor** | `-`           | ==`Remit To`==  |
+    | Behavior                     |               |                 |
+    | **Required**                 | `False`       | ==`True`==      |
 
 ![](../assets/img/vol-2/4-3/040.png)
 
@@ -299,11 +355,10 @@
 
 ## Feature List
 
-!!! abstract "Step"
-    1. Navigate to (root) > Batch Processing > Batches > Test > Invoices
-    2. Click on the Batch Viewer tab
-    3. Collapse the Node Tree using the button in the toolbar
-    4. Open Notepad.exe alongside Grooper Design Studio
+!!! abstract "Batch Processing / Batches / Test / **Invoices**"
+    1. Click on the **Batch Viewer** tab.
+    2. Collapse the Node Tree using the button in the toolbar.
+    3. Open Notepad.exe alongside Grooper Design Studio.
 
 ![](../assets/img/vol-2/4-4/001.png)
 
@@ -311,11 +366,12 @@
 
 ![](../assets/img/vol-2/4-4/003.png)
 
-!!! abstract "Step"
-    1. Select Acme (1)
-    2. In Notepad, begin typing a list of all words and phrases used to identify invoice items
-    3. Do this for the remaining four vendors
-    4. When complete, copy everything in Notepad to your clipboard
+!!! abstract "Batch Processing / Batches / Test / **Invoices**"
+    1. Select **Acme (1)**.
+    2. In Notepad, begin typing a list of all words and phrases used to identify invoice items.
+    3. Do this for the remaining four vendors.
+    4. When complete, copy everything in Notepad to your clipboard.
+    5. Restore the default Grooper Design Studio view.
 
 ![](../assets/img/vol-2/4-4/004.png)
 
@@ -323,13 +379,11 @@
 
 ![](../assets/img/vol-2/4-4/007.png)
 
-!!! abstract "Step"
-    1. Restore the default Grooper Design Studio view
-    2. Navigate to Content Models > Invoices > (local resources)
-    3. Right click and select Add > Folder...
-    4. Name it ==Lexicons==
-    5. Right click on the Lexicons folder and select Add > Lexicon...
-    6. Name it ==Invoice Field Labels==
+!!! abstract "Content Models / Invoices / **(local resources)**"
+    1. Right click and select **Add > Folder...**.
+    2. Name it ==Lexicons==.
+    3. Right click on the **Lexicons** folder and select **Add > Lexicon...**.
+    4. Name it ==Invoice Field Labels==.
 
 ![](../assets/img/vol-2/4-4/009.png)
 
@@ -337,11 +391,12 @@
 
 ![](../assets/img/vol-2/4-4/014.png)
 
-!!! abstract "Step"
-    1. Paste your list of field labels in the Edit Entries editor
-    2. Right click in the Edit Entries editor and select Sort
-    3. Right click in the Edit Entries editor and select Deduplicate
-    4. Normalize synonymous phrases by setting an `=` sign between the original phrase and the desired transformed phrase
+!!! abstract "Content Models / Invoices / (local resources) / Lexicons / **Invoice Field Labels**"
+    1. Paste your list of field labels in the **Edit Entries** editor.
+    2. Right click in the **Edit Entries** editor and select **Sort**.
+    3. Right click in the **Edit Entries** editor and select **Deduplicate**.
+    4. Normalize synonymous phrases by setting an `=` sign between the original phrase and the desired transformed phrase.
+    5. Delete this Lexicon.
 
 ![](../assets/img/vol-2/4-4/015.png)
 
@@ -349,11 +404,9 @@
 
 ![](../assets/img/vol-2/4-4/018.png)
 
-!!! abstract "Step"
-    1. Delete this Lexicon
-    2. Navigate to (root) > Global Resources > Lexicons > Training Materials > Invoice Field Labels
-    3. Right click and select Copy
-    4. Right click on the Invoices > (local resources) > Lexicons folder and select Paste
+!!! abstract "Global Resources / Lexicons / Training Materials / **Invoice Field Labels**"
+    1. Right click and select **Copy**.
+    2. Right click on the **Invoices > (local resources) > Lexicons** folder and select **Paste**.
 
 ![](../assets/img/vol-2/4-4/019.png)
 
@@ -363,12 +416,12 @@
 
 ![](../assets/img/vol-2/4-4/023.png)
 
-!!! abstract "Step"
-    1. Right click on the (local resources) folder and select Add > Folder...
-    2. Name it ==_Global==
-    3. Right click on the _Global folder and select Add > Data Type...
-    4. Name it ==Invoice Field Labels==
-    5. Click to edit the Pattern
+!!! abstract "Content Models / Invoices / **(local resources)**"
+    1. Right click and select **Add > Folder...**.
+    2. Name it ==_Global==.
+    3. Right click on the **_Global** folder and select **Add > Data Type...**.
+    4. Name it ==Invoice Field Labels==.
+    5. Click to edit the **Pattern**.
 
 ![](../assets/img/vol-2/4-4/024.png)
 
@@ -378,13 +431,23 @@
 
 ![](../assets/img/vol-2/4-4/028.png)
 
-!!! abstract "Step"
-    1. In the Value Pattern editor, type:
-        ```
+!!! abstract "Content Models / Invoices / (local resources) / _Global / **Invoice Field Labels**"
+    1. Edit the pattern(s):
+
+        ```tab="Value Pattern"
         [^\r\n\t\f:]+
         ```
+
     2. Click on the Properties tab
-    3. Expand Preprocessing Options and set the Tab Marking property to Enabled
+    3. Change the following property value(s):
+
+        | Property                  | Default Value | New Value     |
+        | ------------------------- | ------------- | ------------- |
+        | General                   |               |               |
+        | **Preprocessing Options** | `None`        |               |
+        | --> **Tab Marking**       | `Disabled`    | ==`Enabled`== |
+
+    4. In the **Lookup and Translation** section, click to edit the **Lookup Options**.
 
 ![](../assets/img/vol-2/4-4/029.png)
 
@@ -392,15 +455,21 @@
 
 ![](../assets/img/vol-2/4-4/031.png)
 
-!!! abstract "Step"
-    1. In the Lookup and Translation section, click to edit the Lookup Options
-    2. In the Lookup Options window, expand Vocabulary
-    3. Select the Vocabulary > Included Lexicons property dropdown and check the box next to the Invoices • (local resources) > Lexicons > Invoice Field Labels Lexicon
-    4. Set the Enable Translation property to ==True==
-    5. Set the Fuzzy Match Similarity property to ==90%==
-    6. Press **OK**
-
 ![](../assets/img/vol-2/4-4/032.png)
+
+!!! abstract "Content Models / Invoices / (local resources) / _Global / **Invoice Field Labels**"
+    1. Change the following property value(s):
+
+        | Property                   | Default Value         | New Value                  |
+        | -------------------------- | --------------------- | -------------------------- |
+        | General                    |                       |                            |
+        | **Vocabulary**             | `(none)`              |                            |
+        | --> **Included Lexicons**  | `(0 Lexicon Objects)` | ==`Invoice Field Labels`== |
+        | **Enable Translation**     | `False`               | ==`True`==                 |
+        | Fuzzy Lookup Options       |                       |                            |
+        | **Fuzzy Match Similarity** | `100%`                | ==`90%`==                  |
+
+    2. Press **OK**.
 
 ![](../assets/img/vol-2/4-4/036.png)
 
@@ -408,19 +477,19 @@
 
 ![](../assets/img/vol-2/4-4/044.png)
 
-!!! abstract "Step"
-    1. In the Output Options section, click to edit Result Filter
-    2. In the Result Filter window, set the Output Case property to ==Lower==
-    3. Press **OK** to close the Result Filter window
-    4. Press **OK** to close the pattern editor window
+!!! abstract "Content Models / Invoices / (local resources) / _Global / **Invoice Field Labels**"
+    1. In the **Output Options** section, click to edit **Result Filter**.
+    2. In the **Result Filter** window, set the **Output Case** property to ==Lower==.
+    3. Press **OK** to close the Result Filter window.
+    4. Press **OK** to close the pattern editor window.
 
 ![](../assets/img/vol-2/4-4/047.png)
 
 ![](../assets/img/vol-2/4-4/049.png)
 
-!!! abstract "Step"
-    1. Right click on the (local resources) > _Global folder and select Add > Data Type...
-    2. Name it ==[Array] PO Number==
+!!! abstract "Content Models / Invoices / (local resources) / **_Global**"
+    1. Right click and select **Add > Data Type...**.
+    2. Name it ==[Array] PO Number==.
     3. Add two child Data Formats to the [Array] PO Number Data Type:
         1. Purchase
         2. Order Number
@@ -429,15 +498,15 @@
 
 ![](../assets/img/vol-2/4-4/060.png)
 
-!!! abstract "Step"
-    1. Select the [Array] PO Number > Purchase Data Format
-    2. Select Enid (5)
-    3. In the Value Pattern editor, type:
-        ```
+!!! abstract "Content Models / Invoices / (local resources) / _Global / [Array] PO Number / **Purchase**"
+    1. Select **Enid (5)**
+    2. Edit the pattern(s):
+
+        ```tab="Value Pattern"
         purchase
         ```
-    4. In the Output Format editor, type:
-        ```
+
+        ```tab="Output Format"
         po
         ```
 
@@ -445,37 +514,40 @@
 
 ![](../assets/img/vol-2/4-4/062.png)
 
-!!! abstract "Step"
-    1. Select the [Array] PO Number > Order Number Data Format
-    2. Select Enid (5)
-    3. In the Value Pattern editor, type:
-        ```
+!!! abstract "Content Models / Invoices / (local resources) / _Global / [Array] PO Number / **Order Number**"
+    1. Select **Enid (5)**
+    2. Edit the pattern(s):
+
+        ```tab="Value Pattern"
         order number
         ```
-    4. In the Output Format editor, type:
-        ```
+
+        ```tab="Output Format"
         number
         ```
 
 ![](../assets/img/vol-2/4-4/063.png)
 
-!!! abstract "Step"
-    1. Select the [Array] PO Number Data Type
-    2. Set the Collation property to ==Ordered Array==
-    3. Expand Collation and set the Vertical Layout property to ==Enabled==
-    4. Expand the Vertical Layout property
-    5. Set the Maximum Distance property to ==0.25==
-    6. Set the Alignment property to ==Center==
-    7. Set the Alignment Tolerance property to ==0.1==
-    8. Set the Result Separator property to ==`␣`== (a single space)
+!!! abstract "Content Models / Invoices / (local resources) / _Global / **[Array] PO Number**"
+    Change the following property value(s):
+
+    | Property                        | Default Value | New Value                |
+    | ------------------------------- | ------------- | ------------------------ |
+    | Output                          |               |                          |
+    | **Collation**                   | `Individual`  | ==`Ordered Array`==      |
+    | --> **Vertical Layout**         | `Disabled`    | ==`Enabled`==            |
+    | --> --> **Maximum Distance**    | `-`           | ==`0.25`==               |
+    | --> --> **Alignment**           | `-`           | ==`Center`==             |
+    | --> --> **Alignment Tolerance** | `-`           | ==`0.1`==                |
+    | --> **Row Separator**           | `-`           | ==`␣`== (a single space) |
 
 ![](../assets/img/vol-2/4-4/064.png)
 
 ![](../assets/img/vol-2/4-4/073.png)
 
-!!! abstract "Step"
-    1. Drag the [Array] PO Number Data Type on top of the Invoice Field Labels Data Type
-    2. Select the Invoice Field Labels Data Type to ensure the array is now being included in the results
+!!! abstract "Content Models / Invoices / (local resources) / **_Global**"
+    1. Drag the **[Array] PO Number** Data Type on top of the **Invoice Field Labels** Data Type.
+    2. Select the **Invoice Field Labels** Data Type to ensure the array is now being included in the results.
 
 ![](../assets/img/vol-2/4-4/075.png)
 
@@ -487,25 +559,27 @@
 
 ## Invoice Number
 
-!!! abstract "Step"
-    1. Right click on the Extractors folder and select Add > Field Class...
-    2. Name it ==Invoice Number==
+!!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
+    1. Right click and select **Add > Field Class...**.
+    2. Name it ==Invoice Number==.
 
 ![](../assets/img/vol-2/4-5/002.png)
 
 ![](../assets/img/vol-2/4-5/004.png)
 
-!!! abstract "Step"
-    1. Create a child Data Type under the Invoice Number Field Class
-    2. Name it ==[Values] Invoice Number==
-    3. Create three child Data Formats under the [Values] Invoice Number Data Type and name them:
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Number**"
+    1. Create a child Data Type under the **Invoice Number** Field Class.
+    2. Name it ==[Values] Invoice Number==.
+    3. Create three child Data Formats under the **[Values] Invoice Number** Data Type:
         1. ==Acme/Standard/Express==
         2. ==Enid==
         3. ==Spartan==
 
 ![](../assets/img/vol-2/4-5/005.png)
-    ---
+
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Invoice Number / *****"
     Edit the patterns for each of the Data Formats:
+
     - Acme/Standard/Express
 
         ```tab="Value Pattern"
@@ -538,14 +612,21 @@
 
 ![](../assets/img/vol-2/4-5/011.png)
 
-!!! abstract "Step"
-    1. Select the Invoice Number Field Class
-    2. In the General section, set the Value Extractor > Type property to Reference
-    3. Set the Referenced Extractor property to the Extractors • Invoice Number > [Values] Invoice Number Data Type
-    4. Set the Feature Extractor > Type property to Reference
-    5. Set the Referenced Extractor property to the Invoices • (local resources) > _Global > Invoice Field Labels Data Type
-    6. Select Acme (1)
-    7. Click Run Extraction
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Number**"
+    1. Change the following property value(s):
+
+        | Property                     | Default Value | New Value                     |
+        | ---------------------------- | ------------- | ----------------------------- |
+        | General                      |               |                               |
+        | **Value Extractor**          |               |                               |
+        | --> **Type**                 | `None`        | ==`Reference`==               |
+        | --> **Referenced Extractor** | `-`           | ==`[Values] Invoice Number`== |
+        | **Feature Extractor**        |               |                               |
+        | --> **Type**                 | `None`        | ==`Reference`==               |
+        | --> **Referenced Extractor** | `-`           | ==`Invoice Field Labels`==    |
+
+    5. Select **Acme (1)**.
+    6. Press **Run Extraction**.
 
 ![](../assets/img/vol-2/4-5/014.png)
 
@@ -553,27 +634,25 @@
 
 ![](../assets/img/vol-2/4-5/016.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Number**"
     1. In the candidate list, find the value that has the appropriate feature(s) to train
     2. Right click and select **Train As Positive**
 
 ![](../assets/img/vol-2/4-5/019.png)
 
-!!! abstract "Step"
-    1. Select Spartan (4)
-    2. Click to edit the Context Zones property
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Number**"
+    1. Select **Spartan (4)**.
+    2. Click to edit the **Context Zones**.
     3. In the Context Zones window, edit the dimensions as follows:
-        1. Zone 1:
-            1. Left: `-4`
-            2. Top: `-0.02`
-            3. Right: `0.35`
-            4. Bottom: `0.1`
-        2. Zone 2:
-            1. Left: `-1`
-            2. Top: `-0.25`
-            3. Right: `0.375`
-            4. Bottom: `0.05`
-    2. Press **OK**
+
+        | Property   | Zone 1      | Zone 2      |
+        | ---------- | ----------- | ----------- |
+        | **Left**   | ==`-4`==    | ==`-1`==    |
+        | **Top**    | ==`-0.02`== | ==`-0.35`== |
+        | **Right**  | ==`0.35`==  | ==`0.375`== |
+        | **Bottom** | ==`0.1`==   | ==`0.05`==  |
+
+    2. Press **OK**.
 
 ![](../assets/img/vol-2/4-5/027.png)
 
@@ -583,23 +662,37 @@
 
 ![](../assets/img/vol-2/4-5/032.png)
 
-!!! abstract "Step"
-    1. Click on the [Values] Invoice Number Data Type
-    2. In the Deduplication section, set the Deduplicate Locations property to ==True==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Invoice Number / **[Values] Invoice Number**"
+    Change the following property value(s):
+
+    | Property                  | Default Value | New Value  |
+    | ------------------------- | ------------- | ---------- |
+    | Deduplication             |               |            |
+    | **Deduplicate Locations** | `False`       | ==`True`== |
 
 ![](../assets/img/vol-2/4-5/038.png)
 
-!!! abstract "Step"
-    1. Click on the Invoice Number Field Class
-    2. In the Output section, set the Minimum Confidence property to ==70%==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Number**"
+    Change the following property value(s):
+
+    | Property               | Default Value | New Value |
+    | ---------------------- | ------------- | --------- |
+    | Output                 |               |           |
+    | **Minimum Confidence** | `0%`          | ==`70%`== |
 
 ![](../assets/img/vol-2/4-5/042.png)
 
-!!! abstract "Step"
-    1. In the Data Model, select the Invoice Number Data Field
-    2. In the General section, set the Value Extractor > Type property to Reference
-    3. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Invoice Number Field Class.
-    4. In the Behavior section, set the Required property to ==True==
+!!! abstract "Content Models / Invoices / (data model) / **Invoice Number**"
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value            |
+    | ---------------------------- | ------------- | -------------------- |
+    | General                      |               |                      |
+    | **Value Extractor**          |               |                      |
+    | --> **Type**                 | `None`        | ==`Reference`==      |
+    | --> **Referenced Extractor** | `-`           | ==`Invoice Number`== |
+    | Behavior                     |               |                      |
+    | **Required**                 | `False`       | ==`True`==           |
 
 ![](../assets/img/vol-2/4-5/043.png)
 
@@ -609,10 +702,10 @@
 
 ## PO Number/Exclusion Extractor
 
-!!! abstract "Step"
-    1. Right click on the (local resources) > _Global folder and select Add > Data Type...
-    2. Name it ==Addresses, Phone Numbers==
-    3. In the Data Extraction section, click to edit Referenced Extractors
+!!! abstract "Content Models / Invoices / (local resources) / **_Global**"
+    1. Right click and select **Add > Data Type...**.
+    2. Name it ==Addresses, Phone Numbers==.
+    3. In the Data Extraction section, click to edit **Referenced Extractors**.
 
 ![](../assets/img/vol-2/4-6/001.png)
 
@@ -620,13 +713,13 @@
 
 ![](../assets/img/vol-2/4-6/004.png)
 
-!!! abstract "Step"
-    1. In the Referenced Extractors window, click Add...
-    2. In the Select Items window, expand (root) • Data Extraction > Data Types > Training Materials > Base Types and check the following:
-        1. Address
-        2. Phone Number
-    3. Press **OK** to close the Select Items window
-    4. Press **OK** to close the Referenced Extractors window
+!!! abstract "Content Models / Invoices / (local resources) / _Global / **Addresses, Phone Numbers**"
+    1. In the **Referenced Extractors** window, press **Add...**.
+    2. In the **Select Items** window, expand **(root) • Data Extraction > Data Types > Training Materials > Base Types** and check the following:
+        1. ==Address==
+        2. ==Phone Number==
+    3. Press **OK** to close the Select Items window.
+    4. Press **OK** to close the Referenced Extractors window.
 
 ![](../assets/img/vol-2/4-6/005.png)
 
@@ -636,11 +729,11 @@
 
 ![](../assets/img/vol-2/4-6/009.png)
 
-!!! abstract "Step"
-    1. Right click on the Extractors folder and select Add > Field Class...
-    2. Name it ==PO Number==
-    3. Create a child Data Type of PO Number and name it ==[Values] PO Number==
-    4. On the [Values] PO Number Data Type, click to edit the Pattern
+!!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
+    1. Right click and select **Add > Field Class...**.
+    2. Name it ==PO Number==.
+    3. Create a child Data Type of PO Number and name it ==[Values] PO Number==.
+    4. On the **[Values] PO Number** Data Type, click to edit the **Pattern**.
 
 ![](../assets/img/vol-2/4-6/013.png)
 
@@ -648,57 +741,74 @@
 
 ![](../assets/img/vol-2/4-6/016.png)
 
-!!! abstract "Step"
-    1. In the Value Pattern editor, type:
-        ```
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **[Values] PO Number**"
+    1. Edit the pattern(s):
+
+        ```tab="Value Pattern"
         [0-9]{4,16}
         ```
-    2. Press **OK**
+
+    2. Press **OK**.
 
 ![](../assets/img/vol-2/4-6/018.png)
 
-!!! abstract "Step"
-    1. On the [Values] PO Number Data Type, in the Data Extraction section, set the Exclusion Extractor > Type property to ==Reference==
-    2. Set the Referenced Extractor property to the Invoices • (local resources) > _Global > ==Addresses, Phone Numbers== Data Type
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **[Values] PO Number**"
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value                      |
+    | ---------------------------- | ------------- | ------------------------------ |
+    | Data Extraction              |               |                                |
+    | **Exclusion Extractor**      |               |                                |
+    | --> **Type**                 | `None`        | ==`Reference`==                |
+    | --> **Referenced Extractor** | `-`           | ==`Addresses, Phone Numbers`== |
 
 ![](../assets/img/vol-2/4-6/021.png)
 
-!!! abstract "Step"
-    1. Click on the PO Number Field Class
-    2. In the General section, set the Value Extractor > Type property to Reference
-    3. Set the Referenced Extractor property to the Extractors • PO Number > ==[Values] PO Number== Data Type
-    4. In the General section, set the Feature Extractor > Type property to Reference
-    5. Set the Referenced Extractor property to the Invoices • (local resources) > _Global > Invoice Field Labels Data Type
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **PO Number**"
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value                  |
+    | ---------------------------- | ------------- | -------------------------- |
+    | General                      |               |                            |
+    | **Value Extractor**          |               |                            |
+    | --> **Type**                 | `None`        | ==`Reference`==            |
+    | --> **Referenced Extractor** | `-`           | ==`[Values] PO Number`==   |
+    | **Feature Extractor**        |               |                            |
+    | --> **Type**                 | `None`        | ==`Reference`==            |
+    | --> **Referenced Extractor** | `-`           | ==`Invoice Field Labels`== |
 
 ![](../assets/img/vol-2/4-6/025.png)
 
 ![](../assets/img/vol-2/4-6/027.png)
 
-!!! abstract "Step"
-    1. Select Acme (1)
-    2. Click Run Extraction
-    3. In the candidate list, find the value that has the appropriate feature(s) to train
-    4. Right click and select **Train As Positive**
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **PO Number**"
+    1. Select **Acme (1)**.
+    2. Press **Run Extraction**.
+    3. In the candidate list, find the value that has the appropriate feature(s) to train.
+    4. Right click and select **Train As Positive**.
 
 ![](../assets/img/vol-2/4-6/029.png)
 
 ![](../assets/img/vol-2/4-6/030.png)
 
-!!! abstract "Step"
-    1. Click to edit the Context Zones property
-    2. In the Context Zones window, edit the dimensions as follows:
-        1. Zone 1:
-            1. Left: `-3.278`
-            2. Top: `-0.054`
-            3. Right: `0.312`
-            4. Bottom: `0.054`
-        2. Zone 2:
-            1. Left: `-0.67`
-            2. Top: `-0.37`
-            3. Right: `0.5`
-            4. Bottom: `0.04`
-    3. Press **OK**
-    4. In the Output section, set the Minimum Confidence property to ==70%==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **PO Number**"
+    1. Click to edit the **Context Zones**.
+    2. In the **Context Zones** window, edit the dimensions as follows:
+
+        | Property   | Zone 1       | Zone 2      |
+        | ---------- | ------------ | ----------- |
+        | **Left**   | ==`-3.278`== | ==`-0.67`== |
+        | **Top**    | ==`-0.054`== | ==`-0.37`== |
+        | **Right**  | ==`0.312`==  | ==`0.5`==   |
+        | **Bottom** | ==`0.054`==  | ==`0.04`==  |
+
+    3. Press **OK**.
+    4. Change the following property value(s):
+
+        | Property               | Default Value | New Value |
+        | ---------------------- | ------------- | --------- |
+        | Output                 |               |           |
+        | **Minimum Confidence** | `0%`          | ==`70%`== |
 
 ![](../assets/img/vol-2/4-6/034.png)
 
@@ -708,11 +818,17 @@
 
 ![](../assets/img/vol-2/4-6/041.png)
 
-!!! abstract "Step"
-    1. In the Data Model, select the PO Number Data Field
-    2. In the General section, set the Value Extractor > Type property to Reference
-    3. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > PO Number Field Class.
-    4. In the Behavior section, set the Required property to ==True==
+!!! abstract "Content Models / Invoices / (data model) / **PO Number**"
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value       |
+    | ---------------------------- | ------------- | --------------- |
+    | General                      |               |                 |
+    | **Value Extractor**          |               |                 |
+    | --> **Type**                 | `None`        | ==`Reference`== |
+    | --> **Referenced Extractor** | `-`           | ==`PO Number`== |
+    | Behavior                     |               |                 |
+    | **Required**                 | `False`       | ==`True`==      |
 
 ![](../assets/img/vol-2/4-6/042.png)
 
@@ -722,49 +838,59 @@
 
 ## Invoice Amount
 
-!!! abstract "Step"
-    1. Right click on the Extractors folder and select Add > Field Class...
-    2. Name it ==Invoice Amount==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors"
+    1. Right click and select **Add > Field Class...**.
+    2. Name it ==Invoice Amount==.
 
 ![](../assets/img/vol-2/4-7/001.png)
 
 ![](../assets/img/vol-2/4-7/003.png)
 
-!!! abstract "Step"
-    1. In the General section, set the Value Extractor > Type property to Reference
-    3. Set the Referenced Extractor property to the Data Extraction • Data Types > Downloads > Base Types > ==Currency Data== Type
-    4. Set the Feature Extractor > Type property to Reference
-    5. Set the Referenced Extractor property to the Invoices • (local resources) > _Global > Invoice Field Labels Data Type
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Amount**"
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value                  |
+    | ---------------------------- | ------------- | -------------------------- |
+    | General                      |               |                            |
+    | **Value Extractor**          |               |                            |
+    | --> **Type**                 | `None`        | ==`Reference`==            |
+    | --> **Referenced Extractor** | `-`           | ==`Currency`==             |
+    | **Feature Extractor**        |               |                            |
+    | --> **Type**                 | `None`        | ==`Reference`==            |
+    | --> **Referenced Extractor** | `-`           | ==`Invoice Field Labels`== |
 
 ![](../assets/img/vol-2/4-7/005.png)
 
 ![](../assets/img/vol-2/4-7/007.png)
 
-!!! abstract "Step"
-    1. Select Acme (1)
-    2. Click Run Extraction
-    3. In the candidate list, find the value that has the appropriate feature(s) to train
-    4. Right click and select **Train As Positive**
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Amount**"
+    1. Select **Acme (1)**.
+    2. Press **Run Extraction**.
+    3. In the candidate list, find the value that has the appropriate feature(s) to train.
+    4. Right click and select **Train As Positive**.
 
 ![](../assets/img/vol-2/4-7/011.png)
 
 ![](../assets/img/vol-2/4-7/012.png)
 
-!!! abstract "Step"
-    1. Click to edit the Context Zones property
-    2. In the Context Zones window, edit the dimensions as follows:
-        1. Zone 1:
-            1. Left: `-4`
-            2. Top: `-0.05`
-            3. Right: `0.2`
-            4. Bottom: `0.1`
-        2. Zone 2:
-            1. Left: `-0.58`
-            2. Top: `-0.36`
-            3. Right: `0.3`
-            4. Bottom: `0.05`
-    3. Press **OK**
-    4. In the Output section, set the Minimum Confidence property to ==70%==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Amount**"
+    1. Click to edit the **Context Zones**.
+    2. In the **Context Zones** window, edit the dimensions as follows:
+
+        | Property   | Zone 1      | Zone 2      |
+        | ---------- | ----------- | ----------- |
+        | **Left**   | ==`-4`==    | ==`-0.58`== |
+        | **Top**    | ==`-0.05`== | ==`-0.36`== |
+        | **Right**  | ==`0.2`==   | ==`0.3`==   |
+        | **Bottom** | ==`0.1`==   | ==`0.05`==  |
+
+    3. Press **OK**.
+    4. Change the following property value(s):
+
+        | Property               | Default Value | New Value |
+        | ---------------------- | ------------- | --------- |
+        | Output                 |               |           |
+        | **Minimum Confidence** | `0%`          | ==`70%`== |
 
 ![](../assets/img/vol-2/4-7/013.png)
 
@@ -774,10 +900,14 @@
 
 ![](../assets/img/vol-2/4-7/021.png)
 
-!!! abstract "Step"
-    1. In the Data Model, select the Invoice Amount Data Field
-    2. In the General section, set the Value Type to ==Decimal==
-    3. Expand Value Type and set the Format Specifier property to ==c2==
+!!! abstract "Content Models / Invoices / (data model) / **Invoice Amount**"
+    Change the following property value(s):
+
+    | Property                 | Default Value | New Value     |
+    | ------------------------ | ------------- | ------------- |
+    | General                  |               |               |
+    | **Value Type**           | `String`      | ==`Decimal`== |
+    | --> **Format Specifier** | `-`           | ==`c2`==      |
 
 ![](../assets/img/vol-2/4-7/022.png)
 
@@ -785,10 +915,17 @@
 
 ![](../assets/img/vol-2/4-7/028.png)
 
-!!! abstract "Step"
-    1. In the General section, set the Value Extractor > Type property to Reference
-    2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Invoice Amount Field Class.
-    3. In the Behavior section, set the Required property to ==True==
+!!! abstract "Content Models / Invoices / (data model) / **Invoice Amount**"
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value            |
+    | ---------------------------- | ------------- | -------------------- |
+    | General                      |               |                      |
+    | **Value Extractor**          |               |                      |
+    | --> **Type**                 | `None`        | ==`Reference`==      |
+    | --> **Referenced Extractor** | `-`           | ==`Invoice Amount`== |
+    | Behavior                     |               |                      |
+    | **Required**                 | `False`       | ==`True`==           |
 
 ![](../assets/img/vol-2/4-7/029.png)
 
@@ -798,46 +935,58 @@
 
 ## Payment Terms
 
-!!! abstract "Step"
-    1. In the Data Model, select the PO Number Data Field
-    2. In the General section, set the Value Extractor > Type property to Internal
-    3. Click to edit the pattern
+!!! abstract "Content Models / Invoices / (data model) / **Payment Terms**"
+    Change the following property value(s):
+
+    | Property            | Default Value     | New Value         |
+    | ------------------- | ----------------- | ----------------- |
+    | General             |                   |                   |
+    | **Value Extractor** |                   |                   |
+    | --> **Type**        | `None`            | ==`Internal`==    |
+    | --> **Pattern**     | *(Click to edit)* | *(Click to edit)* |
 
 ![](../assets/img/vol-2/4-8/001.png)
 
 ![](../assets/img/vol-2/4-8/003.png)
 
-!!! abstract "Step"
-    1. Select Acme (16)
-    2. In the Value Pattern editor, type:
-        ```
+!!! abstract "Content Models / Invoices / (data model) / **Payment Terms**"
+    1. Select **Acme (16)**.
+    2. Edit the pattern(s):
+
+        ```tab="Value Pattern"
         n[eo]t ([@Number]{2})
         ```
-    3. In the Output Format editor, type:
-        ```
+
+        ```tab="Output Format"
         Net {1:Number}
         ```
-    4. Press **OK**
+
+    3. Press **OK**.
 
 ![](../assets/img/vol-2/4-8/007.png)
 
-!!! abstract "Step"
-    1. On the Payment Terms Data Field, set the Required Property to ==True==
+!!! abstract "Content Models / Invoices / (data model) / **Payment Terms**"
+    Change the following property value(s):
+    
+    | Property     | Default Value | New Value  |
+    | ------------ | ------------- | ---------- |
+    | Behavior     |               |            |
+    | **Required** | `False`       | ==`True`== |
 
 ![](../assets/img/vol-2/4-8/010.png)
 
 ## Freight
 
-!!! abstract "Step"
-    1. Right click on the Extractors folder and select Add > Data Type...
-    2. Name it ==Freight==
+!!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
+    1. Right click and select **Add > Data Type...**.
+    2. Name it ==Freight==.
 
 ![](../assets/img/vol-2/4-9/001.png)
 
 ![](../assets/img/vol-2/4-9/003.png)
 
-!!! abstract "Step"
-    1. As child extractors under the Freight Data Type, create:
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Freight**"
+    1. As child extractors under the **Freight** Data Type, create:
         1. Data Format: ==Acme==
         2. Data Format: ==Enid==
         3. Data Format: ==Express==
@@ -851,8 +1000,10 @@
 ![](../assets/img/vol-2/4-9/010.png)
 
 ![](../assets/img/vol-2/4-9/012.png)
-    ---
+
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Freight**"
     Edit the patterns for each of the Data Formats:
+
     - Acme
         
         *Make sure to enable Tab Marking*
@@ -930,22 +1081,26 @@
 
 ![](../assets/img/vol-2/4-9/023.png)
 
-!!! abstract "Step"
-    1. Create two Data Formats as children of the Spartan Data Type:
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Freight / **Spartan**"
+    1. Create two Data Formats as children of the **Spartan** Data Type:
         1. ==Freight==
         2. ==Value 1==
-    2. Edit the Value Patterns for each of the Data Formats:
+    2. Edit the pattern(s):
 
-        ```tab="Freight"
-        freight
-        ```
+        - Freight
 
-        ```tab="Value 1"
-        [\d.]+
-        ```
+            ```tab="Value Pattern"
+            freight
+            ```
 
-    3. Right click on the Value 1 Data Format and select Clone
-    4. Name the clone ==Value 2==
+        - Value 1
+
+            ```tab="Value Pattern"
+            [\d.]+
+            ```
+
+    4. Right click on the **Value 1** Data Format and select **Clone**.
+    5. Name the clone ==Value 2==.
 
 ![](../assets/img/vol-2/4-9/025.png)
 
@@ -955,13 +1110,17 @@
 
 ![](../assets/img/vol-2/4-9/023.png)
 
-!!! abstract "Step"
-    1. Select the Spartan Data Type
-    2. Set the Collation property to ==Ordered Array==
-    3. Expand Collation and set the Vertical Layout property to ==Enabled==
-    4. Expand the Vertical Layout property
-    5. Set the Maximum Distance property to ==0.25==
-    6. Set the Combine Method property to ==Sum==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Freight / **Spartan**"
+    1. Select the **Spartan** Data Type.
+    2. Change the following property value(s):
+
+        | Property                     | Default Value | New Value           |
+        | ---------------------------- | ------------- | ------------------- |
+        | Output                       |               |                     |
+        | **Collation**                | `Individual`  | ==`Ordered Array`== |
+        | --> **Vertical Layout**      | `Disabled`    | ==`Enabled`==       |
+        | --> --> **Maximum Distance** | `-`           | ==`0.25`==          |
+        | --> **Combine Method**       | `-`           | ==`Sum`==           |
 
 ![](../assets/img/vol-2/4-9/035.png)
 
@@ -971,11 +1130,16 @@
 
 ![](../assets/img/vol-2/4-9/045.png)
 
-!!! abstract "Step"
-    1. In the Data Model, select the Freight Data Field
-    2. In the General section, set the Value Type to ==Decimal==
-    3. Expand Value Type and set the Format Specifier property to ==c2==
-    4. In the Expressions section, set the Default Value Expression property to ==0==
+!!! abstract "Content Models / Invoices / (data model) / **Freight**"
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value     |
+    | ---------------------------- | ------------- | ------------- |
+    | General                      |               |               |
+    | **Value Type**               | `String`      | ==`Decimal`== |
+    | --> **Format Specifier**     | `-`           | ==`c2`==      |
+    | Expressions                  |               |               |
+    | **Default Value Expression** | `-`           | ==`0`==       |
 
 ![](../assets/img/vol-2/4-9/050.png)
 
@@ -985,7 +1149,7 @@
 
 ![](../assets/img/vol-2/4-9/056.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (data model) / **Freight**"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Freight== Data Type.
 
@@ -995,15 +1159,15 @@
 
 ## Discount
 
-!!! abstract "Step"
-    1. Right click on the Extractors folder and select Add > Data Type...
+!!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
+    1. Right click and select **Add > Data Type...**.
     2. Name it ==Discount==
 
 ![](../assets/img/vol-2/4-10/002.png)
 
 ![](../assets/img/vol-2/4-10/003.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Discount**"
     1. Create two Data Types as children of the Discount Data Type:
         - ==Acme==
         - ==Enid==
@@ -1015,7 +1179,7 @@
 
 ![](../assets/img/vol-2/4-10/006.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / **Acme**"
     1. Click on the Properties tab and set the Preprocessing Options > Tab Marking property to ==True==
     2. Click back to the Pattern Editor tab
     3. In the Value Pattern editor, type:
@@ -1036,8 +1200,8 @@
 
 ![](../assets/img/vol-2/4-10/010.png)
 
-!!! abstract "Step"
-    1. Select Acme (14)
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / **Acme**"
+    1. Select **Acme (14)**.
     2. In the Output section, set the Collation property to ==Combine==
     3. Expand Collation and set the Combine Method property to ==Sum==
 
@@ -1046,24 +1210,25 @@
 ![](../assets/img/vol-2/4-10/015.png)
 
 ![](../assets/img/vol-2/4-10/018.png)
-    ---
+
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / **Enid**"
     Create two Data Formats as children of the Enid Data Type:
-        - ==[Key] Enid - Discount==
-        - ==[Value] Enid - Discount==
+
+    - ==[Key] Enid - Discount==
+    - ==[Value] Enid - Discount==
 
 ![](../assets/img/vol-2/4-10/021.png)
 
-!!! abstract "Step"
-    1. Select the [Key] Enid - Discount Data Format
-    2. Select Enid (5)
-    3. In the Value Pattern editor, type:
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / Enid / **[Key] Enid - Discount**"
+    1. Select **Enid (5)**.
+    2. In the Value Pattern editor, type:
         ```
         order discount amount
         ```
 
 ![](../assets/img/vol-2/4-10/022.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / Enid / **[Key] Enid - Discount**"
     1. Click on the Properties tab
     2. In the General section, set the Mode property to ==FuzzyRegEx==
     3. In the Fuzzy Matching Options section, set the Minimum Similarity property to ==85%==
@@ -1082,9 +1247,8 @@
 
 ![](../assets/img/vol-2/4-10/029.png)
 
-!!! abstract "Step"
-    1. Select the [Value] Enid - Discount Data Format
-    2. In the Value Pattern editor, type:
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / Enid / **[Value] Enid - Discount**"
+    1. In the Value Pattern editor, type:
         ```
         \d{1,6}\.\d{2,3}
         ```
@@ -1093,10 +1257,9 @@
 
 ![](../assets/img/vol-2/4-10/032.png)
 
-!!! abstract "Step"
-    1. Select the Enid Data Type
-    2. In the Output section, set the Collation property to ==Key-Value Pair==
-    3. Expand Collation and set the Horizontal Layout property to ==Enabled==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / **Enid**"
+    1. In the Output section, set the Collation property to ==Key-Value Pair==
+    2. Expand Collation and set the Horizontal Layout property to ==Enabled==
 
 ![](../assets/img/vol-2/4-10/033.png)
 
@@ -1104,7 +1267,7 @@
 
 ![](../assets/img/vol-2/4-10/038.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (data model) / **Discount**"
     1. In the Data Model, select the Discount Data Field
     2. In the General section, set the Value Type to ==Decimal==
     3. Expand Value Type and set the Format Specifier property to ==c2==
@@ -1118,7 +1281,7 @@
 
 ![](../assets/img/vol-2/4-10/047.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (data model) / **Discount**"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Discount== Data Type.
 
@@ -1128,8 +1291,8 @@
 
 ## Sales Tax
 
-!!! abstract "Step"
-    1. Right click on the Extractors folder and select Add > Data Type...
+!!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
+    1. Right click and select **Add > Data Type...**.
     2. Name it ==Sales Tax==
     3. Create two Data Formats as children of the Sales Tax Data Type
         - ==Express==
@@ -1138,7 +1301,8 @@
 ![](../assets/img/vol-2/4-11/003.png)
 
 ![](../assets/img/vol-2/4-11/004.png)
-    ---
+    
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / Sales Tax / *****"
     Edit the patterns for each of the Data Formats:
     - Express
 
@@ -1172,7 +1336,7 @@
 
 ![](../assets/img/vol-2/4-11/008.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (data model) / **Sales Tax**"
     1. In the Data Model, select the Sales Tax Data Field
     2. In the General section, set the Value Type to ==Decimal==
     3. Expand Value Type and set the Format Specifier property to ==c2==
@@ -1184,25 +1348,25 @@
 
 ![](../assets/img/vol-2/4-11/012.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (data model) / **Sales Tax**"
     1. In the General section, set the Value Extractor > Type property to Reference
     2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Sales Tax== Data Type.
 
 ![](../assets/img/vol-2/4-11/014.png)
 
-!!! abstract "Step"
-    1. Add a new folder to (local resources)
+!!! abstract "Content Models / Invoices / **(local resources)**"
+    1. Right click and select **Add > New Folder...**
     2. Name it ==Overrides==
 
 ![](../assets/img/vol-2/4-11/018.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / **Overrides**"
     1. In the Overrides folder, add a Field Class
     2. Name it ==[Enid] Sales Tax==
 
 ![](../assets/img/vol-2/4-11/020.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Overrides / **[Enid] Sales Tax**"
     1. Set the Value Extractor > Type property to ==Internal==
     2. Click to edit the pattern:
 
@@ -1223,13 +1387,13 @@
 
 ![](../assets/img/vol-2/4-11/024.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Overrides / **[Enid] Sales Tax**"
     1. Click to edit the Context Zones property
     2. In the Context Zones window, delete one of the zones
     3. Edit the dimensions of the remaining zone:
 
         |        | Zone   |
-        |--------|--------|
+        | ------ | ------ |
         | Left   | `-2.4` |
         | Top    | `-0.2` |
         | Right  | `0.25` |
@@ -1244,10 +1408,9 @@
 
 ![](../assets/img/vol-2/4-11/033.png)
 
-!!! abstract "Step"
-    1. Navigate to the (root) > Content Models > Invoices > Enid Document Type
-    2. Click on the Data Element Profiles tab
-    3. Click on the Sales Tax Data Field and click the **+** button in the toolbar
+!!! abstract "Content Models / Invoices / **Enid**"
+    1. Click on the Data Element Profiles tab
+    2. Click on the Sales Tax Data Field and click the **+** button in the toolbar
 
 ![](../assets/img/vol-2/4-11/034.png)
 
@@ -1257,7 +1420,7 @@
 
 ![](../assets/img/vol-2/4-11/037.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / **Enid**"
     1. In the properties panel, set the ESP(tm) Extraction Overrides > Override Extractor property to ==True==
     2. Expand Extractor and set the Extractor > Type property to Reference
     3. Set the Referenced Extractor property to the Invoices • (local resources) > Overrides > ==[Enid] Sales Tax== Field Class
@@ -1268,12 +1431,11 @@
 
 ## Data Model Adjustments
 
-!!! abstract "Step"
-    1. Navigate to the Ship To Data Field
-    2. In the Appearance section, set the Display Width property to ==110==
-    3. In the Behavior section, set the Multi Line property to ==Enabled==
-    4. Expand Multi Line and set the Multi Line Height property to ==45==
-    5. Set the Word Wrap property to ==True==
+!!! abstract "Content Models / Invoices / (data model) / **Ship To**"
+    1. In the Appearance section, set the Display Width property to ==110==
+    2. In the Behavior section, set the Multi Line property to ==Enabled==
+    3. Expand Multi Line and set the Multi Line Height property to ==45==
+    4. Set the Word Wrap property to ==True==
 
 ![](../assets/img/vol-2/4-12/002.png)
 
@@ -1281,7 +1443,7 @@
 
 ![](../assets/img/vol-2/4-12/004.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (data model) / **Ship To**"
     1. Right click on any of the property names and select Copy Properties > Selected Properties...
     2. In the Select Properties window, check the boxes next to the properties to copy:
         - [X] Display Width
@@ -1293,9 +1455,8 @@
 
 ![](../assets/img/vol-2/4-12/012.png)
 
-!!! abstract "Step"
-    1. Navigate to the Remit To Data Field
-    2. Right click on any of the property names and select Paste Properties
+!!! abstract "Content Models / Invoices / (data model) / **Remit To**"
+    1. Right click on any of the property names and select Paste Properties
 
 ![](../assets/img/vol-2/4-12/013.png)
 
@@ -1303,10 +1464,9 @@
 
 ![](../assets/img/vol-2/4-12/015.png)
 
-!!! abstract "Step"
-    1. Navigate to the Data Model itself
-    2. In the Child Element Options section, set the Show Fields In Grid property to ==True==
-    3. In the toolbar, click the Test Extraction button to test all fields against a document
+!!! abstract "Content Models / Invoices / **(data model)**"
+    1. In the Child Element Options section, set the Show Fields In Grid property to ==True==
+    2. In the toolbar, click the Test Extraction button to test all fields against a document
 
 ![](../assets/img/vol-2/4-12/016.png)
 
