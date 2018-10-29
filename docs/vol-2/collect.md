@@ -2,8 +2,8 @@
 
 !!! abstract "Content Models / Invoices / **(data model)**"
     1. Right click and select **Contents > Add Multiple Items...**.
-    2. In the Contents • Add Multiple Items window, make sure Item Type is set to ==Data Field==
-    3. Edit the Item Names property and type out the names of the following fields
+    2. In the **Contents • Add Multiple Items** window, make sure **Item Type** is set to ==Data Field==
+    3. Edit the **Item Names** property and type out the names of the following fields:
         - Invoice Number
         - PO Number
         - Invoice Date
@@ -14,7 +14,7 @@
         - Payment Terms
         - Ship To
         - Remit To
-    4. Click Execute to complete
+    4. Press **Execute**.
 
 ![](../assets/img/vol-2/4-1/005.png)
 
@@ -23,15 +23,15 @@
 ![](../assets/img/vol-2/4-1/010.png)
 
 !!! abstract "Content Models / Invoices / **(local resources)**"
-    1. Right click and select Add > Folder...
-    2. Give it a name, like ==Extractors==
+    1. Right click and select **Add > Folder...**
+    2. Name it ==Extractors==
 
 ![](../assets/img/vol-2/4-1/016.png)
 
 ![](../assets/img/vol-2/4-1/018.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
-    1. Right click and select Add > Field Class...
+    1. Right click and select **Add > Field Class...**
     2. Name it ==Invoice Date==
 
 ![](../assets/img/vol-2/4-1/019.png)
@@ -39,74 +39,90 @@
 ![](../assets/img/vol-2/4-1/021.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date** *(Field Class)*"
-    1. In the General section, set the Value Extractor > Type property to Reference
-    2. Set the Referenced Extractor property to the Data Extraction • Data Types > Downloads > Base Types > Date Data Type
+    Change the following property values:
+
+    | Property                     | Default Value | New Value       |
+    |------------------------------|---------------|-----------------|
+    | General                      |               |                 |
+    | **Value Extractor**          |               |                 |
+    | --> **Type**                 | `none`        | ==`Reference`== |
+    | --> **Referenced Extractor** | `-`           | ==`Date`==      |
 
 ![](../assets/img/vol-2/4-1/029.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    1. In the General section, set the Feature Extractor > Type property to Reference
-    2. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Features > Phrases Data Type
+    Change the following property values:
+
+    | Property                     | Default Value | New Value       |
+    |------------------------------|---------------|-----------------|
+    | General                      |               |                 |
+    | **Feature Extractor**        |               |                 |
+    | --> **Type**                 | `none`        | ==`Reference`== |
+    | --> **Referenced Extractor** | `-`           | ==`Phrases`==   |
 
 ![](../assets/img/vol-2/4-1/031.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    1. Select Acme (1`)
-    2. Click the Run Extraction button
-    3. In the candidate list, right click on the ==11/14/2008== value and select Train As Positive
+    1. Select **Acme (1)**
+    2. Press **Run Extraction**
+    3. In the candidate list, right click on the ==11/14/2008== value and select **Train As Positive**
 
 ![](../assets/img/vol-2/4-1/034.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    1. Select Standard (2)
+    1. Select **Standard (2)**
     2. Select both of the ==11/11/2008== candidates that have correct features
-    3. Right click on either of them and select Train As Positive
+    3. Right click on either of them and select **Train As Positive**
 
 ![](../assets/img/vol-2/4-1/039.png)
 
-!!! abstract "Step"
-    1. Select Express (3)
-    2. Right click on the ==12/2/2008== candidate with 58.1689% confidence and select Train As Positive
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
+    1. Select **Express (3)**
+    2. Right click on the ==12/2/2008== candidate with 58.1689% confidence and select **Train As Positive**
 
 ![](../assets/img/vol-2/4-1/043.png)
 
-!!! abstract "Step"
-    1. Select Spartan (4)
-    2. Click to edit the Context Zones property
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
+    1. Select **Spartan (4)**
+    2. Click to edit the **Context Zones** property
 
 ![](../assets/img/vol-2/4-1/048.png)
 
-!!! abstract "Step"
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
     1. In the Context Zones window, edit the dimensions as follows:
-        1. Zone 1:
-            1. Left: `-3.278`
-            2. Top: `-0.054`
-            3. Right: `0.312`
-            4. Bottom: `0.054`
-        2. Zone 2:
-            1. Left: `-0.67`
-            2. Top: `-0.37`
-            3. Right: `0.5`
-            4. Bottom: `0.04`
-    2. Click OK
+
+    | Property   | Zone 1       | Zone 2      |
+    |------------|--------------|-------------|
+    | **Left**   | ==`-3.278`== | ==`-0.67`== |
+    | **Top**    | ==`-0.054`== | ==`-0.67`== |
+    | **Right**  | ==`0.312`==  | ==`0.5`==   |
+    | **Bottom** | ==`0.054`==  | ==`0.04`==  |
+
+    2. Press **OK**
 
 ![](../assets/img/vol-2/4-1/050.png)
 
 ![](../assets/img/vol-2/4-1/052.png)
 
-!!! abstract "Step"
-    1. Select Enid (5)
-    2. In the Output section, set the Minimum Confidence property to ==70%==
+!!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
+    1. Select **Enid (5)**
+    2. In the Output section, set the **Minimum Confidence** property to ==70%==
 
 ![](../assets/img/vol-2/4-1/060.png)
 
 ![](../assets/img/vol-2/4-1/062.png)
 
-!!! abstract "Step"
-    1. In the Data Model, select the Invoice Date Data Field
-    2. In the General section, set the Value Extractor > Type property to Reference
-    3. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > Invoice Date Field Class.
-    4. In the Behavior section, set the Required property to ==True==
+!!! abstract "Content Models / Invoices / (data model) / **Invoice Date**"
+    Change the following property values:
+
+    | Property                     | Default Value | New Value          |
+    |------------------------------|---------------|--------------------|
+    | General                      |               |                    |
+    | **Value Extractor**          |               |                    |
+    | --> **Type**                 | `None`        | ==`Reference`==    |
+    | --> **Referenced Extractor** | `-`           | ==`Invoice Date`== |
+    | Behavior                     |               |                    |
+    | **Required**                 | `False`       | ==`True`==         |
 
 ![](../assets/img/vol-2/4-1/063.png)
 
@@ -144,7 +160,7 @@
         ```
         ship to
         ```
-    3. Click OK
+    3. Press **OK**
 
 ![](../assets/img/vol-2/4-2/009.png)
 
@@ -171,7 +187,7 @@
         2. Top: `-0.54`
         3. Right: `0.73`
         4. Bottom: `0.13`
-    4. Click OK
+    4. Press **OK**
     5. Click Run Extraction
 
 ![](../assets/img/vol-2/4-2/015.png)
@@ -180,7 +196,7 @@
 
 !!! abstract "Step"
     1. In the candidate list, find the value that has features that can be trained
-    2. Right click on that value and select Train As Positive
+    2. Right click on that value and select **Train As Positive**
     3. Set the Minimum Confidence property to ==70%==
 
 ![](../assets/img/vol-2/4-2/023.png)
@@ -237,8 +253,8 @@
         ```
         li=0.25
         ```
-    9. Click OK to close the List Editor
-    10. Click OK to close the Pattern Editor
+    9. Press **OK** to close the List Editor
+    10. Press **OK** to close the Pattern Editor
 
 ![](../assets/img/vol-2/4-3/023-1.png)
 
@@ -256,7 +272,7 @@
         2. Top: `-0.55`
         3. Right: `1`
         4. Bottom: `0.15`
-    4. Click OK
+    4. Press **OK**
 
 ![](../assets/img/vol-2/4-3/027.png)
 
@@ -265,7 +281,7 @@
 !!! abstract "Step"
     1. Select Acme (1)
     2. In the candidate list, find the value that has features that can be trained
-    3. Right click on that value and select Train As Positive
+    3. Right click on that value and select **Train As Positive**
     4. Set the Minimum Confidence property to ==70%==
 
 ![](../assets/img/vol-2/4-3/033.png)
@@ -382,7 +398,7 @@
     3. Select the Vocabulary > Included Lexicons property dropdown and check the box next to the Invoices • (local resources) > Lexicons > Invoice Field Labels Lexicon
     4. Set the Enable Translation property to ==True==
     5. Set the Fuzzy Match Similarity property to ==90%==
-    6. Click OK
+    6. Press **OK**
 
 ![](../assets/img/vol-2/4-4/032.png)
 
@@ -395,8 +411,8 @@
 !!! abstract "Step"
     1. In the Output Options section, click to edit Result Filter
     2. In the Result Filter window, set the Output Case property to ==Lower==
-    3. Click OK to close the Result Filter window
-    4. Click OK to close the pattern editor window
+    3. Press **OK** to close the Result Filter window
+    4. Press **OK** to close the pattern editor window
 
 ![](../assets/img/vol-2/4-4/047.png)
 
@@ -539,7 +555,7 @@
 
 !!! abstract "Step"
     1. In the candidate list, find the value that has the appropriate feature(s) to train
-    2. Right click and select Train As Positive
+    2. Right click and select **Train As Positive**
 
 ![](../assets/img/vol-2/4-5/019.png)
 
@@ -557,7 +573,7 @@
             2. Top: `-0.25`
             3. Right: `0.375`
             4. Bottom: `0.05`
-    2. Click OK
+    2. Press **OK**
 
 ![](../assets/img/vol-2/4-5/027.png)
 
@@ -609,8 +625,8 @@
     2. In the Select Items window, expand (root) • Data Extraction > Data Types > Training Materials > Base Types and check the following:
         1. Address
         2. Phone Number
-    3. Click OK to close the Select Items window
-    4. Click OK to close the Referenced Extractors window
+    3. Press **OK** to close the Select Items window
+    4. Press **OK** to close the Referenced Extractors window
 
 ![](../assets/img/vol-2/4-6/005.png)
 
@@ -637,7 +653,7 @@
         ```
         [0-9]{4,16}
         ```
-    2. Click OK
+    2. Press **OK**
 
 ![](../assets/img/vol-2/4-6/018.png)
 
@@ -662,7 +678,7 @@
     1. Select Acme (1)
     2. Click Run Extraction
     3. In the candidate list, find the value that has the appropriate feature(s) to train
-    4. Right click and select Train As Positive
+    4. Right click and select **Train As Positive**
 
 ![](../assets/img/vol-2/4-6/029.png)
 
@@ -681,7 +697,7 @@
             2. Top: `-0.37`
             3. Right: `0.5`
             4. Bottom: `0.04`
-    3. Click OK
+    3. Press **OK**
     4. In the Output section, set the Minimum Confidence property to ==70%==
 
 ![](../assets/img/vol-2/4-6/034.png)
@@ -728,7 +744,7 @@
     1. Select Acme (1)
     2. Click Run Extraction
     3. In the candidate list, find the value that has the appropriate feature(s) to train
-    4. Right click and select Train As Positive
+    4. Right click and select **Train As Positive**
 
 ![](../assets/img/vol-2/4-7/011.png)
 
@@ -747,7 +763,7 @@
             2. Top: `-0.36`
             3. Right: `0.3`
             4. Bottom: `0.05`
-    3. Click OK
+    3. Press **OK**
     4. In the Output section, set the Minimum Confidence property to ==70%==
 
 ![](../assets/img/vol-2/4-7/013.png)
@@ -801,7 +817,7 @@
         ```
         Net {1:Number}
         ```
-    4. Click OK
+    4. Press **OK**
 
 ![](../assets/img/vol-2/4-8/007.png)
 
@@ -1014,7 +1030,7 @@
         ```
         {0:Number}
         ```
-    6. Click OK to close the pattern editor window
+    6. Press **OK** to close the pattern editor window
 
 ![](../assets/img/vol-2/4-10/008.png)
 
@@ -1056,7 +1072,7 @@
         ```
         )D=0.1
         ```
-    6. Click OK to close the List Editor window
+    6. Press **OK** to close the List Editor window
 
 ![](../assets/img/vol-2/4-10/025.png)
 
@@ -1219,7 +1235,7 @@
         | Right  | `0.25` |
         | Bottom | `0.1`  |
 
-    4. Click OK to close the Context Zones window
+    4. Press **OK** to close the Context Zones window
     5. In the Output section, set the Minimum Confidence property to ==90%==
 
 ![](../assets/img/vol-2/4-11/027.png)

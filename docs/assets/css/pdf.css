@@ -1,6 +1,6 @@
 @page {
-  size: legal;
-  margin: 5mm 2mm 5mm 2mm;
+  size: letter;
+  margin: 0in;
   counter-increment: page;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   white-space: pre;
@@ -15,3 +15,19 @@
     content: "Page " counter(page);
   } */
 }
+/* 
+h1 {
+  font-size: 38pt;
+  margin: 5cm 2cm 0 2cm;
+  width: 100%;
+}
+
+html .md-content #acquire {
+  background: teal;
+  border-color: teal;
+  border-width: 2cm 3cm;
+  /* bottom: 0; */
+  /* position: absolute; */
+  /* margin: 0 -3cm; */
+  /* width: 18cm; */
+} */
