@@ -1,9 +1,0 @@
-BIS Name			FatCow Name
--------------------------------
-batch				tree
-batch_process		cog
-field_class			textfield
-folder				folder
-content_category	sitemap_application_blue
-data_field			greeting_line
-file_system			folders_explorer

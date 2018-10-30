@@ -67,8 +67,7 @@ markdown_extensions:
 plugins:
   - pdf-export:
       verbose: true
-      media-type: print
-      enabled_if_env: ENABLE_PDF_EXPORT
+      # enabled_if_env: ENABLE_PDF_EXPORT
   - search
   - awesome-pages:
       filename: .title

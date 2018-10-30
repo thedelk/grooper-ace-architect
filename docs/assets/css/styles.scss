@@ -41,7 +41,7 @@
     &.abstract {
       // border-left-color: #36b0a7 !important;
       // border-left-color: #f89420 !important;
-      border-left: 0px solid transparent !important;
+      // border-left: 0px solid transparent !important;
       font-family: "Roboto Light" !important;
       font-size: 1.4rem;
 
@@ -107,8 +107,8 @@ hr {
 
 .md-container img {
   /* max-height: 50% !important; */
-  max-width: 85% !important;
-  margin: 0 7.5%;
+  max-width: 100% !important;
+  // margin: 0 7.5%;
   // margin: 1rem 0 0 !important;
   // clip: rect(2px, 2px, 2px, 2px);
   border: 1px solid rgba(0, 0, 0, 0.2);

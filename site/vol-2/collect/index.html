@@ -15,7 +15,7 @@
 <meta content="1 matching document" name="lang:search.result.one"/>
 <meta content="# matching documents" name="lang:search.result.other"/>
 <meta content="[\s\-]+" name="lang:search.tokenizer"/>
-<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<link href="../../assets/img/favicon.ico" rel="shortcut icon"/>
 <meta content="mkdocs-1.0.4, mkdocs-material-3.0.4" name="generator"/>
 <title>Collect - ACE - Architect</title>
 <link href="../../assets/stylesheets/application.451f80e5.css" rel="stylesheet"/>
@@ -26,9 +26,9 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono" rel="stylesheet"/>
 <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
 <link href="../../assets/fonts/material-icons.css" rel="stylesheet"/>
-<link href="../../css/glightbox.min.css" rel="stylesheet"/>
-<link href="../../css/pdf.css" rel="stylesheet"/>
-<link href="../../css/styles.css" rel="stylesheet"/>
+<link href="../../assets/css/glightbox.min.css" rel="stylesheet"/>
+<link href="../../assets/css/styles.css" rel="stylesheet"/>
+<link href="../../assets/css/pdf.css" rel="stylesheet"/>
 </head>
 <body data-md-color-accent="orange" data-md-color-primary="teal" dir="ltr">
 <svg class="md-svg">
@@ -165,34 +165,6 @@
       Deliver
     </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" id="nav-2-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-2-6">
-      Steps
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-2-6">
-        Steps
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../vol-1/steps/collect/" title="Collect">
-      Collect
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../vol-1/steps/deliver/" title="Deliver">
-      Deliver
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../vol-1/steps/organize/" title="Organize">
-      Organize
-    </a>
-</li>
-</ul>
-</nav>
-</li>
 </ul>
 </nav>
 </li>
@@ -300,44 +272,6 @@
       Deliver
     </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-6" id="nav-3-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-3-6">
-      Steps
-    </label>
-<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-<label class="md-nav__title" for="nav-3-6">
-        Steps
-      </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../steps/acquire/" title="Acquire">
-      Acquire
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../steps/collect/" title="Collect">
-      Collect
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../steps/condition/" title="Condition">
-      Condition
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../steps/deliver/" title="Deliver">
-      Deliver
-    </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../steps/organize/" title="Organize">
-      Organize
-    </a>
-</li>
-</ul>
-</nav>
-</li>
 </ul>
 </nav>
 </li>
@@ -425,438 +359,971 @@
 <p class="admonition-title">Content Models / Invoices / <strong>(data model)</strong></p>
 <ol>
 <li>Right click and select <strong>Contents &gt; Add Multiple Items...</strong>.</li>
-<li>In the Contents • Add Multiple Items window, make sure Item Type is set to <mark>Data Field</mark></li>
-<li>Edit the Item Names property and type out the names of the following fields<ul>
-<li>Invoice Number</li>
-<li>PO Number</li>
-<li>Invoice Date</li>
-<li>Freight</li>
-<li>Sales Tax</li>
-<li>Discount</li>
-<li>Invoice Amount</li>
-<li>Payment Terms</li>
-<li>Ship To</li>
-<li>Remit To</li>
-</ul>
+<li>
+<p>In the <strong>Contents • Add Multiple Items</strong> window, change the following property values:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Item Names</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Invoice Number</code></mark><br/><mark><code class="codehilite">PO Number</code></mark><br/><mark><code class="codehilite">Invoice Date</code></mark><br/><mark><code class="codehilite">Freight</code></mark><br/><mark><code class="codehilite">Sales Tax</code></mark><br/><mark><code class="codehilite">Discount</code></mark><br/><mark><code class="codehilite">Invoice Amount</code></mark><br/><mark><code class="codehilite">Payment Terms</code></mark><br/><mark><code class="codehilite">Ship To</code></mark><br/><mark><code class="codehilite">Remit To</code></mark></td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>Click Execute to complete</li>
+<li>
+<p>Press <strong>Execute</strong>.</p>
+</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-1/005.png"/></p>
-<p><img alt="" src="../img/4-1/008.png"/></p>
-<p><img alt="" src="../img/4-1/010.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/005.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/008.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/010.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Content Models / Invoices / <strong>(local resources)</strong></p>
 <ol>
-<li>Right click and select Add &gt; Folder...</li>
-<li>Give it a name, like <mark>Extractors</mark></li>
+<li>Right click and select <strong>Add &gt; Folder...</strong></li>
+<li>Name it <mark>Extractors</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-1/016.png"/></p>
-<p><img alt="" src="../img/4-1/018.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/016.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/018.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Extractors</strong></p>
 <ol>
-<li>Right click and select Add &gt; Field Class...</li>
+<li>Right click and select <strong>Add &gt; Field Class...</strong></li>
 <li>Name it <mark>Invoice Date</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-1/019.png"/></p>
-<p><img alt="" src="../img/4-1/021.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/019.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/021.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong> <em>(Field Class)</em></p>
-<ol>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Data Extraction • Data Types &gt; Downloads &gt; Base Types &gt; Date Data Type</li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong></p>
+<p>Change the following property values:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">none</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Date</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-1/029.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/029.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong></p>
+<p>Change the following property values:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Feature Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">none</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Phrases</code></mark></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-1/031.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong></p>
 <ol>
-<li>In the General section, set the Feature Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Data Extraction • Data Types &gt; Training Materials &gt; Features &gt; Phrases Data Type</li>
+<li>Select <strong>Acme (1)</strong></li>
+<li>Press <strong>Run Extraction</strong></li>
+<li>In the candidate list, right click on the <mark>11/14/2008</mark> value and select <strong>Train As Positive</strong></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-1/031.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/034.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong></p>
 <ol>
-<li>Select Acme (1`)</li>
-<li>Click the Run Extraction button</li>
-<li>In the candidate list, right click on the <mark>11/14/2008</mark> value and select Train As Positive</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-1/034.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong></p>
-<ol>
-<li>Select Standard (2)</li>
+<li>Select <strong>Standard (2)</strong></li>
 <li>Select both of the <mark>11/11/2008</mark> candidates that have correct features</li>
-<li>Right click on either of them and select Train As Positive</li>
+<li>Right click on either of them and select <strong>Train As Positive</strong></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-1/039.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/039.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong></p>
 <ol>
-<li>Select Express (3)</li>
-<li>Right click on the <mark>12/2/2008</mark> candidate with 58.1689% confidence and select Train As Positive</li>
+<li>Select <strong>Express (3)</strong></li>
+<li>Right click on the <mark>12/2/2008</mark> candidate with 58.1689% confidence and select <strong>Train As Positive</strong></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-1/043.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/043.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong></p>
 <ol>
-<li>Select Spartan (4)</li>
-<li>Click to edit the Context Zones property</li>
+<li>Select <strong>Spartan (4)</strong></li>
+<li>In the <strong>Context Zone Options</strong> section, click to edit the <strong>Context Zones</strong></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-1/048.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/048.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong></p>
 <ol>
-<li>In the Context Zones window, edit the dimensions as follows:<ol>
-<li>Zone 1:<ol>
-<li>Left: <code class="codehilite">-3.278</code></li>
-<li>Top: <code class="codehilite">-0.054</code></li>
-<li>Right: <code class="codehilite">0.312</code></li>
-<li>Bottom: <code class="codehilite">0.054</code></li>
+<li>In the Context Zones window, edit the dimensions as follows:</li>
 </ol>
-</li>
-<li>Zone 2:<ol>
-<li>Left: <code class="codehilite">-0.67</code></li>
-<li>Top: <code class="codehilite">-0.37</code></li>
-<li>Right: <code class="codehilite">0.5</code></li>
-<li>Bottom: <code class="codehilite">0.04</code></li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Click OK</li>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Zone 1</th>
+<th>Zone 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Left</strong></td>
+<td><mark><code class="codehilite">-3.278</code></mark></td>
+<td><mark><code class="codehilite">-0.67</code></mark></td>
+</tr>
+<tr>
+<td><strong>Top</strong></td>
+<td><mark><code class="codehilite">-0.054</code></mark></td>
+<td><mark><code class="codehilite">-0.67</code></mark></td>
+</tr>
+<tr>
+<td><strong>Right</strong></td>
+<td><mark><code class="codehilite">0.312</code></mark></td>
+<td><mark><code class="codehilite">0.5</code></mark></td>
+</tr>
+<tr>
+<td><strong>Bottom</strong></td>
+<td><mark><code class="codehilite">0.054</code></mark></td>
+<td><mark><code class="codehilite">0.04</code></mark></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Press <strong>OK</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-1/050.png"/></p>
-<p><img alt="" src="../img/4-1/052.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/050.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/052.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Date</strong></p>
 <ol>
-<li>Select Enid (5)</li>
-<li>In the Output section, set the Minimum Confidence property to <mark>70%</mark></li>
+<li>Select <strong>Enid (5)</strong></li>
+<li>In the Output section, set the <strong>Minimum Confidence</strong> property to <mark>70%</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-1/060.png"/></p>
-<p><img alt="" src="../img/4-1/062.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/060.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/062.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the Data Model, select the Invoice Date Data Field</li>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Extractors &gt; Invoice Date Field Class.</li>
-<li>In the Behavior section, set the Required property to <mark>True</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Invoice Date</strong></p>
+<p>Change the following property values:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Invoice Date</code></mark></td>
+</tr>
+<tr>
+<td>Behavior</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-1/063.png"/></p>
-<p><img alt="" src="../img/4-1/065.png"/></p>
-<p><img alt="" src="../img/4-1/068.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/063.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/065.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-1/068.png"/></p>
 <h2 id="ship-to">Ship To<a class="headerlink" href="#ship-to" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Extractors</strong></p>
 <ol>
-<li>Right click on the Extractors folder and select Add &gt; Field Class...</li>
+<li>Right click and select <strong>Add &gt; Field Class...</strong></li>
 <li>Name it <mark>Ship To</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-2/002.png"/></p>
-<p><img alt="" src="../img/4-2/004.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/002.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/004.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Ship To</strong></p>
 <ol>
-<li>Right click on the Ship To Field Class and select Add &gt; Data Type...</li>
+<li>Right click and select <strong>Add &gt; Data Type...</strong></li>
 <li>Name it <mark>[Features] Ship To</mark></li>
-<li>In the Data Extraction section, click to edit the Pattern</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-2/005.png"/></p>
-<p><img alt="" src="../img/4-2/006.png"/></p>
-<p><img alt="" src="../img/4-2/007.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/005.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/006.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Ship To / <strong>[Features] Ship To</strong></p>
 <ol>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>ship to|shipped to|ship
-</pre></div></li>
-<li>In the Output Format editor, type:
-    <div class="codehilite"><pre><span></span>ship to
-</pre></div></li>
-<li>Click OK</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-2/009.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Click on the Ship To Field Class</li>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Data Extraction • Data Types &gt; Training Materials &gt; Base Types &gt; Address Data Type</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-2/012.png"/></p>
-<p><img alt="" src="../img/4-2/013.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Extractors • Ship To &gt; [Features] Ship To Data Type</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-2/014.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the Context Scope Options section, click to edit the Context Zones</li>
-<li>In the Context Zones window, delete one of the zones</li>
-<li>Edit the dimensions of the remaining zone:<ol>
-<li>Left: <code class="codehilite">-1.25</code></li>
-<li>Top: <code class="codehilite">-0.54</code></li>
-<li>Right: <code class="codehilite">0.73</code></li>
-<li>Bottom: <code class="codehilite">0.13</code></li>
-</ol>
+<li>In the Data Extraction section, click to edit the <strong>Pattern</strong>.</li>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_1_0" name="__tabs_1" type="radio">
+<label for="__tab_1_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>ship to|shipped to|ship
+</pre></div></div>
+<input id="__tab_1_1" name="__tabs_1" type="radio">
+<label for="__tab_1_1">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>ship to
+</pre></div></div>
+</input></input></div>
 </li>
-<li>Click OK</li>
-<li>Click Run Extraction</li>
+<li>
+<p>Press <strong>OK</strong>.</p>
+</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-2/015.png"/></p>
-<p><img alt="" src="../img/4-2/018.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/007.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/009.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the candidate list, find the value that has features that can be trained</li>
-<li>Right click on that value and select Train As Positive</li>
-<li>Set the Minimum Confidence property to <mark>70%</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Ship To</strong></p>
+<p>Change the following property values:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">none</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Address</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-2/023.png"/></p>
-<p><img alt="" src="../img/4-2/030.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/012.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/013.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Ship To</strong></p>
+<p>Change the following property values:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Feature Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">none</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">[Features] Ship To</code></mark></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-2/014.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Ship To</strong></p>
 <ol>
-<li>In the Data Model, select the Ship To Data Field</li>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Extractors &gt; Ship To Field Class.</li>
-<li>In the Behavior section, set the Required property to <mark>True</mark></li>
+<li>In the <strong>Context Zone Options</strong> section, click to edit the <strong>Context Zones</strong>.</li>
+<li>In the <strong>Context Zones</strong> window, delete one of the zones.</li>
+<li>
+<p>For the remaining zone, edit the dimensions as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Zone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Left</strong></td>
+<td><mark><code class="codehilite">-1.25</code></mark></td>
+</tr>
+<tr>
+<td><strong>Top</strong></td>
+<td><mark><code class="codehilite">-0.54</code></mark></td>
+</tr>
+<tr>
+<td><strong>Right</strong></td>
+<td><mark><code class="codehilite">0.73</code></mark></td>
+</tr>
+<tr>
+<td><strong>Bottom</strong></td>
+<td><mark><code class="codehilite">0.13</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Press <strong>OK</strong>.</p>
+</li>
+<li>Press <strong>Run Extraction</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-2/031.png"/></p>
-<p><img alt="" src="../img/4-2/032.png"/></p>
-<p><img alt="" src="../img/4-2/033.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/015.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/018.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Ship To</strong></p>
+<ol>
+<li>In the candidate list, find the value that has features that can be trained.</li>
+<li>Right click on that value and select <strong>Train As Positive</strong>.</li>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Minimum Confidence</strong></td>
+<td><code class="codehilite">0%</code></td>
+<td><mark><code class="codehilite">70%</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-2/023.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/030.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Ship To</strong></p>
+<p>Change the following property values:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Ship To</code></mark></td>
+</tr>
+<tr>
+<td>Behavior</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-2/031.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/032.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-2/033.png"/></p>
 <h2 id="remit-to">Remit To<a class="headerlink" href="#remit-to" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Extractors</strong></p>
 <ol>
-<li>Right click on the Extractors folder and select Add &gt; Field Class...</li>
-<li>Name it Remit To</li>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Data Extraction • Data Types &gt; Training Materials &gt; Base Types &gt; Address Data Type</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-3/001.png"/></p>
-<p><img alt="" src="../img/4-3/003.png"/></p>
-<p><img alt="" src="../img/4-3/004.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the General section, set the Feature Extractor &gt; Type property to Internal</li>
-<li>Click to edit the Pattern</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-3/006.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>remit to|mail payment to|checks to
-</pre></div></li>
-<li>In the Output Format editor, type:
-    <div class="codehilite"><pre><span></span>remit to
-</pre></div></li>
-<li>Select Standard (2)</li>
-<li>Click on the Properties tab</li>
-<li>Change the Mode property to FuzzyRegEx</li>
-<li>In the Fuzzy Matching Options section, expand Fuzzy Match Weightings</li>
-<li>Click to edit Local Entries</li>
-<li>In the List Editor window, type:
-    <div class="codehilite"><pre><span></span>li=0.25
-</pre></div></li>
-<li>Click OK to close the List Editor</li>
-<li>Click OK to close the Pattern Editor</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-3/023-1.png"/></p>
-<p><img alt="" src="../img/4-3/014.png"/></p>
-<p><img alt="" src="../img/4-3/019.png"/></p>
-<p><img alt="" src="../img/4-3/021.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Click to edit the Context Zones property</li>
-<li>In the Context Zones window, delete one of the zones</li>
-<li>Edit the dimensions of the remaining zone:<ol>
-<li>Left: <code class="codehilite">-2.55</code></li>
-<li>Top: <code class="codehilite">-0.55</code></li>
-<li>Right: <code class="codehilite">1</code></li>
-<li>Bottom: <code class="codehilite">0.15</code></li>
-</ol>
+<li>Right click and select <strong>Add &gt; Field Class...</strong>.</li>
+<li>Name it <mark>Remit To</mark>.</li>
+<li>
+<p>Change the following property values:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Address</code></mark></td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>Click OK</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-3/027.png"/></p>
-<p><img alt="" src="../img/4-3/028.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/001.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/003.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/004.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Select Acme (1)</li>
-<li>In the candidate list, find the value that has features that can be trained</li>
-<li>Right click on that value and select Train As Positive</li>
-<li>Set the Minimum Confidence property to <mark>70%</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Remit To</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Feature Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Internal</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Pattern</strong></td>
+<td><em>(Click to edit)</em></td>
+<td><em>(Click to edit)</em></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-3/033.png"/></p>
-<p><img alt="" src="../img/4-3/034.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/006.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Remit To</strong></p>
 <ol>
-<li>In the Remit To Data Field, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Extractors &gt; Remit To Field Class.</li>
-<li>In the Behavior section, set the Required property to <mark>True</mark></li>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_2_0" name="__tabs_2" type="radio">
+<label for="__tab_2_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>remit to|mail payment to|checks to
+</pre></div></div>
+<input id="__tab_2_1" name="__tabs_2" type="radio">
+<label for="__tab_2_1">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>remit to
+</pre></div></div>
+</input></input></div>
+</li>
+<li>
+<p>Select <strong>Standard (2)</strong>.</p>
+</li>
+<li>Click on the <strong>Properties</strong> tab.</li>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><code class="codehilite">RegEx</code></td>
+<td><mark><code class="codehilite">FuzzyRegEx</code></mark></td>
+</tr>
+<tr>
+<td>Fuzzy Matching Options</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Fuzzy Match Weightings</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Local Entries</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">li=0.25</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Press <strong>OK</strong> to close the List Editor.</p>
+</li>
+<li>Press <strong>OK</strong> to close the Pattern Editor.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-3/040.png"/></p>
-<p><img alt="" src="../img/4-3/041.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/023-1.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/014.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/019.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/021.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Remit To</strong></p>
+<ol>
+<li>In the <strong>Context Zone Options</strong> section, click to edit the <strong>Context Zones</strong>.</li>
+<li>In the <strong>Context Zones</strong> window, delete one of the zones.</li>
+<li>
+<p>For the remaining zone, edit the dimensions as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Zone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Left</strong></td>
+<td><mark><code class="codehilite">-2.55</code></mark></td>
+</tr>
+<tr>
+<td><strong>Top</strong></td>
+<td><mark><code class="codehilite">-0.55</code></mark></td>
+</tr>
+<tr>
+<td><strong>Right</strong></td>
+<td><mark><code class="codehilite">1</code></mark></td>
+</tr>
+<tr>
+<td><strong>Bottom</strong></td>
+<td><mark><code class="codehilite">0.15</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Press <strong>OK</strong>.</p>
+</li>
+</ol>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-3/027.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/028.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Remit To</strong></p>
+<ol>
+<li>Select <strong>Acme (1)</strong>.</li>
+<li>In the candidate list, find the value that has features that can be trained.</li>
+<li>Right click on that value and select <strong>Train As Positive</strong>.</li>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Minimum Confidence</strong></td>
+<td><code class="codehilite">0%</code></td>
+<td><mark><code class="codehilite">70%</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-3/033.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/034.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Remit To</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Remit To</code></mark></td>
+</tr>
+<tr>
+<td>Behavior</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-3/040.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-3/041.png"/></p>
 <h2 id="feature-list">Feature List<a class="headerlink" href="#feature-list" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Batch Processing / Batches / Test / <strong>Invoices</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Batches &gt; Test &gt; Invoices</li>
-<li>Click on the Batch Viewer tab</li>
-<li>Collapse the Node Tree using the button in the toolbar</li>
-<li>Open Notepad.exe alongside Grooper Design Studio</li>
+<li>Click on the <strong>Batch Viewer</strong> tab.</li>
+<li>Collapse the Node Tree using the button in the toolbar.</li>
+<li>Open Notepad.exe alongside Grooper Design Studio.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/001.png"/></p>
-<p><img alt="" src="../img/4-4/002.png"/></p>
-<p><img alt="" src="../img/4-4/003.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/001.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/002.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/003.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Batch Processing / Batches / Test / <strong>Invoices</strong></p>
 <ol>
-<li>Select Acme (1)</li>
-<li>In Notepad, begin typing a list of all words and phrases used to identify invoice items</li>
-<li>Do this for the remaining four vendors</li>
-<li>When complete, copy everything in Notepad to your clipboard</li>
+<li>Select <strong>Acme (1)</strong>.</li>
+<li>In Notepad, begin typing a list of all words and phrases used to identify invoice items.</li>
+<li>Do this for the remaining four vendors.</li>
+<li>When complete, copy everything in Notepad to your clipboard.</li>
+<li>Restore the default Grooper Design Studio view.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/004.png"/></p>
-<p><img alt="" src="../img/4-4/005.png"/></p>
-<p><img alt="" src="../img/4-4/007.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/004.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/005.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/007.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / <strong>(local resources)</strong></p>
 <ol>
-<li>Restore the default Grooper Design Studio view</li>
-<li>Navigate to Content Models &gt; Invoices &gt; (local resources)</li>
-<li>Right click and select Add &gt; Folder...</li>
-<li>Name it <mark>Lexicons</mark></li>
-<li>Right click on the Lexicons folder and select Add &gt; Lexicon...</li>
-<li>Name it <mark>Invoice Field Labels</mark></li>
+<li>Right click and select <strong>Add &gt; Folder...</strong>.</li>
+<li>Name it <mark>Lexicons</mark>.</li>
+<li>Right click on the <strong>Lexicons</strong> folder and select <strong>Add &gt; Lexicon...</strong>.</li>
+<li>Name it <mark>Invoice Field Labels</mark>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/009.png"/></p>
-<p><img alt="" src="../img/4-4/011.png"/></p>
-<p><img alt="" src="../img/4-4/014.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/009.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/011.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/014.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Lexicons / <strong>Invoice Field Labels</strong></p>
 <ol>
-<li>Paste your list of field labels in the Edit Entries editor</li>
-<li>Right click in the Edit Entries editor and select Sort</li>
-<li>Right click in the Edit Entries editor and select Deduplicate</li>
-<li>Normalize synonymous phrases by setting an <code class="codehilite">=</code> sign between the original phrase and the desired transformed phrase</li>
+<li>Paste your list of field labels in the <strong>Edit Entries</strong> editor.</li>
+<li>Right click in the <strong>Edit Entries</strong> editor and select <strong>Sort</strong>.</li>
+<li>Right click in the <strong>Edit Entries</strong> editor and select <strong>Deduplicate</strong>.</li>
+<li>Normalize synonymous phrases by setting an <code class="codehilite">=</code> sign between the original phrase and the desired transformed phrase.</li>
+<li>Delete this Lexicon.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/015.png"/></p>
-<p><img alt="" src="../img/4-4/016.png"/></p>
-<p><img alt="" src="../img/4-4/018.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/015.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/016.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/018.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Global Resources / Lexicons / Training Materials / <strong>Invoice Field Labels</strong></p>
 <ol>
-<li>Delete this Lexicon</li>
-<li>Navigate to (root) &gt; Global Resources &gt; Lexicons &gt; Training Materials &gt; Invoice Field Labels</li>
-<li>Right click and select Copy</li>
-<li>Right click on the Invoices &gt; (local resources) &gt; Lexicons folder and select Paste</li>
+<li>Right click and select <strong>Copy</strong>.</li>
+<li>Right click on the <strong>Invoices &gt; (local resources) &gt; Lexicons</strong> folder and select <strong>Paste</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/019.png"/></p>
-<p><img alt="" src="../img/4-4/021.png"/></p>
-<p><img alt="" src="../img/4-4/022.png"/></p>
-<p><img alt="" src="../img/4-4/023.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/019.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/021.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/022.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/023.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / <strong>(local resources)</strong></p>
 <ol>
-<li>Right click on the (local resources) folder and select Add &gt; Folder...</li>
-<li>Name it <mark>_Global</mark></li>
-<li>Right click on the _Global folder and select Add &gt; Data Type...</li>
-<li>Name it <mark>Invoice Field Labels</mark></li>
-<li>Click to edit the Pattern</li>
+<li>Right click and select <strong>Add &gt; Folder...</strong>.</li>
+<li>Name it <mark>_Global</mark>.</li>
+<li>Right click on the <strong>_Global</strong> folder and select <strong>Add &gt; Data Type...</strong>.</li>
+<li>Name it <mark>Invoice Field Labels</mark>.</li>
+<li>Click to edit the <strong>Pattern</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/024.png"/></p>
-<p><img alt="" src="../img/4-4/026.png"/></p>
-<p><img alt="" src="../img/4-4/027.png"/></p>
-<p><img alt="" src="../img/4-4/028.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/024.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/026.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/027.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/028.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / _Global / <strong>Invoice Field Labels</strong></p>
 <ol>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>[^\r\n\t\f:]+
-</pre></div></li>
-<li>Click on the Properties tab</li>
-<li>Expand Preprocessing Options and set the Tab Marking property to Enabled</li>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_3_0" name="__tabs_3" type="radio">
+<label for="__tab_3_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>[^\r\n\t\f:]+
+</pre></div></div>
+</input></div>
+</li>
+<li>
+<p>Click on the Properties tab</p>
+</li>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Preprocessing Options</strong></td>
+<td><code class="codehilite">None</code></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Tab Marking</strong></td>
+<td><code class="codehilite">Disabled</code></td>
+<td><mark><code class="codehilite">Enabled</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>In the <strong>Lookup and Translation</strong> section, click to edit the <strong>Lookup Options</strong>.</p>
+</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/029.png"/></p>
-<p><img alt="" src="../img/4-4/030.png"/></p>
-<p><img alt="" src="../img/4-4/031.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/029.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/030.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/031.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/032.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / _Global / <strong>Invoice Field Labels</strong></p>
 <ol>
-<li>In the Lookup and Translation section, click to edit the Lookup Options</li>
-<li>In the Lookup Options window, expand Vocabulary</li>
-<li>Select the Vocabulary &gt; Included Lexicons property dropdown and check the box next to the Invoices • (local resources) &gt; Lexicons &gt; Invoice Field Labels Lexicon</li>
-<li>Set the Enable Translation property to <mark>True</mark></li>
-<li>Set the Fuzzy Match Similarity property to <mark>90%</mark></li>
-<li>Click OK</li>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Vocabulary</strong></td>
+<td><code class="codehilite">(none)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Included Lexicons</strong></td>
+<td><code class="codehilite">(0 Lexicon Objects)</code></td>
+<td><mark><code class="codehilite">Invoice Field Labels</code></mark></td>
+</tr>
+<tr>
+<td><strong>Enable Translation</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+<tr>
+<td>Fuzzy Lookup Options</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Fuzzy Match Similarity</strong></td>
+<td><code class="codehilite">100%</code></td>
+<td><mark><code class="codehilite">90%</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Press <strong>OK</strong>.</p>
+</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/032.png"/></p>
-<p><img alt="" src="../img/4-4/036.png"/></p>
-<p><img alt="" src="../img/4-4/038.png"/></p>
-<p><img alt="" src="../img/4-4/044.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/036.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/038.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/044.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / _Global / <strong>Invoice Field Labels</strong></p>
 <ol>
-<li>In the Output Options section, click to edit Result Filter</li>
-<li>In the Result Filter window, set the Output Case property to <mark>Lower</mark></li>
-<li>Click OK to close the Result Filter window</li>
-<li>Click OK to close the pattern editor window</li>
+<li>In the <strong>Output Options</strong> section, click to edit <strong>Result Filter</strong>.</li>
+<li>In the <strong>Result Filter</strong> window, set the <strong>Output Case</strong> property to <mark>Lower</mark>.</li>
+<li>Press <strong>OK</strong> to close the Result Filter window.</li>
+<li>Press <strong>OK</strong> to close the pattern editor window.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/047.png"/></p>
-<p><img alt="" src="../img/4-4/049.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/047.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/049.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>_Global</strong></p>
 <ol>
-<li>Right click on the (local resources) &gt; _Global folder and select Add &gt; Data Type...</li>
-<li>Name it <mark>[Array] PO Number</mark></li>
+<li>Right click and select <strong>Add &gt; Data Type...</strong>.</li>
+<li>Name it <mark>[Array] PO Number</mark>.</li>
 <li>Add two child Data Formats to the [Array] PO Number Data Type:<ol>
 <li>Purchase</li>
 <li>Order Number</li>
@@ -864,79 +1331,128 @@
 </li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/056.png"/></p>
-<p><img alt="" src="../img/4-4/060.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/056.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/060.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / _Global / [Array] PO Number / <strong>Purchase</strong></p>
 <ol>
-<li>Select the [Array] PO Number &gt; Purchase Data Format</li>
-<li>Select Enid (5)</li>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>purchase
-</pre></div></li>
-<li>In the Output Format editor, type:
-    <div class="codehilite"><pre><span></span>po
-</pre></div></li>
+<li>Select <strong>Enid (5)</strong></li>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_4_0" name="__tabs_4" type="radio">
+<label for="__tab_4_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>purchase
+</pre></div></div>
+<input id="__tab_4_1" name="__tabs_4" type="radio"/>
+<label for="__tab_4_1">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>po
+</pre></div></div>
+</input></div>
+</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/061.png"/></p>
-<p><img alt="" src="../img/4-4/062.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/061.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/062.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / _Global / [Array] PO Number / <strong>Order Number</strong></p>
 <ol>
-<li>Select the [Array] PO Number &gt; Order Number Data Format</li>
-<li>Select Enid (5)</li>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>order number
-</pre></div></li>
-<li>In the Output Format editor, type:
-    <div class="codehilite"><pre><span></span>number
-</pre></div></li>
+<li>Select <strong>Enid (5)</strong></li>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_5_0" name="__tabs_5" type="radio"/>
+<label for="__tab_5_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>order number
+</pre></div></div>
+<input id="__tab_5_1" name="__tabs_5" type="radio"/>
+<label for="__tab_5_1">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>number
+</pre></div></div>
+</div>
+</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/063.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/063.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / _Global / <strong>[Array] PO Number</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Collation</strong></td>
+<td><code class="codehilite">Individual</code></td>
+<td><mark><code class="codehilite">Ordered Array</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Vertical Layout</strong></td>
+<td><code class="codehilite">Disabled</code></td>
+<td><mark><code class="codehilite">Enabled</code></mark></td>
+</tr>
+<tr>
+<td>→ → <strong>Maximum Distance</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">0.25</code></mark></td>
+</tr>
+<tr>
+<td>→ → <strong>Alignment</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Center</code></mark></td>
+</tr>
+<tr>
+<td>→ → <strong>Alignment Tolerance</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">0.1</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Row Separator</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">␣</code></mark> (a single space)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-4/064.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/073.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>_Global</strong></p>
 <ol>
-<li>Select the [Array] PO Number Data Type</li>
-<li>Set the Collation property to <mark>Ordered Array</mark></li>
-<li>Expand Collation and set the Vertical Layout property to <mark>Enabled</mark></li>
-<li>Expand the Vertical Layout property</li>
-<li>Set the Maximum Distance property to <mark>0.25</mark></li>
-<li>Set the Alignment property to <mark>Center</mark></li>
-<li>Set the Alignment Tolerance property to <mark>0.1</mark></li>
-<li>Set the Result Separator property to <mark><code class="codehilite">␣</code></mark> (a single space)</li>
+<li>Drag the <strong>[Array] PO Number</strong> Data Type on top of the <strong>Invoice Field Labels</strong> Data Type.</li>
+<li>Select the <strong>Invoice Field Labels</strong> Data Type to ensure the array is now being included in the results.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-4/064.png"/></p>
-<p><img alt="" src="../img/4-4/073.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Drag the [Array] PO Number Data Type on top of the Invoice Field Labels Data Type</li>
-<li>Select the Invoice Field Labels Data Type to ensure the array is now being included in the results</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-4/075.png"/></p>
-<p><img alt="" src="../img/4-4/076.png"/></p>
-<p><img alt="" src="../img/4-4/077.png"/></p>
-<p><img alt="" src="../img/4-4/078.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/075.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/076.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/077.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-4/078.png"/></p>
 <h2 id="invoice-number">Invoice Number<a class="headerlink" href="#invoice-number" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Extractors</strong></p>
 <ol>
-<li>Right click on the Extractors folder and select Add &gt; Field Class...</li>
-<li>Name it <mark>Invoice Number</mark></li>
+<li>Right click and select <strong>Add &gt; Field Class...</strong>.</li>
+<li>Name it <mark>Invoice Number</mark>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-5/002.png"/></p>
-<p><img alt="" src="../img/4-5/004.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/002.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/004.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Number</strong></p>
 <ol>
-<li>Create a child Data Type under the Invoice Number Field Class</li>
-<li>Name it <mark>[Values] Invoice Number</mark></li>
-<li>Create three child Data Formats under the [Values] Invoice Number Data Type and name them:<ol>
+<li>Create a child Data Type under the <strong>Invoice Number</strong> Field Class.</li>
+<li>Name it <mark>[Values] Invoice Number</mark>.</li>
+<li>Create three child Data Formats under the <strong>[Values] Invoice Number</strong> Data Type:<ol>
 <li><mark>Acme/Standard/Express</mark></li>
 <li><mark>Enid</mark></li>
 <li><mark>Spartan</mark></li>
@@ -944,369 +1460,871 @@
 </li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-5/005.png"/>
-    ---
-    Edit the patterns for each of the Data Formats:
-    - Acme/Standard/Express</p>
-<div class="codehilite"><pre><span></span>    ```tab="Value Pattern"
-    [0-9]{6,16}
-    ```
-
-- Enid
-
-    ```tab="Value Pattern"
-    ([A-Z]{3})/([@Number]{8})
-    ```
-
-    ```tab="Output Format"
-    {1}{2:Number}
-    ```
-
-- Spartan
-
-    ```tab="Value Pattern"
-    ([A-Z]{2})([@Number]{2})-([@Number]{6})
-    ```
-
-    ```tab="Output Format"
-    {1}{2:Number}-{3}
-    ```
-</pre></div>
-<p><img alt="" src="../img/4-5/007.png"/></p>
-<p><img alt="" src="../img/4-5/009.png"/></p>
-<p><img alt="" src="../img/4-5/011.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/005.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Invoice Number / <em>*</em>**</p>
+<p>Edit the patterns for each of the Data Formats:</p>
+<ul>
+<li>
+<p>Acme/Standard/Express</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_6_0" name="__tabs_6" type="radio"/>
+<label for="__tab_6_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>[0-9]{6,16}
+</pre></div></div>
+</div>
+</li>
+<li>
+<p>Enid</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_7_0" name="__tabs_7" type="radio"/>
+<label for="__tab_7_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>([A-Z]{3})/([@Number]{8})
+</pre></div></div>
+<input id="__tab_7_1" name="__tabs_7" type="radio"/>
+<label for="__tab_7_1">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>{1}{2:Number}
+</pre></div></div>
+</div>
+</li>
+<li>
+<p>Spartan</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_8_0" name="__tabs_8" type="radio"/>
+<label for="__tab_8_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>([A-Z]{2})([@Number]{2})-([@Number]{6})
+</pre></div></div>
+<input id="__tab_8_1" name="__tabs_8" type="radio"/>
+<label for="__tab_8_1">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>{1}{2:Number}-{3}
+</pre></div></div>
+</div>
+</li>
+</ul>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-5/007.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/009.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/011.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Number</strong></p>
 <ol>
-<li>Select the Invoice Number Field Class</li>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Extractors • Invoice Number &gt; [Values] Invoice Number Data Type</li>
-<li>Set the Feature Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; _Global &gt; Invoice Field Labels Data Type</li>
-<li>Select Acme (1)</li>
-<li>Click Run Extraction</li>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">[Values] Invoice Number</code></mark></td>
+</tr>
+<tr>
+<td><strong>Feature Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Invoice Field Labels</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Select <strong>Acme (1)</strong>.</p>
+</li>
+<li>Press <strong>Run Extraction</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-5/014.png"/></p>
-<p><img alt="" src="../img/4-5/015.png"/></p>
-<p><img alt="" src="../img/4-5/016.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/014.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/015.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/016.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Number</strong></p>
 <ol>
 <li>In the candidate list, find the value that has the appropriate feature(s) to train</li>
-<li>Right click and select Train As Positive</li>
+<li>Right click and select <strong>Train As Positive</strong></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-5/019.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/019.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Number</strong></p>
 <ol>
-<li>Select Spartan (4)</li>
-<li>Click to edit the Context Zones property</li>
-<li>In the Context Zones window, edit the dimensions as follows:<ol>
-<li>Zone 1:<ol>
-<li>Left: <code class="codehilite">-4</code></li>
-<li>Top: <code class="codehilite">-0.02</code></li>
-<li>Right: <code class="codehilite">0.35</code></li>
-<li>Bottom: <code class="codehilite">0.1</code></li>
-</ol>
+<li>Select <strong>Spartan (4)</strong>.</li>
+<li>Click to edit the <strong>Context Zones</strong>.</li>
+<li>
+<p>In the Context Zones window, edit the dimensions as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Zone 1</th>
+<th>Zone 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Left</strong></td>
+<td><mark><code class="codehilite">-4</code></mark></td>
+<td><mark><code class="codehilite">-1</code></mark></td>
+</tr>
+<tr>
+<td><strong>Top</strong></td>
+<td><mark><code class="codehilite">-0.02</code></mark></td>
+<td><mark><code class="codehilite">-0.35</code></mark></td>
+</tr>
+<tr>
+<td><strong>Right</strong></td>
+<td><mark><code class="codehilite">0.35</code></mark></td>
+<td><mark><code class="codehilite">0.375</code></mark></td>
+</tr>
+<tr>
+<td><strong>Bottom</strong></td>
+<td><mark><code class="codehilite">0.1</code></mark></td>
+<td><mark><code class="codehilite">0.05</code></mark></td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>Zone 2:<ol>
-<li>Left: <code class="codehilite">-1</code></li>
-<li>Top: <code class="codehilite">-0.25</code></li>
-<li>Right: <code class="codehilite">0.375</code></li>
-<li>Bottom: <code class="codehilite">0.05</code></li>
-</ol>
+<li>
+<p>Press <strong>OK</strong>.</p>
 </li>
 </ol>
-</li>
-<li>Click OK</li>
-</ol>
 </div>
-<p><img alt="" src="../img/4-5/027.png"/></p>
-<p><img alt="" src="../img/4-5/029.png"/></p>
-<p><img alt="" src="../img/4-5/031.png"/></p>
-<p><img alt="" src="../img/4-5/032.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/027.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/029.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/031.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/032.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Click on the [Values] Invoice Number Data Type</li>
-<li>In the Deduplication section, set the Deduplicate Locations property to <mark>True</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Invoice Number / <strong>[Values] Invoice Number</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deduplication</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Deduplicate Locations</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-5/038.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/038.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Click on the Invoice Number Field Class</li>
-<li>In the Output section, set the Minimum Confidence property to <mark>70%</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Number</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Minimum Confidence</strong></td>
+<td><code class="codehilite">0%</code></td>
+<td><mark><code class="codehilite">70%</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-5/042.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/042.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the Data Model, select the Invoice Number Data Field</li>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Extractors &gt; Invoice Number Field Class.</li>
-<li>In the Behavior section, set the Required property to <mark>True</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Invoice Number</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Invoice Number</code></mark></td>
+</tr>
+<tr>
+<td>Behavior</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-5/043.png"/></p>
-<p><img alt="" src="../img/4-5/044.png"/></p>
-<p><img alt="" src="../img/4-5/045.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/043.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/044.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-5/045.png"/></p>
 <h2 id="po-numberexclusion-extractor">PO Number/Exclusion Extractor<a class="headerlink" href="#po-numberexclusion-extractor" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>_Global</strong></p>
 <ol>
-<li>Right click on the (local resources) &gt; _Global folder and select Add &gt; Data Type...</li>
-<li>Name it <mark>Addresses, Phone Numbers</mark></li>
-<li>In the Data Extraction section, click to edit Referenced Extractors</li>
+<li>Right click and select <strong>Add &gt; Data Type...</strong>.</li>
+<li>Name it <mark>Addresses, Phone Numbers</mark>.</li>
+<li>In the Data Extraction section, click to edit <strong>Referenced Extractors</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-6/001.png"/></p>
-<p><img alt="" src="../img/4-6/003.png"/></p>
-<p><img alt="" src="../img/4-6/004.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/001.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/003.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/004.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / _Global / <strong>Addresses, Phone Numbers</strong></p>
 <ol>
-<li>In the Referenced Extractors window, click Add...</li>
-<li>In the Select Items window, expand (root) • Data Extraction &gt; Data Types &gt; Training Materials &gt; Base Types and check the following:<ol>
-<li>Address</li>
-<li>Phone Number</li>
+<li>In the <strong>Referenced Extractors</strong> window, press <strong>Add...</strong>.</li>
+<li>In the <strong>Select Items</strong> window, expand <strong>(root) • Data Extraction &gt; Data Types &gt; Training Materials &gt; Base Types</strong> and check the following:<ol>
+<li><mark>Address</mark></li>
+<li><mark>Phone Number</mark></li>
 </ol>
 </li>
-<li>Click OK to close the Select Items window</li>
-<li>Click OK to close the Referenced Extractors window</li>
+<li>Press <strong>OK</strong> to close the Select Items window.</li>
+<li>Press <strong>OK</strong> to close the Referenced Extractors window.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-6/005.png"/></p>
-<p><img alt="" src="../img/4-6/007.png"/></p>
-<p><img alt="" src="../img/4-6/008.png"/></p>
-<p><img alt="" src="../img/4-6/009.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/005.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/007.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/008.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/009.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Extractors</strong></p>
 <ol>
-<li>Right click on the Extractors folder and select Add &gt; Field Class...</li>
-<li>Name it <mark>PO Number</mark></li>
-<li>Create a child Data Type of PO Number and name it <mark>[Values] PO Number</mark></li>
-<li>On the [Values] PO Number Data Type, click to edit the Pattern</li>
+<li>Right click and select <strong>Add &gt; Field Class...</strong>.</li>
+<li>Name it <mark>PO Number</mark>.</li>
+<li>Create a child Data Type of PO Number and name it <mark>[Values] PO Number</mark>.</li>
+<li>On the <strong>[Values] PO Number</strong> Data Type, click to edit the <strong>Pattern</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-6/013.png"/></p>
-<p><img alt="" src="../img/4-6/015.png"/></p>
-<p><img alt="" src="../img/4-6/016.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/013.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/015.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/016.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>[Values] PO Number</strong></p>
 <ol>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>[0-9]{4,16}
-</pre></div></li>
-<li>Click OK</li>
-</ol>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_9_0" name="__tabs_9" type="radio"/>
+<label for="__tab_9_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>[0-9]{4,16}
+</pre></div></div>
 </div>
-<p><img alt="" src="../img/4-6/018.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>On the [Values] PO Number Data Type, in the Data Extraction section, set the Exclusion Extractor &gt; Type property to <mark>Reference</mark></li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; _Global &gt; <mark>Addresses, Phone Numbers</mark> Data Type</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-6/021.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Click on the PO Number Field Class</li>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Extractors • PO Number &gt; <mark>[Values] PO Number</mark> Data Type</li>
-<li>In the General section, set the Feature Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; _Global &gt; Invoice Field Labels Data Type</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-6/025.png"/></p>
-<p><img alt="" src="../img/4-6/027.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Select Acme (1)</li>
-<li>Click Run Extraction</li>
-<li>In the candidate list, find the value that has the appropriate feature(s) to train</li>
-<li>Right click and select Train As Positive</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-6/029.png"/></p>
-<p><img alt="" src="../img/4-6/030.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Click to edit the Context Zones property</li>
-<li>In the Context Zones window, edit the dimensions as follows:<ol>
-<li>Zone 1:<ol>
-<li>Left: <code class="codehilite">-3.278</code></li>
-<li>Top: <code class="codehilite">-0.054</code></li>
-<li>Right: <code class="codehilite">0.312</code></li>
-<li>Bottom: <code class="codehilite">0.054</code></li>
-</ol>
 </li>
-<li>Zone 2:<ol>
-<li>Left: <code class="codehilite">-0.67</code></li>
-<li>Top: <code class="codehilite">-0.37</code></li>
-<li>Right: <code class="codehilite">0.5</code></li>
-<li>Bottom: <code class="codehilite">0.04</code></li>
-</ol>
+<li>
+<p>Press <strong>OK</strong>.</p>
 </li>
 </ol>
-</li>
-<li>Click OK</li>
-<li>In the Output section, set the Minimum Confidence property to <mark>70%</mark></li>
-</ol>
 </div>
-<p><img alt="" src="../img/4-6/034.png"/></p>
-<p><img alt="" src="../img/4-6/036.png"/></p>
-<p><img alt="" src="../img/4-6/038.png"/></p>
-<p><img alt="" src="../img/4-6/041.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/018.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>[Values] PO Number</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Extraction</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Exclusion Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Addresses, Phone Numbers</code></mark></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-6/021.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>PO Number</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">[Values] PO Number</code></mark></td>
+</tr>
+<tr>
+<td><strong>Feature Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Invoice Field Labels</code></mark></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-6/025.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/027.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>PO Number</strong></p>
 <ol>
-<li>In the Data Model, select the PO Number Data Field</li>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Extractors &gt; PO Number Field Class.</li>
-<li>In the Behavior section, set the Required property to <mark>True</mark></li>
+<li>Select <strong>Acme (1)</strong>.</li>
+<li>Press <strong>Run Extraction</strong>.</li>
+<li>In the candidate list, find the value that has the appropriate feature(s) to train.</li>
+<li>Right click and select <strong>Train As Positive</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-6/042.png"/></p>
-<p><img alt="" src="../img/4-6/044.png"/></p>
-<p><img alt="" src="../img/4-6/046.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/029.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/030.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>PO Number</strong></p>
+<ol>
+<li>Click to edit the <strong>Context Zones</strong>.</li>
+<li>
+<p>In the <strong>Context Zones</strong> window, edit the dimensions as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Zone 1</th>
+<th>Zone 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Left</strong></td>
+<td><mark><code class="codehilite">-3.278</code></mark></td>
+<td><mark><code class="codehilite">-0.67</code></mark></td>
+</tr>
+<tr>
+<td><strong>Top</strong></td>
+<td><mark><code class="codehilite">-0.054</code></mark></td>
+<td><mark><code class="codehilite">-0.37</code></mark></td>
+</tr>
+<tr>
+<td><strong>Right</strong></td>
+<td><mark><code class="codehilite">0.312</code></mark></td>
+<td><mark><code class="codehilite">0.5</code></mark></td>
+</tr>
+<tr>
+<td><strong>Bottom</strong></td>
+<td><mark><code class="codehilite">0.054</code></mark></td>
+<td><mark><code class="codehilite">0.04</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Press <strong>OK</strong>.</p>
+</li>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Minimum Confidence</strong></td>
+<td><code class="codehilite">0%</code></td>
+<td><mark><code class="codehilite">70%</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-6/034.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/036.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/038.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/041.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>PO Number</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">PO Number</code></mark></td>
+</tr>
+<tr>
+<td>Behavior</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-6/042.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/044.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-6/046.png"/></p>
 <h2 id="invoice-amount">Invoice Amount<a class="headerlink" href="#invoice-amount" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors</p>
 <ol>
-<li>Right click on the Extractors folder and select Add &gt; Field Class...</li>
-<li>Name it <mark>Invoice Amount</mark></li>
+<li>Right click and select <strong>Add &gt; Field Class...</strong>.</li>
+<li>Name it <mark>Invoice Amount</mark>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-7/001.png"/></p>
-<p><img alt="" src="../img/4-7/003.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/001.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/003.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Amount</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Currency</code></mark></td>
+</tr>
+<tr>
+<td><strong>Feature Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Invoice Field Labels</code></mark></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-7/005.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/007.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Amount</strong></p>
 <ol>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Data Extraction • Data Types &gt; Downloads &gt; Base Types &gt; <mark>Currency Data</mark> Type</li>
-<li>Set the Feature Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; _Global &gt; Invoice Field Labels Data Type</li>
+<li>Select <strong>Acme (1)</strong>.</li>
+<li>Press <strong>Run Extraction</strong>.</li>
+<li>In the candidate list, find the value that has the appropriate feature(s) to train.</li>
+<li>Right click and select <strong>Train As Positive</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-7/005.png"/></p>
-<p><img alt="" src="../img/4-7/007.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/011.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/012.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Invoice Amount</strong></p>
 <ol>
-<li>Select Acme (1)</li>
-<li>Click Run Extraction</li>
-<li>In the candidate list, find the value that has the appropriate feature(s) to train</li>
-<li>Right click and select Train As Positive</li>
-</ol>
-</div>
-<p><img alt="" src="../img/4-7/011.png"/></p>
-<p><img alt="" src="../img/4-7/012.png"/></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>Click to edit the Context Zones property</li>
-<li>In the Context Zones window, edit the dimensions as follows:<ol>
-<li>Zone 1:<ol>
-<li>Left: <code class="codehilite">-4</code></li>
-<li>Top: <code class="codehilite">-0.05</code></li>
-<li>Right: <code class="codehilite">0.2</code></li>
-<li>Bottom: <code class="codehilite">0.1</code></li>
-</ol>
+<li>Click to edit the <strong>Context Zones</strong>.</li>
+<li>
+<p>In the <strong>Context Zones</strong> window, edit the dimensions as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Zone 1</th>
+<th>Zone 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Left</strong></td>
+<td><mark><code class="codehilite">-4</code></mark></td>
+<td><mark><code class="codehilite">-0.58</code></mark></td>
+</tr>
+<tr>
+<td><strong>Top</strong></td>
+<td><mark><code class="codehilite">-0.05</code></mark></td>
+<td><mark><code class="codehilite">-0.36</code></mark></td>
+</tr>
+<tr>
+<td><strong>Right</strong></td>
+<td><mark><code class="codehilite">0.2</code></mark></td>
+<td><mark><code class="codehilite">0.3</code></mark></td>
+</tr>
+<tr>
+<td><strong>Bottom</strong></td>
+<td><mark><code class="codehilite">0.1</code></mark></td>
+<td><mark><code class="codehilite">0.05</code></mark></td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>Zone 2:<ol>
-<li>Left: <code class="codehilite">-0.58</code></li>
-<li>Top: <code class="codehilite">-0.36</code></li>
-<li>Right: <code class="codehilite">0.3</code></li>
-<li>Bottom: <code class="codehilite">0.05</code></li>
-</ol>
+<li>
+<p>Press <strong>OK</strong>.</p>
+</li>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Minimum Confidence</strong></td>
+<td><code class="codehilite">0%</code></td>
+<td><mark><code class="codehilite">70%</code></mark></td>
+</tr>
+</tbody>
+</table>
 </li>
 </ol>
-</li>
-<li>Click OK</li>
-<li>In the Output section, set the Minimum Confidence property to <mark>70%</mark></li>
-</ol>
 </div>
-<p><img alt="" src="../img/4-7/013.png"/></p>
-<p><img alt="" src="../img/4-7/015.png"/></p>
-<p><img alt="" src="../img/4-7/017.png"/></p>
-<p><img alt="" src="../img/4-7/021.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/013.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/015.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/017.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/021.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the Data Model, select the Invoice Amount Data Field</li>
-<li>In the General section, set the Value Type to <mark>Decimal</mark></li>
-<li>Expand Value Type and set the Format Specifier property to <mark>c2</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Invoice Amount</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Type</strong></td>
+<td><code class="codehilite">String</code></td>
+<td><mark><code class="codehilite">Decimal</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Format Specifier</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">c2</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-7/022.png"/></p>
-<p><img alt="" src="../img/4-7/025.png"/></p>
-<p><img alt="" src="../img/4-7/028.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/022.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/025.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/028.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Extractors &gt; Invoice Amount Field Class.</li>
-<li>In the Behavior section, set the Required property to <mark>True</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Invoice Amount</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Reference</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Referenced Extractor</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Invoice Amount</code></mark></td>
+</tr>
+<tr>
+<td>Behavior</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-7/029.png"/></p>
-<p><img alt="" src="../img/4-7/030.png"/></p>
-<p><img alt="" src="../img/4-7/032.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/029.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/030.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-7/032.png"/></p>
 <h2 id="payment-terms">Payment Terms<a class="headerlink" href="#payment-terms" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the Data Model, select the PO Number Data Field</li>
-<li>In the General section, set the Value Extractor &gt; Type property to Internal</li>
-<li>Click to edit the pattern</li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Payment Terms</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Extractor</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>→ <strong>Type</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">Internal</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Pattern</strong></td>
+<td><em>(Click to edit)</em></td>
+<td><em>(Click to edit)</em></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-8/001.png"/></p>
-<p><img alt="" src="../img/4-8/003.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-8/001.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-8/003.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Payment Terms</strong></p>
 <ol>
-<li>Select Acme (16)</li>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>n[eo]t ([@Number]{2})
-</pre></div></li>
-<li>In the Output Format editor, type:
-    <div class="codehilite"><pre><span></span>Net {1:Number}
-</pre></div></li>
-<li>Click OK</li>
+<li>Select <strong>Acme (16)</strong>.</li>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_10_0" name="__tabs_10" type="radio"/>
+<label for="__tab_10_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>n[eo]t ([@Number]{2})
+</pre></div></div>
+<input id="__tab_10_1" name="__tabs_10" type="radio"/>
+<label for="__tab_10_1">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>Net {1:Number}
+</pre></div></div>
+</div>
+</li>
+<li>
+<p>Press <strong>OK</strong>.</p>
+</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-8/007.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-8/007.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>On the Payment Terms Data Field, set the Required Property to <mark>True</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Payment Terms</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Behavior</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-8/010.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-8/010.png"/></p>
 <h2 id="freight">Freight<a class="headerlink" href="#freight" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Extractors</strong></p>
 <ol>
-<li>Right click on the Extractors folder and select Add &gt; Data Type...</li>
-<li>Name it <mark>Freight</mark></li>
+<li>Right click and select <strong>Add &gt; Data Type...</strong>.</li>
+<li>Name it <mark>Freight</mark>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-9/001.png"/></p>
-<p><img alt="" src="../img/4-9/003.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/001.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/003.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Freight</strong></p>
 <ol>
-<li>As child extractors under the Freight Data Type, create:<ol>
+<li>As child extractors under the <strong>Freight</strong> Data Type, create:<ol>
 <li>Data Format: <mark>Acme</mark></li>
 <li>Data Format: <mark>Enid</mark></li>
 <li>Data Format: <mark>Express</mark></li>
@@ -1316,164 +2334,255 @@
 </li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-9/004.png"/></p>
-<p><img alt="" src="../img/4-9/006.png"/></p>
-<p><img alt="" src="../img/4-9/010.png"/></p>
-<p><img alt="" src="../img/4-9/012.png"/>
-    ---
-    Edit the patterns for each of the Data Formats:
-    - Acme</p>
-<div class="codehilite"><pre><span></span>    *Make sure to enable Tab Marking*
-
-    ```tab="Value Pattern"
-    ([@Number.]{3,12})
-    ```
-
-    ```tab="Look Ahead Pattern"
-    WS.FREIGHT[0o]231[^\n]+\n
-    [^\n]+\n
-    [^\t]+\t
-    [^\t]+\t
-    ```
-
-    ```tab="Look Behind Pattern"
-    \r\n
-    ```
-
-    ```tab="Output Format"
-    {1:Number}
-    ```
-
-- Enid
-
-    ```tab="Value Pattern"
-    ([@Number.]{3,12})
-    ```
-
-    ```tab="Look Ahead Pattern"
-    020-0027[^\n]*?\n[^\r]*?
-    ```
-
-    ```tab="Look Behind Pattern"
-    \r\n
-    ```
-
-    ```tab="Output Format"
-    {1:Number}
-    ```
-
-- Express
-
-    ```tab="Value Pattern"
-    ([@Number.]{3,12})
-    ```
-
-    ```tab="Look Ahead Pattern"
-    shipping charge:?[^0-9]{0,4}
-    ```
-
-    ```tab="Output Format"
-    {1:Number}
-    ```
-
-- Standard
-
-    ```tab="Value Pattern"
-    ([@Number.]{3,12})
-    ```
-
-    ```tab="Look Ahead Pattern"
-    shipping charge\s
-    ```
-
-    ```tab="Output Format"
-    {1:Number}
-    ```
-</pre></div>
-<p><img alt="" src="../img/4-9/017.png"/></p>
-<p><img alt="" src="../img/4-9/019.png"/></p>
-<p><img alt="" src="../img/4-9/021.png"/></p>
-<p><img alt="" src="../img/4-9/023.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/004.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/006.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/010.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/012.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Freight</strong></p>
+<p>Edit the patterns for each of the Data Formats:</p>
+<ul>
+<li>
+<p>Acme</p>
+<p><em>Make sure to enable Tab Marking</em></p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_11_0" name="__tabs_11" type="radio"/>
+<label for="__tab_11_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>([@Number.]{3,12})
+</pre></div></div>
+<input id="__tab_11_1" name="__tabs_11" type="radio"/>
+<label for="__tab_11_1">Look Ahead Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>WS.FREIGHT[0o]231[^\n]+\n
+[^\n]+\n
+[^\t]+\t
+[^\t]+\t
+</pre></div></div>
+<input id="__tab_11_2" name="__tabs_11" type="radio"/>
+<label for="__tab_11_2">Look Behind Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>\r\n
+</pre></div></div>
+<input id="__tab_11_3" name="__tabs_11" type="radio"/>
+<label for="__tab_11_3">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>{1:Number}
+</pre></div></div>
+</div>
+</li>
+<li>
+<p>Enid</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_12_0" name="__tabs_12" type="radio"/>
+<label for="__tab_12_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>([@Number.]{3,12})
+</pre></div></div>
+<input id="__tab_12_1" name="__tabs_12" type="radio"/>
+<label for="__tab_12_1">Look Ahead Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>020-0027[^\n]*?\n[^\r]*?
+</pre></div></div>
+<input id="__tab_12_2" name="__tabs_12" type="radio"/>
+<label for="__tab_12_2">Look Behind Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>\r\n
+</pre></div></div>
+<input id="__tab_12_3" name="__tabs_12" type="radio"/>
+<label for="__tab_12_3">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>{1:Number}
+</pre></div></div>
+</div>
+</li>
+<li>
+<p>Express</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_13_0" name="__tabs_13" type="radio"/>
+<label for="__tab_13_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>([@Number.]{3,12})
+</pre></div></div>
+<input id="__tab_13_1" name="__tabs_13" type="radio"/>
+<label for="__tab_13_1">Look Ahead Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>shipping charge:?[^0-9]{0,4}
+</pre></div></div>
+<input id="__tab_13_2" name="__tabs_13" type="radio"/>
+<label for="__tab_13_2">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>{1:Number}
+</pre></div></div>
+</div>
+</li>
+<li>
+<p>Standard</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_14_0" name="__tabs_14" type="radio"/>
+<label for="__tab_14_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>([@Number.]{3,12})
+</pre></div></div>
+<input id="__tab_14_1" name="__tabs_14" type="radio"/>
+<label for="__tab_14_1">Look Ahead Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>shipping charge\s
+</pre></div></div>
+<input id="__tab_14_2" name="__tabs_14" type="radio"/>
+<label for="__tab_14_2">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>{1:Number}
+</pre></div></div>
+</div>
+</li>
+</ul>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-9/017.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/019.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/021.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/023.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Freight / <strong>Spartan</strong></p>
 <ol>
-<li>Create two Data Formats as children of the Spartan Data Type:<ol>
+<li>Create two Data Formats as children of the <strong>Spartan</strong> Data Type:<ol>
 <li><mark>Freight</mark></li>
 <li><mark>Value 1</mark></li>
 </ol>
 </li>
 <li>
-<p>Edit the Value Patterns for each of the Data Formats:</p>
+<p>Edit the pattern(s):</p>
+<ul>
+<li>
+<p>Freight</p>
 <div class="superfences-tabs">
-<input checked="checked" id="__tab_1_0" name="__tabs_1" type="radio">
-<label for="__tab_1_0">Freight</label>
+<input checked="checked" id="__tab_15_0" name="__tabs_15" type="radio"/>
+<label for="__tab_15_0">Value Pattern</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span>freight
 </pre></div></div>
-<input id="__tab_1_1" name="__tabs_1" type="radio">
-<label for="__tab_1_1">Value 1</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span>[\d.]+
-</pre></div></div>
-</input></input></div>
+</div>
 </li>
 <li>
-<p>Right click on the Value 1 Data Format and select Clone</p>
+<p>Value 1</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_16_0" name="__tabs_16" type="radio"/>
+<label for="__tab_16_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>[\d.]+
+</pre></div></div>
+</div>
 </li>
-<li>Name the clone <mark>Value 2</mark></li>
+</ul>
+</li>
+<li>
+<p>Right click on the <strong>Value 1</strong> Data Format and select <strong>Clone</strong>.</p>
+</li>
+<li>Name the clone <mark>Value 2</mark>.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-9/025.png"/></p>
-<p><img alt="" src="../img/4-9/027.png"/></p>
-<p><img alt="" src="../img/4-9/029.png"/></p>
-<p><img alt="" src="../img/4-9/023.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/025.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/027.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/029.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/023.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Freight / <strong>Spartan</strong></p>
 <ol>
-<li>Select the Spartan Data Type</li>
-<li>Set the Collation property to <mark>Ordered Array</mark></li>
-<li>Expand Collation and set the Vertical Layout property to <mark>Enabled</mark></li>
-<li>Expand the Vertical Layout property</li>
-<li>Set the Maximum Distance property to <mark>0.25</mark></li>
-<li>Set the Combine Method property to <mark>Sum</mark></li>
+<li>Select the <strong>Spartan</strong> Data Type.</li>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Collation</strong></td>
+<td><code class="codehilite">Individual</code></td>
+<td><mark><code class="codehilite">Ordered Array</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Vertical Layout</strong></td>
+<td><code class="codehilite">Disabled</code></td>
+<td><mark><code class="codehilite">Enabled</code></mark></td>
+</tr>
+<tr>
+<td>→ → <strong>Maximum Distance</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">0.25</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Combine Method</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Sum</code></mark></td>
+</tr>
+</tbody>
+</table>
+</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-9/035.png"/></p>
-<p><img alt="" src="../img/4-9/037.png"/></p>
-<p><img alt="" src="../img/4-9/039.png"/></p>
-<p><img alt="" src="../img/4-9/045.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/035.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/037.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/039.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/045.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
-<ol>
-<li>In the Data Model, select the Freight Data Field</li>
-<li>In the General section, set the Value Type to <mark>Decimal</mark></li>
-<li>Expand Value Type and set the Format Specifier property to <mark>c2</mark></li>
-<li>In the Expressions section, set the Default Value Expression property to <mark>0</mark></li>
-</ol>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Freight</strong></p>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Value Type</strong></td>
+<td><code class="codehilite">String</code></td>
+<td><mark><code class="codehilite">Decimal</code></mark></td>
+</tr>
+<tr>
+<td>→ <strong>Format Specifier</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">c2</code></mark></td>
+</tr>
+<tr>
+<td>Expressions</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Default Value Expression</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">0</code></mark></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p><img alt="" src="../img/4-9/050.png"/></p>
-<p><img alt="" src="../img/4-9/052.png"/></p>
-<p><img alt="" src="../img/4-9/054.png"/></p>
-<p><img alt="" src="../img/4-9/056.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/050.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/052.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/054.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/056.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Freight</strong></p>
 <ol>
 <li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
 <li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Extractors &gt; <mark>Freight</mark> Data Type.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-9/058.png"/></p>
-<p><img alt="" src="../img/4-9/059.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/058.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-9/059.png"/></p>
 <h2 id="discount">Discount<a class="headerlink" href="#discount" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Extractors</strong></p>
 <ol>
-<li>Right click on the Extractors folder and select Add &gt; Data Type...</li>
+<li>Right click and select <strong>Add &gt; Data Type...</strong>.</li>
 <li>Name it <mark>Discount</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/002.png"/></p>
-<p><img alt="" src="../img/4-10/003.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/002.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/003.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / <strong>Discount</strong></p>
 <ol>
 <li>Create two Data Types as children of the Discount Data Type:<ul>
 <li><mark>Acme</mark></li>
@@ -1483,11 +2592,11 @@
 <li>Select the Acme Data Type and click to edit its Pattern</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/004.png"/></p>
-<p><img alt="" src="../img/4-10/005.png"/></p>
-<p><img alt="" src="../img/4-10/006.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/004.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/005.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/006.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Discount / <strong>Acme</strong></p>
 <ol>
 <li>Click on the Properties tab and set the Preprocessing Options &gt; Tab Marking property to <mark>True</mark></li>
 <li>Click back to the Pattern Editor tab</li>
@@ -1500,40 +2609,43 @@
 <li>In the Output Format editor, type:
     <div class="codehilite"><pre><span></span>{0:Number}
 </pre></div></li>
-<li>Click OK to close the pattern editor window</li>
+<li>Press <strong>OK</strong> to close the pattern editor window</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/008.png"/></p>
-<p><img alt="" src="../img/4-10/010.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/008.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/010.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Discount / <strong>Acme</strong></p>
 <ol>
-<li>Select Acme (14)</li>
+<li>Select <strong>Acme (14)</strong>.</li>
 <li>In the Output section, set the Collation property to <mark>Combine</mark></li>
 <li>Expand Collation and set the Combine Method property to <mark>Sum</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/013.png"/></p>
-<p><img alt="" src="../img/4-10/015.png"/></p>
-<p><img alt="" src="../img/4-10/018.png"/>
-    ---
-    Create two Data Formats as children of the Enid Data Type:
-        - <mark>[Key] Enid - Discount</mark>
-        - <mark>[Value] Enid - Discount</mark></p>
-<p><img alt="" src="../img/4-10/021.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/013.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/015.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/018.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Discount / <strong>Enid</strong></p>
+<p>Create two Data Formats as children of the Enid Data Type:</p>
+<ul>
+<li><mark>[Key] Enid - Discount</mark></li>
+<li><mark>[Value] Enid - Discount</mark></li>
+</ul>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-10/021.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Discount / Enid / <strong>[Key] Enid - Discount</strong></p>
 <ol>
-<li>Select the [Key] Enid - Discount Data Format</li>
-<li>Select Enid (5)</li>
+<li>Select <strong>Enid (5)</strong>.</li>
 <li>In the Value Pattern editor, type:
     <div class="codehilite"><pre><span></span>order discount amount
 </pre></div></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/022.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/022.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Discount / Enid / <strong>[Key] Enid - Discount</strong></p>
 <ol>
 <li>Click on the Properties tab</li>
 <li>In the General section, set the Mode property to <mark>FuzzyRegEx</mark></li>
@@ -1542,37 +2654,35 @@
 <li>In the List Editor window, type:
     <div class="codehilite"><pre><span></span>)D=0.1
 </pre></div></li>
-<li>Click OK to close the List Editor window</li>
+<li>Press <strong>OK</strong> to close the List Editor window</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/025.png"/></p>
-<p><img alt="" src="../img/4-10/026.png"/></p>
-<p><img alt="" src="../img/4-10/028.png"/></p>
-<p><img alt="" src="../img/4-10/029.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/025.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/026.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/028.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/029.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Discount / Enid / <strong>[Value] Enid - Discount</strong></p>
 <ol>
-<li>Select the [Value] Enid - Discount Data Format</li>
 <li>In the Value Pattern editor, type:
     <div class="codehilite"><pre><span></span>\d{1,6}\.\d{2,3}
 </pre></div></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/031.png"/></p>
-<p><img alt="" src="../img/4-10/032.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/031.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/032.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Discount / <strong>Enid</strong></p>
 <ol>
-<li>Select the Enid Data Type</li>
 <li>In the Output section, set the Collation property to <mark>Key-Value Pair</mark></li>
 <li>Expand Collation and set the Horizontal Layout property to <mark>Enabled</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/033.png"/></p>
-<p><img alt="" src="../img/4-10/035.png"/></p>
-<p><img alt="" src="../img/4-10/038.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/033.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/035.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/038.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Discount</strong></p>
 <ol>
 <li>In the Data Model, select the Discount Data Field</li>
 <li>In the General section, set the Value Type to <mark>Decimal</mark></li>
@@ -1580,24 +2690,24 @@
 <li>In the Expressions section, set the Default Value Expression property to <mark>0</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/040.png"/></p>
-<p><img alt="" src="../img/4-10/042.png"/></p>
-<p><img alt="" src="../img/4-10/044.png"/></p>
-<p><img alt="" src="../img/4-10/047.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/040.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/042.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/044.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/047.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Discount</strong></p>
 <ol>
 <li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
 <li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Extractors &gt; <mark>Discount</mark> Data Type.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-10/046.png"/></p>
-<p><img alt="" src="../img/4-10/047.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/046.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-10/047.png"/></p>
 <h2 id="sales-tax">Sales Tax<a class="headerlink" href="#sales-tax" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Extractors</strong></p>
 <ol>
-<li>Right click on the Extractors folder and select Add &gt; Data Type...</li>
+<li>Right click and select <strong>Add &gt; Data Type...</strong>.</li>
 <li>Name it <mark>Sales Tax</mark></li>
 <li>Create two Data Formats as children of the Sales Tax Data Type<ul>
 <li><mark>Express</mark></li>
@@ -1606,41 +2716,48 @@
 </li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-11/003.png"/></p>
-<p><img alt="" src="../img/4-11/004.png"/>
-    ---
-    Edit the patterns for each of the Data Formats:
-    - Express</p>
-<div class="codehilite"><pre><span></span>    ```tab="Value Pattern"
-    ([@Number.]{4,12})
-    ```
-
-    ```tab="Look Ahead Pattern"
-    sales tax:((\r\n)|\s)
-    ```
-
-    ```tab="Output Format"
-    {0:Number}
-    ```
-
-- Standard
-
-    ```tab="Value Pattern"
-    ([@Number.]{3,12})
-    ```
-
-    ```tab="Look Ahead Pattern"
-    tax\s
-    ```
-
-    ```tab="Output Format"
-    {1:Number}
-    ```
-</pre></div>
-<p><img alt="" src="../img/4-11/006.png"/></p>
-<p><img alt="" src="../img/4-11/008.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/003.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/004.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Extractors / Sales Tax / <em>*</em>**</p>
+<p>Edit the patterns for each of the Data Formats:
+- Express</p>
+<div class="codehilite"><pre><span></span>```tab="Value Pattern"
+([@Number.]{4,12})
+```
+
+```tab="Look Ahead Pattern"
+sales tax:((\r\n)|\s)
+```
+
+```tab="Output Format"
+{0:Number}
+```
+</pre></div>
+<ul>
+<li>
+<p>Standard</p>
+<div class="superfences-tabs">
+<input checked="checked" id="__tab_17_0" name="__tabs_17" type="radio"/>
+<label for="__tab_17_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>([@Number.]{3,12})
+</pre></div></div>
+<input id="__tab_17_1" name="__tabs_17" type="radio"/>
+<label for="__tab_17_1">Look Ahead Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>tax\s
+</pre></div></div>
+<input id="__tab_17_2" name="__tabs_17" type="radio"/>
+<label for="__tab_17_2">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>{1:Number}
+</pre></div></div>
+</div>
+</li>
+</ul>
+</div>
+<p><img alt="" src="../../assets/img/vol-2/4-11/006.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/008.png"/></p>
+<div class="admonition abstract">
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Sales Tax</strong></p>
 <ol>
 <li>In the Data Model, select the Sales Tax Data Field</li>
 <li>In the General section, set the Value Type to <mark>Decimal</mark></li>
@@ -1648,49 +2765,49 @@
 <li>In the Expressions section, set the Default Value Expression property to <mark>0</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-11/009.png"/></p>
-<p><img alt="" src="../img/4-11/011.png"/></p>
-<p><img alt="" src="../img/4-11/012.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/009.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/011.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/012.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Sales Tax</strong></p>
 <ol>
 <li>In the General section, set the Value Extractor &gt; Type property to Reference</li>
 <li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Extractors &gt; <mark>Sales Tax</mark> Data Type.</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-11/014.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/014.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / <strong>(local resources)</strong></p>
 <ol>
-<li>Add a new folder to (local resources)</li>
+<li>Right click and select <strong>Add &gt; New Folder...</strong></li>
 <li>Name it <mark>Overrides</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-11/018.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/018.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Overrides</strong></p>
 <ol>
 <li>In the Overrides folder, add a Field Class</li>
 <li>Name it <mark>[Enid] Sales Tax</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-11/020.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/020.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Overrides / <strong>[Enid] Sales Tax</strong></p>
 <ol>
 <li>Set the Value Extractor &gt; Type property to <mark>Internal</mark></li>
 <li>
 <p>Click to edit the pattern:</p>
 <div class="superfences-tabs">
-<input checked="checked" id="__tab_2_0" name="__tabs_2" type="radio">
-<label for="__tab_2_0">Value Pattern</label>
+<input checked="checked" id="__tab_18_0" name="__tabs_18" type="radio"/>
+<label for="__tab_18_0">Value Pattern</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span>([@Number.]{2,12})
 </pre></div></div>
-<input id="__tab_2_1" name="__tabs_2" type="radio">
-<label for="__tab_2_1">Output Format</label>
+<input id="__tab_18_1" name="__tabs_18" type="radio"/>
+<label for="__tab_18_1">Output Format</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span>{1:Number}
 </pre></div></div>
-</input></input></div>
+</div>
 </li>
 <li>
 <p>Set the Feature Extractor &gt; Type property to <mark>Reference</mark></p>
@@ -1698,11 +2815,11 @@
 <li>Set the Referenced Extractor property to the Data Extraction • Data Types &gt; Training Materials &gt; Features &gt; <mark>Phrases</mark> Data Type</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-11/021.png"/></p>
-<p><img alt="" src="../img/4-11/023.png"/></p>
-<p><img alt="" src="../img/4-11/024.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/021.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/023.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/024.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Overrides / <strong>[Enid] Sales Tax</strong></p>
 <ol>
 <li>Click to edit the Context Zones property</li>
 <li>In the Context Zones window, delete one of the zones</li>
@@ -1736,85 +2853,81 @@
 </table>
 </li>
 <li>
-<p>Click OK to close the Context Zones window</p>
+<p>Press <strong>OK</strong> to close the Context Zones window</p>
 </li>
 <li>In the Output section, set the Minimum Confidence property to <mark>90%</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-11/027.png"/></p>
-<p><img alt="" src="../img/4-11/030.png"/></p>
-<p><img alt="" src="../img/4-11/033.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/027.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/030.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/033.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / <strong>Enid</strong></p>
 <ol>
-<li>Navigate to the (root) &gt; Content Models &gt; Invoices &gt; Enid Document Type</li>
 <li>Click on the Data Element Profiles tab</li>
 <li>Click on the Sales Tax Data Field and click the <strong>+</strong> button in the toolbar</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-11/034.png"/></p>
-<p><img alt="" src="../img/4-11/035.png"/></p>
-<p><img alt="" src="../img/4-11/036.png"/></p>
-<p><img alt="" src="../img/4-11/037.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/034.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/035.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/036.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/037.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / <strong>Enid</strong></p>
 <ol>
 <li>In the properties panel, set the ESP™ Extraction Overrides &gt; Override Extractor property to <mark>True</mark></li>
 <li>Expand Extractor and set the Extractor &gt; Type property to Reference</li>
 <li>Set the Referenced Extractor property to the Invoices • (local resources) &gt; Overrides &gt; <mark>[Enid] Sales Tax</mark> Field Class</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-11/039.png"/></p>
-<p><img alt="" src="../img/4-11/040.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/039.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-11/040.png"/></p>
 <h2 id="data-model-adjustments">Data Model Adjustments<a class="headerlink" href="#data-model-adjustments" title="Permanent link">¶</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Ship To</strong></p>
 <ol>
-<li>Navigate to the Ship To Data Field</li>
 <li>In the Appearance section, set the Display Width property to <mark>110</mark></li>
 <li>In the Behavior section, set the Multi Line property to <mark>Enabled</mark></li>
 <li>Expand Multi Line and set the Multi Line Height property to <mark>45</mark></li>
 <li>Set the Word Wrap property to <mark>True</mark></li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-12/002.png"/></p>
-<p><img alt="" src="../img/4-12/003.png"/></p>
-<p><img alt="" src="../img/4-12/004.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/002.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/003.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/004.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Ship To</strong></p>
 <ol>
 <li>Right click on any of the property names and select Copy Properties &gt; Selected Properties...</li>
 <li>In the Select Properties window, check the boxes next to the properties to copy:<ul class="task-list">
-<li class="task-list-item"><input checked="" disabled="" type="checkbox"> Display Width</input></li>
-<li class="task-list-item"><input checked="" disabled="" type="checkbox"> Multi Line</input></li>
+<li class="task-list-item"><input checked="" disabled="" type="checkbox"/> Display Width</li>
+<li class="task-list-item"><input checked="" disabled="" type="checkbox"/> Multi Line</li>
 </ul>
 </li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-12/010.png"/></p>
-<p><img alt="" src="../img/4-12/011.png"/></p>
-<p><img alt="" src="../img/4-12/012.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/010.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/011.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/012.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Remit To</strong></p>
 <ol>
-<li>Navigate to the Remit To Data Field</li>
 <li>Right click on any of the property names and select Paste Properties</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-12/013.png"/></p>
-<p><img alt="" src="../img/4-12/014.png"/></p>
-<p><img alt="" src="../img/4-12/015.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/013.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/014.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/015.png"/></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step</p>
+<p class="admonition-title">Content Models / Invoices / <strong>(data model)</strong></p>
 <ol>
-<li>Navigate to the Data Model itself</li>
 <li>In the Child Element Options section, set the Show Fields In Grid property to <mark>True</mark></li>
 <li>In the toolbar, click the Test Extraction button to test all fields against a document</li>
 </ol>
 </div>
-<p><img alt="" src="../img/4-12/016.png"/></p>
-<p><img alt="" src="../img/4-12/018.png"/></p>
-<p><img alt="" src="../img/4-12/019.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/016.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/018.png"/></p>
+<p><img alt="" src="../../assets/img/vol-2/4-12/019.png"/></p>
 </article>
 </div>
 </div>
@@ -1873,8 +2986,8 @@
 </div>
 <script src="../../assets/javascripts/application.583bbe55.js"></script>
 <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
-<script src="../../js/glightbox.min.js"></script>
-<script src="../../js/jquery-3.3.1.min.js"></script>
-<script src="../../js/app.js"></script>
+<script src="../../assets/js/glightbox.min.js"></script>
+<script src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../assets/js/app.js"></script>
 </body>
 </html>
