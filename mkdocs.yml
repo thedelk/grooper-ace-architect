@@ -4,6 +4,7 @@ site_name: ACE - Architect
 # Configuration
 theme:
   name: material
+  custom_dir: custom_theme
   favicon: "assets/img/favicon.ico"
   # logo: "assets/img/favicon.ico"
   palette:
@@ -66,14 +67,14 @@ markdown_extensions:
 
 plugins:
   - pdf-export:
-      verbose: true
-      # enabled_if_env: ENABLE_PDF_EXPORT
+      # verbose: true
+      enabled_if_env: ENABLE_PDF_EXPORT
   - search
   - awesome-pages:
       filename: .title
 extra_css:
   - "assets/css/glightbox.min.css"
-  - "assets/css/styles.css"
+  # - "assets/css/styles.css"
   - "assets/css/pdf.css"
 extra_javascript:
   - "assets/js/glightbox.min.js"
