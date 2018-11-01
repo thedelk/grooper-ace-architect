@@ -1,0 +1,184 @@
+.md-main,
+.md-typeset {
+  font-size: 14px !important;
+  color: #707070;
+  line-height: 24px !important;
+}
+
+.md-sidebar * {
+  font-size: 14px !important;
+}
+
+.md-typeset {
+  code,
+  pre {
+    font-size: 1.2rem;
+  }
+
+  .codehilite,
+  .highlight {
+    .hll {
+      display: inline;
+      margin: 0 -0.5rem;
+      padding: 0 0.5rem;
+    }
+  }
+
+  .admonition {
+    overflow: hidden !important;
+
+    .md-typeset__table table {
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      box-shadow: none;
+      margin: auto !important;
+      // display: block;
+
+      th {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &.abstract {
+      // border-left-color: #36b0a7 !important;
+      // border-left-color: #f89420 !important;
+      // border-left: 0px solid transparent !important;
+      font-family: "Roboto Light" !important;
+      font-size: 1.4rem;
+
+      li {
+        margin-top: 2.4rem;
+        margin-bottom: 2.4rem;
+      }
+
+      & > .admonition-title {
+        // background-color: rgba(54, 176, 167, 0.1) !important;
+        // background-color: rgba(248, 148, 32, 0.1) !important;
+        // background-color: #fafafa !important;
+        font-family: "Roboto Mono";
+        font-size: 1.2rem;
+        font-weight: normal;
+        line-height: 3rem;
+        // padding-left: 2.5rem;
+
+        strong {
+          color: #f89420 !important;
+          font-weight: 700 !important;
+          font-family: "Roboto Mono" !important;
+          // font-family: "Roboto Medium" !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          border-radius: 0 !important;
+          background-color: initial;
+          box-shadow: none !important;
+        }
+
+        &::before {
+          // content: "\E5DA"; // subdirectory_arrow_right
+          content: "\E315"; // keyboard_arrow_right
+          // content: "\E037"; // play_arrow
+          line-height: inherit !important;
+        }
+      }
+    }
+  }
+}
+
+mark .codehilite {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.codehilite:not(pre) {
+  // color: #f89420 !important;
+}
+.codehilite pre {
+  color: #ed2330;
+}
+
+details:not(.abstract) {
+  // width: 50%;
+  margin-left: 50%;
+  font-size: 1.2rem;
+}
+
+hr {
+  margin: 5rem 0 !important;
+}
+
+.md-container img {
+  /* max-height: 50% !important; */
+  max-width: 100% !important;
+  // margin: 0 7.5%;
+  // margin: 1rem 0 0 !important;
+  // clip: rect(2px, 2px, 2px, 2px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* border: 0.4rem solid #80828580 !important; */
+  // border-left: 0.4rem solid rgba(0, 176, 255, 0.1) !important;
+  // border-radius: 0.4rem !important;
+  // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+  //   0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.md-content {
+  h1 {
+    font-family: "Roboto Thin" !important;
+    letter-spacing: -1px;
+    font-size: 36px;
+    /* font-weight: 500 !important; */
+  }
+
+  h2 {
+    font-family: "Roboto Light" !important;
+    font-size: 28px;
+    letter-spacing: -1px;
+  }
+
+  h3 {
+    font-family: "Roboto Light" !important;
+    font-size: 20px;
+    // letter-spacing: -0.8px;
+  }
+}
+
+h4 {
+  font-family: "Roboto Medium" !important;
+  font-weight: normal !important;
+  margin-top: 4rem !important;
+}
+
+del {
+  text-decoration: none;
+  font-family: "Roboto Light" !important;
+}
+
+strong {
+  font-weight: normal;
+  font-family: "Roboto Light";
+  margin: 0 0.25em;
+  padding: 0.0625em 0;
+  border-radius: 0.2rem;
+  background-color: rgba(219, 219, 219, 0.6);
+  box-shadow: 0.25rem 0 0 rgba(219, 219, 219, 0.6),
+    -0.25rem 0 0 rgba(219, 219, 219, 0.6);
+  word-break: break-word;
+}
+
+.codehilite:not(pre) {
+  font-size: 1.2rem !important;
+  box-shadow: 0.25rem 0 0 rgba(236, 236, 236, 0.5) !important,
+    -0.25rem 0 0 rgba(236, 236, 236, 0.5) !important;
+}
+
+td mark {
+  font-family: "Roboto Mono";
+  font-size: 1.2rem;
+}
+
+mark {
+  box-shadow: 0.25rem 0 0 rgba(255, 235, 59, 0.5) !important,
+    -0.25rem 0 0 rgba(255, 235, 59, 0.5) !important;
+}
+
+table {
+  margin: auto auto !important;
+}

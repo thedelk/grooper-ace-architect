@@ -1,0 +1,21 @@
+@page {
+  size: letter;
+  margin: 5mm 4mm 3mm 4mm;
+  counter-increment: page;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  white-space: pre;
+  color: grey;
+  /* @top-left {
+    content: "© 2018 My Company";
+  }
+  @top-center {
+    content: string(chapter);
+  }
+  @top-right {
+    content: "Page " counter(page);
+  } */
+}
+
+img {
+  /* max-width: 100%; */
+}
