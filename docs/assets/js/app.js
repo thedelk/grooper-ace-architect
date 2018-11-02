@@ -2,30 +2,11 @@ $(document).ready(function ()
 {
   $('p > img').each(function ()
   {
-    // Add class to images
-    // $(this).addClass('glightbox');
-    
-    
-    
-    // TESTING
-    /////////////////////////////////////////
-    
-    $(this).wrap(`<a class="glightbox5" href="${$(this).prop('src')}"></a>`)
-    
-    
-    
-    
-    
-    
-    /////////////////////////////////////////
-    // END TESTING
-    
-    
-    
+    $(this).wrap(`<a class="lightbox" href="${$(this).prop('src')}"></a>`);
   });
   
   var lightbox = GLightbox();
   var lightboxDescription = GLightbox({
-    selector: 'glightbox5'
+    selector: 'lightbox'
   });
 });
