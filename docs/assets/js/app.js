@@ -19,17 +19,16 @@ $(document).ready(function ()
     "images",
     "page",
     "pages",
-    // "batch",
+    "batch",
     "batches",
     "folder",
     "folders",
-    // "scan",
+    "scan",
     "scanning",
     "activity",
     "activities",
     "property",
     "properties",
-    // "Process",
     "Lexicon",
     "Batch Process",
     "Scan Profile",
@@ -43,7 +42,8 @@ $(document).ready(function ()
     "(data model)",
     "(local resources)",
     "Content Model",
-    "Data Format"
+    "Data Format",
+    "Process"
   ];
 
   for (let term of grooperTerms) {
@@ -52,7 +52,8 @@ $(document).ready(function ()
 
       // https://stackoverflow.com/questions/7959050/use-jquery-filter-to-select-specific-text-within-div
       regexp = RegExp(`(${term})`, 'g');
-      replacement = `<span class='grooper-word grooper-word-${term}'>$1</span>`;
+      termClass = term.replace(" ", "-");
+      replacement = `<span class='grooper-word grooper-word-${termClass}'>$1</span>`;
 
       return html.replace(regexp, replacement);
     });
