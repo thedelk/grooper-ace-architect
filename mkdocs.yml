@@ -74,7 +74,7 @@ plugins:
       filename: .title
 extra_css:
   - "assets/css/glightbox.min.css"
-  # - "assets/css/styles.css"
+  - "assets/css/test.css"
   - "assets/css/pdf.css"
 extra_javascript:
   - "assets/js/glightbox.min.js"
