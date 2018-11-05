@@ -15,20 +15,21 @@ $(document).ready(function ()
   // TESTING
   // ---------------------------------
   // const grooperTerms = [
-  //   "image",
-  //   "images",
-  //   "page",
-  //   "pages",
+  //   // "image",
+  //   // "images",
+  //   // "page",
+  //   // "pages",
   //   "batch",
-  //   "batches",
-  //   "folder",
-  //   "folders",
-  //   "scan",
-  //   "scanning",
-  //   "activity",
-  //   "activities",
-  //   "property",
-  //   "properties",
+  //   // "batches",
+  //   // "folder",
+  //   // "folders",
+  //   // "scan",
+  //   // "scanning",
+  //   // "activity",
+  //   // "activities",
+  //   // "process",
+  //   // "property",
+  //   // "properties",
   //   "Lexicon",
   //   "Batch Process",
   //   "Scan Profile",
@@ -42,20 +43,21 @@ $(document).ready(function ()
   //   "(data model)",
   //   "(local resources)",
   //   "Content Model",
-  //   "Data Format",
-  //   "Process"
+  //   "Data Format"
   // ];
 
   // for (let term of grooperTerms) {
-  //   $('p, .md-content li').html(function(i, html) {
-  //     var regexp, replacement;
+  //   $('p:not(.admonition-title), .md-content li').html(function(i, html) {
+  //   // $('p:not(.admonition-title), .md-content li').html(function(i, html) {
+  //   // $('p, .md-content li').html(function(i, html) {
+  //     var regex1, replacement;
 
   //     // https://stackoverflow.com/questions/7959050/use-jquery-filter-to-select-specific-text-within-div
-  //     regexp = RegExp(`(${term})`, 'g');
+  //     regex1 = new RegExp('(?<gname>' + term + ')', 'g');
   //     termClass = term.replace(" ", "-");
-  //     replacement = `<span class='grooper-word grooper-word-${termClass}'>$1</span>`;
+  //     replacement = `<span class='grooper-word grooper-word-${termClass}'>$<gname></span>`;
 
-  //     return html.replace(regexp, replacement);
+  //     return html.replace(regex1, replacement);
   //   });
   // }
 
