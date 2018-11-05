@@ -5,7 +5,7 @@
 ### Adding and configuring Document Export
 
 !!! abstract "Step 1"
-    1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process
+    1. Navigate to (root) > Batch Processing > Processes > Production > Invoices Process
     2. Add a new step
     3. Set the Activity Type property of the new step to ==Document Export==
     4. Set the Export Provider property to ==File System Export==

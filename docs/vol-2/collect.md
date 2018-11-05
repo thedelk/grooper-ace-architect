@@ -2,7 +2,7 @@
 
 !!! abstract "Content Models / Invoices / **(data model)**"
     1. Right click and select **Contents > Add Multiple Items...**.
-    2. In the **Contents • Add Multiple Items** window, change the following property values:
+    2. In the **Contents • Add Multiple Items** window, change the following property value(s):
 
         | Property       | Default Value | New Value                                                                                                                                                                                             |
         | -------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -18,23 +18,23 @@
 ![](../assets/img/vol-2/4-1/010.png)
 
 !!! abstract "Content Models / Invoices / **(local resources)**"
-    1. Right click and select **Add > Folder...**
-    2. Name it ==Extractors==
+    1. Right click and select **Add > Folder...**.
+    2. Name it ==Extractors==.
 
 ![](../assets/img/vol-2/4-1/016.png)
 
 ![](../assets/img/vol-2/4-1/018.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
-    1. Right click and select **Add > Field Class...**
-    2. Name it ==Invoice Date==
+    1. Right click and select **Add > Field Class...**.
+    2. Name it ==Invoice Date==.
 
 ![](../assets/img/vol-2/4-1/019.png)
 
 ![](../assets/img/vol-2/4-1/021.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    Change the following property values:
+    Change the following property value(s):
 
     | Property                     | Default Value | New Value       |
     | ---------------------------- | ------------- | --------------- |
@@ -46,7 +46,7 @@
 ![](../assets/img/vol-2/4-1/029.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    Change the following property values:
+    Change the following property value(s):
 
     | Property                     | Default Value | New Value       |
     | ---------------------------- | ------------- | --------------- |
@@ -58,28 +58,28 @@
 ![](../assets/img/vol-2/4-1/031.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    1. Select **Acme (1)**
-    2. Press **Run Extraction**
-    3. In the candidate list, right click on the ==11/14/2008== value and select **Train As Positive**
+    1. Select **Acme (1)**.
+    2. Press **Run Extraction**.
+    3. In the candidate list, right click on the ==11/14/2008== value and select **Train As Positive**.
 
 ![](../assets/img/vol-2/4-1/034.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    1. Select **Standard (2)**
-    2. Select both of the ==11/11/2008== candidates that have correct features
-    3. Right click on either of them and select **Train As Positive**
+    1. Select **Standard (2)**.
+    2. Select both of the ==11/11/2008== candidates that have correct features.
+    3. Right click on either of them and select **Train As Positive**.
 
 ![](../assets/img/vol-2/4-1/039.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    1. Select **Express (3)**
-    2. Right click on the ==12/2/2008== candidate with 58.1689% confidence and select **Train As Positive**
+    1. Select **Express (3)**.
+    2. Right click on the ==12/2/2008== candidate with **58.1689%** confidence and select **Train As Positive**.
 
 ![](../assets/img/vol-2/4-1/043.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    1. Select **Spartan (4)**
-    2. In the **Context Zone Options** section, click to edit the **Context Zones**
+    1. Select **Spartan (4)**.
+    2. In the **Context Zone Options** section, click to edit the **Context Zones**.
 
 ![](../assets/img/vol-2/4-1/048.png)
 
@@ -100,15 +100,15 @@
 ![](../assets/img/vol-2/4-1/052.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    1. Select **Enid (5)**
-    2. In the Output section, set the **Minimum Confidence** property to ==70%==
+    1. Select **Enid (5)**.
+    2. In the Output section, set the **Minimum Confidence** property to ==70%==.
 
 ![](../assets/img/vol-2/4-1/060.png)
 
 ![](../assets/img/vol-2/4-1/062.png)
 
 !!! abstract "Content Models / Invoices / (data model) / **Invoice Date**"
-    Change the following property values:
+    Change the following property value(s):
 
     | Property                     | Default Value | New Value          |
     | ---------------------------- | ------------- | ------------------ |
@@ -128,16 +128,16 @@
 ## Ship To
 
 !!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
-    1. Right click and select **Add > Field Class...**
-    2. Name it ==Ship To==
+    1. Right click and select **Add > Field Class...**.
+    2. Name it ==Ship To==.
 
 ![](../assets/img/vol-2/4-2/002.png)
 
 ![](../assets/img/vol-2/4-2/004.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Ship To**"
-    1. Right click and select **Add > Data Type...**
-    2. Name it ==[Features] Ship To==
+    1. Right click and select **Add > Data Type...**.
+    2. Name it ==[Features] Ship To==.
 
 ![](../assets/img/vol-2/4-2/005.png)
 
@@ -162,7 +162,7 @@
 ![](../assets/img/vol-2/4-2/009.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Ship To**"
-    Change the following property values:
+    Change the following property value(s):
 
     | Property                     | Default Value | New Value       |
     | ---------------------------- | ------------- | --------------- |
@@ -176,7 +176,7 @@
 ![](../assets/img/vol-2/4-2/013.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Ship To**"
-    Change the following property values:
+    Change the following property value(s):
 
     | Property                     | Default Value | New Value                |
     | ---------------------------- | ------------- | ------------------------ |
@@ -221,7 +221,7 @@
 ![](../assets/img/vol-2/4-2/030.png)
 
 !!! abstract "Content Models / Invoices / (data model) / **Ship To**"
-    Change the following property values:
+    Change the following property value(s):
 
     | Property                     | Default Value | New Value       |
     | ---------------------------- | ------------- | --------------- |
@@ -243,7 +243,7 @@
 !!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
     1. Right click and select **Add > Field Class...**.
     2. Name it ==Remit To==.
-    3. Change the following property values:
+    3. Change the following property value(s):
 
         | Property                     | Default Value | New Value       |
         | ---------------------------- | ------------- | --------------- |
@@ -438,7 +438,7 @@
         [^\r\n\t\f:]+
         ```
 
-    2. Click on the Properties tab
+    2. Click on the **Properties** tab.
     3. Change the following property value(s):
 
         | Property                  | Default Value | New Value     |
@@ -499,7 +499,7 @@
 ![](../assets/img/vol-2/4-4/060.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / _Global / [Array] PO Number / **Purchase**"
-    1. Select **Enid (5)**
+    1. Select **Enid (5)**.
     2. Edit the pattern(s):
 
         ```tab="Value Pattern"
@@ -515,7 +515,7 @@
 ![](../assets/img/vol-2/4-4/062.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / _Global / [Array] PO Number / **Order Number**"
-    1. Select **Enid (5)**
+    1. Select **Enid (5)**.
     2. Edit the pattern(s):
 
         ```tab="Value Pattern"
@@ -635,8 +635,8 @@
 ![](../assets/img/vol-2/4-5/016.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Number**"
-    1. In the candidate list, find the value that has the appropriate feature(s) to train
-    2. Right click and select **Train As Positive**
+    1. In the candidate list, find the value that has the appropriate feature(s) to train.
+    2. Right click and select **Train As Positive**.
 
 ![](../assets/img/vol-2/4-5/019.png)
 
@@ -1006,7 +1006,7 @@
 
     - Acme
         
-        *Make sure to enable Tab Marking*
+        *Make sure to enable Tab Marking!*
 
         ```tab="Value Pattern"
         ([@Number.]{3,12})
@@ -1083,8 +1083,8 @@
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Freight / **Spartan**"
     1. Create two Data Formats as children of the **Spartan** Data Type:
-        1. ==Freight==
-        2. ==Value 1==
+        - ==Freight==
+        - ==Value 1==
     2. Edit the pattern(s):
 
         - Freight
@@ -1150,8 +1150,14 @@
 ![](../assets/img/vol-2/4-9/056.png)
 
 !!! abstract "Content Models / Invoices / (data model) / **Freight**"
-    1. In the General section, set the Value Extractor > Type property to Reference
-    2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Freight== Data Type.
+    Change the following property value(s):
+    
+    | Property                     | Default Value | New Value       |
+    |------------------------------|---------------|-----------------|
+    | General                      |               |                 |
+    | **Value Extractor**          |               |                 |
+    | --> **Type**                 | `None`        | ==`Reference`== |
+    | --> **Referenced Extractor** | `-`           | ==`Freight`==   |
 
 ![](../assets/img/vol-2/4-9/058.png)
 
@@ -1161,17 +1167,17 @@
 
 !!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
     1. Right click and select **Add > Data Type...**.
-    2. Name it ==Discount==
+    2. Name it ==Discount==.
 
 ![](../assets/img/vol-2/4-10/002.png)
 
 ![](../assets/img/vol-2/4-10/003.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Discount**"
-    1. Create two Data Types as children of the Discount Data Type:
+    1. Create two Data Types as children of the **Discount** Data Type:
         - ==Acme==
         - ==Enid==
-    2. Select the Acme Data Type and click to edit its Pattern
+    2. Select the **Acme** Data Type and click to edit its Pattern.
 
 ![](../assets/img/vol-2/4-10/004.png)
 
@@ -1180,21 +1186,31 @@
 ![](../assets/img/vol-2/4-10/006.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / **Acme**"
-    1. Click on the Properties tab and set the Preprocessing Options > Tab Marking property to ==True==
-    2. Click back to the Pattern Editor tab
-    3. In the Value Pattern editor, type:
-        ```
+    1. Click on the **Properties** tab.
+    2. Change the following property value(s):
+
+        | Property                  | Default Value | New Value     |
+        | ------------------------- | ------------- | ------------- |
+        | General                   |               |               |
+        | **Preprocessing Options** | `None`        |               |
+        | --> **Tab Marking**       | `Disabled`    | ==`Enabled`== |
+
+    3. Click on the **Pattern Editor** tab.
+    4. Edit the pattern(s):
+
+        ```tab="Value Pattern"
         [@Number.,]{3,12}
         ```
-    4. In the Look Ahead Pattern editor, type:
-        ```
+
+        ```tab="Look Ahead Pattern"
         cust\.\sdiscount\s%(\t|\r\n)[^\t]+\t
         ```
-    5. In the Output Format editor, type:
-        ```
+
+        ```tab="Output Format"
         {0:Number}
         ```
-    6. Press **OK** to close the pattern editor window
+
+    5.  Press **OK** to close the pattern editor window.
 
 ![](../assets/img/vol-2/4-10/008.png)
 
@@ -1202,8 +1218,13 @@
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / **Acme**"
     1. Select **Acme (14)**.
-    2. In the Output section, set the Collation property to ==Combine==
-    3. Expand Collation and set the Combine Method property to ==Sum==
+    2. Change the following property value(s):
+
+        | Property               | Default Value | New Value     |
+        |------------------------|---------------|---------------|
+        | Output                 |               |               |
+        | **Collation**          | `Individual`  | ==`Combine`== |
+        | --> **Combine Method** | `-`           | ==`Sum`==     |
 
 ![](../assets/img/vol-2/4-10/013.png)
 
@@ -1212,7 +1233,7 @@
 ![](../assets/img/vol-2/4-10/018.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / **Enid**"
-    Create two Data Formats as children of the Enid Data Type:
+    Create two Data Formats as children of the **Enid** Data Type:
 
     - ==[Key] Enid - Discount==
     - ==[Value] Enid - Discount==
@@ -1221,23 +1242,31 @@
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / Enid / **[Key] Enid - Discount**"
     1. Select **Enid (5)**.
-    2. In the Value Pattern editor, type:
-        ```
+    2. Edit the pattern(s):
+
+        ```tab="Value Pattern"
         order discount amount
         ```
 
 ![](../assets/img/vol-2/4-10/022.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / Enid / **[Key] Enid - Discount**"
-    1. Click on the Properties tab
-    2. In the General section, set the Mode property to ==FuzzyRegEx==
-    3. In the Fuzzy Matching Options section, set the Minimum Similarity property to ==85%==
-    4. Expand Fuzzy Match Weightings and click to edit Local Entries
-    5. In the List Editor window, type:
+    1. Click on the **Properties** tab.
+    2. Change the following property value(s):
+
+        | Property               | Default Value     | New Value         |
+        |------------------------|-------------------|-------------------|
+        | General                |                   |                   |
+        | **Mode**               | `RegEx`           | ==`FuzzyRegEx`==  |
+        | Fuzzy Matching Options |                   |                   |
+        | **Minimum Similarity** | `90%`             | ==`85%`==         |
+        | **Local Entries**      | *(Click to edit)* | *(Click to edit)* |
+
+    3. In the List Editor window, enter:
         ```
         )D=0.1
         ```
-    6. Press **OK** to close the List Editor window
+    4. Press **OK** to close the List Editor window.
 
 ![](../assets/img/vol-2/4-10/025.png)
 
@@ -1249,7 +1278,9 @@
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / Enid / **[Value] Enid - Discount**"
     1. In the Value Pattern editor, type:
-        ```
+    2. Edit the pattern(s):
+
+        ```tab="Value Pattern"
         \d{1,6}\.\d{2,3}
         ```
 
@@ -1258,8 +1289,13 @@
 ![](../assets/img/vol-2/4-10/032.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / **Enid**"
-    1. In the Output section, set the Collation property to ==Key-Value Pair==
-    2. Expand Collation and set the Horizontal Layout property to ==Enabled==
+    Change the following property value(s):
+    
+    | Property                  | Default Value | New Value            |
+    |---------------------------|---------------|----------------------|
+    | Output                    |               |                      |
+    | **Collation**             | `Individual`  | ==`Key-Value Pair`== |
+    | --> **Horizontal Layout** | `Disabled`    | ==`Enabled`==        |
 
 ![](../assets/img/vol-2/4-10/033.png)
 
@@ -1268,10 +1304,15 @@
 ![](../assets/img/vol-2/4-10/038.png)
 
 !!! abstract "Content Models / Invoices / (data model) / **Discount**"
-    1. In the Data Model, select the Discount Data Field
-    2. In the General section, set the Value Type to ==Decimal==
-    3. Expand Value Type and set the Format Specifier property to ==c2==
-    4. In the Expressions section, set the Default Value Expression property to ==0==
+    Change the following property value(s):
+    
+    | Property                     | Default Value | New Value     |
+    | ---------------------------- | ------------- | ------------- |
+    | General                      |               |               |
+    | **Value Type**               | `String`      | ==`Decimal`== |
+    | --> **Format Specifier**     | `-`           | ==`c2`==      |
+    | Expressions                  |               |               |
+    | **Default Value Expression** | `-`           | ==`0`==       |
 
 ![](../assets/img/vol-2/4-10/040.png)
 
@@ -1282,8 +1323,14 @@
 ![](../assets/img/vol-2/4-10/047.png)
 
 !!! abstract "Content Models / Invoices / (data model) / **Discount**"
-    1. In the General section, set the Value Extractor > Type property to Reference
-    2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Discount== Data Type.
+    Change the following property value(s):
+    
+    | Property                     | Default Value | New Value       |
+    |------------------------------|---------------|-----------------|
+    | General                      |               |                 |
+    | **Value Extractor**          |               |                 |
+    | --> **Type**                 | `None`        | ==`Reference`== |
+    | --> **Referenced Extractor** | `-`           | ==`Discount`==  |
 
 ![](../assets/img/vol-2/4-10/046.png)
 
@@ -1293,8 +1340,8 @@
 
 !!! abstract "Content Models / Invoices / (local resources) / **Extractors**"
     1. Right click and select **Add > Data Type...**.
-    2. Name it ==Sales Tax==
-    3. Create two Data Formats as children of the Sales Tax Data Type
+    2. Name it ==Sales Tax==.
+    3. Create two Data Formats as children of the **Sales Tax** Data Type:
         - ==Express==
         - ==Standard==
 
@@ -1303,7 +1350,8 @@
 ![](../assets/img/vol-2/4-11/004.png)
     
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Sales Tax / *****"
-    Edit the patterns for each of the Data Formats:
+    Edit the pattern(s) for each of the Data Formats:
+    
     - Express
 
         ```tab="Value Pattern"
@@ -1337,10 +1385,15 @@
 ![](../assets/img/vol-2/4-11/008.png)
 
 !!! abstract "Content Models / Invoices / (data model) / **Sales Tax**"
-    1. In the Data Model, select the Sales Tax Data Field
-    2. In the General section, set the Value Type to ==Decimal==
-    3. Expand Value Type and set the Format Specifier property to ==c2==
-    4. In the Expressions section, set the Default Value Expression property to ==0==
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value     |
+    | ---------------------------- | ------------- | ------------- |
+    | General                      |               |               |
+    | **Value Type**               | `String`      | ==`Decimal`== |
+    | --> **Format Specifier**     | `-`           | ==`c2`==      |
+    | Expressions                  |               |               |
+    | **Default Value Expression** | `-`           | ==`0`==       |
 
 ![](../assets/img/vol-2/4-11/009.png)
 
@@ -1349,25 +1402,39 @@
 ![](../assets/img/vol-2/4-11/012.png)
 
 !!! abstract "Content Models / Invoices / (data model) / **Sales Tax**"
-    1. In the General section, set the Value Extractor > Type property to Reference
-    2. Set the Referenced Extractor property to the Invoices • (local resources) > Extractors > ==Sales Tax== Data Type.
+    Change the following property value(s):
+    
+    | Property                     | Default Value | New Value       |
+    |------------------------------|---------------|-----------------|
+    | General                      |               |                 |
+    | **Value Extractor**          |               |                 |
+    | --> **Type**                 | `None`        | ==`Reference`== |
+    | --> **Referenced Extractor** | `-`           | ==`Sales Tax`== |
 
 ![](../assets/img/vol-2/4-11/014.png)
 
 !!! abstract "Content Models / Invoices / **(local resources)**"
-    1. Right click and select **Add > New Folder...**
-    2. Name it ==Overrides==
+    1. Right click and select **Add > New Folder...**.
+    2. Name it ==Overrides==.
 
 ![](../assets/img/vol-2/4-11/018.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / **Overrides**"
-    1. In the Overrides folder, add a Field Class
-    2. Name it ==[Enid] Sales Tax==
+    1. In the **Overrides** folder, add a Field Class.
+    2. Name it ==[Enid] Sales Tax==.
 
 ![](../assets/img/vol-2/4-11/020.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Overrides / **[Enid] Sales Tax**"
-    1. Set the Value Extractor > Type property to ==Internal==
+    1. Change the following property value(s):
+
+        | Property            | Default Value     | New Value         |
+        | ------------------- | ----------------- | ----------------- |
+        | General             |                   |                   |
+        | **Value Extractor** |                   |                   |
+        | --> **Type**        | `None`            | ==`Internal`==    |
+        | --> **Pattern**     | *(Click to edit)* | *(Click to edit)* |
+
     2. Click to edit the pattern:
 
         ```tab="Value Pattern"
@@ -1378,8 +1445,15 @@
         {1:Number}
         ```
 
-    3. Set the Feature Extractor > Type property to ==Reference==
-    4. Set the Referenced Extractor property to the Data Extraction • Data Types > Training Materials > Features > ==Phrases== Data Type
+    3. Press **OK** to close the pattern editor window.
+    4. Change the following property value(s):
+
+        | Property                     | Default Value | New Value       |
+        |------------------------------|---------------|-----------------|
+        | General                      |               |                 |
+        | **Feature Extractor**        |               |                 |
+        | --> **Type**                 | `None`        | ==`Reference`== |
+        | --> **Referenced Extractor** | `-`           | ==`Phrases`==   |
 
 ![](../assets/img/vol-2/4-11/021.png)
 
@@ -1388,19 +1462,30 @@
 ![](../assets/img/vol-2/4-11/024.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Overrides / **[Enid] Sales Tax**"
-    1. Click to edit the Context Zones property
-    2. In the Context Zones window, delete one of the zones
-    3. Edit the dimensions of the remaining zone:
+    1. Change the following property value(s):
 
-        |        | Zone   |
-        | ------ | ------ |
-        | Left   | `-2.4` |
-        | Top    | `-0.2` |
-        | Right  | `0.25` |
-        | Bottom | `0.1`  |
+        | Property              | Default Value     | New Value         |
+        |-----------------------|-------------------|-------------------|
+        | Context Scope Options |                   |                   |
+        | **Context Zones**     | *(Click to edit)* | *(Click to edit)* |
 
-    4. Press **OK** to close the Context Zones window
-    5. In the Output section, set the Minimum Confidence property to ==90%==
+    2. In the **Context Zones** window, delete one of the zones.
+    3. For the remaining zone, edit the dimensions as follows:
+
+        | Property   | Zone       |
+        | ---------- | ---------- |
+        | **Left**   | ==`-2.4`== |
+        | **Top**    | ==`-0.2`== |
+        | **Right**  | ==`0.25`== |
+        | **Bottom** | ==`0.1`==  |
+
+    4. Press **OK** to close the Context Zones window.
+    5. Change the following property value(s):
+
+        | Property               | Default Value | New Value |
+        |------------------------|---------------|-----------|
+        | Output                 |               |           |
+        | **Minimum Confidence** | `0%`          | ==`90%`== |
 
 ![](../assets/img/vol-2/4-11/027.png)
 
@@ -1409,8 +1494,8 @@
 ![](../assets/img/vol-2/4-11/033.png)
 
 !!! abstract "Content Models / Invoices / **Enid**"
-    1. Click on the Data Element Profiles tab
-    2. Click on the Sales Tax Data Field and click the **+** button in the toolbar
+    1. Click on the **Data Element Profiles** tab.
+    2. Click on the **Sales Tax** Data Field and click the **+** button in the toolbar.
 
 ![](../assets/img/vol-2/4-11/034.png)
 
@@ -1421,9 +1506,14 @@
 ![](../assets/img/vol-2/4-11/037.png)
 
 !!! abstract "Content Models / Invoices / **Enid**"
-    1. In the properties panel, set the ESP(tm) Extraction Overrides > Override Extractor property to ==True==
-    2. Expand Extractor and set the Extractor > Type property to Reference
-    3. Set the Referenced Extractor property to the Invoices • (local resources) > Overrides > ==[Enid] Sales Tax== Field Class
+    Change the following property value(s):
+
+    | Property                     | Default Value | New Value              |
+    |------------------------------|---------------|------------------------|
+    | ESP(tm) Extraction Overrides |               |                        |
+    | **Override Extractor**       | `False`       | ==`True`==             |
+    | --> **Type**                 | `None`        | ==`Reference`==        |
+    | --> **Referenced Extractor** | `-`           | ==`[Enid] Sales Tax`== |
 
 ![](../assets/img/vol-2/4-11/039.png)
 
@@ -1432,10 +1522,15 @@
 ## Data Model Adjustments
 
 !!! abstract "Content Models / Invoices / (data model) / **Ship To**"
-    1. In the Appearance section, set the Display Width property to ==110==
-    2. In the Behavior section, set the Multi Line property to ==Enabled==
-    3. Expand Multi Line and set the Multi Line Height property to ==45==
-    4. Set the Word Wrap property to ==True==
+    Change the following property value(s):
+    | Property                  | Default Value | New Value     |
+    |---------------------------|---------------|---------------|
+    | Appearance                |               |               |
+    | **Display Width**         | `100`         | ==`110`==     |
+    | Behavior                  |               |               |
+    | **Multi Line**            | `Disabled`    | ==`Enabled`== |
+    | --> **Multi Line Height** | `80`          | ==`45`==      |
+    | --> **Word Wrap**         | `False`       | ==`True`==    |
 
 ![](../assets/img/vol-2/4-12/002.png)
 
@@ -1444,10 +1539,10 @@
 ![](../assets/img/vol-2/4-12/004.png)
 
 !!! abstract "Content Models / Invoices / (data model) / **Ship To**"
-    1. Right click on any of the property names and select Copy Properties > Selected Properties...
+    1. Right click on any of the property names and select **Copy Properties > Selected Properties...**.
     2. In the Select Properties window, check the boxes next to the properties to copy:
-        - [X] Display Width
-        - [X] Multi Line
+        - ==[X] Display Width==
+        - ==[X] Multi Line==
 
 ![](../assets/img/vol-2/4-12/010.png)
 
@@ -1456,7 +1551,7 @@
 ![](../assets/img/vol-2/4-12/012.png)
 
 !!! abstract "Content Models / Invoices / (data model) / **Remit To**"
-    1. Right click on any of the property names and select Paste Properties
+    1. Right click on any of the property names and select **Paste Properties**.
 
 ![](../assets/img/vol-2/4-12/013.png)
 
@@ -1465,8 +1560,14 @@
 ![](../assets/img/vol-2/4-12/015.png)
 
 !!! abstract "Content Models / Invoices / **(data model)**"
-    1. In the Child Element Options section, set the Show Fields In Grid property to ==True==
-    2. In the toolbar, click the Test Extraction button to test all fields against a document
+    1. Change the following property value(s):
+
+        | Property                | Default Value | New Value  |
+        |-------------------------|---------------|------------|
+        | Child Element Options   |               |            |
+        | **Show Fields in Grid** | `False`       | ==`True`== |
+
+    2. In the toolbar, press the **Test Extraction** button to test all fields against a document.
 
 ![](../assets/img/vol-2/4-12/016.png)
 

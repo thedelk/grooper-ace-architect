@@ -25,7 +25,7 @@ For the next few phases, we'll be testing the results of adding a single Batch P
 !!! abstract "Step 1"
     In Grooper Design Studio, navigate to ***(root)* > Batch Processing > Batches > Production > Invoices Process**.
 
-``` clojure hl_lines="5"
+<!-- ``` clojure hl_lines="5"
 (root)
 ├─ Batch Processing
 |  ├─ Batches
@@ -38,7 +38,7 @@ For the next few phases, we'll be testing the results of adding a single Batch P
 ├─ Content Models
 ├─ Data Extraction
 └─ ...
-```
+``` -->
 
 ![](../assets/img/vol-1/2-1/003.png)
 
@@ -55,11 +55,11 @@ You can simply view the batch by clicking on the **Batch Viewer** tab.
 
 Notice that there are two child objects here:
 
-``` hl_lines="2 3"
+<!-- ``` hl_lines="2 3"
 └─ Invoices Batch
     ├─ Invoices Batch
     └─ Invoices Process
-```
+``` -->
 
 1. a folder with the same name as the batch, and
 2. a gear icon with the name of the Batch Process we used to create the batch.
@@ -106,7 +106,7 @@ Once the clone is complete, you will see a confirmation window; click **OK**.
 
 Now you can view the cloned batch by navigating to ***(root)* > Batch Processing > Batches > Test > Production Clones > Invoices Process > Invoices Batch**
 
-``` clojure hl_lines="8"
+<!-- ``` clojure hl_lines="8"
 (root)
 ├─ Batch Processing
 |  ├─ Batches
@@ -121,7 +121,7 @@ Now you can view the cloned batch by navigating to ***(root)* > Batch Processing
 ├─ Content Models
 ├─ Data Extraction
 └─ ...
-```
+``` -->
 
 ![](../assets/img/vol-1/2-1/020.png)
 
@@ -136,7 +136,7 @@ We can start creating one now that we've got a batch against which we can test i
 !!! abstract "Step 1"
     Navigate to ***(root)* > Global Resources > IP Profiles**.
 
-``` clojure hl_lines="6"
+<!-- ``` clojure hl_lines="6"
 (root)
 ├─ Batch Processing
 ├─ Content Models
@@ -145,7 +145,7 @@ We can start creating one now that we've got a batch against which we can test i
 |  └─ IP Profiles
 ├─ Infrastructure
 └─ Reports
-```
+``` -->
 
 !!! abstract "Step 2"
     Right-click on this node and click **Add > IP Profile...**.
@@ -576,12 +576,12 @@ Check out [this video](https://upload.wikimedia.org/wikipedia/commons/transcoded
 
 With Grooper, page scanning happens (usually) all at once. During the OCR process the image is broken into vertical and horizontal lines of pixels to identify individual letter characters and spacing.
 
-| <!--  | G     | r     | o |
+| G     | r     | o     |
 | :---: | :---: | :---: |
-![](../assets/img/vol-1/2-3/ref/ocr-03.jpg) -->
+![](../assets/img/vol-1/2-3/ref/ocr-03.jpg)
 
-!!! danger "TO-DO"
-    THESE STEPS NEED EXPLANATION.
+<!-- !!! danger "TO-DO"
+    THESE STEPS NEED EXPLANATION. -->
 
 <!-- This is extra information not crucial to the steps -->
 <!-- !!! abstract "Step 1"

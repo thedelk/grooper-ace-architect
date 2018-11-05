@@ -75,7 +75,7 @@
     2. Select Enid (5) in the batch viewer
     3. In the Value Pattern editor, type:
         ```
-        (\w{3})(\d{8})
+        (\w{3})/(\d{8})
         ```
     4. In the Output Format editor, type:
         ```

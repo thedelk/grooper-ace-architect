@@ -64,7 +64,7 @@
 
 ### Testing the Scanner Profile
 
-!!! abstract "Global Resources > **Scanner Profiles**"
+!!! abstract "Global Resources / **Scanner Profiles**"
     1. From the **Scanner Profile dropdown** select the ==Invoices Source Scan== profile.
     2. From the **batch dropdown** select the ==Invoices== batch.
     3. Press **Scan**.
