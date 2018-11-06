@@ -4,8 +4,8 @@
 
 ### Importing a pre-made batch
 
-!!! abstract "***(root)***"
-    1. Right click and select **Import > Compressed Archive**.
+!!! abstract "***(root)*** ![](../assets/img/thumbs/ace_root.png)"
+    1. Right click and select **Import --> Compressed Archive**.
     2. Set the **Import Path** property to the ==Grooper ACE - Architect - Volume II - Begin.zip== file.
     3. Press **Execute**.
 
@@ -17,8 +17,8 @@
 
 ### Creating an empty test batch
 
-!!! abstract "Batch Processing / Batches / **Test**"
-    1. Right click and select **Add > Batch...**.
+!!! abstract "Batch Processing / Batches / **Test** ![](../assets/img/thumbs/ace_folder-batches.png)"
+    1. Right click and select **Add --> Batch...**.
     2. Name it ==Invoices==.
 
 ![](../assets/img/vol-2/1-1/007.png)
@@ -30,7 +30,7 @@
 ### Creating a Scanner Profile
 
 !!! abstract "Global Resources / **Scanner Profiles**"
-    1. Right click and select **Add > Scanner Profile...**.
+    1. Right click and select **Add --> Scanner Profile...**.
     2. Name it ==Invoices Source Scan==.
 
 ![](../assets/img/vol-2/1-1/012.png)

@@ -27,7 +27,7 @@ Before we can expect to get any kind of information from these invoices, we need
 ### Creating a Separation Profile
 
 !!! abstract "Global Resources / **Separation Profiles**"
-    1. Right click and select **Add > Separation Profile...**.
+    1. Right click and select **Add --> Separation Profile...**.
     2. Name it ==Invoices Separation==.
 
 ![](../assets/img/vol-1/3-1/006.png)
@@ -70,13 +70,13 @@ Before we can expect to get any kind of information from these invoices, we need
 ### Setting up the Content Model
 
 !!! abstract "**Content Models**"
-    1. Right click and select **Add > Content Model…**.
+    1. Right click and select **Add --> Content Model…**.
     2. Name it ==Invoices==.
 
 ![](../assets/img/vol-1/3-2/002.png)
 
 !!! abstract "Content Models / **Invoices**"
-    1. Right click and select **Contents > Add Multiple Items…**.
+    1. Right click and select **Contents --> Add Multiple Items…**.
     2. In the **Contents • Add Multiple Items** window, set **Item Type** to ==Document Type==.
     3. Edit the **Item Names** property and type out the names of each vendor:
         - ==Acme==
@@ -112,8 +112,8 @@ Before we can expect to get any kind of information from these invoices, we need
 
 !!! abstract "Content Models / **Invoices**"
     1. In the General section, set the **Classification Method** property to ==Lexical==.
-    2. Set the **Classification Method > Text Feature Extractor > Type** property to ==Reference==.
-    3. Set the **Referenced Extractor** property to the **Data Extraction > Downloads > Features > ==Words (Stemmed)==** Data Type.
+    2. Set the **Classification Method --> Text Feature Extractor --> Type** property to ==Reference==.
+    3. Set the **Referenced Extractor** property to the **Data Extraction --> Downloads --> Features --> ==Words (Stemmed)==** Data Type.
 
 ![](../assets/img/vol-1/3-2/021.png)
 
@@ -164,7 +164,7 @@ Before we can expect to get any kind of information from these invoices, we need
 !!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
     1. Add a new step.
     2. Set the **Activity Type** property of the new step to ==Classify Review==.
-    3. Set the **Classification Viewer Settings > Content Model Scope** to our ==Invoices== Content Model.
+    3. Set the **Classification Viewer Settings --> Content Model Scope** to our ==Invoices== Content Model.
     4. **Save** and **Publish**.
 
 ![](../assets/img/vol-1/3-3/003.png)

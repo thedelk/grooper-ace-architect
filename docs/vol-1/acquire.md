@@ -25,13 +25,13 @@ The first thing we want to do is create a Batch Process.  We'll be working out o
 
 !!! abstract "Batch Processing / Process / **Working**"
     1. Create a new Batch Process by:
-        - right-clicking on the **Working** node and selecting **Add > Batch Process...**, or
+        - right-clicking on the **Working** node and selecting **Add --> Batch Process...**, or
         - clicking **Add** in the toolbar and selecting **Batch Process...**.
     2. Name the Batch Process ==Invoices Process== (or anything that makes you happy) and press **OK**.
 
 ![](../assets/img/vol-1/1-2/001-002.gif)
 
-Congratulations! You've just created your first Batch Process. You can see the new process under the **Batch Processing > Processes > Working** node. Now we can start building it!
+Congratulations! You've just created your first Batch Process. You can see the new process under the **Batch Processing --> Processes --> Working** node. Now we can start building it!
 
 ![](../assets/img/vol-1/1-2/004.png)
 
@@ -87,7 +87,7 @@ We're done adding our first step, so now we want to test it out.
 ![](../assets/img/vol-1/1-2/010.png)
 
 !!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
-    After the Batch Process is published, you will see that the **Batch Processing > Processes > Published** node now has a child that looks exactly like the **Working** node.
+    After the Batch Process is published, you will see that the **Batch Processing --> Processes --> Published** node now has a child that looks exactly like the **Working** node.
 
 ![](../assets/img/vol-1/1-2/016.png)
 
@@ -113,14 +113,14 @@ To start off, we're going to need to tell Grooper how we're going to bring these
 Let's begin by creating a Scanner Profile.
 
 !!! abstract "Global Resources / **Scanner Profiles**"
-    1. Right-click and select **Add > Scanner Profile...**.
+    1. Right-click and select **Add --> Scanner Profile...**.
     2. Name it ==Scan Profile==.
 
 ![](../assets/img/vol-1/1-3/001.png)
 
 ### Configuring the Scanner Profile
 
-Way to go! You've just created your first Scanner Profile. You're on a roll! You can see it in the node tree under **Global Resources > Scanner Profiles**.
+Way to go! You've just created your first Scanner Profile. You're on a roll! You can see it in the node tree under **Global Resources --> Scanner Profiles**.
 
 This is the default Scanner Profile configuration screen. Let's set it up so we can use it.
 
@@ -187,14 +187,14 @@ We're going to create a production batch with our new Process, so now we want to
 ### Creating a batch
 
 !!! abstract "Batch Processing / **Batches**"
-    Navigate to **Batch Processing > Batches**.
+    Navigate to **Batch Processing --> Batches**.
 
 ![](../assets/img/vol-1/1-3/016.png)
 
 ??? note
-    In the **Batch Processing > Batches** node, you will be able to see *all* batches in your environment, including test batches. To limit your list of batches to either test or production, select the appropriate child node.
+    In the **Batch Processing --> Batches** node, you will be able to see *all* batches in your environment, including test batches. To limit your list of batches to either test or production, select the appropriate child node.
 
-In the **Batches Folder** tab, click on **Batch > New...**.
+In the **Batches Folder** tab, click on **Batch --> New...**.
 
 ![](../assets/img/vol-1/1-3/018.png)
 

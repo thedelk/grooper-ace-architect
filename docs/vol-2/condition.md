@@ -5,7 +5,7 @@
 ### Creating an OCR Profile
 
 !!! abstract "Global Resources / **OCR Profiles**"
-    1. Right click and select **Add > OCR Profile...**.
+    1. Right click and select **Add --> OCR Profile...**.
     2. Name it ==Invoices OCR==.
 
 ![](../assets/img/vol-2/2-1/002.png)
@@ -46,7 +46,7 @@
 !!! abstract "Global Resources / OCR Profiles / **Invoices OCR**"
     1. Switch to the **OCR Testing** tab.
     2. From the **batch dropdown** select the **Invoices** batch.
-    3. Right click on the root batch folder and select **Contents > Apply Activity...**.
+    3. Right click on the root batch folder and select **Contents --> Apply Activity...**.
     4. In the **Contents • Apply Activity** window, change the following property value(s):
 
         | Property            | Default Value | New Value          |

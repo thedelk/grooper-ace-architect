@@ -5,14 +5,14 @@
 ### Creating a Separation Profile
 
 !!! abstract "Global Resources / **Separation Profiles**"
-    1. Right click and select **Add > Separation Profile...**.
+    1. Right click and select **Add --> Separation Profile...**.
     2. Name it ==Change in Value (Invoice Number)==.
 
 ![](../assets/img/vol-2/3-1/009.png)
 
 ### Configuring "Change in Value" separation
 
-!!! abstract "Global Resources / Separation Profiles / **Change in Value (Invoice Number)**"
+!!! abstract "Global Resources / Separation Profiles / **Change in Value (Invoice Number)** ![](../assets/img/thumbs/ace_profile-separation.png)"
     Change the following property value(s):
     
     | Property                         | Default Value | New Value                        |
@@ -27,7 +27,7 @@
 
 ### Testing the Separation Profile
 
-!!! abstract "Global Resources / Separation Profiles / **Change in Value (Invoice Number)**"
+!!! abstract "Global Resources / Separation Profiles / **Change in Value (Invoice Number)** ![](../assets/img/thumbs/ace_profile-separation.png)"
     1. Switch to the **Testing** tab.
     2. Press **Separate Batch**.
 
@@ -35,7 +35,7 @@
 
 ### Correcting issues
 
-!!! abstract "Global Resources / Separation Profiles / **Change in Value (Invoice Number)**"
+!!! abstract "Global Resources / Separation Profiles / **Change in Value (Invoice Number)** ![](../assets/img/thumbs/ace_profile-separation.png)"
     1. Select **Page 38**.
     2. Right click and select **Add Selection to New Folder**.
 
@@ -45,8 +45,8 @@
 
 ### Setting up the Content Model
 
-!!! abstract "**Content Models**"
-    1. Right click and select **Add > Content Model...**.
+!!! abstract "**Content Models** ![](../assets/img/thumbs/ace_folder-content-model.png)"
+    1. Right click and select **Add --> Content Model...**.
     2. Name it ==Invoices==.
 
 ![](../assets/img/vol-2/3-2/002.png)
@@ -55,7 +55,7 @@
 
 ### Creating the Data Model and Local Resources folder
 
-!!! abstract "Content Models / **Invoices**"
+!!! abstract "Content Models / **Invoices** ![](../assets/img/thumbs/ace_content-model.png)"
     1. Right click and select **Create Data Model**.
     2. Right click and select **Create Local Resources Folder**.
 
@@ -65,8 +65,8 @@
 
 ### Adding Document Types
 
-!!! abstract "Content Models / **Invoices**"
-    1. Right click and select **Contents > Add Multiple Items...**.
+!!! abstract "Content Models / **Invoices** ![](../assets/img/thumbs/ace_content-model.png)"
+    1. Right click and select **Contents --> Add Multiple Items...**.
     2. In the **Contents • Add Multiple Items** window, change the following property value(s):
 
         | Property          | Default Value      | New Value                                                                    |
@@ -85,7 +85,7 @@
 
 ### Setting the Classification Method
 
-!!! abstract "Content Models / **Invoices**"
+!!! abstract "Content Models / **Invoices** ![](../assets/img/thumbs/ace_content-model.png)"
     Change the following property value(s):
 
     | Property                         | Default Value | New Value             |
@@ -102,7 +102,7 @@
 
 ### Setting a positive extractor for classification
 
-!!! abstract "Content Models / Invoices / **Acme**"
+!!! abstract "Content Models / Invoices / **Acme** ![](../assets/img/thumbs/ace_document-type.png)"
     Change the following property value(s):
 
     | Property               | Default Value     | New Value         |
@@ -116,7 +116,7 @@
 
 ![](../assets/img/vol-2/3-2/034.png)
 
-!!! abstract "Content Models / Invoices / **Acme**"
+!!! abstract "Content Models / Invoices / **Acme** ![](../assets/img/thumbs/ace_document-type.png)"
     1. Select **Folder (1)**.
     2. Edit the pattern(s):
 
@@ -128,7 +128,7 @@
     
 ![](../assets/img/vol-2/3-2/036.png)
 
-!!! abstract "Content Models / Invoices / **\***"
+!!! abstract "Content Models / Invoices / * ![](../assets/img/thumbs/ace_document-type.png)"
     Repeat the previous two steps for each of the other four vendors, using the following patterns in their respective **Value Pattern** editors:
 
     ```tab="Enid"
@@ -151,7 +151,7 @@
 
 ### Testing classification
 
-!!! abstract "Content Models / **Invoices**"
+!!! abstract "Content Models / **Invoices** ![](../assets/img/thumbs/ace_content-model.png)"
     1. Switch to the **Classification Testing** tab.
     2. Press **Classify Batch**.
     3. Press **Execute**.

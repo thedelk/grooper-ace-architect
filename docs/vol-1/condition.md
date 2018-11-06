@@ -77,7 +77,7 @@ We can, however, clone our production batch to our test batches. This way we don
 
 Once the clone is complete, you will see a confirmation window; press **OK**.
 
-Now you can view the cloned batch by navigating to **Batch Processing > Batches > Test > Production Clones > Invoices Process > Invoices Batch**
+Now you can view the cloned batch by navigating to **Batch Processing --> Batches --> Test --> Production Clones --> Invoices Process --> Invoices Batch**.
 
 ![](../assets/img/vol-1/2-1/020.png)
 
@@ -90,7 +90,7 @@ We can start creating one now that we've got a batch against which we can test i
 ### Creating an IP Profile
 
 !!! abstract "Global Resources / **IP Profiles**"
-    1. Right click and select **Add > IP Profile...**.
+    1. Right click and select **Add --> IP Profile...**.
     2. Name it ==Invoices IP Profile==.
 
 ![](../assets/img/vol-1/2-1/021.png)
@@ -125,7 +125,7 @@ Let's add a command!
 The first thing we want to do is deskew the images.
 
 !!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
-    Press **Add** and select **Image Transforms > Auto Deskew**.
+    Press **Add** and select **Image Transforms --> Auto Deskew**.
 
 ![](../assets/img/vol-1/2-1/030.png)
 
@@ -184,7 +184,7 @@ Speaking of borders, let's take care of them.
 #### Border cleanup commands
 
 !!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
-    Press **Add**, and then **Border Cleanup > Auto Border Crop**.
+    Press **Add**, and then **Border Cleanup --> Auto Border Crop**.
 
 ![](../assets/img/vol-1/2-1/038.png)
 
@@ -209,7 +209,7 @@ Our Border Crop works pretty well, but there are some images that still have a b
 ![](../assets/img/vol-1/2-1/042.png)
     
 !!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
-    Select **Page 1** in our batch. Press **Add** and select **Border Cleanup > Border Fill**.
+    Select **Page 1** in our batch. Press **Add** and select **Border Cleanup --> Border Fill**.
 
 ![](../assets/img/vol-1/2-1/044.png)
 
@@ -245,7 +245,7 @@ Yet, once again, **Execute** yields no results.
     We're not changing the size of the page, only the stuff on it.
 
 !!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
-    Press **Add** and select **Feature Detection > Patch Code Detection**.
+    Press **Add** and select **Feature Detection --> Patch Code Detection**.
     
     **Save** the profile.
 
@@ -271,7 +271,7 @@ Yet, once again, **Execute** yields no results.
     Notice how the Batch Process that is attached to this batch didn't receive the new step we just added. Remember that when this batch was created, the process had only the "Scan" step. We want to tell this batch to check out the changes we made to the process so that it can run through the new Image Processing step.
 
 !!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
-    Select the batch from the list, and then press **Batch > Update Process...**.
+    Select the batch from the list, and then press **Batch --> Update Process...**.
     
 ![](../assets/img/vol-1/2-1/066.png)
 
@@ -311,7 +311,7 @@ Now we see that there's an **Image Processing** step that wasn't here the last t
 The batch received the latest updates from our **Invoices Process**, which had a new step, so now it's ready to run it!
 
 !!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
-    Navigate back up to **Batch Processing > Batches > Production > Invoices Process**, select the batch, and press **Process**.
+    Navigate back up to **Batch Processing --> Batches --> Production --> Invoices Process**, select the batch, and press **Process**.
     
 ![](../assets/img/vol-1/2-1/77-78.gif)
 

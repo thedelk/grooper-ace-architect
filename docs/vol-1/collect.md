@@ -3,7 +3,7 @@
 ## Data Field
 
 !!! abstract "Content Models / Invoices / **(data model)** ![](../assets/img/thumbs/ace_data-model.png)"
-    1. Right click and select **Add > Data Field...**.
+    1. Right click and select **Add --> Data Field...**.
     2. Name it ==Invoice Number==.
 
 ![](../assets/img/vol-1/4-1/001.png)
@@ -15,7 +15,7 @@
 ### Creating the invoice number extractor
 
 !!! abstract "Content Models / Invoices / **(local resources)** ![](../assets/img/thumbs/ace_folder-local-resources.png)"
-    1. Right click and select **Add > Data Type...**.
+    1. Right click and select **Add --> Data Type...**.
     2. Name it ==Invoice Number==.
 
 ![](../assets/img/vol-1/4-1/004.png)
@@ -23,7 +23,7 @@
 ![](../assets/img/vol-1/4-1/006.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / **Invoice Number** ![](../assets/img/thumbs/ace_data-type.png)"
-    1. Right click and select **Add > Data Format...**.
+    1. Right click and select **Add --> Data Format...**.
     2. Name it ==Acme/Standard/Express==.
 
 ![](../assets/img/vol-1/4-1/007.png)
@@ -45,7 +45,7 @@
 ![](../assets/img/vol-1/4-1/012.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / **Invoice Number** ![](../assets/img/thumbs/ace_data-type.png)"
-    1. Right click and select **Contents > Add Multiple Items...**.
+    1. Right click and select **Contents --> Add Multiple Items...**.
     2. In the **Contents • Add Multiple Items** window, set **Item Type** to ==Data Format==.
     3. Edit the **Item Names** property and type out the names of the other formats:
         - ==Spartan==
@@ -88,8 +88,8 @@
 
 !!! abstract "Content Models / Invoices / (data model) / **Invoice Number** ![](../assets/img/thumbs/ace_data-field.png)"
     1. In the General section, expand the **Value Extractor** property.
-    2. Set the **Value Extractor > Type** property to ==Reference==.
-    3. Set the **Value Extractor > Referenced Extractor** property to the **Invoices > ==Invoice Number==** Data Type.
+    2. Set the **Value Extractor --> Type** property to ==Reference==.
+    3. Set the **Value Extractor --> Referenced Extractor** property to the **Invoices --> ==Invoice Number==** Data Type.
     4. In the Behavior section, set the **Required** property to ==True==.
 
 ![](../assets/img/vol-1/4-1/030.png)
