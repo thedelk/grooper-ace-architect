@@ -2,7 +2,7 @@
 
 ## Data Field
 
-!!! abstract "Content Models / Invoices / **(data model)**"
+!!! abstract "Content Models / Invoices / **(data model)** ![](../assets/img/thumbs/ace_data-model.png)"
     1. Right click and select **Add > Data Field...**.
     2. Name it ==Invoice Number==.
 
@@ -14,7 +14,7 @@
 
 ### Creating the invoice number extractor
 
-!!! abstract "Content Models / Invoices / **(local resources)**"
+!!! abstract "Content Models / Invoices / **(local resources)** ![](../assets/img/thumbs/ace_folder-local-resources.png)"
     1. Right click and select **Add > Data Type...**.
     2. Name it ==Invoice Number==.
 
@@ -22,7 +22,7 @@
 
 ![](../assets/img/vol-1/4-1/006.png)
 
-!!! abstract "Content Models / Invoices / (local resources) / **Invoice Number**"
+!!! abstract "Content Models / Invoices / (local resources) / **Invoice Number** ![](../assets/img/thumbs/ace_data-type.png)"
     1. Right click and select **Add > Data Format...**.
     2. Name it ==Acme/Standard/Express==.
 
@@ -30,7 +30,7 @@
 
 ![](../assets/img/vol-1/4-1/009.png)
 
-!!! abstract "Content Models / Invoices / (local resources) / Invoice Number / **Acme/Standard/Express**"
+!!! abstract "Content Models / Invoices / (local resources) / Invoice Number / **Acme/Standard/Express** ![](../assets/img/thumbs/ace_data-format.png)"
     1. Select **Acme (1)**.
     2. Edit the pattern(s):
 
@@ -44,7 +44,7 @@
 
 ![](../assets/img/vol-1/4-1/012.png)
 
-!!! abstract "Content Models / Invoices / (local resources) / **Invoice Number**"
+!!! abstract "Content Models / Invoices / (local resources) / **Invoice Number** ![](../assets/img/thumbs/ace_data-type.png)"
     1. Right click and select **Contents > Add Multiple Items...**.
     2. In the **Contents • Add Multiple Items** window, set **Item Type** to ==Data Format==.
     3. Edit the **Item Names** property and type out the names of the other formats:
@@ -56,7 +56,7 @@
 
 ![](../assets/img/vol-1/4-1/014.png)
 
-!!! abstract "Content Models / Invoices / (local resources) / Invoice Number / **Spartan**"
+!!! abstract "Content Models / Invoices / (local resources) / Invoice Number / **Spartan** ![](../assets/img/thumbs/ace_data-format.png)"
     1. Select **Spartan (4)**.
     2. Edit the pattern(s):
 
@@ -70,7 +70,7 @@
 
 ![](../assets/img/vol-1/4-1/020.png)
 
-!!! abstract "Content Models / Invoices / (local resources) / Invoice Number / **Enid**"
+!!! abstract "Content Models / Invoices / (local resources) / Invoice Number / **Enid** ![](../assets/img/thumbs/ace_data-format.png)"
     1. Select **Enid (5)**.
     2. Edit the pattern(s):
 
@@ -86,7 +86,7 @@
 
 ### Linking the extractor to the field
 
-!!! abstract "Content Models / Invoices / (data model) / **Invoice Number**"
+!!! abstract "Content Models / Invoices / (data model) / **Invoice Number** ![](../assets/img/thumbs/ace_data-field.png)"
     1. In the General section, expand the **Value Extractor** property.
     2. Set the **Value Extractor > Type** property to ==Reference==.
     3. Set the **Value Extractor > Referenced Extractor** property to the **Invoices > ==Invoice Number==** Data Type.
@@ -102,7 +102,7 @@
 
 ### Adding Extract and Data Review steps
 
-!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process** ![](../assets/img/thumbs/ace_process.png)"
     1. Add a new step.
     2. Set the **Activity Type** property of the new step to ==Extract==.
 
@@ -110,7 +110,7 @@
 
 ![](../assets/img/vol-1/4-2/002.png)
 
-!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process** ![](../assets/img/thumbs/ace_process.png)"
     1. Add a new step.
     2. Set the **Activity Type** property of the new step to ==Data Review==.
     3. **Save** and **Publish**.
@@ -119,7 +119,7 @@
 
 ### Updating the production batch
 
-!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process** ![](../assets/img/thumbs/ace_folder-batches.png)"
     1. Right click on batch and select **Update Process...**.
     2. Set **Target Step** to ==Extract==.
     3. Press **Execute**.
@@ -128,7 +128,7 @@
 
 ![](../assets/img/vol-1/4-2/006.png)
 
-!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process** ![](../assets/img/thumbs/ace_folder-batches.png)"
     1. Resume the batch.
     2. Press **Process**.
 
@@ -138,13 +138,13 @@
 
 ### Reviewing extraction results
 
-!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process** ![](../assets/img/thumbs/ace_folder-batches.png)"
     1. After the Extract step has completed, press **Process** to start the Data Review step.
     2. In Grooper Data Review, press ++ctrl+i++ on your keyboard.
 
 ![](../assets/img/vol-1/4-2/011.png)
 
-!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process** ![](../assets/img/thumbs/ace_folder-batches.png)"
     1. Fix the issue with the field.
     2. Use ++ctrl+i++ to jump to the next document with an issue.
     3. Repeat until all documents are valid.

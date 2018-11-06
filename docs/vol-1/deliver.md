@@ -52,7 +52,7 @@
 
 ### Updating the production batch
 
-!!! abstract "Batch Processing > Batches > Production / **Invoices Process**"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
     1. Make sure the batch is paused.
     2. Right click on **Invoices Batch** and select **Update Process...**.
     3. Set **Target Step** to ==Document Export==.
@@ -62,7 +62,7 @@
 
 ![](../assets/img/vol-1/5-1/039.png)
 
-!!! abstract "Batch Processing > Batches > Production / **Invoices Process**"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
     1. Resume the batch.
     2. Press **Process**.
     3. View the exported documents in Windows Explorer.
