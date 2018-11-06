@@ -26,46 +26,40 @@ Before we can expect to get any kind of information from these invoices, we need
 
 ### Creating a Separation Profile
 
-!!! abstract "Step 1"
-    1. Navigate to (root) > Global Resources > Separation Profiles 
-    2. Create a new separation profile
-    3. Give it a name, like Invoices Separation
+!!! abstract "Global Resources / **Separation Profiles**"
+    1. Right click and select **Add > Separation Profile...**.
+    2. Name it ==Invoices Separation==.
 
 ![](../assets/img/vol-1/3-1/006.png)
 
-!!! abstract "Step 2"
-    Change the following properties:
-    
-    1. Set Provider to Control Sheet Separation
-    2. Set Delete All Separators to True
+!!! abstract "Global Resources / **Separation Profiles**"
+    1. Set **Provider** to ==Control Sheet Separation==.
+    2. Set **Delete All Separators** to ==True==.
 
 ![](../assets/img/vol-1/3-1/013.png)
 
 ### Updating the production batch
 
-!!! abstract "Step 1"
-    1. Navigate to (root) > Batch Processing > Processes > Working > Invoices Process
-    2. Add a new step
-    3. Set the Activity Type property of the new step to Separate
-    4. Set the Separation Profile to the new Invoices Separation profile we created
-    5. Save and Publish.
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+    1. Add a new step.
+    2. Set the **Activity Type** property of the new step to ==Separate==.
+    3. Set the **Separation Profile** to the new ==Invoices Separation== profile we created.
+    4. **Save** and **Publish**.
 
 ![](../assets/img/vol-1/3-1/016.png)
 
-!!! abstract "Step 2"
-    1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process.
-    2. Make sure the batch is paused
-    3. Right click on the Invoices Batch and select Update Process….
-    4. Set Target Step to Separate.
-    5. Click Execute.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    1. Right click and select **Update Process….**.
+    2. Set **Target Step** to ==Separate==.
+    3. Press **Execute**.
 
 ![](../assets/img/vol-1/3-1/018.png)
 
 ![](../assets/img/vol-1/3-1/021.png)
 
-!!! abstract "Step 3"
-    1. Resume the batch
-    2. Click Process
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    1. Resume the batch.
+    2. Press **Process**.
 
 ![](../assets/img/vol-1/3-1/027.png)
 
@@ -75,23 +69,22 @@ Before we can expect to get any kind of information from these invoices, we need
 
 ### Setting up the Content Model
 
-!!! abstract "Step 1"
-    1. Navigate to (root) > Content Models.
-    2. Right click on Content Models and select Add > Content Model….
-    3. Name it ==Invoices==.
+!!! abstract "**Content Models**"
+    1. Right click and select **Add > Content Model…**.
+    2. Name it ==Invoices==.
 
 ![](../assets/img/vol-1/3-2/002.png)
 
-!!! abstract "Step 2"
-    1. Right click on the new Invoices Content Model and select Contents > Add Multiple Items….
-    2. In the Contents • Add Multiple Items window, set Item Type to Document Type
-    3. Edit the Item Names property and type out the names of each vendor
-        - Acme
-        - Enid
-        - Express
-        - Spartan
-        - Standard
-    4. Click Execute to complete
+!!! abstract "Content Models / **Invoices**"
+    1. Right click and select **Contents > Add Multiple Items…**.
+    2. In the **Contents • Add Multiple Items** window, set **Item Type** to ==Document Type==.
+    3. Edit the **Item Names** property and type out the names of each vendor:
+        - ==Acme==
+        - ==Enid==
+        - ==Express==
+        - ==Spartan==
+        - ==Standard==
+    4. Press **Execute** to complete.
     
 ![](../assets/img/vol-1/3-2/005.png)
 
@@ -99,32 +92,28 @@ Before we can expect to get any kind of information from these invoices, we need
 
 ### Re-cloning the production batch
 
-!!! abstract "Step 1"
-    1. Navigate to (root) > Batch Processing > Batches > Test > Production Clones > Invoices Process > Invoices Batch
-    2. Right click on Invoices Batch and select Delete
+!!! abstract "Batch Processing / Batches / Test / Production Clones / Invoices Process / **Invoices Batch**"
+    Right click and select **Delete**.
 
 ![](../assets/img/vol-1/3-2/015.png)
 
-!!! abstract "Step 2"
-    1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process > Invoices Batch
-    2. Click Clone To Test
+!!! abstract "Batch Processing / Batches / Production / Invoices Process / **Invoices Batch**"
+    Press **Clone To Test**.
 
 ![](../assets/img/vol-1/3-2/016.png)
 
 ### Setting the classification method
 
-!!! abstract "Step 1"
-    1. Navigate to (root) > Content Models > Invoices
-    2. Right click on Invoices and select Create Data Model
-    3. Right click on Invoices and select Create Local Resources Folder
+!!! abstract "Content Models / **Invoices**"
+    1. Right click and select **Create Data Model**.
+    2. Right click and select **Create Local Resources Folder**.
 
 ![](../assets/img/vol-1/3-2/019.png)
 
-!!! abstract "Step 2"
-    1. On the Invoices Content Model in the General section, set the Classification Method property to ==Lexical==
-    2. Still in the General section, navigate to Classification Method > Text Feature Extractor > Type
-    3. Set the Type property to ==Reference==
-    4. Set the Referenced Extractor property to the Data Extraction > Downloads > Features > ==Words (Stemmed)== Data Type
+!!! abstract "Content Models / **Invoices**"
+    1. In the General section, set the **Classification Method** property to ==Lexical==.
+    2. Set the **Classification Method > Text Feature Extractor > Type** property to ==Reference==.
+    3. Set the **Referenced Extractor** property to the **Data Extraction > Downloads > Features > ==Words (Stemmed)==** Data Type.
 
 ![](../assets/img/vol-1/3-2/021.png)
 
@@ -132,12 +121,12 @@ Before we can expect to get any kind of information from these invoices, we need
 
 ### Training and testing classification
 
-!!! abstract "Step 1"
-    1. Click on the Classification Testing tab
-    2. Select Folder (1)
-    3. In the toolbar, click on the Train Document button
-    4. Select the Acme Document Type from the list
-    5. In the toolbar, click on the Classify Batch button
+!!! abstract "Content Models / **Invoices**"
+    1. Switch to the **Classification Testing** tab.
+    2. Select **Folder (1)**.
+    3. In the toolbar, press **Train Document**.
+    4. Select the **Acme** Document Type from the list.
+    5. In the toolbar, press **Classify Batch**.
 
 ![](../assets/img/vol-1/3-2/027.png)
 
@@ -147,13 +136,13 @@ Before we can expect to get any kind of information from these invoices, we need
 
 ![](../assets/img/vol-1/3-2/035.png)
 
-!!! abstract "Step 2"
+!!! abstract "Content Models / **Invoices**"
     1. Train the other four vendors:
         - Folder (2) --> Standard (2)
         - Folder (3) --> Express (3)
         - Folder (4) --> Spartan (4)
         - Folder (5) --> Enid (5)
-    2. In the toolbar, click on the Classify Batch button
+    2. In the toolbar, press **Classify Batch**.
 
 ![](../assets/img/vol-1/3-2/035.png)
 
@@ -163,21 +152,20 @@ Before we can expect to get any kind of information from these invoices, we need
 
 ### Adding a Classify Review step
 
-!!! abstract "Step 1"
-    1. Navigate to (root) > Batch Processing > Processes > Working > Invoices Process
-    2. Add a new step
-    3. Set the Activity Type property of the new step to Classify
-    4. Set the Content Model Scope to our Invoices Content Model
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+    1. Add a new step.
+    2. Set the **Activity Type** property of the new step to ==Classify==.
+    3. Set the **Content Model Scope** to our ==Invoices== Content Model.
 
 ![](../assets/img/vol-1/3-3/001.png)
 
 ![](../assets/img/vol-1/3-3/002.png)
 
-!!! abstract "Step 2"
-    1. Add a new step
-    2. Set the Activity Type property of the new step to Classify Review
-    3. Set the Classification Viewer Settings > Content Model Scope to our Invoices Content Model
-    4. Save and Publish.
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+    1. Add a new step.
+    2. Set the **Activity Type** property of the new step to ==Classify Review==.
+    3. Set the **Classification Viewer Settings > Content Model Scope** to our ==Invoices== Content Model.
+    4. **Save** and **Publish**.
 
 ![](../assets/img/vol-1/3-3/003.png)
 
@@ -185,30 +173,28 @@ Before we can expect to get any kind of information from these invoices, we need
 
 ### Updating the production batch
 
-!!! abstract "Step 1"
-    1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process
-    2. Make sure the batch is paused
-    3. Right click on the Invoices Batch and select Update Process….
-    4. Set Target Step to Classify.
-    5. Click Execute.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    1. Right click and select **Update Process…**.
+    2. Set **Target Step** to ==Classify==.
+    3. Press **Execute**.
 
 ![](../assets/img/vol-1/3-3/007.png)
 
 ![](../assets/img/vol-1/3-3/008.png)
 
-!!! abstract "Step 2"
-    1. Resume the batch
-    2. Click Process
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    1. Resume the batch.
+    2. Press **Process**.
 
 ![](../assets/img/vol-1/3-3/011.png)
 
 ### Reviewing and correcting classification
 
-!!! abstract "Step 1"
-    1. After the Classify step has completed, click Process to start the Classify Review step.
-    2. In Grooper Classify Review, right click on Folder (18) and select Assign Content Type
-    3. Select the Enid Document Type from the list and click OK
-    4. In the toolbar, click on the Complete Task button to finish this activity
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    1. After the Classify step has completed, press **Process** to start the Classify Review step.
+    2. In Grooper Classify Review, right click on **Folder (18)** and select **Assign Content Type**.
+    3. Select the **Enid** Document Type from the list and press **OK**.
+    4. In the toolbar, press **Complete Task** to finish this activity.
 
 ![](../assets/img/vol-1/3-3/015.png)
 

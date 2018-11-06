@@ -13,7 +13,7 @@
 ### Configuring "Change in Value" separation
 
 !!! abstract "Global Resources / Separation Profiles / **Change in Value (Invoice Number)**"
-    Change the following property values:
+    Change the following property value(s):
     
     | Property                         | Default Value | New Value                        |
     |----------------------------------|---------------|----------------------------------|
@@ -67,7 +67,7 @@
 
 !!! abstract "Content Models / **Invoices**"
     1. Right click and select **Contents > Add Multiple Items...**.
-    2. In the **Contents • Add Multiple Items** window, change the following property values:
+    2. In the **Contents • Add Multiple Items** window, change the following property value(s):
 
         | Property          | Default Value      | New Value                                                                    |
         |-------------------|--------------------|------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@
 ### Setting the Classification Method
 
 !!! abstract "Content Models / **Invoices**"
-    Change the following property values:
+    Change the following property value(s):
 
     | Property                         | Default Value | New Value             |
     |----------------------------------|---------------|-----------------------|
@@ -103,7 +103,7 @@
 ### Setting a positive extractor for classification
 
 !!! abstract "Content Models / Invoices / **Acme**"
-    Change the following property values:
+    Change the following property value(s):
 
     | Property               | Default Value     | New Value         |
     |------------------------|-------------------|-------------------|

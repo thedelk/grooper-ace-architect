@@ -21,46 +21,30 @@ We want to start building out steps to make that process as automated as possibl
 
 ### Creating a Batch Process
 
-The first thing we want to do is create a Batch Process.
+The first thing we want to do is create a Batch Process.  We'll be working out of Grooper Design Studio, so open it up!
 
-!!! abstract "Step 1"
-    Open Grooper Design Studio and expand the node tree to **_(root)_ > Batch Processing > Process** and select the **Working** node.
-    
-!!! abstract "Step 2"
-    Create a new Batch Process by either:
-    
-    1. right-clicking on the **Working** node and selecting **Add > Batch Process...**, or
-
-    2. clicking **Add** in the toolbar and selecting **Batch Process...**.
+!!! abstract "Batch Processing / Process / **Working**"
+    1. Create a new Batch Process by:
+        - right-clicking on the **Working** node and selecting **Add > Batch Process...**, or
+        - clicking **Add** in the toolbar and selecting **Batch Process...**.
+    2. Name the Batch Process ==Invoices Process== (or anything that makes you happy) and press **OK**.
 
 ![](../assets/img/vol-1/1-2/001-002.gif)
 
-### Naming the Batch Process
-
-Before our Process can be created, we have to give it a name.
-
-!!! abstract "Step 3"
-    Name the Batch Process ==Invoices Process== (or anything that makes you happy) and click **OK**.
-
-![](../assets/img/vol-1/1-2/003.png)
-
-### Adding a step
-
-Congratulations! You've just created your first Batch Process. You can see the new process under the **_(root)_ > Batch Processing > Processes > Working** node. Now we can start building it!
+Congratulations! You've just created your first Batch Process. You can see the new process under the **Batch Processing > Processes > Working** node. Now we can start building it!
 
 ![](../assets/img/vol-1/1-2/004.png)
+
+### Adding a step
 
 By default, a new Process will be empty when we create it. We want to start adding the steps through which our batches are going to run.
 
 We'll start with a simple Scan step for now, and add more steps in later.
 
-!!! abstract "Step 4"
-    In the **Steps in Batch Process** panel, click the **Add Step...** button.
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+    Press **Add Step...**. This will create a blank step in our Process.
 
 ![](../assets/img/vol-1/1-2/005.png)
-
-!!! abstract "Step 5"
-    This will create a blank step in our Process.
 
 ![](../assets/img/vol-1/1-2/006.png)
 
@@ -72,12 +56,12 @@ If we read the error, it tells us that our **New Step • Activity Type**'s valu
 
 We've added a step to our process, but it's currently blank, meaning we haven't specified which activity we want Grooper to perform here. This is like saying, "I want you to do something here, but I haven't told you what it is yet."
 
-!!! abstract "Step 6"
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
     In the **Step Properties** panel, select the **Activity Type** property and choose **Scan** from the dropdown list.
 
 ![](../assets/img/vol-1/1-2/007.png)
 
-!!! abstract "Step 7"
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
     Our validation error should go away now that we've satisfied the requirement.
 
 ![](../assets/img/vol-1/1-2/008.png)
@@ -92,18 +76,18 @@ We're done adding our first step, so now we want to test it out.
 ??? info
     Batch Processes must first be published in order to be used. This is to allow development of a Process without users having access to changes before they're ready.
 
-!!! abstract "Step 8"
-    Click **Save** to save our changes.
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+    Press **Save** to save our changes.
 
 ![](../assets/img/vol-1/1-2/009.png)
 
-!!! abstract "Step 9"
-    Click **Publish** to make this Batch Process available for production use.
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+    Press **Publish** to make this Batch Process available for production use.
 
 ![](../assets/img/vol-1/1-2/010.png)
 
-!!! abstract "Step 10"
-    After the Batch Process is published, you will see that the **_(root)_ > Batch Processing > Processes > Published** node now has a child that looks exactly like the **Working** node.
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+    After the Batch Process is published, you will see that the **Batch Processing > Processes > Published** node now has a child that looks exactly like the **Working** node.
 
 ![](../assets/img/vol-1/1-2/016.png)
 
@@ -128,21 +112,15 @@ To start off, we're going to need to tell Grooper how we're going to bring these
 
 Let's begin by creating a Scanner Profile.
 
-!!! abstract "Step 1"
-    Right-click on the **_(root)_ > Global Resources > Scanner Profiles** folder, hover over **Add >** and select **Scanner Profile...**
+!!! abstract "Global Resources / **Scanner Profiles**"
+    1. Right-click and select **Add > Scanner Profile...**.
+    2. Name it ==Scan Profile==.
 
 ![](../assets/img/vol-1/1-3/001.png)
 
-This will open the **Add New Scanner Profile** name dialog.
-
-!!! abstract "Step 2"
-    Give it a name (we'll be using the exciting name ==Scan Profile== for the rest of this instruction) and click **OK**.
-
-![](../assets/img/vol-1/1-3/004.png)
-
 ### Configuring the Scanner Profile
 
-Way to go! You've just created your first Scanner Profile. You're on a roll! You can see it in the node tree under **_(root)_ > Global Resources > Scanner Profiles**.
+Way to go! You've just created your first Scanner Profile. You're on a roll! You can see it in the node tree under **Global Resources > Scanner Profiles**.
 
 This is the default Scanner Profile configuration screen. Let's set it up so we can use it.
 
@@ -150,12 +128,12 @@ This is the default Scanner Profile configuration screen. Let's set it up so we 
 
 We first need to set which of the various "scan" methods our profile will be using.
 
-!!! abstract "Step 3"
+!!! abstract "Global Resources / Scanner Profiles / **Scan Profile**"
     In the Properties panel, in the **General** section, click on the **Selected Device** property.
 
 ![](../assets/img/vol-1/1-3/007.png)
 
-!!! abstract "Step 4"
+!!! abstract "Global Resources / Scanner Profiles / **Scan Profile**"
     Click the drop-down on the right and select **File System Import**.
 
 ??? info
@@ -163,14 +141,14 @@ We first need to set which of the various "scan" methods our profile will be usi
 
 ![](../assets/img/vol-1/1-3/008.png)
 
-!!! abstract "Step 5"
+!!! abstract "Global Resources / Scanner Profiles / **Scan Profile**"
     Click the **Device Settings** property, and then click the ellipsis button to the right.
 
 This will bring up the configuration settings for whichever device you chose from the previous step.
 
 ![](../assets/img/vol-1/1-3/009.png)
 
-!!! abstract "Step 6"
+!!! abstract "Global Resources / Scanner Profiles / **Scan Profile**"
     Because we chose **File System Import** as our device, this will bring up the **File System Import Settings** panel.
 
 ![](../assets/img/vol-1/1-3/011.png)
@@ -179,7 +157,7 @@ This will bring up the configuration settings for whichever device you chose fro
 
 We're going to be importing, so we need to tell Grooper where to look.
 
-!!! abstract "Step 7"
+!!! abstract "Global Resources / Scanner Profiles / **Scan Profile**"
     Click the **Import Path** property. There are two ways you can set the path:
 
 1. You can click the ellipsis to the right and browse for the path. This is useful if the files are located locally.
@@ -188,17 +166,15 @@ We're going to be importing, so we need to tell Grooper where to look.
 
 ![](../assets/img/vol-1/1-3/013.png)
 
-!!! abstract "Step 8"
-    Click **OK**. We don't need to change any of the other settings here, but feel free to click on them and read their descriptions to learn more about them.
-
-This will bring us back to our **Scanner Profile** configuration node.
+!!! abstract "Global Resources / Scanner Profiles / **Scan Profile**"
+    Press **OK**. We don't need to change any of the other settings here, but feel free to click on them and read their descriptions to learn more about them.
 
 ![](../assets/img/vol-1/1-3/014.png)
 
 #### Saving
 
-!!! abstract "Step 9"
-    We're done here, so click **Save** to save the changes we've made so far.
+!!! abstract "Global Resources / Scanner Profiles / **Scan Profile**"
+    We're done here, so press **Save** to save the changes we've made so far.
 
 ![](../assets/img/vol-1/1-3/015.png)
 
@@ -210,16 +186,15 @@ We're going to create a production batch with our new Process, so now we want to
 
 ### Creating a batch
 
-!!! abstract "Step 1"
-    Navigate to **_(root)_ > Batch Processing > Batches**.
+!!! abstract "Batch Processing / **Batches**"
+    Navigate to **Batch Processing > Batches**.
 
 ![](../assets/img/vol-1/1-3/016.png)
 
 ??? note
-    In the **_(root)_ > Batch Processing > Batches** node, you will be able to see *all* batches in your environment, including test batches. To limit your list of batches to either test or production, select the appropriate child node.
+    In the **Batch Processing > Batches** node, you will be able to see *all* batches in your environment, including test batches. To limit your list of batches to either test or production, select the appropriate child node.
 
-!!! abstract "Step 2"
-    In the **Batches Folder** tab, click on **Batch > New...**.
+In the **Batches Folder** tab, click on **Batch > New...**.
 
 ![](../assets/img/vol-1/1-3/018.png)
 
@@ -229,22 +204,22 @@ The **Batch Properties** window will appear. This is where we specify which Batc
 
 ### Configuring the batch properties
 
-!!! abstract "Step 3"
+!!! abstract "Batch Processing / **Batches**"
     Give your batch an intuitive name, such as ==Invoices Batch==.
 
 ![](../assets/img/vol-1/1-3/020.png)
 
-!!! abstract "Step 4"
-    From the **Batch Process** dropdown, select **Invoices Process**.
+!!! abstract "Batch Processing / **Batches**"
+    From the **Batch Process** dropdown select **Invoices Process**.
 
 ![](../assets/img/vol-1/1-3/022.png)
 
-!!! abstract "Step 5"
-    We're done here, so click **OK** to return close this window and create our batch.
+!!! abstract "Batch Processing / **Batches**"
+    We're done here, so press **OK** to return this window and create our batch.
 
 ![](../assets/img/vol-1/1-3/024.png)
 
-!!! abstract "Step 6"
+!!! abstract "Batch Processing / **Batches**"
     Back in **Grooper Design Studio** we should see our new batch in our list.
 
 ![](../assets/img/vol-1/1-3/025.png)
@@ -261,16 +236,16 @@ If you click on the batch, you can see where it's at in the process.  Currently,
 ??? tip
     You have the ability to rename your batch after it has already been created.
 
-    1. From the **Batches Folder**, select the batch and click the **Pause** button in the toolbar.
+    1. From the **Batches Folder** select the batch and press **Pause** in the toolbar.
 
     2. Right-click on the batch and select **Properties**.
 
-    3. Rename the batch and click **OK**.
+    3. Rename the batch and press **OK**.
 
 ### Processing the batch
 
-!!! abstract "Step 7"
-    Make sure your batch is selected, and click the **Process** button.  This tells Grooper to begin processing this activity.
+!!! abstract "Batch Processing / **Batches**"
+    Make sure your batch is selected and press **Process**.  This tells Grooper to begin processing this activity.
 
 ![](../assets/img/vol-1/1-3/026.png)
 
@@ -278,7 +253,7 @@ This will bring up the **Attended Client** window for the **Scan** activity.
 
 ![](../assets/img/vol-1/1-3/027.png)
 
-!!! abstract "Step 8"
+!!! abstract "Batch Processing / **Batches**"
     Click the **Scanner Profile** dropdown.
 
 This is where all of our Scan Profiles would appear if we had more than one.  We have only one, so select it from the list.
@@ -289,8 +264,8 @@ This is where all of our Scan Profiles would appear if we had more than one.  We
 
 Now we're ready to scan!
 
-!!! abstract "Step 9"
-    Click the big **Scan** button.
+!!! abstract "Batch Processing / **Batches**"
+    Press the big **Scan** button.
 
 This will activate the Scan Profile we selected, which is configured to look in our file system and pull in any images it finds in there.
 
@@ -300,8 +275,8 @@ As the pages are scanned in, their images will display in the panel on the right
 
 ![](../assets/img/vol-1/1-3/031.png)
 
-!!! abstract "Step 10"
-    We're done scanning in our pages, so in the toolbar, click the **Complete Task** button.
+!!! abstract "Batch Processing / **Batches**"
+    We're done scanning in our pages, so in the toolbar, press **Complete Task**.
 
 This is like telling Grooper, "I'm done with this task, so move on to the next step in the process."
 
@@ -312,14 +287,14 @@ This will close **Attended Client** and return us to Grooper Design Studio.
 ??? note
     There may be times when you may have more pages to scan into your batch, but can't do it at that moment.  In situations like that, you wouldn't necessarily want to use **Complete Task**, because it will take the batch as-is and move it on to the next step.
 
-    If you're scanning in **Attended Client** and want to return to the batch later, click the **Stop** button instead.  This will return the batch to a "Pending" state.  When you are ready to come back to it, click **Process** again, and it will pick up where you left off, with all of your already-scanned pages still present.
+    If you're scanning in **Attended Client** and want to return to the batch later, press **Stop** instead.  This will return the batch to a "Pending" state.  When you are ready to come back to it, press **Process** again, and it will pick up where you left off, with all of your already-scanned pages still present.
 
 ??? tip
     If you need to rescan a page or pages, you can right-click on them in the Batch Viewer. There are a few things you can do from this context menu, so feel free to hover over the options and read the tooltips to see what they can do.
 
 ### Observing the results
 
-!!! abstract "Step 11"
+!!! abstract "Batch Processing / **Batches**"
     Back in Grooper Design Studio, take a look at our batch. The progress bar should now be blue, which means that this activity is complete.
 
 ![](../assets/img/vol-1/1-3/034.png)

@@ -22,44 +22,19 @@ Let the conditioning commence!
 
 For the next few phases, we'll be testing the results of adding a single Batch Process step at a time. Let's take a deeper look at our batch so that when we start adding steps, the process makes a little bit more sense.
 
-!!! abstract "Step 1"
-    In Grooper Design Studio, navigate to ***(root)* > Batch Processing > Batches > Production > Invoices Process**.
-
-<!-- ``` clojure hl_lines="5"
-(root)
-├─ Batch Processing
-|  ├─ Batches
-|  |  ├─ Production
-|  |  |  └─ Invoices Process
-|  |  └─ Test
-|  ├─ Control Sheets
-|  ├─ Processes
-|  └─ Projects
-├─ Content Models
-├─ Data Extraction
-└─ ...
-``` -->
-
-![](../assets/img/vol-1/2-1/003.png)
-
-Any batches that are created will also be visible in the node tree. Viewing the batch from this location gives us access to more information about the batch itself.
-
-You can simply view the batch by clicking on the **Batch Viewer** tab.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Any batches that are created will also be visible in the node tree. Viewing the batch from this location gives us access to more information about the batch itself.
+    
+    You can view the batch by switching to the **Batch Viewer** tab.
 
 ![](../assets/img/vol-1/2-1/005.png)
 
-!!! abstract "Step 2"
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
     Click the **+** button next to the batch in the node tree to expand it.
 
 ![](../assets/img/vol-1/2-1/006.png)
 
 Notice that there are two child objects here:
-
-<!-- ``` hl_lines="2 3"
-└─ Invoices Batch
-    ├─ Invoices Batch
-    └─ Invoices Process
-``` -->
 
 1. a folder with the same name as the batch, and
 2. a gear icon with the name of the Batch Process we used to create the batch.
@@ -81,47 +56,28 @@ We'll be doing this quite a few times, so it won't hurt to become familiar with 
     
 ## Cloning to test
 
-!!! abstract "Step 1"
-    Navigate back up the node tree to ***(root)* > Batch Processing > Batches > Production > Invoices Process > Invoices Batch**.
-
-![](../assets/img/vol-1/2-1/003.png)
-
 We need to clean up our batch images, so we're going to create an Image Processing Profile to do that. However, profiles can be tested only against test batches, so we can't use our production batch.
 
 We can, however, clone our production batch to our test batches. This way we don't have to create a brand new test batch to work with.
 
-!!! abstract "Step 2"
-    Click the **Clone To Test** button, and then **Execute** on the window that appears.
+!!! abstract "Batch Processing / Batches / Production / Invoices Process / **Invoices Batch**"
+    Press **Clone To Test**, and then **Execute** on the window that appears.
 
 ![](../assets/img/vol-1/2-1/013.png)
 
+??? note
+    A batch must first be paused before **Clone To Test** will appear.
+
 ??? warning
-    Make sure you click the **Clone To Test** button and NOT the **Clone** button in the upper toolbar.
+    Make sure you press **Clone To Test** and NOT **Clone** in the upper toolbar.
 
     - **Clone To Test** makes an exact replica of the batch in the test batches.
 
     - **Clone** is a way to create an exact copy of an object in-place in the node tree. If we used this option instead, we would have two identical production batches (and we'd have to rename the second one).
 
-Once the clone is complete, you will see a confirmation window; click **OK**.
+Once the clone is complete, you will see a confirmation window; press **OK**.
 
-Now you can view the cloned batch by navigating to ***(root)* > Batch Processing > Batches > Test > Production Clones > Invoices Process > Invoices Batch**
-
-<!-- ``` clojure hl_lines="8"
-(root)
-├─ Batch Processing
-|  ├─ Batches
-|  |  ├─ Production
-|  |  └─ Test
-|  |     └─ Production Clones
-|  |        └─ Invoices Process
-|  |           └─ Invoices Batch
-|  ├─ Control Sheets
-|  ├─ Processes
-|  └─ Projects
-├─ Content Models
-├─ Data Extraction
-└─ ...
-``` -->
+Now you can view the cloned batch by navigating to **Batch Processing > Batches > Test > Production Clones > Invoices Process > Invoices Batch**
 
 ![](../assets/img/vol-1/2-1/020.png)
 
@@ -133,27 +89,11 @@ We can start creating one now that we've got a batch against which we can test i
 
 ### Creating an IP Profile
 
-!!! abstract "Step 1"
-    Navigate to ***(root)* > Global Resources > IP Profiles**.
-
-<!-- ``` clojure hl_lines="6"
-(root)
-├─ Batch Processing
-├─ Content Models
-├─ Data Extraction
-├─ Global Resources
-|  └─ IP Profiles
-├─ Infrastructure
-└─ Reports
-``` -->
-
-!!! abstract "Step 2"
-    Right-click on this node and click **Add > IP Profile...**.
+!!! abstract "Global Resources / **IP Profiles**"
+    1. Right click and select **Add > IP Profile...**.
+    2. Name it ==Invoices IP Profile==.
 
 ![](../assets/img/vol-1/2-1/021.png)
-
-!!! abstract "Step 3"
-    Give the profile a name, such as ==Invoices IP Profile==, and click **OK**.
 
 ![](../assets/img/vol-1/2-1/024.png)
 
@@ -163,14 +103,14 @@ Once you have your IP Profile created, you should see the configuration screen.
 
 ![](../assets/img/vol-1/2-1/026.png)
 
-Setting up an IP Profile is a bit like setting up a Batch Process. We'll create a list of things to do (called "commands") when the profile runs against a page. Then we'll actually get to test it out against our test batch before we put it into production.
+Setting up an IP Profile is a bit like setting up a Batch Process. We'll create a list of things to do (in an IP Profile we'll work with "commands") when the profile runs against a page. Then we'll actually get to test it out against our test batch before we put it into production.
 
 #### Selecting a batch
 
-!!! abstract "Step 1"
-    From the **Batch** dropdown, select our cloned **Invoices Batch**.
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
+    From the **Batch** dropdown select our cloned **Invoices Batch**.
 
-We're going to build the profile, but we first need to select a batch for testing, otherwise we won't know if the commands we're adding will work.
+We're going to build the profile, but we first need to select a batch for testing.  Otherwise we won't know if the commands we're adding will work.
 
 ![](../assets/img/vol-1/2-1/028.png)
 
@@ -184,8 +124,8 @@ Let's add a command!
 
 The first thing we want to do is deskew the images.
 
-!!! abstract "Step 2"
-    Click the **Add** button, and then click on **Image Transforms > Auto Deskew**.
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
+    Press **Add** and select **Image Transforms > Auto Deskew**.
 
 ![](../assets/img/vol-1/2-1/030.png)
 
@@ -203,8 +143,8 @@ Let's test it out so far to make sure it's working.
 
 #### Testing the command
 
-!!! abstract "Step 3"
-    Click the **Execute** button in the toolbar. Keep your eye on the image in the lower right panel.
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
+    Keeping your eye on the image in the lower right panel, press **Execute** in the toolbar.
 
 This will run all commands in the list against the selected page from top to bottom.
 
@@ -212,7 +152,7 @@ This will run all commands in the list against the selected page from top to bot
 
 If you were watching, you probably noticed that the image did rotate, but now we have some extra white space around the edges that we didn't have before. That's okay, because we have plenty of other commands at our disposal to take care of that. Right now our primary concern is that the *text* is oriented correctly (we'll talk about why here in a bit).
 
-!!! abstract "Step 4"
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
     In the lower right panel, click the rightmost magnifying glass to zoom the image to fit the panel.
 
 This will make it easier to see.
@@ -227,8 +167,8 @@ Check it out on page two.
 
 ![](../assets/img/vol-1/2-1/35-36.gif)
 
-!!! abstract "Step 5"
-    Click **Save**.
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
+    Press **Save**.
 
 ![](../assets/img/vol-1/2-1/037.png)
 
@@ -243,15 +183,15 @@ Speaking of borders, let's take care of them.
 
 #### Border cleanup commands
 
-!!! abstract "Step 6"
-    Click **Add**, and then **Border Cleanup > Auto Border Crop**.
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
+    Press **Add**, and then **Border Cleanup > Auto Border Crop**.
 
 ![](../assets/img/vol-1/2-1/038.png)
 
 We aren't going to change any of the default properties, so let's see what happens.
     
-!!! abstract "Step 7"
-    Click **Execute**, and click back and forth between the images to see the changes.
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
+    Press **Execute**.  Click back and forth between the images to see the changes.
 
 ??? tip
     As you're building an IP Profile and adding and testing commands, make sure you are on the **Result Image** to see if your configuration is working. It's not unusual to be adding commands and not see any changes in your image, only to realize you never switched over from the **Original Image** view!
@@ -263,22 +203,22 @@ We aren't going to change any of the default properties, so let's see what happe
 
 Our Border Crop works pretty well, but there are some images that still have a bit leftover. We don't necessarily want to increase the size of our crop because we risk cutting off any text that might be close to the edge of the page (for example, **Page 7** in our batch). We'll take care of that another way.
     
-!!! abstract "Step 8"
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
     **Save** the profile.
 
 ![](../assets/img/vol-1/2-1/042.png)
     
-!!! abstract "Step 9"
-    Select **Page 1** in our batch. Click on **Add**, and then select **Border Cleanup > Border Fill.**
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
+    Select **Page 1** in our batch. Press **Add** and select **Border Cleanup > Border Fill**.
 
 ![](../assets/img/vol-1/2-1/044.png)
 
 ??? note
-    When you click on a page in the batch viewer, it automatically runs all commands against that page. The only time you need to use the **Execute** button is when you're adding commands and you want to run them against your current page without navigating away from it.
+    When you click on a page in the batch viewer, it automatically runs all commands against that page. The only time you need to use **Execute** is when you're adding commands and you want to run them against your current page without navigating away from it.
 
 If you click on **Execute**, nothing happens. That tells us that the default properties for this command probably need to be tweaked for us to see results.
     
-!!! abstract "Step 10"
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
     1. Select the **Border Fill** command.
     2. Change the **Border Region Size** property to ==25pt==.
 
@@ -288,14 +228,14 @@ This is increasing how far inward from the border Grooper will look when running
 
 Yet, once again, **Execute** yields no results.
     
-!!! abstract "Step 11"
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
     1. Select **Page 9** in our batch.
     2. Change the **Method** property to ==Inclusive==.
 
 ![](../assets/img/vol-1/2-1/052.png)
     
-!!! abstract "Step 12"
-    Click **Execute** and check out the results.
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
+    Press **Execute** and check out the results.
 
 ![](../assets/img/vol-1/2-1/53-54.gif)
 
@@ -304,8 +244,8 @@ Yet, once again, **Execute** yields no results.
     
     We're not changing the size of the page, only the stuff on it.
 
-!!! abstract "Step 13"
-    Click **Add** and select **Feature Detection > Patch Code Detection**.
+!!! abstract "Global Resources / IP Profiles / **Invoices IP Profile**"
+    Press **Add** and select **Feature Detection > Patch Code Detection**.
     
     **Save** the profile.
 
@@ -313,41 +253,25 @@ Yet, once again, **Execute** yields no results.
 
 ### Adding to the Batch Process
 
-!!! abstract "Step 1"
-    Navigate to ***(root)* > Batch Processing > Processes > Working > Invoices Process**.
-    
-![](../assets/img/vol-1/2-1/057.png)
-
-!!! abstract "Step 2"
-    Click **Add Step...**.
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**."
+    1. Press **Add Step...**.
+    2. In the **Step Properties** for our new empty step, change the **Activity Type** to ==Image Processing==.
+    3. Set the **IP Profile** on the right to the IP Profile we just got done making.
+    4. **Save** and **Publish**.
 
 ![](../assets/img/vol-1/2-1/058.png)
 
-!!! abstract "Step 3"
-    In the **Properties** for our new empty step, change the **Activity Type** to **Image Processing**.
-    
-    Set the **IP Profile** on the right to the IP Profile we just got done making.
-    
 ![](../assets/img/vol-1/2-1/060.png)
 
-!!! abstract "Step 4"
-    **Save** and **Publish** our process.
-    
 ![](../assets/img/vol-1/2-1/61-62.gif)
 
 ### Updating the production batch
 
-!!! abstract "Step 1"
-    Navigate to ***(root)* > Batch Processing > Batches > Production > Invoices Process > Invoices Batch > Invoices Process**.
-    
-![](../assets/img/vol-1/2-1/064.png)
+!!! abstract "Batch Processing / Batches / Production / Invoices Process / Invoices Batch / **Invoices Process**"
+    Notice how the Batch Process that is attached to this batch didn't receive the new step we just added. Remember that when this batch was created, the process had only the "Scan" step. We want to tell this batch to check out the changes we made to the process so that it can run through the new Image Processing step.
 
-Notice how the Batch Process that is attached to this batch didn't receive the new step we just added. Remember that when this batch was created, the process had only the "Scan" step. We want to tell this batch to check out the changes we made to the process so that it can run through the new Image Processing step.
-
-!!! abstract "Step 2"
-    Navigate back up to ***(root)* > Batch Processing > Batches > Production > Invoices Process**.
-    
-    Select the batch from the list, and then go to **Batch > Update Process...**.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Select the batch from the list, and then press **Batch > Update Process...**.
     
 ![](../assets/img/vol-1/2-1/066.png)
 
@@ -355,10 +279,10 @@ The **Update Process** window will appear.
 
 ![](../assets/img/vol-1/2-1/067.png)
 
-!!! abstract "Step 3"
-    Select **Target Step**.  From the dropdown on the right, select the **Image Processing** step, and then click **Execute**.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Select **Target Step**.  From the dropdown on the right select the **Image Processing** step, and then press **Execute**.
     
-We're telling Grooper, "Update the process on this batch. We're using this process, and I want you to start processing at this step."
+We're telling Grooper: "Update the process attached to this batch. We're using this process, I've added a step, and I want you to run the batch through it."
 
 ![](../assets/img/vol-1/2-1/069.png)
 
@@ -368,8 +292,8 @@ We will return to Grooper Design Studio, only now our batch's **Task Status** pa
 
 The task doesn't have a progress bar because the batch is still paused.
 
-!!! abstract "Step 4"
-    Click on the **Resume Batch** button, and then **Execute** on the confirmation window that appears.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Press **Resume Batch**, and then **Execute** on the confirmation window that appears.
     
 ![](../assets/img/vol-1/2-1/071.png)
 
@@ -377,8 +301,8 @@ Now the batch has a gray progress bar for the **Image Processing** step. We know
 
 Before we do that, let's look at what we just did.
 
-!!! abstract "Step 5"
-    Navigate to ***(root)* > Batch Processing > Batches > Production > Invoices Process > Invoices Batch > Invoices Process** and expand it.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Expand this node in the node tree.
 
 ![](../assets/img/vol-1/2-1/075.png)
 
@@ -386,8 +310,8 @@ Now we see that there's an **Image Processing** step that wasn't here the last t
 
 The batch received the latest updates from our **Invoices Process**, which had a new step, so now it's ready to run it!
 
-!!! abstract "Step 6"
-    Navigate back up to ***(root)* > Batch Processing > Batches > Production > Invoices Process**, select the batch, and click the **Process** button.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Navigate back up to **Batch Processing > Batches > Production > Invoices Process**, select the batch, and press **Process**.
     
 ![](../assets/img/vol-1/2-1/77-78.gif)
 
@@ -403,7 +327,7 @@ When it's done, it will have a blue progress bar similar to the Scan step.
 
 ![](../assets/img/vol-1/2-1/081.png)
 
-But how do we know that it actually worked, and that our images have been correctly cleaned up?
+But how do we know that it actually worked, and that our images have been cleaned up satisfactorily?
 
 ## Image Review
 
@@ -413,22 +337,20 @@ In Grooper, we can do this with an **Image Review** step. This is an attended ac
 
 ### Adding an Image Review step
 
-!!! abstract "Step 1"
-    1. Navigate to ***(root)* > Batch Processing > Batches > Production > Invoices Process**.
-    2. Click **Add Step...**.
-    3. Under **Properties of Image Review Step**, set the **Activity Type** to **Image Review**.
-    4. **Save** and **Publish** the process.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    1. Press **Add Step...**.
+    2. Under **Step Properties**, set the **Activity Type** to ==Image Review==.
+    3. **Save** and **Publish**.
 
 ![](../assets/img/vol-1/2-2/001.png)
 
 Now we need to go update our batch.
 
-!!! abstract "Step 2"
-    1. Navigate to ***(root)* > Batch Processing > Batches > Production > Invoices Process**.
-    2. **Pause** the batch.
-    3. Select the **Batch** dropdown and select **Update Process...**.
-    4. In the **Update Process** window, select the **Image Review** step from the **Target Step** dropdown.
-    5. Click **Execute**.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    1. **Pause** the batch.
+    2. Select the **Batch** dropdown and select **Update Process...**.
+    3. In the **Update Process** window, set **Target Step** to ==Image Review==.
+    4. Press **Execute**.
 
 ![](../assets/img/vol-1/2-2/2-5-9.gif)
 
@@ -438,13 +360,13 @@ We should see another step in the **Task Status** panel, just like when we added
 
 ![](../assets/img/vol-1/2-2/014.png)
 
-!!! abstract "Step 3"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
     **Resume** the batch.
 
 ![](../assets/img/vol-1/2-2/015.png)
 
-!!! abstract "Step 4"
-    Click **Process** to start this activity.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Press **Process** to start this activity.
 
 ![](../assets/img/vol-1/2-2/019.png)
 
@@ -454,8 +376,8 @@ We should see another step in the **Task Status** panel, just like when we added
 
 ### Opening Image Review
 
-!!! abstract "Step 5"
-    Click on the **Thumbnail Viewer** tab.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Switch to the **Thumbnail Viewer** tab.
 
 ![](../assets/img/vol-1/2-2/20-22.gif)
 
@@ -463,12 +385,12 @@ This gives us an easy way to see all of the thumbnails of the batch at a glance.
 
 If you haven't noticed yet, there are a few blank pages in this batch. We don't really care about processing those, so let's get rid of them.
 
-!!! abstract "Step 6"
-    In the **Thumbnail Viewer**, click the **Sort** button in the upper right corner.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    In the **Thumbnail Viewer**, press **Sort** in the upper right corner.
 
 ![](../assets/img/vol-1/2-2/023.png)
 
-!!! abstract "Step 7"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
     Select the **Sort By Intensity** option.
 
 ![](../assets/img/vol-1/2-2/024.png)
@@ -486,12 +408,12 @@ If you scroll to the top, you can see all of the pages with the least amount of 
 
 ### Deleting blank pages
 
-!!! abstract "Step 8"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
     1. Select the blank pages. You can do this in the same way you select files on your computer.
-        - Using your **Ctrl** key and clicking on the page you want to select
-        - Clicking the first blank page, holding **Shift** on your keyboard, and then clicking on the last blank page
+        - Using your ++ctrl++ key and clicking on the page you want to select
+        - Clicking the first blank page, holding ++shift++ on your keyboard, and then clicking on the last blank page
     2. Delete the pages. Either:
-        - press the **Delete** key on your keyboard, or
+        - press the ++delete++ key on your keyboard, or
         - right click on the selected pages and select **Delete**.
     3. Confirm the deletion when the confirmation window comes up.
 
@@ -504,8 +426,8 @@ Ta-da! They're all gone.
 ??? note
     This is only one of many ways that blank pages can be removed in Grooper.
 
-!!! abstract "Step 9"
-    Click back over to the **Batch Viewer** tab.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Switch to the **Batch Viewer** tab.
 
 Notice that the order of the pages didn't actually change, and now our batch is free of any blank pages.
 
@@ -516,27 +438,28 @@ Notice that the order of the pages didn't actually change, and now our batch is 
 In order to complete this activity, the images have to be verified. This means that they need to be checked to make sure the previous step (Image Processing) worked correctly on all of the pages.
 
 To verify that an image has been reviewed, you can:
-    1. right click on the image and click **Mark As Reviewed**, or
-    2. press the **Enter** key on your keyboard.
+
+1. right click on the image and press **Mark As Reviewed**, or
+2. press ++enter++ on your keyboard.
 
 You know an image has been reviewed when there is a green **✓** on the image.
 
-Each image has to be reviewed before the **Complete Task** button in the toolbar will light up, so it's probably easiest to press the **Enter** key for each of these.
+Each image has to be reviewed before **Complete Task** in the toolbar will light up, so it's probably easiest to press ++enter++ for each of these.
 
-!!! abstract "Step 10"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
     Make sure every image in the batch has been marked as reviewed.
 
 ??? tip
     For this exercise, Image Processing works on all of the pages.
 
-    To complete this step quickly, select the first page in the batch and hold your **Enter** key down. It will quickly verify all of the pages in the batch.
+    To complete this step quickly, select the first page in the batch and hold your ++enter++ key down. It will quickly verify all of the pages in the batch.
 
-When you have reviewed all of the pages in the batch, the **Complete Task** button in the toolbar will light up.
+When you have reviewed all of the pages in the batch, **Complete Task** in the toolbar will light up.
 
 ![](../assets/img/vol-1/2-2/35-36.gif)
 
-!!! abstract "Step 11"
-    Click the **Complete Task** button to finish this activity and return to Grooper Design Studio.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    Press **Complete Task** to finish this activity and return to Grooper Design Studio.
 
 ![](../assets/img/vol-1/2-2/037.png)
 
@@ -576,64 +499,37 @@ Check out [this video](https://upload.wikimedia.org/wikipedia/commons/transcoded
 
 With Grooper, page scanning happens (usually) all at once. During the OCR process the image is broken into vertical and horizontal lines of pixels to identify individual letter characters and spacing.
 
-| G     | r     | o     |
-| :---: | :---: | :---: |
+<!-- | G     | r     | o     |
+| :---: | :---: | :---: | -->
+![](../assets/img/vol-1/2-3/ref/ocr-01.jpg)
+
+![](../assets/img/vol-1/2-3/ref/ocr-02.jpg)
+
 ![](../assets/img/vol-1/2-3/ref/ocr-03.jpg)
-
-<!-- !!! danger "TO-DO"
-    THESE STEPS NEED EXPLANATION. -->
-
-<!-- This is extra information not crucial to the steps -->
-<!-- !!! abstract "Step 1"
-    Navigate to ***(root)* > Global Resources > OCR Profiles > Downloads > Full Text - Accurate**. 
-
-![](../assets/img/vol-1/2-3/001.png)
-
-!!! abstract "Step 2"
-    1. Click on the **IP Profile** property.
-    2. Click the dropdown to see the list of IP Profiles and where the configured one is located.
-
-![](../assets/img/vol-1/2-3/002.png)
-
-!!! abstract "Step 3"
-    Navigate to the location of the IP Profile, which is ***(root)* > Global Resources > IP Profiles > Downloads > OCR Cleanup**.
-
-![](../assets/img/vol-1/2-3/004.png)
-
-If you hover over the **Description** property, a tooltip will appear that gives a brief description of the purpose and use for this IP Profile.
-
-> Performs temporary pre-OCR image cleanup to remove hole punches, lines, negated regions, halftone regions, barcodes, and specks.
-
-![](../assets/img/vol-1/2-3/005.png)
-
-!!! abstract "Step 4"
-    Test out a few of the batch pages and click back and forth between the **Original Image** and **Result Image** tabs. -->
 
 ### Adding an OCR step
 
-!!! abstract "Step 1"
-    1. Navigate to ***(root)* > Batch Processing > Processes > Working > Invoices Process**.
-    2. Click **Add Step...**.
-    3. Under **Properties of OCR Step**, set the **Activity Type** to **OCR**.
-    4. Under **Properties of OCR Activity**, set the **OCR Profile** to **Full Text - Accurate**.
-    5. **Save** and **Publish** the process.
+!!! abstract "Batch Processing / Processes / Working / **Invoices Process**"
+    1. Press **Add Step...**.
+    2. Under **Step Properties**, set the **Activity Type** to ==OCR==.
+    3. Under **Properties of OCR Activity**, set the **OCR Profile** to ==Full Text - Accurate==.
+    4. **Save** and **Publish** the process.
 
 ![](../assets/img/vol-1/2-3/018.png)
 
-!!! abstract "Step 2"
-    1. Navigate to ***(root)* > Batch Processing > Batches > Production > Invoices Process**.
-    2. **Pause** the batch.
-    3. Select the **Batch** dropdown and select **Update Process...**.
-    4. In the **Update Process** window, select the **OCR** step from the **Target Step** dropdown.
-    5. Click **Execute**.
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
+    1. **Pause** the batch.
+    2. Select the **Batch** dropdown and select **Update Process...**.
+    3. In the **Update Process** window, set **Target Step** to ==OCR==.
+    4. Press **Execute**.
 
 ![](../assets/img/vol-1/2-3/19-20-24.gif)
 
 ![](../assets/img/vol-1/2-3/25-26-27.gif)
 
-!!! abstract "Step 3"
+!!! abstract "Batch Processing / Batches / Production / **Invoices Process**"
     1. **Resume** the batch.
-    2. Click **Process** to kick off the OCR activity.
+    2. Press **Process** to kick off the OCR activity.
 
 ![](../assets/img/vol-1/2-3/29-33.gif)
 
@@ -641,14 +537,12 @@ The **Grooper Unattended Client** should kick off again and start processing aga
 
 ![](../assets/img/vol-1/2-3/034.png)
 
-!!! danger "TO-DO"
-    Insert information about OCR and unattended client (images 36-39)
-
 ## Recap
 
 That's it for the **Condition** phase! We've successfully prepped our images and extracted text from them.
 
 Here's a list of everything we learned:
+
 - how to clone a batch from production to test,
 - how to create an Image Processing Profile (or "IP Profile"),
 - how to configure our IP Profile to clean up our images,

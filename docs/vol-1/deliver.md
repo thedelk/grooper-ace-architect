@@ -4,12 +4,11 @@
 
 ### Adding and configuring Document Export
 
-!!! abstract "Step 1"
-    1. Navigate to (root) > Batch Processing > Processes > Production > Invoices Process
-    2. Add a new step
-    3. Set the Activity Type property of the new step to ==Document Export==
-    4. Set the Export Provider property to ==File System Export==
-    5. Click on the Export Settings property to edit its settings
+!!! abstract "Batch Processing / Processes / Production / **Invoices Process**"
+    1. Add a new step.
+    2. Set the Activity Type property of the new step to ==Document Export==.
+    3. Set the Export Provider property to ==File System Export==.
+    4. Click on the Export Settings property to edit its settings.
 
 ![](../assets/img/vol-1/5-1/001.png)
 
@@ -17,21 +16,33 @@
 
 ![](../assets/img/vol-1/5-1/004.png)
 
-!!! abstract "Step 2"
-    1. In the File System Export window, in the General section:
-        1. Set the Base Export Folder property to a path where the files can be exported
-        2. Set the File Export Settings > Content Format property to ==PDF==
-        3. Set the File Export Settings > PDF Options > Make Searchable property to ==True==
-    2. In the File and Directory Naming section:
-        1. Set the Content Type property to the ==Invoices== Content Model
-        2. Set the Subfolder Levels property to ==1==
-        3. Edit the Folder Mappings property:
-            1. For Folder Level 1, set Map To to ==Variable== and Mapped Value to =={Node.ContentTypeName}==
-            2. For Filename, set Map To to ==Field== and Mapped Value to ==Invoice Number==
-    3. In the Metadata Export section:
-        1. Set the Metadata Format property to ==XML==
-    4. Click OK to close the window
-    5. Save and Publish
+!!! abstract "Batch Processing / Processes / Production / **Invoices Process**"
+    1. Change the following property value(s):
+    
+        | Property                    | Default Value     | New Value         |
+        |-----------------------------|-------------------|-------------------|
+        | General                     |                   |                   |
+        | **Base Export Folder**      | `-`               | *(Export path)*   |
+        | **File Export Settings**    |                   |                   |
+        | --> **Content Format**      | `Native`          | ==`PDF`==         |
+        | --> **PDF Options**         |                   |                   |
+        | --> --> **Make Searchable** | `False`           | ==`True`==        |
+        | File and Directory Naming   |                   |                   |
+        | **Content Type**            | `-`               | ==`Invoices`==    |
+        | **Subfolder Levels**        | `0`               | ==`1`==           |
+        | **Folder Mappings**         | *(Click to edit)* | *(Click to edit)* |
+        | Metadata Export             |                   |                   |
+        | **Metadata Format**         | `None`            | ==`XML`==         |
+    
+    2. In the **Property Mapping Control** window, assign the following mapping(s):
+
+        | Property Name      | Map To         | Mapped Value                 |
+        |--------------------|----------------|------------------------------|
+        | **Folder Level 1** | ==`Variable`== | ==`{Node.ContentTypeName}`== |
+        | **Filename**       | ==`Field`==    | ==`Invoice Number`==         |
+
+    3. Press **OK** to close the window.
+    4. **Save** and **Publish**.
 
 ![](../assets/img/vol-1/5-1/028.png)
 
@@ -41,21 +52,20 @@
 
 ### Updating the production batch
 
-!!! abstract "Step 1"
-    1. Navigate to (root) > Batch Processing > Batches > Production > Invoices Process
-    2. Make sure the batch is paused
-    3. Right click on the Invoices Batch and select Update Process...
-    4. Set Target Step to ==Document Export==
-    5. Click Execute
+!!! abstract "Batch Processing > Batches > Production / **Invoices Process**"
+    1. Make sure the batch is paused.
+    2. Right click on **Invoices Batch** and select **Update Process...**.
+    3. Set **Target Step** to ==Document Export==.
+    4. Press **Execute**.
 
 ![](../assets/img/vol-1/5-1/036.png)
 
 ![](../assets/img/vol-1/5-1/039.png)
 
-!!! abstract "Step 2"
-    1. Resume the batch
-    2. Click Process
-    3. View the exported documents in Windows Explorer
+!!! abstract "Batch Processing > Batches > Production / **Invoices Process**"
+    1. Resume the batch.
+    2. Press **Process**.
+    3. View the exported documents in Windows Explorer.
 
 ![](../assets/img/vol-1/5-1/043.png)
 

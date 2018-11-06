@@ -84,7 +84,7 @@
 ![](../assets/img/vol-2/4-1/048.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Date**"
-    1. In the Context Zones window, edit the dimensions as follows:
+    1. In the **Context Zones** window, edit the dimensions as follows:
 
     | Property   | Zone 1       | Zone 2      |
     | ---------- | ------------ | ----------- |
@@ -282,7 +282,7 @@
         ```
 
     2. Select **Standard (2)**.
-    3. Click on the **Properties** tab.
+    3. Switch to the **Properties** tab.
     4. Change the following property value(s):
 
         | Property                   | Default Value | New Value        |
@@ -356,7 +356,7 @@
 ## Feature List
 
 !!! abstract "Batch Processing / Batches / Test / **Invoices**"
-    1. Click on the **Batch Viewer** tab.
+    1. Switch to the **Batch Viewer** tab.
     2. Collapse the Node Tree using the button in the toolbar.
     3. Open Notepad.exe alongside Grooper Design Studio.
 
@@ -438,7 +438,7 @@
         [^\r\n\t\f:]+
         ```
 
-    2. Click on the **Properties** tab.
+    2. Switch to the **Properties** tab.
     3. Change the following property value(s):
 
         | Property                  | Default Value | New Value     |
@@ -480,8 +480,8 @@
 !!! abstract "Content Models / Invoices / (local resources) / _Global / **Invoice Field Labels**"
     1. In the **Output Options** section, click to edit **Result Filter**.
     2. In the **Result Filter** window, set the **Output Case** property to ==Lower==.
-    3. Press **OK** to close the Result Filter window.
-    4. Press **OK** to close the pattern editor window.
+    3. Press **OK** to close the **Result Filter** window.
+    4. Press **OK** to close the **pattern editor** window.
 
 ![](../assets/img/vol-2/4-4/047.png)
 
@@ -578,7 +578,7 @@
 ![](../assets/img/vol-2/4-5/005.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Invoice Number / *****"
-    Edit the patterns for each of the Data Formats:
+    Edit the pattern(s) for each of the Data Formats:
 
     - Acme/Standard/Express
 
@@ -643,7 +643,7 @@
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Invoice Number**"
     1. Select **Spartan (4)**.
     2. Click to edit the **Context Zones**.
-    3. In the Context Zones window, edit the dimensions as follows:
+    3. In the **Context Zones** window, edit the dimensions as follows:
 
         | Property   | Zone 1      | Zone 2      |
         | ---------- | ----------- | ----------- |
@@ -715,11 +715,11 @@
 
 !!! abstract "Content Models / Invoices / (local resources) / _Global / **Addresses, Phone Numbers**"
     1. In the **Referenced Extractors** window, press **Add...**.
-    2. In the **Select Items** window, expand **(root) • Data Extraction > Data Types > Training Materials > Base Types** and check the following:
+    2. In the **Select Items** window, expand **Data Extraction > Data Types > Training Materials > Base Types** and check the following:
         1. ==Address==
         2. ==Phone Number==
-    3. Press **OK** to close the Select Items window.
-    4. Press **OK** to close the Referenced Extractors window.
+    3. Press **OK** to close the **Select Items** window.
+    4. Press **OK** to close the **Referenced Extractors** window.
 
 ![](../assets/img/vol-2/4-6/005.png)
 
@@ -1002,7 +1002,7 @@
 ![](../assets/img/vol-2/4-9/012.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / **Freight**"
-    Edit the patterns for each of the Data Formats:
+    Edit the pattern(s) for each of the Data Formats:
 
     - Acme
         
@@ -1186,7 +1186,7 @@
 ![](../assets/img/vol-2/4-10/006.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / **Acme**"
-    1. Click on the **Properties** tab.
+    1. Switch to the **Properties** tab.
     2. Change the following property value(s):
 
         | Property                  | Default Value | New Value     |
@@ -1195,7 +1195,7 @@
         | **Preprocessing Options** | `None`        |               |
         | --> **Tab Marking**       | `Disabled`    | ==`Enabled`== |
 
-    3. Click on the **Pattern Editor** tab.
+    3. Switch to the **Pattern Editor** tab.
     4. Edit the pattern(s):
 
         ```tab="Value Pattern"
@@ -1210,7 +1210,7 @@
         {0:Number}
         ```
 
-    5.  Press **OK** to close the pattern editor window.
+    5.  Press **OK** to close the **pattern editor** window.
 
 ![](../assets/img/vol-2/4-10/008.png)
 
@@ -1251,7 +1251,7 @@
 ![](../assets/img/vol-2/4-10/022.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / Enid / **[Key] Enid - Discount**"
-    1. Click on the **Properties** tab.
+    1. Switch to the **Properties** tab.
     2. Change the following property value(s):
 
         | Property               | Default Value     | New Value         |
@@ -1262,11 +1262,11 @@
         | **Minimum Similarity** | `90%`             | ==`85%`==         |
         | **Local Entries**      | *(Click to edit)* | *(Click to edit)* |
 
-    3. In the List Editor window, enter:
+    3. In the **List Editor** window, enter:
         ```
         )D=0.1
         ```
-    4. Press **OK** to close the List Editor window.
+    4. Press **OK** to close the **List Editor** window.
 
 ![](../assets/img/vol-2/4-10/025.png)
 
@@ -1277,8 +1277,7 @@
 ![](../assets/img/vol-2/4-10/029.png)
 
 !!! abstract "Content Models / Invoices / (local resources) / Extractors / Discount / Enid / **[Value] Enid - Discount**"
-    1. In the Value Pattern editor, type:
-    2. Edit the pattern(s):
+    Edit the pattern(s):
 
         ```tab="Value Pattern"
         \d{1,6}\.\d{2,3}
@@ -1445,7 +1444,7 @@
         {1:Number}
         ```
 
-    3. Press **OK** to close the pattern editor window.
+    3. Press **OK** to close the **pattern editor** window.
     4. Change the following property value(s):
 
         | Property                     | Default Value | New Value       |
@@ -1479,7 +1478,7 @@
         | **Right**  | ==`0.25`== |
         | **Bottom** | ==`0.1`==  |
 
-    4. Press **OK** to close the Context Zones window.
+    4. Press **OK** to close the **Context Zones** window.
     5. Change the following property value(s):
 
         | Property               | Default Value | New Value |
@@ -1494,7 +1493,7 @@
 ![](../assets/img/vol-2/4-11/033.png)
 
 !!! abstract "Content Models / Invoices / **Enid**"
-    1. Click on the **Data Element Profiles** tab.
+    1. Switch to the **Data Element Profiles** tab.
     2. Click on the **Sales Tax** Data Field and click the **+** button in the toolbar.
 
 ![](../assets/img/vol-2/4-11/034.png)
@@ -1540,7 +1539,7 @@
 
 !!! abstract "Content Models / Invoices / (data model) / **Ship To**"
     1. Right click on any of the property names and select **Copy Properties > Selected Properties...**.
-    2. In the Select Properties window, check the boxes next to the properties to copy:
+    2. In the **Select Properties** window, check the boxes next to the properties to copy:
         - ==[X] Display Width==
         - ==[X] Multi Line==
 
@@ -1567,7 +1566,7 @@
         | Child Element Options   |               |            |
         | **Show Fields in Grid** | `False`       | ==`True`== |
 
-    2. In the toolbar, press the **Test Extraction** button to test all fields against a document.
+    2. In the toolbar, press **Test Extraction** to test all fields against a document.
 
 ![](../assets/img/vol-2/4-12/016.png)
 

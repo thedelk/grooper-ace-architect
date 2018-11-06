@@ -48,7 +48,7 @@
         | **Selected Device**     | `-`               | ==`File System Import`== |
         | --> **Device Settings** | *(Click to edit)* | *(Click to edit)*        |
 
-    2. In the **File System Import Settings** window, change the following property values:
+    2. In the **File System Import Settings** window, change the following property value(s):
 
         | Section/Property  | Default Value | New Value       |
         |-------------------|---------------|-----------------|

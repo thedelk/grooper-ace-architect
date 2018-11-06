@@ -13,7 +13,7 @@
 ![](../assets/img/vol-2/2-1/004.png)
 
 !!! abstract "Global Resources / OCR Profiles / **Invoices OCR**"
-    Change the following property values:
+    Change the following property value(s):
 
     | Property                           | Default Value | New Value         |
     |------------------------------------|---------------|-------------------|
@@ -47,7 +47,7 @@
     1. Switch to the **OCR Testing** tab.
     2. From the **batch dropdown** select the **Invoices** batch.
     3. Right click on the root batch folder and select **Contents > Apply Activity...**.
-    4. In the **Contents • Apply Activity** window, change the following property values:
+    4. In the **Contents • Apply Activity** window, change the following property value(s):
 
         | Property            | Default Value | New Value          |
         |---------------------|---------------|--------------------|
