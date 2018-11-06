@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.2232ba22.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.d680e3e5.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.cb4d95c6.css">
       
@@ -169,8 +169,8 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." title="Introduction" class="md-tabs__link">
-        Introduction
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
       </a>
     
   </li>
@@ -231,8 +231,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -901,40 +901,17 @@
 <h2 id="but-first">But first<a class="headerlink" href="#but-first" title="Permanent link">&para;</a></h2>
 <p>For the next few phases, we'll be testing the results of adding a single Batch Process step at a time. Let's take a deeper look at our batch so that when we start adding steps, the process makes a little bit more sense.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<p>In Grooper Design Studio, navigate to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</strong>.</p>
-</div>
-<!-- ``` clojure hl_lines="5"
-(root)
-├─ Batch Processing
-|  ├─ Batches
-|  |  ├─ Production
-|  |  |  └─ Invoices Process
-|  |  └─ Test
-|  ├─ Control Sheets
-|  ├─ Processes
-|  └─ Projects
-├─ Content Models
-├─ Data Extraction
-└─ ...
-``` -->
-
-<p><img alt="" src="../../assets/img/vol-1/2-1/003.png" /></p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Any batches that are created will also be visible in the node tree. Viewing the batch from this location gives us access to more information about the batch itself.</p>
-<p>You can simply view the batch by clicking on the <strong>Batch Viewer</strong> tab.</p>
+<p>You can view the batch by switching to the <strong>Batch Viewer</strong> tab.</p>
+</div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/005.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p>Click the <strong>+</strong> button next to the batch in the node tree to expand it.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/006.png" /></p>
 <p>Notice that there are two child objects here:</p>
-<!-- ``` hl_lines="2 3"
-└─ Invoices Batch
-    ├─ Invoices Batch
-    └─ Invoices Process
-``` -->
-
 <ol>
 <li>a folder with the same name as the batch, and</li>
 <li>a gear icon with the name of the Batch Process we used to create the batch.</li>
@@ -948,19 +925,16 @@
 <p>This is like telling Grooper, "Hey, I've changed the steps I want you to take when you process."</p>
 <p>We'll be doing this quite a few times, so it won't hurt to become familiar with the technique!</p>
 <h2 id="cloning-to-test">Cloning to test<a class="headerlink" href="#cloning-to-test" title="Permanent link">&para;</a></h2>
-<div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<p>Navigate back up the node tree to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process &gt; Invoices Batch</strong>.</p>
-</div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/003.png" /></p>
 <p>We need to clean up our batch images, so we're going to create an Image Processing Profile to do that. However, profiles can be tested only against test batches, so we can't use our production batch.</p>
 <p>We can, however, clone our production batch to our test batches. This way we don't have to create a brand new test batch to work with.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<p>Click the <strong>Clone To Test</strong> button, and then <strong>Execute</strong> on the window that appears.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / Invoices Process / <strong>Invoices Batch</strong></p>
+<p>Press <strong>Clone To Test</strong>, and then <strong>Execute</strong> on the window that appears.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/013.png" /></p>
-<details class="warning"><summary>Warning</summary><p>Make sure you click the <strong>Clone To Test</strong> button and NOT the <strong>Clone</strong> button in the upper toolbar.</p>
+<details class="note"><summary>Note</summary><p>A batch must first be paused before <strong>Clone To Test</strong> will appear.</p>
+</details>
+<details class="warning"><summary>Warning</summary><p>Make sure you press <strong>Clone To Test</strong> and NOT <strong>Clone</strong> in the upper toolbar.</p>
 <ul>
 <li>
 <p><strong>Clone To Test</strong> makes an exact replica of the batch in the test batches.</p>
@@ -970,65 +944,32 @@
 </li>
 </ul>
 </details>
-<p>Once the clone is complete, you will see a confirmation window; click <strong>OK</strong>.</p>
-<p>Now you can view the cloned batch by navigating to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Test &gt; Production Clones &gt; Invoices Process &gt; Invoices Batch</strong></p>
-<!-- ``` clojure hl_lines="8"
-(root)
-├─ Batch Processing
-|  ├─ Batches
-|  |  ├─ Production
-|  |  └─ Test
-|  |     └─ Production Clones
-|  |        └─ Invoices Process
-|  |           └─ Invoices Batch
-|  ├─ Control Sheets
-|  ├─ Processes
-|  └─ Projects
-├─ Content Models
-├─ Data Extraction
-└─ ...
-``` -->
-
+<p>Once the clone is complete, you will see a confirmation window; press <strong>OK</strong>.</p>
+<p>Now you can view the cloned batch by navigating to <strong>Batch Processing &gt; Batches &gt; Test &gt; Production Clones &gt; Invoices Process &gt; Invoices Batch</strong></p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/020.png" /></p>
 <h2 id="image-processing">Image Processing<a class="headerlink" href="#image-processing" title="Permanent link">&para;</a></h2>
 <p>Our current objective is to clean up the images, which we learned is done via an Image Processing Profile (or "IP Profile").</p>
 <p>We can start creating one now that we've got a batch against which we can test it.</p>
 <h3 id="creating-an-ip-profile">Creating an IP Profile<a class="headerlink" href="#creating-an-ip-profile" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<p>Navigate to <strong><em>(root)</em> &gt; Global Resources &gt; IP Profiles</strong>.</p>
-</div>
-<!-- ``` clojure hl_lines="6"
-(root)
-├─ Batch Processing
-├─ Content Models
-├─ Data Extraction
-├─ Global Resources
-|  └─ IP Profiles
-├─ Infrastructure
-└─ Reports
-``` -->
-
-<div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<p>Right-click on this node and click <strong>Add &gt; IP Profile...</strong>.</p>
+<p class="admonition-title">Global Resources / <strong>IP Profiles</strong></p>
+<ol>
+<li>Right click and select <strong>Add &gt; IP Profile...</strong>.</li>
+<li>Name it <mark>Invoices IP Profile</mark>.</li>
+</ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/021.png" /></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
-<p>Give the profile a name, such as <mark>Invoices IP Profile</mark>, and click <strong>OK</strong>.</p>
-</div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/024.png" /></p>
 <h3 id="configuring-the-ip-profile">Configuring the IP Profile<a class="headerlink" href="#configuring-the-ip-profile" title="Permanent link">&para;</a></h3>
 <p>Once you have your IP Profile created, you should see the configuration screen.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/026.png" /></p>
-<p>Setting up an IP Profile is a bit like setting up a Batch Process. We'll create a list of things to do (called "commands") when the profile runs against a page. Then we'll actually get to test it out against our test batch before we put it into production.</p>
+<p>Setting up an IP Profile is a bit like setting up a Batch Process. We'll create a list of things to do (in an IP Profile we'll work with "commands") when the profile runs against a page. Then we'll actually get to test it out against our test batch before we put it into production.</p>
 <h4 id="selecting-a-batch">Selecting a batch<a class="headerlink" href="#selecting-a-batch" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<p>From the <strong>Batch</strong> dropdown, select our cloned <strong>Invoices Batch</strong>.</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
+<p>From the <strong>Batch</strong> dropdown select our cloned <strong>Invoices Batch</strong>.</p>
 </div>
-<p>We're going to build the profile, but we first need to select a batch for testing, otherwise we won't know if the commands we're adding will work.</p>
+<p>We're going to build the profile, but we first need to select a batch for testing.  Otherwise we won't know if the commands we're adding will work.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/028.png" /></p>
 <p>After you select the batch, it will appear in the batch viewer below.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/029.png" /></p>
@@ -1036,8 +977,8 @@
 <h4 id="adding-a-deskew-command">Adding a Deskew command<a class="headerlink" href="#adding-a-deskew-command" title="Permanent link">&para;</a></h4>
 <p>The first thing we want to do is deskew the images.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<p>Click the <strong>Add</strong> button, and then click on <strong>Image Transforms &gt; Auto Deskew</strong>.</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
+<p>Press <strong>Add</strong> and select <strong>Image Transforms &gt; Auto Deskew</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/030.png" /></p>
 <p>You should now see the "Auto Deskew" command in the list in the "Child Element" column.</p>
@@ -1049,14 +990,14 @@
 <p>Let's test it out so far to make sure it's working.</p>
 <h4 id="testing-the-command">Testing the command<a class="headerlink" href="#testing-the-command" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
-<p>Click the <strong>Execute</strong> button in the toolbar. Keep your eye on the image in the lower right panel.</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
+<p>Keeping your eye on the image in the lower right panel, press <strong>Execute</strong> in the toolbar.</p>
 </div>
 <p>This will run all commands in the list against the selected page from top to bottom.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/031.png" /></p>
 <p>If you were watching, you probably noticed that the image did rotate, but now we have some extra white space around the edges that we didn't have before. That's okay, because we have plenty of other commands at our disposal to take care of that. Right now our primary concern is that the <em>text</em> is oriented correctly (we'll talk about why here in a bit).</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 4</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p>In the lower right panel, click the rightmost magnifying glass to zoom the image to fit the panel.</p>
 </div>
 <p>This will make it easier to see.</p>
@@ -1066,8 +1007,8 @@
 <p>Check it out on page two.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/35-36.gif" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 5</p>
-<p>Click <strong>Save</strong>.</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
+<p>Press <strong>Save</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/037.png" /></p>
 <details class="tip"><summary>Tip</summary><p>Save often!</p>
@@ -1077,14 +1018,14 @@
 <p>Speaking of borders, let's take care of them.</p>
 <h4 id="border-cleanup-commands">Border cleanup commands<a class="headerlink" href="#border-cleanup-commands" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p class="admonition-title">Step 6</p>
-<p>Click <strong>Add</strong>, and then <strong>Border Cleanup &gt; Auto Border Crop</strong>.</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
+<p>Press <strong>Add</strong>, and then <strong>Border Cleanup &gt; Auto Border Crop</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/038.png" /></p>
 <p>We aren't going to change any of the default properties, so let's see what happens.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 7</p>
-<p>Click <strong>Execute</strong>, and click back and forth between the images to see the changes.</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
+<p>Press <strong>Execute</strong>.  Click back and forth between the images to see the changes.</p>
 </div>
 <details class="tip"><summary>Tip</summary><p>As you're building an IP Profile and adding and testing commands, make sure you are on the <strong>Result Image</strong> to see if your configuration is working. It's not unusual to be adding commands and not see any changes in your image, only to realize you never switched over from the <strong>Original Image</strong> view!</p>
 </details>
@@ -1093,20 +1034,20 @@
 </details>
 <p>Our Border Crop works pretty well, but there are some images that still have a bit leftover. We don't necessarily want to increase the size of our crop because we risk cutting off any text that might be close to the edge of the page (for example, <strong>Page 7</strong> in our batch). We'll take care of that another way.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 8</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p><strong>Save</strong> the profile.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/042.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 9</p>
-<p>Select <strong>Page 1</strong> in our batch. Click on <strong>Add</strong>, and then select <strong>Border Cleanup &gt; Border Fill.</strong></p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
+<p>Select <strong>Page 1</strong> in our batch. Press <strong>Add</strong> and select <strong>Border Cleanup &gt; Border Fill</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/044.png" /></p>
-<details class="note"><summary>Note</summary><p>When you click on a page in the batch viewer, it automatically runs all commands against that page. The only time you need to use the <strong>Execute</strong> button is when you're adding commands and you want to run them against your current page without navigating away from it.</p>
+<details class="note"><summary>Note</summary><p>When you click on a page in the batch viewer, it automatically runs all commands against that page. The only time you need to use <strong>Execute</strong> is when you're adding commands and you want to run them against your current page without navigating away from it.</p>
 </details>
 <p>If you click on <strong>Execute</strong>, nothing happens. That tells us that the default properties for this command probably need to be tweaked for us to see results.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 10</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <ol>
 <li>Select the <strong>Border Fill</strong> command.</li>
 <li>Change the <strong>Border Region Size</strong> property to <mark>25pt</mark>.</li>
@@ -1116,7 +1057,7 @@
 <p>This is increasing how far inward from the border Grooper will look when running this command.</p>
 <p>Yet, once again, <strong>Execute</strong> yields no results.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 11</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <ol>
 <li>Select <strong>Page 9</strong> in our batch.</li>
 <li>Change the <strong>Method</strong> property to <mark>Inclusive</mark>.</li>
@@ -1124,82 +1065,70 @@
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/052.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 12</p>
-<p>Click <strong>Execute</strong> and check out the results.</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
+<p>Press <strong>Execute</strong> and check out the results.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/53-54.gif" /></p>
 <details class="note"><summary>Note</summary><p>Unlike the <strong>Border Crop</strong> command, <strong>Border Fill</strong> does not change the size of your image. This is because this command serves to fill in the edge of the page with whatever color is set in the <strong>Fill Color</strong> property.</p>
 <p>We're not changing the size of the page, only the stuff on it.</p>
 </details>
 <div class="admonition abstract">
-<p class="admonition-title">Step 13</p>
-<p>Click <strong>Add</strong> and select <strong>Feature Detection &gt; Patch Code Detection</strong>.</p>
+<p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
+<p>Press <strong>Add</strong> and select <strong>Feature Detection &gt; Patch Code Detection</strong>.</p>
 <p><strong>Save</strong> the profile.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/551-561.gif" /></p>
 <h3 id="adding-to-the-batch-process">Adding to the Batch Process<a class="headerlink" href="#adding-to-the-batch-process" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<p>Navigate to <strong><em>(root)</em> &gt; Batch Processing &gt; Processes &gt; Working &gt; Invoices Process</strong>.</p>
-</div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/057.png" /></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<p>Click <strong>Add Step...</strong>.</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong>.</p>
+<ol>
+<li>Press <strong>Add Step...</strong>.</li>
+<li>In the <strong>Step Properties</strong> for our new empty step, change the <strong>Activity Type</strong> to <mark>Image Processing</mark>.</li>
+<li>Set the <strong>IP Profile</strong> on the right to the IP Profile we just got done making.</li>
+<li><strong>Save</strong> and <strong>Publish</strong>.</li>
+</ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/058.png" /></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
-<p>In the <strong>Properties</strong> for our new empty step, change the <strong>Activity Type</strong> to <strong>Image Processing</strong>.</p>
-<p>Set the <strong>IP Profile</strong> on the right to the IP Profile we just got done making.</p>
-</div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/060.png" /></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step 4</p>
-<p><strong>Save</strong> and <strong>Publish</strong> our process.</p>
-</div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/61-62.gif" /></p>
 <h3 id="updating-the-production-batch">Updating the production batch<a class="headerlink" href="#updating-the-production-batch" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<p>Navigate to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process &gt; Invoices Batch &gt; Invoices Process</strong>.</p>
-</div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/064.png" /></p>
+<p class="admonition-title">Batch Processing / Batches / Production / Invoices Process / Invoices Batch / <strong>Invoices Process</strong></p>
 <p>Notice how the Batch Process that is attached to this batch didn't receive the new step we just added. Remember that when this batch was created, the process had only the "Scan" step. We want to tell this batch to check out the changes we made to the process so that it can run through the new Image Processing step.</p>
+</div>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<p>Navigate back up to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</strong>.</p>
-<p>Select the batch from the list, and then go to <strong>Batch &gt; Update Process...</strong>.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>Select the batch from the list, and then press <strong>Batch &gt; Update Process...</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/066.png" /></p>
 <p>The <strong>Update Process</strong> window will appear.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/067.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
-<p>Select <strong>Target Step</strong>.  From the dropdown on the right, select the <strong>Image Processing</strong> step, and then click <strong>Execute</strong>.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>Select <strong>Target Step</strong>.  From the dropdown on the right select the <strong>Image Processing</strong> step, and then press <strong>Execute</strong>.</p>
 </div>
-<p>We're telling Grooper, "Update the process on this batch. We're using this process, and I want you to start processing at this step."</p>
+<p>We're telling Grooper: "Update the process attached to this batch. We're using this process, I've added a step, and I want you to run the batch through it."</p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/069.png" /></p>
 <p>We will return to Grooper Design Studio, only now our batch's <strong>Task Status</strong> panel has another step in it.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/070.png" /></p>
 <p>The task doesn't have a progress bar because the batch is still paused.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 4</p>
-<p>Click on the <strong>Resume Batch</strong> button, and then <strong>Execute</strong> on the confirmation window that appears.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>Press <strong>Resume Batch</strong>, and then <strong>Execute</strong> on the confirmation window that appears.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/071.png" /></p>
 <p>Now the batch has a gray progress bar for the <strong>Image Processing</strong> step. We know this means that it's ready and waiting for us to tell it to start this activity.</p>
 <p>Before we do that, let's look at what we just did.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 5</p>
-<p>Navigate to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process &gt; Invoices Batch &gt; Invoices Process</strong> and expand it.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>Expand this node in the node tree.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/075.png" /></p>
 <p>Now we see that there's an <strong>Image Processing</strong> step that wasn't here the last time we looked. This is the result of the <strong>Update Process...</strong> that we did to the batch.</p>
 <p>The batch received the latest updates from our <strong>Invoices Process</strong>, which had a new step, so now it's ready to run it!</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 6</p>
-<p>Navigate back up to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</strong>, select the batch, and click the <strong>Process</strong> button.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>Navigate back up to <strong>Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</strong>, select the batch, and press <strong>Process</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-1/77-78.gif" /></p>
 <p>You'll see the <strong>Grooper Unattended Client</strong> window appear. This is the part of the Grooper suite that processes <strong>unattended activities</strong>.</p>
@@ -1208,30 +1137,28 @@
 <p>If you take a look at the <strong>Image Processing</strong> step, you can see it working on the pages.</p>
 <p>When it's done, it will have a blue progress bar similar to the Scan step.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-1/081.png" /></p>
-<p>But how do we know that it actually worked, and that our images have been correctly cleaned up?</p>
+<p>But how do we know that it actually worked, and that our images have been cleaned up satisfactorily?</p>
 <h2 id="image-review">Image Review<a class="headerlink" href="#image-review" title="Permanent link">&para;</a></h2>
 <p>In a production environment, you might want to have users review the images before they move on to any other steps in your Batch Process.</p>
 <p>In Grooper, we can do this with an <strong>Image Review</strong> step. This is an attended activity that will display the batch to the users and give them an opportunity to approve or rescan any images that need it.</p>
 <h3 id="adding-an-image-review-step">Adding an Image Review step<a class="headerlink" href="#adding-an-image-review-step" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</strong>.</li>
-<li>Click <strong>Add Step...</strong>.</li>
-<li>Under <strong>Properties of Image Review Step</strong>, set the <strong>Activity Type</strong> to <strong>Image Review</strong>.</li>
-<li><strong>Save</strong> and <strong>Publish</strong> the process.</li>
+<li>Press <strong>Add Step...</strong>.</li>
+<li>Under <strong>Step Properties</strong>, set the <strong>Activity Type</strong> to <mark>Image Review</mark>.</li>
+<li><strong>Save</strong> and <strong>Publish</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-2/001.png" /></p>
 <p>Now we need to go update our batch.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</strong>.</li>
 <li><strong>Pause</strong> the batch.</li>
 <li>Select the <strong>Batch</strong> dropdown and select <strong>Update Process...</strong>.</li>
-<li>In the <strong>Update Process</strong> window, select the <strong>Image Review</strong> step from the <strong>Target Step</strong> dropdown.</li>
-<li>Click <strong>Execute</strong>.</li>
+<li>In the <strong>Update Process</strong> window, set <strong>Target Step</strong> to <mark>Image Review</mark>.</li>
+<li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-2/2-5-9.gif" /></p>
@@ -1239,32 +1166,32 @@
 <p>We should see another step in the <strong>Task Status</strong> panel, just like when we added <strong>Image Processing</strong>.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-2/014.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p><strong>Resume</strong> the batch.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-2/015.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 4</p>
-<p>Click <strong>Process</strong> to start this activity.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>Press <strong>Process</strong> to start this activity.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-2/019.png" /></p>
 <p><strong>Image Review</strong> is an attended activity, so clicking <strong>Process</strong> will open up the <strong>Grooper Attended Client</strong> module (like it did when we scanned).</p>
 <p><img alt="" src="../../assets/img/vol-1/2-2/020.png" /></p>
 <h3 id="opening-image-review">Opening Image Review<a class="headerlink" href="#opening-image-review" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 5</p>
-<p>Click on the <strong>Thumbnail Viewer</strong> tab.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>Switch to the <strong>Thumbnail Viewer</strong> tab.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-2/20-22.gif" /></p>
 <p>This gives us an easy way to see all of the thumbnails of the batch at a glance.</p>
 <p>If you haven't noticed yet, there are a few blank pages in this batch. We don't really care about processing those, so let's get rid of them.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 6</p>
-<p>In the <strong>Thumbnail Viewer</strong>, click the <strong>Sort</strong> button in the upper right corner.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>In the <strong>Thumbnail Viewer</strong>, press <strong>Sort</strong> in the upper right corner.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-2/023.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 7</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Select the <strong>Sort By Intensity</strong> option.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-2/024.png" /></p>
@@ -1276,15 +1203,15 @@
 <p><img alt="" src="../../assets/img/vol-1/2-2/026.png" /></p>
 <h3 id="deleting-blank-pages">Deleting blank pages<a class="headerlink" href="#deleting-blank-pages" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 8</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
 <li>Select the blank pages. You can do this in the same way you select files on your computer.<ul>
-<li>Using your <strong>Ctrl</strong> key and clicking on the page you want to select</li>
-<li>Clicking the first blank page, holding <strong>Shift</strong> on your keyboard, and then clicking on the last blank page</li>
+<li>Using your <span class="keys"><kbd class="key-control">Ctrl</kbd></span> key and clicking on the page you want to select</li>
+<li>Clicking the first blank page, holding <span class="keys"><kbd class="key-shift">Shift</kbd></span> on your keyboard, and then clicking on the last blank page</li>
 </ul>
 </li>
 <li>Delete the pages. Either:<ul>
-<li>press the <strong>Delete</strong> key on your keyboard, or</li>
+<li>press the <span class="keys"><kbd class="key-delete">Del</kbd></span> key on your keyboard, or</li>
 <li>right click on the selected pages and select <strong>Delete</strong>.</li>
 </ul>
 </li>
@@ -1297,30 +1224,32 @@
 <details class="note"><summary>Note</summary><p>This is only one of many ways that blank pages can be removed in Grooper.</p>
 </details>
 <div class="admonition abstract">
-<p class="admonition-title">Step 9</p>
-<p>Click back over to the <strong>Batch Viewer</strong> tab.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>Switch to the <strong>Batch Viewer</strong> tab.</p>
 </div>
 <p>Notice that the order of the pages didn't actually change, and now our batch is free of any blank pages.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-2/032.png" /></p>
 <h3 id="verifying-the-images">Verifying the images<a class="headerlink" href="#verifying-the-images" title="Permanent link">&para;</a></h3>
 <p>In order to complete this activity, the images have to be verified. This means that they need to be checked to make sure the previous step (Image Processing) worked correctly on all of the pages.</p>
-<p>To verify that an image has been reviewed, you can:
-    1. right click on the image and click <strong>Mark As Reviewed</strong>, or
-    2. press the <strong>Enter</strong> key on your keyboard.</p>
+<p>To verify that an image has been reviewed, you can:</p>
+<ol>
+<li>right click on the image and press <strong>Mark As Reviewed</strong>, or</li>
+<li>press <span class="keys"><kbd class="key-enter">Enter</kbd></span> on your keyboard.</li>
+</ol>
 <p>You know an image has been reviewed when there is a green <strong>✓</strong> on the image.</p>
-<p>Each image has to be reviewed before the <strong>Complete Task</strong> button in the toolbar will light up, so it's probably easiest to press the <strong>Enter</strong> key for each of these.</p>
+<p>Each image has to be reviewed before <strong>Complete Task</strong> in the toolbar will light up, so it's probably easiest to press <span class="keys"><kbd class="key-enter">Enter</kbd></span> for each of these.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 10</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Make sure every image in the batch has been marked as reviewed.</p>
 </div>
 <details class="tip"><summary>Tip</summary><p>For this exercise, Image Processing works on all of the pages.</p>
-<p>To complete this step quickly, select the first page in the batch and hold your <strong>Enter</strong> key down. It will quickly verify all of the pages in the batch.</p>
+<p>To complete this step quickly, select the first page in the batch and hold your <span class="keys"><kbd class="key-enter">Enter</kbd></span> key down. It will quickly verify all of the pages in the batch.</p>
 </details>
-<p>When you have reviewed all of the pages in the batch, the <strong>Complete Task</strong> button in the toolbar will light up.</p>
+<p>When you have reviewed all of the pages in the batch, <strong>Complete Task</strong> in the toolbar will light up.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-2/35-36.gif" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 11</p>
-<p>Click the <strong>Complete Task</strong> button to finish this activity and return to Grooper Design Studio.</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
+<p>Press <strong>Complete Task</strong> to finish this activity and return to Grooper Design Studio.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-2/037.png" /></p>
 <p>And that's it! We've successfully cleaned up our images. But now what do we do?</p>
@@ -1341,99 +1270,55 @@
 <h4 id="how-does-ocr-work">How does OCR work?<a class="headerlink" href="#how-does-ocr-work" title="Permanent link">&para;</a></h4>
 <p>Check out <a href="https://upload.wikimedia.org/wikipedia/commons/transcoded/8/81/Portable_scanner_and_OCR_%28video%29.webm/Portable_scanner_and_OCR_%28video%29.webm.480p.webm">this video</a> on Wikipedia. It’s a nice demonstration of a very manual approach to OCR. You can see the person live scanning the document, line by line, and the computer “reads” the letters as the scanning happens.</p>
 <p>With Grooper, page scanning happens (usually) all at once. During the OCR process the image is broken into vertical and horizontal lines of pixels to identify individual letter characters and spacing.</p>
-<table>
-<thead>
-<tr>
-<th align="center">G</th>
-<th align="center">r</th>
-<th align="center">o</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-03.jpg" /></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody>
-</table>
-<!-- !!! danger "TO-DO"
-    THESE STEPS NEED EXPLANATION. -->
+<!-- | G     | r     | o     |
+| :---: | :---: | :---: | -->
 
-<!-- This is extra information not crucial to the steps -->
-
-<!-- !!! abstract "Step 1"
-    Navigate to ***(root)* > Global Resources > OCR Profiles > Downloads > Full Text - Accurate**.
-
-![](../assets/img/vol-1/2-3/001.png)
-
-!!! abstract "Step 2"
-    1. Click on the **IP Profile** property.
-    2. Click the dropdown to see the list of IP Profiles and where the configured one is located.
-
-![](../assets/img/vol-1/2-3/002.png)
-
-!!! abstract "Step 3"
-    Navigate to the location of the IP Profile, which is ***(root)* > Global Resources > IP Profiles > Downloads > OCR Cleanup**.
-
-![](../assets/img/vol-1/2-3/004.png)
-
-If you hover over the **Description** property, a tooltip will appear that gives a brief description of the purpose and use for this IP Profile.
-
-> Performs temporary pre-OCR image cleanup to remove hole punches, lines, negated regions, halftone regions, barcodes, and specks.
-
-![](../assets/img/vol-1/2-3/005.png)
-
-!!! abstract "Step 4"
-    Test out a few of the batch pages and click back and forth between the **Original Image** and **Result Image** tabs. -->
-
+<p><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-01.jpg" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-02.jpg" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-03.jpg" /></p>
 <h3 id="adding-an-ocr-step">Adding an OCR step<a class="headerlink" href="#adding-an-ocr-step" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to <strong><em>(root)</em> &gt; Batch Processing &gt; Processes &gt; Working &gt; Invoices Process</strong>.</li>
-<li>Click <strong>Add Step...</strong>.</li>
-<li>Under <strong>Properties of OCR Step</strong>, set the <strong>Activity Type</strong> to <strong>OCR</strong>.</li>
-<li>Under <strong>Properties of OCR Activity</strong>, set the <strong>OCR Profile</strong> to <strong>Full Text - Accurate</strong>.</li>
+<li>Press <strong>Add Step...</strong>.</li>
+<li>Under <strong>Step Properties</strong>, set the <strong>Activity Type</strong> to <mark>OCR</mark>.</li>
+<li>Under <strong>Properties of OCR Activity</strong>, set the <strong>OCR Profile</strong> to <mark>Full Text - Accurate</mark>.</li>
 <li><strong>Save</strong> and <strong>Publish</strong> the process.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-3/018.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</strong>.</li>
 <li><strong>Pause</strong> the batch.</li>
 <li>Select the <strong>Batch</strong> dropdown and select <strong>Update Process...</strong>.</li>
-<li>In the <strong>Update Process</strong> window, select the <strong>OCR</strong> step from the <strong>Target Step</strong> dropdown.</li>
-<li>Click <strong>Execute</strong>.</li>
+<li>In the <strong>Update Process</strong> window, set <strong>Target Step</strong> to <mark>OCR</mark>.</li>
+<li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-3/19-20-24.gif" /></p>
 <p><img alt="" src="../../assets/img/vol-1/2-3/25-26-27.gif" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
 <li><strong>Resume</strong> the batch.</li>
-<li>Click <strong>Process</strong> to kick off the OCR activity.</li>
+<li>Press <strong>Process</strong> to kick off the OCR activity.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/2-3/29-33.gif" /></p>
 <p>The <strong>Grooper Unattended Client</strong> should kick off again and start processing against the pages in the batch.</p>
 <p><img alt="" src="../../assets/img/vol-1/2-3/034.png" /></p>
-<div class="admonition danger">
-<p class="admonition-title">TO-DO</p>
-<p>Insert information about OCR and unattended client (images 36-39)</p>
-</div>
 <h2 id="recap">Recap<a class="headerlink" href="#recap" title="Permanent link">&para;</a></h2>
 <p>That's it for the <strong>Condition</strong> phase! We've successfully prepped our images and extracted text from them.</p>
-<p>Here's a list of everything we learned:
-- how to clone a batch from production to test,
-- how to create an Image Processing Profile (or "IP Profile"),
-- how to configure our IP Profile to clean up our images,
-- how to update an existing batch when you change its Batch Process,
-- how to perform Image Review on the images, and
-- how to extract text from the images using Optical Character Recognition (or "OCR")</p>
+<p>Here's a list of everything we learned:</p>
+<ul>
+<li>how to clone a batch from production to test,</li>
+<li>how to create an Image Processing Profile (or "IP Profile"),</li>
+<li>how to configure our IP Profile to clean up our images,</li>
+<li>how to update an existing batch when you change its Batch Process,</li>
+<li>how to perform Image Review on the images, and</li>
+<li>how to extract text from the images using Optical Character Recognition (or "OCR")</li>
+</ul>
 <p>And thus your arsenal of Grooper knowledge grows!</p>
 <h2 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permanent link">&para;</a></h2>
 <p>We currently have a batch of loose pages with some patch code sheets. This batch consists of multiple invoices, but Grooper isn't aware of that yet. You and I know where one invoice ends and another begins, so it's up to us to tell Grooper how to recognize that as well.</p>

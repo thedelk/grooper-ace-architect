@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.2232ba22.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.d680e3e5.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.cb4d95c6.css">
       
@@ -169,8 +169,8 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." title="Introduction" class="md-tabs__link">
-        Introduction
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
       </a>
     
   </li>
@@ -231,8 +231,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -308,13 +308,6 @@
           <li class="md-nav__item">
   <a href="#creating-a-batch-process" title="Creating a Batch Process" class="md-nav__link">
     Creating a Batch Process
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#naming-the-batch-process" title="Naming the Batch Process" class="md-nav__link">
-    Naming the Batch Process
   </a>
   
 </li>
@@ -645,13 +638,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#naming-the-batch-process" title="Naming the Batch Process" class="md-nav__link">
-    Naming the Batch Process
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#adding-a-step" title="Adding a step" class="md-nav__link">
     Adding a step
   </a>
@@ -818,57 +804,41 @@
 <p>When it comes to processing documents, you typically don't do it only one time and get to forget about it, right? It's usually done on a regular basis.</p>
 <p>We want to start building out steps to make that process as automated as possible.</p>
 <h3 id="creating-a-batch-process">Creating a Batch Process<a class="headerlink" href="#creating-a-batch-process" title="Permanent link">&para;</a></h3>
-<p>The first thing we want to do is create a Batch Process.</p>
+<p>The first thing we want to do is create a Batch Process.  We'll be working out of Grooper Design Studio, so open it up!</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<p>Open Grooper Design Studio and expand the node tree to <strong><em>(root)</em> &gt; Batch Processing &gt; Process</strong> and select the <strong>Working</strong> node.</p>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<p>Create a new Batch Process by either:</p>
+<p class="admonition-title">Batch Processing / Process / <strong>Working</strong></p>
 <ol>
-<li>
-<p>right-clicking on the <strong>Working</strong> node and selecting <strong>Add &gt; Batch Process...</strong>, or</p>
+<li>Create a new Batch Process by:<ul>
+<li>right-clicking on the <strong>Working</strong> node and selecting <strong>Add &gt; Batch Process...</strong>, or</li>
+<li>clicking <strong>Add</strong> in the toolbar and selecting <strong>Batch Process...</strong>.</li>
+</ul>
 </li>
-<li>
-<p>clicking <strong>Add</strong> in the toolbar and selecting <strong>Batch Process...</strong>.</p>
-</li>
+<li>Name the Batch Process <mark>Invoices Process</mark> (or anything that makes you happy) and press <strong>OK</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-2/001-002.gif" /></p>
-<h3 id="naming-the-batch-process">Naming the Batch Process<a class="headerlink" href="#naming-the-batch-process" title="Permanent link">&para;</a></h3>
-<p>Before our Process can be created, we have to give it a name.</p>
-<div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
-<p>Name the Batch Process <mark>Invoices Process</mark> (or anything that makes you happy) and click <strong>OK</strong>.</p>
-</div>
-<p><img alt="" src="../../assets/img/vol-1/1-2/003.png" /></p>
-<h3 id="adding-a-step">Adding a step<a class="headerlink" href="#adding-a-step" title="Permanent link">&para;</a></h3>
-<p>Congratulations! You've just created your first Batch Process. You can see the new process under the <strong><em>(root)</em> &gt; Batch Processing &gt; Processes &gt; Working</strong> node. Now we can start building it!</p>
+<p>Congratulations! You've just created your first Batch Process. You can see the new process under the <strong>Batch Processing &gt; Processes &gt; Working</strong> node. Now we can start building it!</p>
 <p><img alt="" src="../../assets/img/vol-1/1-2/004.png" /></p>
+<h3 id="adding-a-step">Adding a step<a class="headerlink" href="#adding-a-step" title="Permanent link">&para;</a></h3>
 <p>By default, a new Process will be empty when we create it. We want to start adding the steps through which our batches are going to run.</p>
 <p>We'll start with a simple Scan step for now, and add more steps in later.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 4</p>
-<p>In the <strong>Steps in Batch Process</strong> panel, click the <strong>Add Step...</strong> button.</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
+<p>Press <strong>Add Step...</strong>. This will create a blank step in our Process.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-2/005.png" /></p>
-<div class="admonition abstract">
-<p class="admonition-title">Step 5</p>
-<p>This will create a blank step in our Process.</p>
-</div>
 <p><img alt="" src="../../assets/img/vol-1/1-2/006.png" /></p>
 <h3 id="setting-the-new-steps-activity-type">Setting the new step's Activity Type<a class="headerlink" href="#setting-the-new-steps-activity-type" title="Permanent link">&para;</a></h3>
 <p>We've added a step to our Process, but we have an error in our <strong>Validation Errors</strong> panel. This will tell us what issues Grooper found with this Process and where they are located.</p>
 <p>If we read the error, it tells us that our <strong>New Step • Activity Type</strong>'s value is required.</p>
 <p>We've added a step to our process, but it's currently blank, meaning we haven't specified which activity we want Grooper to perform here. This is like saying, "I want you to do something here, but I haven't told you what it is yet."</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 6</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
 <p>In the <strong>Step Properties</strong> panel, select the <strong>Activity Type</strong> property and choose <strong>Scan</strong> from the dropdown list.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-2/007.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 7</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
 <p>Our validation error should go away now that we've satisfied the requirement.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-2/008.png" /></p>
@@ -879,18 +849,18 @@
 <details class="info"><summary>Info</summary><p>Batch Processes must first be published in order to be used. This is to allow development of a Process without users having access to changes before they're ready.</p>
 </details>
 <div class="admonition abstract">
-<p class="admonition-title">Step 8</p>
-<p>Click <strong>Save</strong> to save our changes.</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
+<p>Press <strong>Save</strong> to save our changes.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-2/009.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 9</p>
-<p>Click <strong>Publish</strong> to make this Batch Process available for production use.</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
+<p>Press <strong>Publish</strong> to make this Batch Process available for production use.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-2/010.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 10</p>
-<p>After the Batch Process is published, you will see that the <strong><em>(root)</em> &gt; Batch Processing &gt; Processes &gt; Published</strong> node now has a child that looks exactly like the <strong>Working</strong> node.</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
+<p>After the Batch Process is published, you will see that the <strong>Batch Processing &gt; Processes &gt; Published</strong> node now has a child that looks exactly like the <strong>Working</strong> node.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-2/016.png" /></p>
 <details class="warning"><summary>Warning</summary><p>Published Batch Processes cannot (and should not!) be edited.  If you wish to make any changes to a published Batch Process, first make the change in the appropriate working process, then re-publish.</p>
@@ -906,48 +876,45 @@
 <h3 id="creating-a-scanner-profile">Creating a Scanner Profile<a class="headerlink" href="#creating-a-scanner-profile" title="Permanent link">&para;</a></h3>
 <p>Let's begin by creating a Scanner Profile.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<p>Right-click on the <strong><em>(root)</em> &gt; Global Resources &gt; Scanner Profiles</strong> folder, hover over <strong>Add &gt;</strong> and select <strong>Scanner Profile...</strong></p>
+<p class="admonition-title">Global Resources / <strong>Scanner Profiles</strong></p>
+<ol>
+<li>Right-click and select <strong>Add &gt; Scanner Profile...</strong>.</li>
+<li>Name it <mark>Scan Profile</mark>.</li>
+</ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/001.png" /></p>
-<p>This will open the <strong>Add New Scanner Profile</strong> name dialog.</p>
-<div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<p>Give it a name (we'll be using the exciting name <mark>Scan Profile</mark> for the rest of this instruction) and click <strong>OK</strong>.</p>
-</div>
-<p><img alt="" src="../../assets/img/vol-1/1-3/004.png" /></p>
 <h3 id="configuring-the-scanner-profile">Configuring the Scanner Profile<a class="headerlink" href="#configuring-the-scanner-profile" title="Permanent link">&para;</a></h3>
-<p>Way to go! You've just created your first Scanner Profile. You're on a roll! You can see it in the node tree under <strong><em>(root)</em> &gt; Global Resources &gt; Scanner Profiles</strong>.</p>
+<p>Way to go! You've just created your first Scanner Profile. You're on a roll! You can see it in the node tree under <strong>Global Resources &gt; Scanner Profiles</strong>.</p>
 <p>This is the default Scanner Profile configuration screen. Let's set it up so we can use it.</p>
 <h4 id="choosing-a-scan-method">Choosing a scan method<a class="headerlink" href="#choosing-a-scan-method" title="Permanent link">&para;</a></h4>
 <p>We first need to set which of the various "scan" methods our profile will be using.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
+<p class="admonition-title">Global Resources / Scanner Profiles / <strong>Scan Profile</strong></p>
 <p>In the Properties panel, in the <strong>General</strong> section, click on the <strong>Selected Device</strong> property.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/007.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 4</p>
+<p class="admonition-title">Global Resources / Scanner Profiles / <strong>Scan Profile</strong></p>
 <p>Click the drop-down on the right and select <strong>File System Import</strong>.</p>
 </div>
 <details class="info"><summary>Info</summary><p>If you have scanner drivers installed, you will probably see ISIS and TWAIN in this list as well.</p>
 </details>
 <p><img alt="" src="../../assets/img/vol-1/1-3/008.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 5</p>
+<p class="admonition-title">Global Resources / Scanner Profiles / <strong>Scan Profile</strong></p>
 <p>Click the <strong>Device Settings</strong> property, and then click the ellipsis button to the right.</p>
 </div>
 <p>This will bring up the configuration settings for whichever device you chose from the previous step.</p>
 <p><img alt="" src="../../assets/img/vol-1/1-3/009.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 6</p>
+<p class="admonition-title">Global Resources / Scanner Profiles / <strong>Scan Profile</strong></p>
 <p>Because we chose <strong>File System Import</strong> as our device, this will bring up the <strong>File System Import Settings</strong> panel.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/011.png" /></p>
 <h4 id="setting-the-import-path">Setting the import path<a class="headerlink" href="#setting-the-import-path" title="Permanent link">&para;</a></h4>
 <p>We're going to be importing, so we need to tell Grooper where to look.</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 7</p>
+<p class="admonition-title">Global Resources / Scanner Profiles / <strong>Scan Profile</strong></p>
 <p>Click the <strong>Import Path</strong> property. There are two ways you can set the path:</p>
 </div>
 <ol>
@@ -960,15 +927,14 @@
 </ol>
 <p><img alt="" src="../../assets/img/vol-1/1-3/013.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 8</p>
-<p>Click <strong>OK</strong>. We don't need to change any of the other settings here, but feel free to click on them and read their descriptions to learn more about them.</p>
+<p class="admonition-title">Global Resources / Scanner Profiles / <strong>Scan Profile</strong></p>
+<p>Press <strong>OK</strong>. We don't need to change any of the other settings here, but feel free to click on them and read their descriptions to learn more about them.</p>
 </div>
-<p>This will bring us back to our <strong>Scanner Profile</strong> configuration node.</p>
 <p><img alt="" src="../../assets/img/vol-1/1-3/014.png" /></p>
 <h4 id="saving">Saving<a class="headerlink" href="#saving" title="Permanent link">&para;</a></h4>
 <div class="admonition abstract">
-<p class="admonition-title">Step 9</p>
-<p>We're done here, so click <strong>Save</strong> to save the changes we've made so far.</p>
+<p class="admonition-title">Global Resources / Scanner Profiles / <strong>Scan Profile</strong></p>
+<p>We're done here, so press <strong>Save</strong> to save the changes we've made so far.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/015.png" /></p>
 <h2 id="production-batch">Production Batch<a class="headerlink" href="#production-batch" title="Permanent link">&para;</a></h2>
@@ -976,37 +942,34 @@
 <p>We're going to create a production batch with our new Process, so now we want to see what happens when a batch runs through it.</p>
 <h3 id="creating-a-batch">Creating a batch<a class="headerlink" href="#creating-a-batch" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<p>Navigate to <strong><em>(root)</em> &gt; Batch Processing &gt; Batches</strong>.</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
+<p>Navigate to <strong>Batch Processing &gt; Batches</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/016.png" /></p>
-<details class="note"><summary>Note</summary><p>In the <strong><em>(root)</em> &gt; Batch Processing &gt; Batches</strong> node, you will be able to see <em>all</em> batches in your environment, including test batches. To limit your list of batches to either test or production, select the appropriate child node.</p>
+<details class="note"><summary>Note</summary><p>In the <strong>Batch Processing &gt; Batches</strong> node, you will be able to see <em>all</em> batches in your environment, including test batches. To limit your list of batches to either test or production, select the appropriate child node.</p>
 </details>
-<div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
 <p>In the <strong>Batches Folder</strong> tab, click on <strong>Batch &gt; New...</strong>.</p>
-</div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/018.png" /></p>
 <p>The <strong>Batch Properties</strong> window will appear. This is where we specify which Batch Process we want to associate with the batch we are trying to create, as well as optionally giving the batch a name other than the default date/timestamp. We currently have only one process, so the choice is pretty easy.</p>
 <p><img alt="" src="../../assets/img/vol-1/1-3/019.png" /></p>
 <h3 id="configuring-the-batch-properties">Configuring the batch properties<a class="headerlink" href="#configuring-the-batch-properties" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
 <p>Give your batch an intuitive name, such as <mark>Invoices Batch</mark>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/020.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 4</p>
-<p>From the <strong>Batch Process</strong> dropdown, select <strong>Invoices Process</strong>.</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
+<p>From the <strong>Batch Process</strong> dropdown select <strong>Invoices Process</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/022.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 5</p>
-<p>We're done here, so click <strong>OK</strong> to return close this window and create our batch.</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
+<p>We're done here, so press <strong>OK</strong> to return this window and create our batch.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/024.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 6</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
 <p>Back in <strong>Grooper Design Studio</strong> we should see our new batch in our list.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/025.png" /></p>
@@ -1024,26 +987,26 @@
 <details class="tip"><summary>Tip</summary><p>You have the ability to rename your batch after it has already been created.</p>
 <ol>
 <li>
-<p>From the <strong>Batches Folder</strong>, select the batch and click the <strong>Pause</strong> button in the toolbar.</p>
+<p>From the <strong>Batches Folder</strong> select the batch and press <strong>Pause</strong> in the toolbar.</p>
 </li>
 <li>
 <p>Right-click on the batch and select <strong>Properties</strong>.</p>
 </li>
 <li>
-<p>Rename the batch and click <strong>OK</strong>.</p>
+<p>Rename the batch and press <strong>OK</strong>.</p>
 </li>
 </ol>
 </details>
 <h3 id="processing-the-batch">Processing the batch<a class="headerlink" href="#processing-the-batch" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 7</p>
-<p>Make sure your batch is selected, and click the <strong>Process</strong> button.  This tells Grooper to begin processing this activity.</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
+<p>Make sure your batch is selected and press <strong>Process</strong>.  This tells Grooper to begin processing this activity.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/026.png" /></p>
 <p>This will bring up the <strong>Attended Client</strong> window for the <strong>Scan</strong> activity.</p>
 <p><img alt="" src="../../assets/img/vol-1/1-3/027.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 8</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
 <p>Click the <strong>Scanner Profile</strong> dropdown.</p>
 </div>
 <p>This is where all of our Scan Profiles would appear if we had more than one.  We have only one, so select it from the list.</p>
@@ -1051,28 +1014,28 @@
 <p><img alt="" src="../../assets/img/vol-1/1-3/029.png" /></p>
 <p>Now we're ready to scan!</p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 9</p>
-<p>Click the big <strong>Scan</strong> button.</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
+<p>Press the big <strong>Scan</strong> button.</p>
 </div>
 <p>This will activate the Scan Profile we selected, which is configured to look in our file system and pull in any images it finds in there.</p>
 <p><img alt="" src="../../assets/img/vol-1/1-3/030.png" /></p>
 <p>As the pages are scanned in, their images will display in the panel on the right.</p>
 <p><img alt="" src="../../assets/img/vol-1/1-3/031.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 10</p>
-<p>We're done scanning in our pages, so in the toolbar, click the <strong>Complete Task</strong> button.</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
+<p>We're done scanning in our pages, so in the toolbar, press <strong>Complete Task</strong>.</p>
 </div>
 <p>This is like telling Grooper, "I'm done with this task, so move on to the next step in the process."</p>
 <p>This will close <strong>Attended Client</strong> and return us to Grooper Design Studio.</p>
 <p><img alt="" src="../../assets/img/vol-1/1-3/033.png" /></p>
 <details class="note"><summary>Note</summary><p>There may be times when you may have more pages to scan into your batch, but can't do it at that moment.  In situations like that, you wouldn't necessarily want to use <strong>Complete Task</strong>, because it will take the batch as-is and move it on to the next step.</p>
-<p>If you're scanning in <strong>Attended Client</strong> and want to return to the batch later, click the <strong>Stop</strong> button instead.  This will return the batch to a "Pending" state.  When you are ready to come back to it, click <strong>Process</strong> again, and it will pick up where you left off, with all of your already-scanned pages still present.</p>
+<p>If you're scanning in <strong>Attended Client</strong> and want to return to the batch later, press <strong>Stop</strong> instead.  This will return the batch to a "Pending" state.  When you are ready to come back to it, press <strong>Process</strong> again, and it will pick up where you left off, with all of your already-scanned pages still present.</p>
 </details>
 <details class="tip"><summary>Tip</summary><p>If you need to rescan a page or pages, you can right-click on them in the Batch Viewer. There are a few things you can do from this context menu, so feel free to hover over the options and read the tooltips to see what they can do.</p>
 </details>
 <h3 id="observing-the-results">Observing the results<a class="headerlink" href="#observing-the-results" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 11</p>
+<p class="admonition-title">Batch Processing / <strong>Batches</strong></p>
 <p>Back in Grooper Design Studio, take a look at our batch. The progress bar should now be blue, which means that this activity is complete.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/1-3/034.png" /></p>
@@ -1109,7 +1072,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../.." title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1118,7 +1081,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Introduction
+                Home
               </span>
             </div>
           </a>

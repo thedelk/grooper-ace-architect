@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.2232ba22.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.d680e3e5.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.cb4d95c6.css">
       
@@ -169,8 +169,8 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." title="Introduction" class="md-tabs__link">
-        Introduction
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
       </a>
     
   </li>
@@ -231,8 +231,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -614,11 +614,10 @@
                 <h1 id="collect">Collect<a class="headerlink" href="#collect" title="Permanent link">&para;</a></h1>
 <h2 id="data-field">Data Field<a class="headerlink" href="#data-field" title="Permanent link">&para;</a></h2>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Content Models / Invoices / <strong>(data model)</strong> <img alt="" src="../../assets/img/thumbs/ace_data-model.png" /></p>
 <ol>
-<li>Navigate to (root) &gt; Content Models &gt; Invoices &gt; (data model)</li>
-<li>Right click on the Data Model and select Add &gt; Data Field...</li>
-<li>Name it <mark>Invoice Number</mark></li>
+<li>Right click and select <strong>Add &gt; Data Field...</strong>.</li>
+<li>Name it <mark>Invoice Number</mark>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-1/001.png" /></p>
@@ -626,88 +625,106 @@
 <h2 id="extractors">Extractors<a class="headerlink" href="#extractors" title="Permanent link">&para;</a></h2>
 <h3 id="creating-the-invoice-number-extractor">Creating the invoice number extractor<a class="headerlink" href="#creating-the-invoice-number-extractor" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Content Models / Invoices / <strong>(local resources)</strong> <img alt="" src="../../assets/img/thumbs/ace_folder-local-resources.png" /></p>
 <ol>
-<li>Right click on the (local resources) folder and select Add &gt; Data Type...</li>
-<li>Name it <mark>Invoice Number</mark></li>
+<li>Right click and select <strong>Add &gt; Data Type...</strong>.</li>
+<li>Name it <mark>Invoice Number</mark>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-1/004.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/4-1/006.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Invoice Number</strong> <img alt="" src="../../assets/img/thumbs/ace_data-type.png" /></p>
 <ol>
-<li>Right click on the Invoices Data Type and select Add &gt; Data Format...</li>
-<li>Name it <mark>Acme/Standard/Express</mark></li>
+<li>Right click and select <strong>Add &gt; Data Format...</strong>.</li>
+<li>Name it <mark>Acme/Standard/Express</mark>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-1/007.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/4-1/009.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Invoice Number / <strong>Acme/Standard/Express</strong> <img alt="" src="../../assets/img/thumbs/ace_data-format.png" /></p>
 <ol>
-<li>Select Acme (1) from the batch viewer</li>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>invoice\snumber\s?:?\s(\d{8,10})
-</pre></div></li>
-<li>In the Output Format editor, type:
-    <div class="codehilite"><pre><span></span>{1}
-</pre></div></li>
+<li>Select <strong>Acme (1)</strong>.</li>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>invoice\snumber\s?:?\s(\d{8,10})
+</pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_1" />
+<label for="__tab_1_1">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>{1}
+</pre></div></div>
+</div>
+</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-1/012.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 4</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / <strong>Invoice Number</strong> <img alt="" src="../../assets/img/thumbs/ace_data-type.png" /></p>
 <ol>
-<li>Right click on the Invoice Number Data Type and select Contents &gt; Add Multiple Items...</li>
-<li>In the Contents • Add Multiple Items window, set Item Type to Data Format</li>
-<li>Edit the Item Names property and type out the names of the other formats:<ul>
-<li>Spartan</li>
-<li>Enid</li>
+<li>Right click and select <strong>Contents &gt; Add Multiple Items...</strong>.</li>
+<li>In the <strong>Contents • Add Multiple Items</strong> window, set <strong>Item Type</strong> to <mark>Data Format</mark>.</li>
+<li>Edit the <strong>Item Names</strong> property and type out the names of the other formats:<ul>
+<li><mark>Spartan</mark></li>
+<li><mark>Enid</mark></li>
 </ul>
 </li>
-<li>Click Execute to complete</li>
+<li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-1/013.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/4-1/014.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 5</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Invoice Number / <strong>Spartan</strong> <img alt="" src="../../assets/img/thumbs/ace_data-format.png" /></p>
 <ol>
-<li>Select the Invoice Number &gt; Spartan Data Format</li>
-<li>Select Spartan (4) in the batch viewer</li>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>\w{2}\d{2}-\d{6}
-</pre></div></li>
-<li>In the Look Behind editor, type:
-    <div class="codehilite"><pre><span></span>\r\n
-</pre></div></li>
+<li>Select <strong>Spartan (4)</strong>.</li>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
+<label for="__tab_2_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>\w{2}\d{2}-\d{6}
+</pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_1" />
+<label for="__tab_2_1">Look Behind</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>\r\n
+</pre></div></div>
+</div>
+</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-1/020.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 6</p>
+<p class="admonition-title">Content Models / Invoices / (local resources) / Invoice Number / <strong>Enid</strong> <img alt="" src="../../assets/img/thumbs/ace_data-format.png" /></p>
 <ol>
-<li>Select the Invoice Number &gt; Enid Data Format</li>
-<li>Select Enid (5) in the batch viewer</li>
-<li>In the Value Pattern editor, type:
-    <div class="codehilite"><pre><span></span>(\w{3})/(\d{8})
-</pre></div></li>
-<li>In the Output Format editor, type:
-    <div class="codehilite"><pre><span></span>{1} {2}
-</pre></div></li>
+<li>Select <strong>Enid (5)</strong>.</li>
+<li>
+<p>Edit the pattern(s):</p>
+<div class="superfences-tabs">
+<input name="__tabs_3" type="radio" id="__tab_3_0" checked="checked" />
+<label for="__tab_3_0">Value Pattern</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>(\w{3})/(\d{8})
+</pre></div></div>
+<input name="__tabs_3" type="radio" id="__tab_3_1" />
+<label for="__tab_3_1">Output Format</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span>{1} {2}
+</pre></div></div>
+</div>
+</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-1/022-2.png" /></p>
 <h3 id="linking-the-extractor-to-the-field">Linking the extractor to the field<a class="headerlink" href="#linking-the-extractor-to-the-field" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Content Models / Invoices / (data model) / <strong>Invoice Number</strong> <img alt="" src="../../assets/img/thumbs/ace_data-field.png" /></p>
 <ol>
-<li>In the Invoices Content Model, navigate to (data model) &gt; Invoice Number</li>
-<li>In the General section, expand the Value Extractor property</li>
-<li>Set the Value Extractor &gt; Type property to Reference</li>
-<li>Set the Value Extractor &gt; Referenced Extractor property to the Invoices &gt; Invoice Number Data Type</li>
-<li>In the Behavior section, set the Required property to <mark>True</mark></li>
+<li>In the General section, expand the <strong>Value Extractor</strong> property.</li>
+<li>Set the <strong>Value Extractor &gt; Type</strong> property to <mark>Reference</mark>.</li>
+<li>Set the <strong>Value Extractor &gt; Referenced Extractor</strong> property to the <strong>Invoices &gt; <mark>Invoice Number</mark></strong> Data Type.</li>
+<li>In the Behavior section, set the <strong>Required</strong> property to <mark>True</mark>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-1/030.png" /></p>
@@ -716,62 +733,59 @@
 <h2 id="extraction-data-review">Extraction &amp; Data Review<a class="headerlink" href="#extraction-data-review" title="Permanent link">&para;</a></h2>
 <h3 id="adding-extract-and-data-review-steps">Adding Extract and Data Review steps<a class="headerlink" href="#adding-extract-and-data-review-steps" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong> <img alt="" src="../../assets/img/thumbs/ace_process.png" /></p>
 <ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Processes &gt; Working &gt; Invoices Process</li>
-<li>Add a new step</li>
-<li>Set the Activity Type property of the new step to <mark>Extract</mark></li>
+<li>Add a new step.</li>
+<li>Set the <strong>Activity Type</strong> property of the new step to <mark>Extract</mark>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-2/001.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/4-2/002.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong> <img alt="" src="../../assets/img/thumbs/ace_process.png" /></p>
 <ol>
-<li>Add a new step</li>
-<li>Set the Activity Type property of the new step to <mark>Data Review</mark></li>
-<li>Save and Publish</li>
+<li>Add a new step.</li>
+<li>Set the <strong>Activity Type</strong> property of the new step to <mark>Data Review</mark>.</li>
+<li><strong>Save</strong> and <strong>Publish</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-2/003.png" /></p>
 <h3 id="updating-the-production-batch">Updating the production batch<a class="headerlink" href="#updating-the-production-batch" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong> <img alt="" src="../../assets/img/thumbs/ace_folder-batches.png" /></p>
 <ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</li>
-<li>Make sure the batch is paused</li>
-<li>Right click on the Invoices Batch and select Update Process...</li>
-<li>Set Target Step to <mark>Extract</mark></li>
-<li>Click Execute</li>
+<li>Right click on batch and select <strong>Update Process...</strong>.</li>
+<li>Set <strong>Target Step</strong> to <mark>Extract</mark>.</li>
+<li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-2/005.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/4-2/006.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong> <img alt="" src="../../assets/img/thumbs/ace_folder-batches.png" /></p>
 <ol>
-<li>Resume the batch</li>
-<li>Click Process</li>
+<li>Resume the batch.</li>
+<li>Press <strong>Process</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-2/008.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/4-2/010.png" /></p>
 <h3 id="reviewing-extraction-results">Reviewing extraction results<a class="headerlink" href="#reviewing-extraction-results" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong> <img alt="" src="../../assets/img/thumbs/ace_folder-batches.png" /></p>
 <ol>
-<li>After the Extract step has completed, click Process to start the Data Review step</li>
-<li>In Grooper Data Review, press Ctrl + I on your keyboard</li>
+<li>After the Extract step has completed, press <strong>Process</strong> to start the Data Review step.</li>
+<li>In Grooper Data Review, press <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-i">I</kbd></span> on your keyboard.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-2/011.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong> <img alt="" src="../../assets/img/thumbs/ace_folder-batches.png" /></p>
 <ol>
-<li>Fix the issue with the field</li>
-<li>Use Ctrl + I to jump to the next document with an issue</li>
-<li>Repeat until all documents are valid</li>
-<li>In the toolbar, click the Complete Task button</li>
+<li>Fix the issue with the field.</li>
+<li>Use <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-i">I</kbd></span> to jump to the next document with an issue.</li>
+<li>Repeat until all documents are valid.</li>
+<li>Press <strong>Complete Task</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/4-2/018.png" /></p>

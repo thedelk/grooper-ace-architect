@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.2232ba22.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.d680e3e5.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.cb4d95c6.css">
       
@@ -169,8 +169,8 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." title="Introduction" class="md-tabs__link">
-        Introduction
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
       </a>
     
   </li>
@@ -231,8 +231,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -712,52 +712,47 @@
 <p>Before we can expect to get any kind of information from these invoices, we need to sort them. While we could get away with doing this manually, Grooper most certainly provides us with a better way.</p>
 <h3 id="creating-a-separation-profile">Creating a Separation Profile<a class="headerlink" href="#creating-a-separation-profile" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Global Resources / <strong>Separation Profiles</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Global Resources &gt; Separation Profiles </li>
-<li>Create a new separation profile</li>
-<li>Give it a name, like Invoices Separation</li>
+<li>Right click and select <strong>Add &gt; Separation Profile...</strong>.</li>
+<li>Name it <mark>Invoices Separation</mark>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-1/006.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<p>Change the following properties:</p>
+<p class="admonition-title">Global Resources / <strong>Separation Profiles</strong></p>
 <ol>
-<li>Set Provider to Control Sheet Separation</li>
-<li>Set Delete All Separators to True</li>
+<li>Set <strong>Provider</strong> to <mark>Control Sheet Separation</mark>.</li>
+<li>Set <strong>Delete All Separators</strong> to <mark>True</mark>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-1/013.png" /></p>
 <h3 id="updating-the-production-batch">Updating the production batch<a class="headerlink" href="#updating-the-production-batch" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Processes &gt; Working &gt; Invoices Process</li>
-<li>Add a new step</li>
-<li>Set the Activity Type property of the new step to Separate</li>
-<li>Set the Separation Profile to the new Invoices Separation profile we created</li>
-<li>Save and Publish.</li>
+<li>Add a new step.</li>
+<li>Set the <strong>Activity Type</strong> property of the new step to <mark>Separate</mark>.</li>
+<li>Set the <strong>Separation Profile</strong> to the new <mark>Invoices Separation</mark> profile we created.</li>
+<li><strong>Save</strong> and <strong>Publish</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-1/016.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process.</li>
-<li>Make sure the batch is paused</li>
-<li>Right click on the Invoices Batch and select Update Process….</li>
-<li>Set Target Step to Separate.</li>
-<li>Click Execute.</li>
+<li>Right click and select <strong>Update Process….</strong>.</li>
+<li>Set <strong>Target Step</strong> to <mark>Separate</mark>.</li>
+<li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-1/018.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/3-1/021.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 3</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Resume the batch</li>
-<li>Click Process</li>
+<li>Resume the batch.</li>
+<li>Press <strong>Process</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-1/027.png" /></p>
@@ -765,79 +760,70 @@
 <h2 id="classification">Classification<a class="headerlink" href="#classification" title="Permanent link">&para;</a></h2>
 <h3 id="setting-up-the-content-model">Setting up the Content Model<a class="headerlink" href="#setting-up-the-content-model" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title"><strong>Content Models</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Content Models.</li>
-<li>Right click on Content Models and select Add &gt; Content Model….</li>
+<li>Right click and select <strong>Add &gt; Content Model…</strong>.</li>
 <li>Name it <mark>Invoices</mark>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-2/002.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Content Models / <strong>Invoices</strong></p>
 <ol>
-<li>Right click on the new Invoices Content Model and select Contents &gt; Add Multiple Items….</li>
-<li>In the Contents • Add Multiple Items window, set Item Type to Document Type</li>
-<li>Edit the Item Names property and type out the names of each vendor<ul>
-<li>Acme</li>
-<li>Enid</li>
-<li>Express</li>
-<li>Spartan</li>
-<li>Standard</li>
+<li>Right click and select <strong>Contents &gt; Add Multiple Items…</strong>.</li>
+<li>In the <strong>Contents • Add Multiple Items</strong> window, set <strong>Item Type</strong> to <mark>Document Type</mark>.</li>
+<li>Edit the <strong>Item Names</strong> property and type out the names of each vendor:<ul>
+<li><mark>Acme</mark></li>
+<li><mark>Enid</mark></li>
+<li><mark>Express</mark></li>
+<li><mark>Spartan</mark></li>
+<li><mark>Standard</mark></li>
 </ul>
 </li>
-<li>Click Execute to complete</li>
+<li>Press <strong>Execute</strong> to complete.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-2/005.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/3-2/009.png" /></p>
 <h3 id="re-cloning-the-production-batch">Re-cloning the production batch<a class="headerlink" href="#re-cloning-the-production-batch" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
-<ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Batches &gt; Test &gt; Production Clones &gt; Invoices Process &gt; Invoices Batch</li>
-<li>Right click on Invoices Batch and select Delete</li>
-</ol>
+<p class="admonition-title">Batch Processing / Batches / Test / Production Clones / Invoices Process / <strong>Invoices Batch</strong></p>
+<p>Right click and select <strong>Delete</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-2/015.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
-<ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process &gt; Invoices Batch</li>
-<li>Click Clone To Test</li>
-</ol>
+<p class="admonition-title">Batch Processing / Batches / Production / Invoices Process / <strong>Invoices Batch</strong></p>
+<p>Press <strong>Clone To Test</strong>.</p>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-2/016.png" /></p>
 <h3 id="setting-the-classification-method">Setting the classification method<a class="headerlink" href="#setting-the-classification-method" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Content Models / <strong>Invoices</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Content Models &gt; Invoices</li>
-<li>Right click on Invoices and select Create Data Model</li>
-<li>Right click on Invoices and select Create Local Resources Folder</li>
+<li>Right click and select <strong>Create Data Model</strong>.</li>
+<li>Right click and select <strong>Create Local Resources Folder</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-2/019.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Content Models / <strong>Invoices</strong></p>
 <ol>
-<li>On the Invoices Content Model in the General section, set the Classification Method property to <mark>Lexical</mark></li>
-<li>Still in the General section, navigate to Classification Method &gt; Text Feature Extractor &gt; Type</li>
-<li>Set the Type property to <mark>Reference</mark></li>
-<li>Set the Referenced Extractor property to the Data Extraction &gt; Downloads &gt; Features &gt; <mark>Words (Stemmed)</mark> Data Type</li>
+<li>In the General section, set the <strong>Classification Method</strong> property to <mark>Lexical</mark>.</li>
+<li>Set the <strong>Classification Method &gt; Text Feature Extractor &gt; Type</strong> property to <mark>Reference</mark>.</li>
+<li>Set the <strong>Referenced Extractor</strong> property to the <strong>Data Extraction &gt; Downloads &gt; Features &gt; <mark>Words (Stemmed)</mark></strong> Data Type.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-2/021.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/3-2/026.png" /></p>
 <h3 id="training-and-testing-classification">Training and testing classification<a class="headerlink" href="#training-and-testing-classification" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Content Models / <strong>Invoices</strong></p>
 <ol>
-<li>Click on the Classification Testing tab</li>
-<li>Select Folder (1)</li>
-<li>In the toolbar, click on the Train Document button</li>
-<li>Select the Acme Document Type from the list</li>
-<li>In the toolbar, click on the Classify Batch button</li>
+<li>Switch to the <strong>Classification Testing</strong> tab.</li>
+<li>Select <strong>Folder (1)</strong>.</li>
+<li>In the toolbar, press <strong>Train Document</strong>.</li>
+<li>Select the <strong>Acme</strong> Document Type from the list.</li>
+<li>In the toolbar, press <strong>Classify Batch</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-2/027.png" /></p>
@@ -845,7 +831,7 @@
 <p><img alt="" src="../../assets/img/vol-1/3-2/031.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/3-2/035.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Content Models / <strong>Invoices</strong></p>
 <ol>
 <li>Train the other four vendors:<ul>
 <li>Folder (2) &rarr; Standard (2)</li>
@@ -854,7 +840,7 @@
 <li>Folder (5) &rarr; Enid (5)</li>
 </ul>
 </li>
-<li>In the toolbar, click on the Classify Batch button</li>
+<li>In the toolbar, press <strong>Classify Batch</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-2/035.png" /></p>
@@ -862,56 +848,53 @@
 <h2 id="classify-review">Classify Review<a class="headerlink" href="#classify-review" title="Permanent link">&para;</a></h2>
 <h3 id="adding-a-classify-review-step">Adding a Classify Review step<a class="headerlink" href="#adding-a-classify-review-step" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Processes &gt; Working &gt; Invoices Process</li>
-<li>Add a new step</li>
-<li>Set the Activity Type property of the new step to Classify</li>
-<li>Set the Content Model Scope to our Invoices Content Model</li>
+<li>Add a new step.</li>
+<li>Set the <strong>Activity Type</strong> property of the new step to <mark>Classify</mark>.</li>
+<li>Set the <strong>Content Model Scope</strong> to our <mark>Invoices</mark> Content Model.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-3/001.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/3-3/002.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
 <ol>
-<li>Add a new step</li>
-<li>Set the Activity Type property of the new step to Classify Review</li>
-<li>Set the Classification Viewer Settings &gt; Content Model Scope to our Invoices Content Model</li>
-<li>Save and Publish.</li>
+<li>Add a new step.</li>
+<li>Set the <strong>Activity Type</strong> property of the new step to <mark>Classify Review</mark>.</li>
+<li>Set the <strong>Classification Viewer Settings &gt; Content Model Scope</strong> to our <mark>Invoices</mark> Content Model.</li>
+<li><strong>Save</strong> and <strong>Publish</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-3/003.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/3-3/004.png" /></p>
 <h3 id="updating-the-production-batch_1">Updating the production batch<a class="headerlink" href="#updating-the-production-batch_1" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</li>
-<li>Make sure the batch is paused</li>
-<li>Right click on the Invoices Batch and select Update Process….</li>
-<li>Set Target Step to Classify.</li>
-<li>Click Execute.</li>
+<li>Right click and select <strong>Update Process…</strong>.</li>
+<li>Set <strong>Target Step</strong> to <mark>Classify</mark>.</li>
+<li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-3/007.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/3-3/008.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Resume the batch</li>
-<li>Click Process</li>
+<li>Resume the batch.</li>
+<li>Press <strong>Process</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-3/011.png" /></p>
 <h3 id="reviewing-and-correcting-classification">Reviewing and correcting classification<a class="headerlink" href="#reviewing-and-correcting-classification" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>After the Classify step has completed, click Process to start the Classify Review step.</li>
-<li>In Grooper Classify Review, right click on Folder (18) and select Assign Content Type</li>
-<li>Select the Enid Document Type from the list and click OK</li>
-<li>In the toolbar, click on the Complete Task button to finish this activity</li>
+<li>After the Classify step has completed, press <strong>Process</strong> to start the Classify Review step.</li>
+<li>In Grooper Classify Review, right click on <strong>Folder (18)</strong> and select <strong>Assign Content Type</strong>.</li>
+<li>Select the <strong>Enid</strong> Document Type from the list and press <strong>OK</strong>.</li>
+<li>In the toolbar, press <strong>Complete Task</strong> to finish this activity.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/3-3/015.png" /></p>

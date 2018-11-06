@@ -40,7 +40,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.2232ba22.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.d680e3e5.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.cb4d95c6.css">
       
@@ -169,8 +169,8 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." title="Introduction" class="md-tabs__link">
-        Introduction
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
       </a>
     
   </li>
@@ -231,8 +231,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -533,43 +533,122 @@
 <h2 id="document-export">Document Export<a class="headerlink" href="#document-export" title="Permanent link">&para;</a></h2>
 <h3 id="adding-and-configuring-document-export">Adding and configuring Document Export<a class="headerlink" href="#adding-and-configuring-document-export" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Processes / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Processes &gt; Production &gt; Invoices Process</li>
-<li>Add a new step</li>
-<li>Set the Activity Type property of the new step to <mark>Document Export</mark></li>
-<li>Set the Export Provider property to <mark>File System Export</mark></li>
-<li>Click on the Export Settings property to edit its settings</li>
+<li>Add a new step.</li>
+<li>Set the Activity Type property of the new step to <mark>Document Export</mark>.</li>
+<li>Set the Export Provider property to <mark>File System Export</mark>.</li>
+<li>Click on the Export Settings property to edit its settings.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/5-1/001.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/5-1/002.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/5-1/004.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Processes / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>In the File System Export window, in the General section:<ol>
-<li>Set the Base Export Folder property to a path where the files can be exported</li>
-<li>Set the File Export Settings &gt; Content Format property to <mark>PDF</mark></li>
-<li>Set the File Export Settings &gt; PDF Options &gt; Make Searchable property to <mark>True</mark></li>
-</ol>
+<li>
+<p>Change the following property value(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default Value</th>
+<th>New Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Base Export Folder</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><em>(Export path)</em></td>
+</tr>
+<tr>
+<td><strong>File Export Settings</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&rarr; <strong>Content Format</strong></td>
+<td><code class="codehilite">Native</code></td>
+<td><mark><code class="codehilite">PDF</code></mark></td>
+</tr>
+<tr>
+<td>&rarr; <strong>PDF Options</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&rarr; &rarr; <strong>Make Searchable</strong></td>
+<td><code class="codehilite">False</code></td>
+<td><mark><code class="codehilite">True</code></mark></td>
+</tr>
+<tr>
+<td>File and Directory Naming</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Content Type</strong></td>
+<td><code class="codehilite">-</code></td>
+<td><mark><code class="codehilite">Invoices</code></mark></td>
+</tr>
+<tr>
+<td><strong>Subfolder Levels</strong></td>
+<td><code class="codehilite">0</code></td>
+<td><mark><code class="codehilite">1</code></mark></td>
+</tr>
+<tr>
+<td><strong>Folder Mappings</strong></td>
+<td><em>(Click to edit)</em></td>
+<td><em>(Click to edit)</em></td>
+</tr>
+<tr>
+<td>Metadata Export</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Metadata Format</strong></td>
+<td><code class="codehilite">None</code></td>
+<td><mark><code class="codehilite">XML</code></mark></td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>In the File and Directory Naming section:<ol>
-<li>Set the Content Type property to the <mark>Invoices</mark> Content Model</li>
-<li>Set the Subfolder Levels property to <mark>1</mark></li>
-<li>Edit the Folder Mappings property:<ol>
-<li>For Folder Level 1, set Map To to <mark>Variable</mark> and Mapped Value to <mark>{Node.ContentTypeName}</mark></li>
-<li>For Filename, set Map To to <mark>Field</mark> and Mapped Value to <mark>Invoice Number</mark></li>
-</ol>
+<li>
+<p>In the <strong>Property Mapping Control</strong> window, assign the following mapping(s):</p>
+<table>
+<thead>
+<tr>
+<th>Property Name</th>
+<th>Map To</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Folder Level 1</strong></td>
+<td><mark><code class="codehilite">Variable</code></mark></td>
+<td><mark><code class="codehilite">{Node.ContentTypeName}</code></mark></td>
+</tr>
+<tr>
+<td><strong>Filename</strong></td>
+<td><mark><code class="codehilite">Field</code></mark></td>
+<td><mark><code class="codehilite">Invoice Number</code></mark></td>
+</tr>
+</tbody>
+</table>
 </li>
-</ol>
+<li>
+<p>Press <strong>OK</strong> to close the window.</p>
 </li>
-<li>In the Metadata Export section:<ol>
-<li>Set the Metadata Format property to <mark>XML</mark></li>
-</ol>
-</li>
-<li>Click OK to close the window</li>
-<li>Save and Publish</li>
+<li><strong>Save</strong> and <strong>Publish</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/5-1/028.png" /></p>
@@ -577,23 +656,22 @@
 <p><img alt="" src="../../assets/img/vol-1/5-1/033.png" /></p>
 <h3 id="updating-the-production-batch">Updating the production batch<a class="headerlink" href="#updating-the-production-batch" title="Permanent link">&para;</a></h3>
 <div class="admonition abstract">
-<p class="admonition-title">Step 1</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Navigate to (root) &gt; Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</li>
-<li>Make sure the batch is paused</li>
-<li>Right click on the Invoices Batch and select Update Process...</li>
-<li>Set Target Step to <mark>Document Export</mark></li>
-<li>Click Execute</li>
+<li>Make sure the batch is paused.</li>
+<li>Right click on <strong>Invoices Batch</strong> and select <strong>Update Process...</strong>.</li>
+<li>Set <strong>Target Step</strong> to <mark>Document Export</mark>.</li>
+<li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/5-1/036.png" /></p>
 <p><img alt="" src="../../assets/img/vol-1/5-1/039.png" /></p>
 <div class="admonition abstract">
-<p class="admonition-title">Step 2</p>
+<p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
-<li>Resume the batch</li>
-<li>Click Process</li>
-<li>View the exported documents in Windows Explorer</li>
+<li>Resume the batch.</li>
+<li>Press <strong>Process</strong>.</li>
+<li>View the exported documents in Windows Explorer.</li>
 </ol>
 </div>
 <p><img alt="" src="../../assets/img/vol-1/5-1/043.png" /></p>
