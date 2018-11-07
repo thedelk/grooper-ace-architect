@@ -1,537 +1,280 @@
 
-
-
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-      
-      
-      
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.pipeline.stopwords" content="True">
-      
-        <meta name="lang:search.pipeline.trimmer" content="True">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
-      
-      <link rel="shortcut icon" href="../../assets/img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
-    
-    
-      
-        <title>Deliver - ACE - Architect</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/application.d680e3e5.css">
-      
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.cb4d95c6.css">
-      
-      
-        
-        
-        <meta name="theme-color" content="#36b0a7">
-      
-    
-    
-      <script src="../../assets/javascripts/modernizr.e655f622.js"></script>
-    
-    
-      
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-    
-    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
-    <link rel="stylesheet" href="../../assets/fonts/roboto.css">
-    
-      <link rel="stylesheet" href="../../assets/css/glightbox.min.css">
-    
-      <link rel="stylesheet" href="../../assets/css/test.css">
-    
-      <link rel="stylesheet" href="../../assets/css/pdf.css">
-    
-    
-  </head>
-  
-    
-    
-    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="orange">
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-    
-      <a href="#deliver" tabindex="1" class="md-skip">
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="Copy to clipboard" name="lang:clipboard.copy"/>
+<meta content="Copied to clipboard" name="lang:clipboard.copied"/>
+<meta content="en" name="lang:search.language"/>
+<meta content="True" name="lang:search.pipeline.stopwords"/>
+<meta content="True" name="lang:search.pipeline.trimmer"/>
+<meta content="No matching documents" name="lang:search.result.none"/>
+<meta content="1 matching document" name="lang:search.result.one"/>
+<meta content="# matching documents" name="lang:search.result.other"/>
+<meta content="[\s\-]+" name="lang:search.tokenizer"/>
+<link href="../../assets/img/favicon.ico" rel="shortcut icon"/>
+<meta content="mkdocs-1.0.4, mkdocs-material-3.0.6" name="generator"/>
+<title>Deliver - ACE - Architect</title>
+<link href="../../assets/stylesheets/application.d680e3e5.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/application-palette.cb4d95c6.css" rel="stylesheet"/>
+<meta content="#36b0a7" name="theme-color"/>
+<script src="../../assets/javascripts/modernizr.e655f622.js"></script>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+<link href="../../assets/fonts/material-icons.css" rel="stylesheet"/>
+<link href="../../assets/fonts/roboto.css" rel="stylesheet"/>
+<link href="../../assets/css/glightbox.min.css" rel="stylesheet"/>
+<link href="../../assets/css/test.css" rel="stylesheet"/>
+<link href="../../assets/css/pdf.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="teal" dir="ltr">
+<svg class="md-svg">
+<defs>
+</defs>
+</svg>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+<a class="md-skip" href="#deliver" tabindex="1">
         Skip to content
       </a>
-    
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="ACE - Architect" class="md-header-nav__button md-logo">
-          
-            <i class="md-icon"></i>
-          
-        </a>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          
-            
-              <span class="md-header-nav__topic">
+<header class="md-header" data-md-component="header">
+<nav class="md-header-nav md-grid">
+<div class="md-flex">
+<div class="md-flex__cell md-flex__cell--shrink">
+<a class="md-header-nav__button md-logo" href="../.." title="ACE - Architect">
+<i class="md-icon"></i>
+</a>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch">
+<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+<span class="md-header-nav__topic">
                 ACE - Architect
               </span>
-              <span class="md-header-nav__topic">
+<span class="md-header-nav__topic">
                 Deliver
               </span>
-            
-          
-        </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
+</div>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
 <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/>
+<label class="md-icon md-search__icon" for="__search"></label>
+<button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">
+        
       </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="result">
+<div class="md-search-result__meta">
             Type to start searching
           </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list"></ol>
 </div>
-          
-        
-      </div>
-      
-    </div>
-  </nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container">
-      
-        
-      
-      
-        
-
-  
-
+<div class="md-container">
 <nav class="md-tabs md-tabs--active" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  <li class="md-tabs__item">
-    
-      <a href="../.." title="Home" class="md-tabs__link">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../.." title="Home">
         Home
       </a>
-    
-  </li>
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../acquire/" title="Volume I" class="md-tabs__link md-tabs__link--active">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../acquire/" title="Volume I">
           Volume I
         </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../vol-2/acquire/" title="Volume II" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../vol-2/acquire/" title="Volume II">
           Volume II
         </a>
-      
-    </li>
-  
-
-      
-    </ul>
-  </div>
+</li>
+</ul>
+</div>
 </nav>
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="ACE - Architect" class="md-nav__button md-logo">
-      
-        <i class="md-icon"></i>
-      
-    </a>
+<main class="md-main">
+<div class="md-main__inner md-grid" data-md-component="container">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title md-nav__title--site" for="__drawer">
+<a class="md-nav__button md-logo" href="../.." title="ACE - Architect">
+<i class="md-icon"></i>
+</a>
     ACE - Architect
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../.." title="Home" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../.." title="Home">
       Home
     </a>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
-    
-    <label class="md-nav__link" for="nav-2">
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-2">
       Volume I
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-2">
         Volume I
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../acquire/" title="Acquire" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../acquire/" title="Acquire">
       Acquire
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../condition/" title="Condition" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../condition/" title="Condition">
       Condition
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../organize/" title="Organize" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../organize/" title="Organize">
       Organize
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../collect/" title="Collect" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../collect/" title="Collect">
       Collect
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
         Deliver
       </label>
-    
-    <a href="./" title="Deliver" class="md-nav__link md-nav__link--active">
+<a class="md-nav__link md-nav__link--active" href="./" title="Deliver">
       Deliver
     </a>
-    
-      
 <nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#document-export" title="Document Export" class="md-nav__link">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-export" title="Document Export">
     Document Export
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-and-configuring-document-export" title="Adding and configuring Document Export" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-and-configuring-document-export" title="Adding and configuring Document Export">
     Adding and configuring Document Export
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#updating-the-production-batch" title="Updating the production batch" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#updating-the-production-batch" title="Updating the production batch">
     Updating the production batch
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
+</ul>
 </nav>
-    
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-3">
       Volume II
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-3">
         Volume II
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/acquire/" title="Acquire" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/acquire/" title="Acquire">
       Acquire
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/condition/" title="Condition" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/condition/" title="Condition">
       Condition
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/organize/" title="Organize" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/organize/" title="Organize">
       Organize
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/collect/" title="Collect" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/collect/" title="Collect">
       Collect
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/deliver/" title="Deliver" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/deliver/" title="Deliver">
       Deliver
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
 <nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#document-export" title="Document Export" class="md-nav__link">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-export" title="Document Export">
     Document Export
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-and-configuring-document-export" title="Adding and configuring Document Export" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-and-configuring-document-export" title="Adding and configuring Document Export">
     Adding and configuring Document Export
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#updating-the-production-batch" title="Updating the production batch" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#updating-the-production-batch" title="Updating the production batch">
     Updating the production batch
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                <h1 id="deliver">Deliver<a class="headerlink" href="#deliver" title="Permanent link">&para;</a></h1>
-<h2 id="document-export">Document Export<a class="headerlink" href="#document-export" title="Permanent link">&para;</a></h2>
-<h3 id="adding-and-configuring-document-export">Adding and configuring Document Export<a class="headerlink" href="#adding-and-configuring-document-export" title="Permanent link">&para;</a></h3>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href="deliver.pdf" title="PDF Export"></a>
+<h1 id="deliver">Deliver<a class="headerlink" href="#deliver" title="Permanent link">¶</a></h1>
+<h2 id="document-export">Document Export<a class="headerlink" href="#document-export" title="Permanent link">¶</a></h2>
+<h3 id="adding-and-configuring-document-export">Adding and configuring Document Export<a class="headerlink" href="#adding-and-configuring-document-export" title="Permanent link">¶</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Processes / Production / <strong>Invoices Process</strong></p>
 <ol>
@@ -541,9 +284,9 @@
 <li>Click on the Export Settings property to edit its settings.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/5-1/001.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/5-1/002.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/5-1/004.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/001.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/002.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/004.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Processes / Production / <strong>Invoices Process</strong></p>
 <ol>
@@ -574,17 +317,17 @@
 <td></td>
 </tr>
 <tr>
-<td>&rarr; <strong>Content Format</strong></td>
+<td>→ <strong>Content Format</strong></td>
 <td><code class="codehilite">Native</code></td>
 <td><mark><code class="codehilite">PDF</code></mark></td>
 </tr>
 <tr>
-<td>&rarr; <strong>PDF Options</strong></td>
+<td>→ <strong>PDF Options</strong></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>&rarr; &rarr; <strong>Make Searchable</strong></td>
+<td>→ → <strong>Make Searchable</strong></td>
 <td><code class="codehilite">False</code></td>
 <td><mark><code class="codehilite">True</code></mark></td>
 </tr>
@@ -651,10 +394,10 @@
 <li><strong>Save</strong> and <strong>Publish</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/5-1/028.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/5-1/032.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/5-1/033.png" /></p>
-<h3 id="updating-the-production-batch">Updating the production batch<a class="headerlink" href="#updating-the-production-batch" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/img/vol-1/5-1/028.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/032.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/033.png"/></p>
+<h3 id="updating-the-production-batch">Updating the production batch<a class="headerlink" href="#updating-the-production-batch" title="Permanent link">¶</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
@@ -664,8 +407,8 @@
 <li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/5-1/036.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/5-1/039.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/036.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/039.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
@@ -674,107 +417,70 @@
 <li>View the exported documents in Windows Explorer.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/5-1/043.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/5-1/044.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/5-1/045.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/5-1/046.png" /></p>
-                
-                  
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-      </main>
-      
-        
+<p><img alt="" src="../../assets/img/vol-1/5-1/043.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/044.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/045.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/5-1/046.png"/></p>
+</article>
+</div>
+</div>
+</main>
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../collect/" title="Collect" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
+<div class="md-footer-nav">
+<nav class="md-footer-nav__inner md-grid">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../collect/" rel="prev" title="Collect">
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
                   Previous
                 </span>
                 Collect
               </span>
-            </div>
-          </a>
-        
-        
-          <a href="../../vol-2/acquire/" title="Acquire" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
+</div>
+</a>
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../../vol-2/acquire/" rel="next" title="Acquire">
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
                   Next
                 </span>
                 Acquire
               </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
         
         powered by
         <a href="https://www.mkdocs.org">MkDocs</a>
         and
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
-      </div>
-      
-        
-  <div class="md-footer-social">
-    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
-    
-      <a href="https://www.facebook.com/BusinessImagingSystems" class="md-footer-social__link fa fa-facebook"></a>
-    
-      <a href="https://www.linkedin.com/company/business-imaging-systems" class="md-footer-social__link fa fa-linkedin"></a>
-    
-      <a href="https://twitter.com/grooper_ai" class="md-footer-social__link fa fa-twitter"></a>
-    
-      <a href="https://www.youtube.com/channel/UCiJPKqS_enHrFsX49cngqag" class="md-footer-social__link fa fa-youtube"></a>
-    
-  </div>
-
-      
-    </div>
-  </div>
+</div>
+<div class="md-footer-social">
+<link href="../../assets/fonts/font-awesome.css" rel="stylesheet"/>
+<a class="md-footer-social__link fa fa-facebook" href="https://www.facebook.com/BusinessImagingSystems"></a>
+<a class="md-footer-social__link fa fa-linkedin" href="https://www.linkedin.com/company/business-imaging-systems"></a>
+<a class="md-footer-social__link fa fa-twitter" href="https://twitter.com/grooper_ai"></a>
+<a class="md-footer-social__link fa fa-youtube" href="https://www.youtube.com/channel/UCiJPKqS_enHrFsX49cngqag"></a>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    
-      <script src="../../assets/javascripts/application.49fb0ed4.js"></script>
-      
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
-      
-        <script src="../../assets/js/glightbox.min.js"></script>
-      
-        <script src="../../assets/js/jquery-3.3.1.min.js"></script>
-      
-        <script src="../../assets/js/app.js"></script>
-      
-    
-    
-      
-    
-  </body>
+</div>
+<script src="../../assets/javascripts/application.49fb0ed4.js"></script>
+<script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+<script src="../../assets/js/glightbox.min.js"></script>
+<script src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
 </html>

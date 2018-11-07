@@ -1,892 +1,531 @@
 
-
-
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-      
-      
-      
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.pipeline.stopwords" content="True">
-      
-        <meta name="lang:search.pipeline.trimmer" content="True">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
-      
-      <link rel="shortcut icon" href="../../assets/img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
-    
-    
-      
-        <title>Condition - ACE - Architect</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/application.d680e3e5.css">
-      
-        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.cb4d95c6.css">
-      
-      
-        
-        
-        <meta name="theme-color" content="#36b0a7">
-      
-    
-    
-      <script src="../../assets/javascripts/modernizr.e655f622.js"></script>
-    
-    
-      
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-    
-    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
-    <link rel="stylesheet" href="../../assets/fonts/roboto.css">
-    
-      <link rel="stylesheet" href="../../assets/css/glightbox.min.css">
-    
-      <link rel="stylesheet" href="../../assets/css/test.css">
-    
-      <link rel="stylesheet" href="../../assets/css/pdf.css">
-    
-    
-  </head>
-  
-    
-    
-    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="orange">
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-    
-      <a href="#condition" tabindex="1" class="md-skip">
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="Copy to clipboard" name="lang:clipboard.copy"/>
+<meta content="Copied to clipboard" name="lang:clipboard.copied"/>
+<meta content="en" name="lang:search.language"/>
+<meta content="True" name="lang:search.pipeline.stopwords"/>
+<meta content="True" name="lang:search.pipeline.trimmer"/>
+<meta content="No matching documents" name="lang:search.result.none"/>
+<meta content="1 matching document" name="lang:search.result.one"/>
+<meta content="# matching documents" name="lang:search.result.other"/>
+<meta content="[\s\-]+" name="lang:search.tokenizer"/>
+<link href="../../assets/img/favicon.ico" rel="shortcut icon"/>
+<meta content="mkdocs-1.0.4, mkdocs-material-3.0.6" name="generator"/>
+<title>Condition - ACE - Architect</title>
+<link href="../../assets/stylesheets/application.d680e3e5.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/application-palette.cb4d95c6.css" rel="stylesheet"/>
+<meta content="#36b0a7" name="theme-color"/>
+<script src="../../assets/javascripts/modernizr.e655f622.js"></script>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+<link href="../../assets/fonts/material-icons.css" rel="stylesheet"/>
+<link href="../../assets/fonts/roboto.css" rel="stylesheet"/>
+<link href="../../assets/css/glightbox.min.css" rel="stylesheet"/>
+<link href="../../assets/css/test.css" rel="stylesheet"/>
+<link href="../../assets/css/pdf.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="teal" dir="ltr">
+<svg class="md-svg">
+<defs>
+</defs>
+</svg>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+<a class="md-skip" href="#condition" tabindex="1">
         Skip to content
       </a>
-    
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="ACE - Architect" class="md-header-nav__button md-logo">
-          
-            <i class="md-icon"></i>
-          
-        </a>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          
-            
-              <span class="md-header-nav__topic">
+<header class="md-header" data-md-component="header">
+<nav class="md-header-nav md-grid">
+<div class="md-flex">
+<div class="md-flex__cell md-flex__cell--shrink">
+<a class="md-header-nav__button md-logo" href="../.." title="ACE - Architect">
+<i class="md-icon"></i>
+</a>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch">
+<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+<span class="md-header-nav__topic">
                 ACE - Architect
               </span>
-              <span class="md-header-nav__topic">
+<span class="md-header-nav__topic">
                 Condition
               </span>
-            
-          
-        </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
+</div>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
 <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/>
+<label class="md-icon md-search__icon" for="__search"></label>
+<button class="md-icon md-search__icon" data-md-component="reset" tabindex="-1" type="reset">
+        
       </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="result">
+<div class="md-search-result__meta">
             Type to start searching
           </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list"></ol>
 </div>
-          
-        
-      </div>
-      
-    </div>
-  </nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container">
-      
-        
-      
-      
-        
-
-  
-
+<div class="md-container">
 <nav class="md-tabs md-tabs--active" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  <li class="md-tabs__item">
-    
-      <a href="../.." title="Home" class="md-tabs__link">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../.." title="Home">
         Home
       </a>
-    
-  </li>
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../acquire/" title="Volume I" class="md-tabs__link md-tabs__link--active">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../acquire/" title="Volume I">
           Volume I
         </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../vol-2/acquire/" title="Volume II" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../vol-2/acquire/" title="Volume II">
           Volume II
         </a>
-      
-    </li>
-  
-
-      
-    </ul>
-  </div>
+</li>
+</ul>
+</div>
 </nav>
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="ACE - Architect" class="md-nav__button md-logo">
-      
-        <i class="md-icon"></i>
-      
-    </a>
+<main class="md-main">
+<div class="md-main__inner md-grid" data-md-component="container">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title md-nav__title--site" for="__drawer">
+<a class="md-nav__button md-logo" href="../.." title="ACE - Architect">
+<i class="md-icon"></i>
+</a>
     ACE - Architect
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../.." title="Home" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../.." title="Home">
       Home
     </a>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
-    
-    <label class="md-nav__link" for="nav-2">
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-2">
       Volume I
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-2">
         Volume I
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../acquire/" title="Acquire" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../acquire/" title="Acquire">
       Acquire
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
         Condition
       </label>
-    
-    <a href="./" title="Condition" class="md-nav__link md-nav__link--active">
+<a class="md-nav__link md-nav__link--active" href="./" title="Condition">
       Condition
     </a>
-    
-      
 <nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview" title="Overview">
     Overview
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#but-first" title="But first" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#but-first" title="But first">
     But first
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#cloning-to-test" title="Cloning to test" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cloning-to-test" title="Cloning to test">
     Cloning to test
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#image-processing" title="Image Processing" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#image-processing" title="Image Processing">
     Image Processing
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-an-ip-profile" title="Creating an IP Profile" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-an-ip-profile" title="Creating an IP Profile">
     Creating an IP Profile
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-the-ip-profile" title="Configuring the IP Profile" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuring-the-ip-profile" title="Configuring the IP Profile">
     Configuring the IP Profile
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#selecting-a-batch" title="Selecting a batch" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#selecting-a-batch" title="Selecting a batch">
     Selecting a batch
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-deskew-command" title="Adding a Deskew command" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-a-deskew-command" title="Adding a Deskew command">
     Adding a Deskew command
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#testing-the-command" title="Testing the command" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-the-command" title="Testing the command">
     Testing the command
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#border-cleanup-commands" title="Border cleanup commands" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#border-cleanup-commands" title="Border cleanup commands">
     Border cleanup commands
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-to-the-batch-process" title="Adding to the Batch Process" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-to-the-batch-process" title="Adding to the Batch Process">
     Adding to the Batch Process
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#updating-the-production-batch" title="Updating the production batch" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#updating-the-production-batch" title="Updating the production batch">
     Updating the production batch
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#image-review" title="Image Review" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#image-review" title="Image Review">
     Image Review
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-an-image-review-step" title="Adding an Image Review step" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-an-image-review-step" title="Adding an Image Review step">
     Adding an Image Review step
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#opening-image-review" title="Opening Image Review" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#opening-image-review" title="Opening Image Review">
     Opening Image Review
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#deleting-blank-pages" title="Deleting blank pages" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deleting-blank-pages" title="Deleting blank pages">
     Deleting blank pages
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#verifying-the-images" title="Verifying the images" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verifying-the-images" title="Verifying the images">
     Verifying the images
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#ocr" title="OCR" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ocr" title="OCR">
     OCR
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#about-ocr" title="About OCR" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#about-ocr" title="About OCR">
     About OCR
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-ocr" title="What is OCR?" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-ocr" title="What is OCR?">
     What is OCR?
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#when-do-i-need-to-ocr" title="When do I need to OCR?" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#when-do-i-need-to-ocr" title="When do I need to OCR?">
     When do I need to OCR?
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#how-does-ocr-work" title="How does OCR work?" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-does-ocr-work" title="How does OCR work?">
     How does OCR work?
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-an-ocr-step" title="Adding an OCR step" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-an-ocr-step" title="Adding an OCR step">
     Adding an OCR step
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#recap" title="Recap" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recap" title="Recap">
     Recap
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#up-next" title="Up next" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#up-next" title="Up next">
     Up next
   </a>
-  
 </li>
-      
-      
-      
-      
-      
-    </ul>
-  
+</ul>
 </nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../organize/" title="Organize" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../organize/" title="Organize">
       Organize
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../collect/" title="Collect" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../collect/" title="Collect">
       Collect
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../deliver/" title="Deliver" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../deliver/" title="Deliver">
       Deliver
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-3">
       Volume II
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-3">
         Volume II
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/acquire/" title="Acquire" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/acquire/" title="Acquire">
       Acquire
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/condition/" title="Condition" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/condition/" title="Condition">
       Condition
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/organize/" title="Organize" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/organize/" title="Organize">
       Organize
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/collect/" title="Collect" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/collect/" title="Collect">
       Collect
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../vol-2/deliver/" title="Deliver" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../vol-2/deliver/" title="Deliver">
       Deliver
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
 <nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" title="Overview" class="md-nav__link">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#overview" title="Overview">
     Overview
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#but-first" title="But first" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#but-first" title="But first">
     But first
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#cloning-to-test" title="Cloning to test" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cloning-to-test" title="Cloning to test">
     Cloning to test
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#image-processing" title="Image Processing" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#image-processing" title="Image Processing">
     Image Processing
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-an-ip-profile" title="Creating an IP Profile" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-an-ip-profile" title="Creating an IP Profile">
     Creating an IP Profile
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#configuring-the-ip-profile" title="Configuring the IP Profile" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuring-the-ip-profile" title="Configuring the IP Profile">
     Configuring the IP Profile
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#selecting-a-batch" title="Selecting a batch" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#selecting-a-batch" title="Selecting a batch">
     Selecting a batch
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-deskew-command" title="Adding a Deskew command" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-a-deskew-command" title="Adding a Deskew command">
     Adding a Deskew command
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#testing-the-command" title="Testing the command" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-the-command" title="Testing the command">
     Testing the command
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#border-cleanup-commands" title="Border cleanup commands" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#border-cleanup-commands" title="Border cleanup commands">
     Border cleanup commands
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-to-the-batch-process" title="Adding to the Batch Process" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-to-the-batch-process" title="Adding to the Batch Process">
     Adding to the Batch Process
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#updating-the-production-batch" title="Updating the production batch" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#updating-the-production-batch" title="Updating the production batch">
     Updating the production batch
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#image-review" title="Image Review" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#image-review" title="Image Review">
     Image Review
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-an-image-review-step" title="Adding an Image Review step" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-an-image-review-step" title="Adding an Image Review step">
     Adding an Image Review step
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#opening-image-review" title="Opening Image Review" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#opening-image-review" title="Opening Image Review">
     Opening Image Review
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#deleting-blank-pages" title="Deleting blank pages" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deleting-blank-pages" title="Deleting blank pages">
     Deleting blank pages
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#verifying-the-images" title="Verifying the images" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verifying-the-images" title="Verifying the images">
     Verifying the images
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#ocr" title="OCR" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ocr" title="OCR">
     OCR
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#about-ocr" title="About OCR" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#about-ocr" title="About OCR">
     About OCR
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-ocr" title="What is OCR?" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-ocr" title="What is OCR?">
     What is OCR?
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#when-do-i-need-to-ocr" title="When do I need to OCR?" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#when-do-i-need-to-ocr" title="When do I need to OCR?">
     When do I need to OCR?
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#how-does-ocr-work" title="How does OCR work?" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-does-ocr-work" title="How does OCR work?">
     How does OCR work?
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-an-ocr-step" title="Adding an OCR step" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-an-ocr-step" title="Adding an OCR step">
     Adding an OCR step
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#recap" title="Recap" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recap" title="Recap">
     Recap
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#up-next" title="Up next" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#up-next" title="Up next">
     Up next
   </a>
-  
 </li>
-      
-      
-      
-      
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                <h1 id="condition">Condition<a class="headerlink" href="#condition" title="Permanent link">&para;</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset"><a class="md-icon md-content__icon" download href="condition.pdf" title="PDF Export"></a>
+<h1 id="condition">Condition<a class="headerlink" href="#condition" title="Permanent link">¶</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
 <p>Remember that our goal for using Grooper is to automate tasks that we would otherwise have to perform manually.</p>
 <p>Imagine we have a pile of papers in our inbox. We can think of this as the batch we just made, so they arrived there via the <strong>Acquire</strong> phase.</p>
 <p>If we had to work through these documents by hand, we'd probably have to go through them and make sure they're all facing the same way, remove any sticky notes on them, take out the staples, and potentially white out smudges and marks.</p>
@@ -898,40 +537,40 @@
 <li>use OCR to obtain text from our images that we'll use later.</li>
 </ul>
 <p>Let the conditioning commence!</p>
-<h2 id="but-first">But first<a class="headerlink" href="#but-first" title="Permanent link">&para;</a></h2>
+<h2 id="but-first">But first<a class="headerlink" href="#but-first" title="Permanent link">¶</a></h2>
 <p>For the next few phases, we'll be testing the results of adding a single Batch Process step at a time. Let's take a deeper look at our batch so that when we start adding steps, the process makes a little bit more sense.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Any batches that are created will also be visible in the node tree. Viewing the batch from this location gives us access to more information about the batch itself.</p>
 <p>You can view the batch by switching to the <strong>Batch Viewer</strong> tab.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/005.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/005.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p>Click the <strong>+</strong> button next to the batch in the node tree to expand it.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/006.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/006.png"/></p>
 <p>Notice that there are two child objects here:</p>
 <ol>
 <li>a folder with the same name as the batch, and</li>
 <li>a gear icon with the name of the Batch Process we used to create the batch.</li>
 </ol>
-<p><img alt="" src="../../assets/img/vol-1/2-1/007.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/009.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/007.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/009.png"/></p>
 <details class="note"><summary>Note</summary><p>When you create a production batch and assign it a particular Batch Process, it attaches a copy of that Process to that batch. This is to ensure that, should there be any changes to the process after the batch is created, it won't affect how this batch is processing.</p>
 <p>An important note is that because this Process is only a <em>copy</em> of the original, it doesn't maintain a link to the original.</p>
 </details>
 <p>If we want to make changes to the Process and subsequently test those changes against an batch, we need to tell that batch to update.</p>
 <p>This is like telling Grooper, "Hey, I've changed the steps I want you to take when you process."</p>
 <p>We'll be doing this quite a few times, so it won't hurt to become familiar with the technique!</p>
-<h2 id="cloning-to-test">Cloning to test<a class="headerlink" href="#cloning-to-test" title="Permanent link">&para;</a></h2>
+<h2 id="cloning-to-test">Cloning to test<a class="headerlink" href="#cloning-to-test" title="Permanent link">¶</a></h2>
 <p>We need to clean up our batch images, so we're going to create an Image Processing Profile to do that. However, profiles can be tested only against test batches, so we can't use our production batch.</p>
 <p>We can, however, clone our production batch to our test batches. This way we don't have to create a brand new test batch to work with.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / Invoices Process / <strong>Invoices Batch</strong></p>
 <p>Press <strong>Clone To Test</strong>, and then <strong>Execute</strong> on the window that appears.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/013.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/013.png"/></p>
 <details class="note"><summary>Note</summary><p>A batch must first be paused before <strong>Clone To Test</strong> will appear.</p>
 </details>
 <details class="warning"><summary>Warning</summary><p>Make sure you press <strong>Clone To Test</strong> and NOT <strong>Clone</strong> in the upper toolbar.</p>
@@ -945,42 +584,42 @@
 </ul>
 </details>
 <p>Once the clone is complete, you will see a confirmation window; press <strong>OK</strong>.</p>
-<p>Now you can view the cloned batch by navigating to <strong>Batch Processing &gt; Batches &gt; Test &gt; Production Clones &gt; Invoices Process &gt; Invoices Batch</strong></p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/020.png" /></p>
-<h2 id="image-processing">Image Processing<a class="headerlink" href="#image-processing" title="Permanent link">&para;</a></h2>
+<p>Now you can view the cloned batch by navigating to <strong>Batch Processing → Batches → Test → Production Clones → Invoices Process → Invoices Batch</strong>.</p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/020.png"/></p>
+<h2 id="image-processing">Image Processing<a class="headerlink" href="#image-processing" title="Permanent link">¶</a></h2>
 <p>Our current objective is to clean up the images, which we learned is done via an Image Processing Profile (or "IP Profile").</p>
 <p>We can start creating one now that we've got a batch against which we can test it.</p>
-<h3 id="creating-an-ip-profile">Creating an IP Profile<a class="headerlink" href="#creating-an-ip-profile" title="Permanent link">&para;</a></h3>
+<h3 id="creating-an-ip-profile">Creating an IP Profile<a class="headerlink" href="#creating-an-ip-profile" title="Permanent link">¶</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / <strong>IP Profiles</strong></p>
 <ol>
-<li>Right click and select <strong>Add &gt; IP Profile...</strong>.</li>
+<li>Right click and select <strong>Add → IP Profile...</strong>.</li>
 <li>Name it <mark>Invoices IP Profile</mark>.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/021.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/024.png" /></p>
-<h3 id="configuring-the-ip-profile">Configuring the IP Profile<a class="headerlink" href="#configuring-the-ip-profile" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/img/vol-1/2-1/021.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/024.png"/></p>
+<h3 id="configuring-the-ip-profile">Configuring the IP Profile<a class="headerlink" href="#configuring-the-ip-profile" title="Permanent link">¶</a></h3>
 <p>Once you have your IP Profile created, you should see the configuration screen.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/026.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/026.png"/></p>
 <p>Setting up an IP Profile is a bit like setting up a Batch Process. We'll create a list of things to do (in an IP Profile we'll work with "commands") when the profile runs against a page. Then we'll actually get to test it out against our test batch before we put it into production.</p>
-<h4 id="selecting-a-batch">Selecting a batch<a class="headerlink" href="#selecting-a-batch" title="Permanent link">&para;</a></h4>
+<h4 id="selecting-a-batch">Selecting a batch<a class="headerlink" href="#selecting-a-batch" title="Permanent link">¶</a></h4>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p>From the <strong>Batch</strong> dropdown select our cloned <strong>Invoices Batch</strong>.</p>
 </div>
 <p>We're going to build the profile, but we first need to select a batch for testing.  Otherwise we won't know if the commands we're adding will work.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/028.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/028.png"/></p>
 <p>After you select the batch, it will appear in the batch viewer below.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/029.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/029.png"/></p>
 <p>Let's add a command!</p>
-<h4 id="adding-a-deskew-command">Adding a Deskew command<a class="headerlink" href="#adding-a-deskew-command" title="Permanent link">&para;</a></h4>
+<h4 id="adding-a-deskew-command">Adding a Deskew command<a class="headerlink" href="#adding-a-deskew-command" title="Permanent link">¶</a></h4>
 <p>The first thing we want to do is deskew the images.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
-<p>Press <strong>Add</strong> and select <strong>Image Transforms &gt; Auto Deskew</strong>.</p>
+<p>Press <strong>Add</strong> and select <strong>Image Transforms → Auto Deskew</strong>.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/030.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/030.png"/></p>
 <p>You should now see the "Auto Deskew" command in the list in the "Child Element" column.</p>
 <details class="tip"><summary>Tip</summary><p>If you're not seeing an image in the lower right panel, click on one of the pages in the batch.</p>
 </details>
@@ -988,40 +627,40 @@
 </details>
 <p>In the panel below, there are different properties that you can modify for each command, but we're going to leave these ones at their default configurations.</p>
 <p>Let's test it out so far to make sure it's working.</p>
-<h4 id="testing-the-command">Testing the command<a class="headerlink" href="#testing-the-command" title="Permanent link">&para;</a></h4>
+<h4 id="testing-the-command">Testing the command<a class="headerlink" href="#testing-the-command" title="Permanent link">¶</a></h4>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p>Keeping your eye on the image in the lower right panel, press <strong>Execute</strong> in the toolbar.</p>
 </div>
 <p>This will run all commands in the list against the selected page from top to bottom.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/031.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/031.png"/></p>
 <p>If you were watching, you probably noticed that the image did rotate, but now we have some extra white space around the edges that we didn't have before. That's okay, because we have plenty of other commands at our disposal to take care of that. Right now our primary concern is that the <em>text</em> is oriented correctly (we'll talk about why here in a bit).</p>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p>In the lower right panel, click the rightmost magnifying glass to zoom the image to fit the panel.</p>
 </div>
 <p>This will make it easier to see.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/032.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/032.png"/></p>
 <p>You can see the effect your commands have on your image by switching back and forth between <strong>Result Image</strong> and <strong>Original Image</strong>.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/33-34.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/33-34.gif"/></p>
 <p>Check it out on page two.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/35-36.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/35-36.gif"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p>Press <strong>Save</strong>.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/037.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/037.png"/></p>
 <details class="tip"><summary>Tip</summary><p>Save often!</p>
 <p>A good rule of thumb is to save every time you make a change you know you're going to keep.</p>
 </details>
 <p>We're done with the Deskew command. Remember that the goal is to make sure the text is displayed in horizontal lines, so try not to focus on the border skew.</p>
 <p>Speaking of borders, let's take care of them.</p>
-<h4 id="border-cleanup-commands">Border cleanup commands<a class="headerlink" href="#border-cleanup-commands" title="Permanent link">&para;</a></h4>
+<h4 id="border-cleanup-commands">Border cleanup commands<a class="headerlink" href="#border-cleanup-commands" title="Permanent link">¶</a></h4>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
-<p>Press <strong>Add</strong>, and then <strong>Border Cleanup &gt; Auto Border Crop</strong>.</p>
+<p>Press <strong>Add</strong>, and then <strong>Border Cleanup → Auto Border Crop</strong>.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/038.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/038.png"/></p>
 <p>We aren't going to change any of the default properties, so let's see what happens.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
@@ -1029,7 +668,7 @@
 </div>
 <details class="tip"><summary>Tip</summary><p>As you're building an IP Profile and adding and testing commands, make sure you are on the <strong>Result Image</strong> to see if your configuration is working. It's not unusual to be adding commands and not see any changes in your image, only to realize you never switched over from the <strong>Original Image</strong> view!</p>
 </details>
-<p><img alt="" src="../../assets/img/vol-1/2-1/40-41.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/40-41.gif"/></p>
 <details class="note"><summary>Note</summary><p>The <strong>Border Crop</strong> command changes the size of your image. You can see this in the information panel below the image itself.</p>
 </details>
 <p>Our Border Crop works pretty well, but there are some images that still have a bit leftover. We don't necessarily want to increase the size of our crop because we risk cutting off any text that might be close to the edge of the page (for example, <strong>Page 7</strong> in our batch). We'll take care of that another way.</p>
@@ -1037,12 +676,12 @@
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p><strong>Save</strong> the profile.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/042.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/042.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
-<p>Select <strong>Page 1</strong> in our batch. Press <strong>Add</strong> and select <strong>Border Cleanup &gt; Border Fill</strong>.</p>
+<p>Select <strong>Page 1</strong> in our batch. Press <strong>Add</strong> and select <strong>Border Cleanup → Border Fill</strong>.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/044.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/044.png"/></p>
 <details class="note"><summary>Note</summary><p>When you click on a page in the batch viewer, it automatically runs all commands against that page. The only time you need to use <strong>Execute</strong> is when you're adding commands and you want to run them against your current page without navigating away from it.</p>
 </details>
 <p>If you click on <strong>Execute</strong>, nothing happens. That tells us that the default properties for this command probably need to be tweaked for us to see results.</p>
@@ -1053,7 +692,7 @@
 <li>Change the <strong>Border Region Size</strong> property to <mark>25pt</mark>.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/048.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/048.png"/></p>
 <p>This is increasing how far inward from the border Grooper will look when running this command.</p>
 <p>Yet, once again, <strong>Execute</strong> yields no results.</p>
 <div class="admonition abstract">
@@ -1063,22 +702,22 @@
 <li>Change the <strong>Method</strong> property to <mark>Inclusive</mark>.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/052.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/052.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
 <p>Press <strong>Execute</strong> and check out the results.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/53-54.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/53-54.gif"/></p>
 <details class="note"><summary>Note</summary><p>Unlike the <strong>Border Crop</strong> command, <strong>Border Fill</strong> does not change the size of your image. This is because this command serves to fill in the edge of the page with whatever color is set in the <strong>Fill Color</strong> property.</p>
 <p>We're not changing the size of the page, only the stuff on it.</p>
 </details>
 <div class="admonition abstract">
 <p class="admonition-title">Global Resources / IP Profiles / <strong>Invoices IP Profile</strong></p>
-<p>Press <strong>Add</strong> and select <strong>Feature Detection &gt; Patch Code Detection</strong>.</p>
+<p>Press <strong>Add</strong> and select <strong>Feature Detection → Patch Code Detection</strong>.</p>
 <p><strong>Save</strong> the profile.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/551-561.gif" /></p>
-<h3 id="adding-to-the-batch-process">Adding to the Batch Process<a class="headerlink" href="#adding-to-the-batch-process" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/img/vol-1/2-1/551-561.gif"/></p>
+<h3 id="adding-to-the-batch-process">Adding to the Batch Process<a class="headerlink" href="#adding-to-the-batch-process" title="Permanent link">¶</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong>.</p>
 <ol>
@@ -1088,60 +727,60 @@
 <li><strong>Save</strong> and <strong>Publish</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/058.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/060.png" /></p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/61-62.gif" /></p>
-<h3 id="updating-the-production-batch">Updating the production batch<a class="headerlink" href="#updating-the-production-batch" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/img/vol-1/2-1/058.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/060.png"/></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/61-62.gif"/></p>
+<h3 id="updating-the-production-batch">Updating the production batch<a class="headerlink" href="#updating-the-production-batch" title="Permanent link">¶</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / Invoices Process / Invoices Batch / <strong>Invoices Process</strong></p>
 <p>Notice how the Batch Process that is attached to this batch didn't receive the new step we just added. Remember that when this batch was created, the process had only the "Scan" step. We want to tell this batch to check out the changes we made to the process so that it can run through the new Image Processing step.</p>
 </div>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
-<p>Select the batch from the list, and then press <strong>Batch &gt; Update Process...</strong>.</p>
+<p>Select the batch from the list, and then press <strong>Batch → Update Process...</strong>.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/066.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/066.png"/></p>
 <p>The <strong>Update Process</strong> window will appear.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/067.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/067.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Select <strong>Target Step</strong>.  From the dropdown on the right select the <strong>Image Processing</strong> step, and then press <strong>Execute</strong>.</p>
 </div>
 <p>We're telling Grooper: "Update the process attached to this batch. We're using this process, I've added a step, and I want you to run the batch through it."</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/069.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/069.png"/></p>
 <p>We will return to Grooper Design Studio, only now our batch's <strong>Task Status</strong> panel has another step in it.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/070.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/070.png"/></p>
 <p>The task doesn't have a progress bar because the batch is still paused.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Press <strong>Resume Batch</strong>, and then <strong>Execute</strong> on the confirmation window that appears.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/071.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/071.png"/></p>
 <p>Now the batch has a gray progress bar for the <strong>Image Processing</strong> step. We know this means that it's ready and waiting for us to tell it to start this activity.</p>
 <p>Before we do that, let's look at what we just did.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Expand this node in the node tree.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/075.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/075.png"/></p>
 <p>Now we see that there's an <strong>Image Processing</strong> step that wasn't here the last time we looked. This is the result of the <strong>Update Process...</strong> that we did to the batch.</p>
 <p>The batch received the latest updates from our <strong>Invoices Process</strong>, which had a new step, so now it's ready to run it!</p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
-<p>Navigate back up to <strong>Batch Processing &gt; Batches &gt; Production &gt; Invoices Process</strong>, select the batch, and press <strong>Process</strong>.</p>
+<p>Navigate back up to <strong>Batch Processing → Batches → Production → Invoices Process</strong>, select the batch, and press <strong>Process</strong>.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-1/77-78.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/77-78.gif"/></p>
 <p>You'll see the <strong>Grooper Unattended Client</strong> window appear. This is the part of the Grooper suite that processes <strong>unattended activities</strong>.</p>
 <p>When this shows up, you don't need to press anything - it will start working automatically.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/079.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/079.png"/></p>
 <p>If you take a look at the <strong>Image Processing</strong> step, you can see it working on the pages.</p>
 <p>When it's done, it will have a blue progress bar similar to the Scan step.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-1/081.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-1/081.png"/></p>
 <p>But how do we know that it actually worked, and that our images have been cleaned up satisfactorily?</p>
-<h2 id="image-review">Image Review<a class="headerlink" href="#image-review" title="Permanent link">&para;</a></h2>
+<h2 id="image-review">Image Review<a class="headerlink" href="#image-review" title="Permanent link">¶</a></h2>
 <p>In a production environment, you might want to have users review the images before they move on to any other steps in your Batch Process.</p>
 <p>In Grooper, we can do this with an <strong>Image Review</strong> step. This is an attended activity that will display the batch to the users and give them an opportunity to approve or rescan any images that need it.</p>
-<h3 id="adding-an-image-review-step">Adding an Image Review step<a class="headerlink" href="#adding-an-image-review-step" title="Permanent link">&para;</a></h3>
+<h3 id="adding-an-image-review-step">Adding an Image Review step<a class="headerlink" href="#adding-an-image-review-step" title="Permanent link">¶</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
@@ -1150,7 +789,7 @@
 <li><strong>Save</strong> and <strong>Publish</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-2/001.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/001.png"/></p>
 <p>Now we need to go update our batch.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
@@ -1161,47 +800,47 @@
 <li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-2/2-5-9.gif" /></p>
-<p><img alt="" src="../../assets/img/vol-1/2-2/10-11-12-13.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/2-5-9.gif"/></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/10-11-12-13.gif"/></p>
 <p>We should see another step in the <strong>Task Status</strong> panel, just like when we added <strong>Image Processing</strong>.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-2/014.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/014.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p><strong>Resume</strong> the batch.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-2/015.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/015.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Press <strong>Process</strong> to start this activity.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-2/019.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/019.png"/></p>
 <p><strong>Image Review</strong> is an attended activity, so clicking <strong>Process</strong> will open up the <strong>Grooper Attended Client</strong> module (like it did when we scanned).</p>
-<p><img alt="" src="../../assets/img/vol-1/2-2/020.png" /></p>
-<h3 id="opening-image-review">Opening Image Review<a class="headerlink" href="#opening-image-review" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/img/vol-1/2-2/020.png"/></p>
+<h3 id="opening-image-review">Opening Image Review<a class="headerlink" href="#opening-image-review" title="Permanent link">¶</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Switch to the <strong>Thumbnail Viewer</strong> tab.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-2/20-22.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/20-22.gif"/></p>
 <p>This gives us an easy way to see all of the thumbnails of the batch at a glance.</p>
 <p>If you haven't noticed yet, there are a few blank pages in this batch. We don't really care about processing those, so let's get rid of them.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>In the <strong>Thumbnail Viewer</strong>, press <strong>Sort</strong> in the upper right corner.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-2/023.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/023.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Select the <strong>Sort By Intensity</strong> option.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-2/024.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/024.png"/></p>
 <p>This will arrange the images by how intense they are, based on the black pixel count. Images will be arranged from top to bottom by least amount of black pixels to most.</p>
 <details class="note"><summary>Note</summary><p>This does not permanently arrange the images in this order. This is just a technique to see how many blank pages we have.</p>
 </details>
-<p><img alt="" src="../../assets/img/vol-1/2-2/025.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/025.png"/></p>
 <p>If you scroll to the top, you can see all of the pages with the least amount of black pixels - the blank pages we want to remove.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-2/026.png" /></p>
-<h3 id="deleting-blank-pages">Deleting blank pages<a class="headerlink" href="#deleting-blank-pages" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/img/vol-1/2-2/026.png"/></p>
+<h3 id="deleting-blank-pages">Deleting blank pages<a class="headerlink" href="#deleting-blank-pages" title="Permanent link">¶</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
@@ -1218,9 +857,9 @@
 <li>Confirm the deletion when the confirmation window comes up.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-2/027.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/027.png"/></p>
 <p>Ta-da! They're all gone.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-2/030.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/030.png"/></p>
 <details class="note"><summary>Note</summary><p>This is only one of many ways that blank pages can be removed in Grooper.</p>
 </details>
 <div class="admonition abstract">
@@ -1228,8 +867,8 @@
 <p>Switch to the <strong>Batch Viewer</strong> tab.</p>
 </div>
 <p>Notice that the order of the pages didn't actually change, and now our batch is free of any blank pages.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-2/032.png" /></p>
-<h3 id="verifying-the-images">Verifying the images<a class="headerlink" href="#verifying-the-images" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/img/vol-1/2-2/032.png"/></p>
+<h3 id="verifying-the-images">Verifying the images<a class="headerlink" href="#verifying-the-images" title="Permanent link">¶</a></h3>
 <p>In order to complete this activity, the images have to be verified. This means that they need to be checked to make sure the previous step (Image Processing) worked correctly on all of the pages.</p>
 <p>To verify that an image has been reviewed, you can:</p>
 <ol>
@@ -1246,37 +885,36 @@
 <p>To complete this step quickly, select the first page in the batch and hold your <span class="keys"><kbd class="key-enter">Enter</kbd></span> key down. It will quickly verify all of the pages in the batch.</p>
 </details>
 <p>When you have reviewed all of the pages in the batch, <strong>Complete Task</strong> in the toolbar will light up.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-2/35-36.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/35-36.gif"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <p>Press <strong>Complete Task</strong> to finish this activity and return to Grooper Design Studio.</p>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-2/037.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-2/037.png"/></p>
 <p>And that's it! We've successfully cleaned up our images. But now what do we do?</p>
-<h2 id="ocr">OCR<a class="headerlink" href="#ocr" title="Permanent link">&para;</a></h2>
+<h2 id="ocr">OCR<a class="headerlink" href="#ocr" title="Permanent link">¶</a></h2>
 <p>You may be wondering why it's so important for us to have the images as clean as we can get them? Why can't we just store them however they came in? They weren't that bad, right?</p>
 <p>Well, believe it or not, there is a reason behind the madness.</p>
-<h3 id="about-ocr">About OCR<a class="headerlink" href="#about-ocr" title="Permanent link">&para;</a></h3>
+<h3 id="about-ocr">About OCR<a class="headerlink" href="#about-ocr" title="Permanent link">¶</a></h3>
 <p>Remember that our overarching goal with Grooper is to automate the process of processing documents, collecting information from them, and sending them on their way.</p>
 <p>We're well on our way to getting that information from the documents, but we have to do a few things to prepare Grooper to get the information for us.</p>
-<h4 id="what-is-ocr">What is OCR?<a class="headerlink" href="#what-is-ocr" title="Permanent link">&para;</a></h4>
+<h4 id="what-is-ocr">What is OCR?<a class="headerlink" href="#what-is-ocr" title="Permanent link">¶</a></h4>
 <p>We're going to be performing what's called OCR, which stands for "optical character recognition." This means we're going to tell Grooper to look at the images in our batch, identify what on these images is text, and store that text for us to use later.</p>
 <p>Image someone who doesn't know how to read. Letters on a page would simply look like a bunch of symbols without meaning, right?</p>
 <p>Now image that that person is a computer. For a scanned document, a computer doesn’t even know the symbol is a letter, but instead an arbitrary combination of pixels. The OCR process is how the computer takes an image and, <mark>line by line</mark>, finds combinations of pixels that it ultimately determines are letters, numbers, spaces, special characters, and so on.</p>
 <p>For this to happen successfully, the quality of the images has to be as high as possible. If we tried to OCR low-quality images, the text identified by the OCR engine won't be very good, which essentially breaks down everything we do from this point forward.</p>
-<h4 id="when-do-i-need-to-ocr">When do I need to OCR?<a class="headerlink" href="#when-do-i-need-to-ocr" title="Permanent link">&para;</a></h4>
+<h4 id="when-do-i-need-to-ocr">When do I need to OCR?<a class="headerlink" href="#when-do-i-need-to-ocr" title="Permanent link">¶</a></h4>
 <p>To harness all the power of Grooper, pages must be OCRed. There are perhaps very simple batch processes that could be created that utilized human interaction for every step, and in that case OCR would not be required, but that’s like buying a Ferrari to take trips to the grocery store.</p>
 <p>All the power of Grooper, from separation, to classification, to extraction, leverages the computer’s ability to read the document, and to that end require a page be OCRed. Therefore it is <em>crucial</em> to have the highest quality documents we can get in order for the automation process to run as smoothly as possible.</p>
-<h4 id="how-does-ocr-work">How does OCR work?<a class="headerlink" href="#how-does-ocr-work" title="Permanent link">&para;</a></h4>
+<h4 id="how-does-ocr-work">How does OCR work?<a class="headerlink" href="#how-does-ocr-work" title="Permanent link">¶</a></h4>
 <p>Check out <a href="https://upload.wikimedia.org/wikipedia/commons/transcoded/8/81/Portable_scanner_and_OCR_%28video%29.webm/Portable_scanner_and_OCR_%28video%29.webm.480p.webm">this video</a> on Wikipedia. It’s a nice demonstration of a very manual approach to OCR. You can see the person live scanning the document, line by line, and the computer “reads” the letters as the scanning happens.</p>
 <p>With Grooper, page scanning happens (usually) all at once. During the OCR process the image is broken into vertical and horizontal lines of pixels to identify individual letter characters and spacing.</p>
 <!-- | G     | r     | o     |
 | :---: | :---: | :---: | -->
-
-<p><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-01.jpg" /></p>
-<p><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-02.jpg" /></p>
-<p><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-03.jpg" /></p>
-<h3 id="adding-an-ocr-step">Adding an OCR step<a class="headerlink" href="#adding-an-ocr-step" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-01.jpg"/></p>
+<p><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-02.jpg"/></p>
+<p><img alt="" src="../../assets/img/vol-1/2-3/ref/ocr-03.jpg"/></p>
+<h3 id="adding-an-ocr-step">Adding an OCR step<a class="headerlink" href="#adding-an-ocr-step" title="Permanent link">¶</a></h3>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Processes / Working / <strong>Invoices Process</strong></p>
 <ol>
@@ -1286,7 +924,7 @@
 <li><strong>Save</strong> and <strong>Publish</strong> the process.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-3/018.png" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-3/018.png"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
@@ -1296,8 +934,8 @@
 <li>Press <strong>Execute</strong>.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-3/19-20-24.gif" /></p>
-<p><img alt="" src="../../assets/img/vol-1/2-3/25-26-27.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-3/19-20-24.gif"/></p>
+<p><img alt="" src="../../assets/img/vol-1/2-3/25-26-27.gif"/></p>
 <div class="admonition abstract">
 <p class="admonition-title">Batch Processing / Batches / Production / <strong>Invoices Process</strong></p>
 <ol>
@@ -1305,10 +943,10 @@
 <li>Press <strong>Process</strong> to kick off the OCR activity.</li>
 </ol>
 </div>
-<p><img alt="" src="../../assets/img/vol-1/2-3/29-33.gif" /></p>
+<p><img alt="" src="../../assets/img/vol-1/2-3/29-33.gif"/></p>
 <p>The <strong>Grooper Unattended Client</strong> should kick off again and start processing against the pages in the batch.</p>
-<p><img alt="" src="../../assets/img/vol-1/2-3/034.png" /></p>
-<h2 id="recap">Recap<a class="headerlink" href="#recap" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../assets/img/vol-1/2-3/034.png"/></p>
+<h2 id="recap">Recap<a class="headerlink" href="#recap" title="Permanent link">¶</a></h2>
 <p>That's it for the <strong>Condition</strong> phase! We've successfully prepped our images and extracted text from them.</p>
 <p>Here's a list of everything we learned:</p>
 <ul>
@@ -1320,105 +958,68 @@
 <li>how to extract text from the images using Optical Character Recognition (or "OCR")</li>
 </ul>
 <p>And thus your arsenal of Grooper knowledge grows!</p>
-<h2 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permanent link">&para;</a></h2>
+<h2 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permanent link">¶</a></h2>
 <p>We currently have a batch of loose pages with some patch code sheets. This batch consists of multiple invoices, but Grooper isn't aware of that yet. You and I know where one invoice ends and another begins, so it's up to us to tell Grooper how to recognize that as well.</p>
-                
-                  
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-      </main>
-      
-        
+</article>
+</div>
+</div>
+</main>
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../acquire/" title="Acquire" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
+<div class="md-footer-nav">
+<nav class="md-footer-nav__inner md-grid">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../acquire/" rel="prev" title="Acquire">
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
                   Previous
                 </span>
                 Acquire
               </span>
-            </div>
-          </a>
-        
-        
-          <a href="../organize/" title="Organize" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
+</div>
+</a>
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../organize/" rel="next" title="Organize">
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
                   Next
                 </span>
                 Organize
               </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
         
         powered by
         <a href="https://www.mkdocs.org">MkDocs</a>
         and
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
-      </div>
-      
-        
-  <div class="md-footer-social">
-    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
-    
-      <a href="https://www.facebook.com/BusinessImagingSystems" class="md-footer-social__link fa fa-facebook"></a>
-    
-      <a href="https://www.linkedin.com/company/business-imaging-systems" class="md-footer-social__link fa fa-linkedin"></a>
-    
-      <a href="https://twitter.com/grooper_ai" class="md-footer-social__link fa fa-twitter"></a>
-    
-      <a href="https://www.youtube.com/channel/UCiJPKqS_enHrFsX49cngqag" class="md-footer-social__link fa fa-youtube"></a>
-    
-  </div>
-
-      
-    </div>
-  </div>
+</div>
+<div class="md-footer-social">
+<link href="../../assets/fonts/font-awesome.css" rel="stylesheet"/>
+<a class="md-footer-social__link fa fa-facebook" href="https://www.facebook.com/BusinessImagingSystems"></a>
+<a class="md-footer-social__link fa fa-linkedin" href="https://www.linkedin.com/company/business-imaging-systems"></a>
+<a class="md-footer-social__link fa fa-twitter" href="https://twitter.com/grooper_ai"></a>
+<a class="md-footer-social__link fa fa-youtube" href="https://www.youtube.com/channel/UCiJPKqS_enHrFsX49cngqag"></a>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    
-      <script src="../../assets/javascripts/application.49fb0ed4.js"></script>
-      
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
-      
-        <script src="../../assets/js/glightbox.min.js"></script>
-      
-        <script src="../../assets/js/jquery-3.3.1.min.js"></script>
-      
-        <script src="../../assets/js/app.js"></script>
-      
-    
-    
-      
-    
-  </body>
+</div>
+<script src="../../assets/javascripts/application.49fb0ed4.js"></script>
+<script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+<script src="../../assets/js/glightbox.min.js"></script>
+<script src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
 </html>

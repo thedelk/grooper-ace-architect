@@ -1,10 +1,14 @@
 @page {
   size: letter;
-  margin: 5mm 4mm 3mm 4mm;
+  margin: 0.2in 0.15in 0.3in 0.15in;
   counter-increment: page;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   white-space: pre;
   color: grey;
+
+  @bottom-right {
+    content: counter(page);
+  }
   /* @top-left {
     content: "© 2018 My Company";
   }
@@ -16,6 +20,11 @@
   } */
 }
 
-img {
-  /* max-width: 100%; */
-}
+/* img {
+  max-width: 100%;
+} */
+
+/* Break before level 2 headings - Working! */
+/* h2 {
+  break-before: always;
+} */

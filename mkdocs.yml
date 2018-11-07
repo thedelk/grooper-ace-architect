@@ -67,9 +67,10 @@ markdown_extensions:
 # - vol-2: vol-2/deliver.md
 
 plugins:
-  - pdf-export:
-      # verbose: true
-      enabled_if_env: ENABLE_PDF_EXPORT
+  - pdf-export
+  # - pdf-export:
+  #     verbose: true
+  #     enabled_if_env: ENABLE_PDF_EXPORT
   - search
   - awesome-pages:
       filename: .title
